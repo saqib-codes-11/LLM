@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_8fc1d866-a661-46d0-a8b8-fb62fb212bf6",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "8fc1d866-a661-46d0-a8b8-fb62fb212bf6",
+    "solution_code": "from typing import List\n\ndef solve(n: List[int]) -> int:\n    # counting the occurrence of each elements in the list\n    counts = {}\n    for num in n:\n        if num in counts:\n            counts[num] += 1\n        else:\n            counts[num] = 1\n            \n    # iterates through the dictionary to find the number that appears nine times \n    for num, count in counts.items():\n        if count == 9:\n            # calculates the sum of the digits\n            digit_sum = sum(int(digit) for digit in str(num))\n            # returns the sum of the digits raised to the eighth power\n            return digit_sum ** 8\n\n    # returns 0 if no number appears nine times\n    return 0",
+    "feedback": null
+}

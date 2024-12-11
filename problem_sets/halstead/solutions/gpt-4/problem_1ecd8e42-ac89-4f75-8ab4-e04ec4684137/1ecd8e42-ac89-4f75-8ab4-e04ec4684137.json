@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_1ecd8e42-ac89-4f75-8ab4-e04ec4684137",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "1ecd8e42-ac89-4f75-8ab4-e04ec4684137",
+    "solution_code": "from collections import Counter\n\ndef solve(n):\n    freq = Counter(n)\n    for x in freq.keys():\n        if freq[x] == 1:\n            single = x\n            break\n    result = 1\n    x_str = str(single)\n    for digit in x_str:\n        result *= int(digit)\n    return result",
+    "feedback": null
+}

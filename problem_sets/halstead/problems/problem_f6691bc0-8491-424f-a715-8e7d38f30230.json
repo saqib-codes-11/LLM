@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_f6691bc0-8491-424f-a715-8e7d38f30230",
+    "prompts": [
+        {
+            "prompt_id": "f6691bc0-8491-424f-a715-8e7d38f30230",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 290), determine the nth number in the sequence defined as: a(n) = 12*a(n-1) - 8*a(n-2) + 15, a(1) = 14, a(2) = 17. Return its last digit.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                4
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                7
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                7
+            ]
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+  "identifier": "prime_generator_and_specific_checker_001",
+  "prompts": [
+    {
+      "prompt_id": "prime_generator_and_specific_checker_prompt_01",
+      "prompt": "Write a parent function named 'generate_primes' that takes an integer n and returns a list of all prime numbers less than n. Afterwards, create a child function named 'is_prime_value' that takes two integers n and val, uses 'generate_primes' to obtain all prime numbers less than n, and checks whether val is among them.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"n": 20, "val": 13},
+          "expected_output": [true]
+        },
+        {
+          "input": {"n": 20, "val": 22},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "generate_primes",
+    "parameters": [
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_prime_value",
+    "parameters": [
+      {"name": "n", "type": "int"},
+      {"name": "val", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"n": 30, "val": 29}, "expected_output": [true]},
+    {"input": {"n": 30, "val": 30}, "expected_output": [false]},
+    {"input": {"n": 50, "val": 47}, "expected_output": [true]},
+    {"input": {"n": 50, "val": 49}, "expected_output": [false]}
+  ]
+}

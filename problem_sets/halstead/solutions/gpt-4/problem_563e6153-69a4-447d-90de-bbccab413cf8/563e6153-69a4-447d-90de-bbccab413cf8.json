@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_563e6153-69a4-447d-90de-bbccab413cf8",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "563e6153-69a4-447d-90de-bbccab413cf8",
+    "solution_code": "def solve(n):\n    # calculate sum of the first n odd numbers to the power of 7\n    sum_n = (n * (2*n - 1) * (2*(n*n) - 3*n + 3) ** 2) // 3\n\n    # multiply all odd digits of the resulting sum\n    product = 1\n    for digit in str(sum_n):\n        if int(digit) % 2 == 1:\n            product *= int(digit)\n\n    return product",
+    "feedback": null
+}

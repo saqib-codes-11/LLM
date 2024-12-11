@@ -1,0 +1,44 @@
+{
+  "identifier": "string_length_and_substring_001",
+  "prompts": [
+    {
+      "prompt_id": "string_length_and_substring_prompt_01",
+      "prompt": "Write a parent function named 'calculate_length' that takes a string and returns its length. Then, write a child function named 'is_substring' that takes two strings and, utilizing 'calculate_length', returns True if the first string is a substring of the second, and False otherwise.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"str1": "cat", "str2": "concatenation"},
+          "expected_output": [true]
+        },
+        {
+          "input": {"str1": "bat", "str2": "concatenation"},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_length",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_substring",
+    "parameters": [
+      {"name": "str1", "type": "str"},
+      {"name": "str2", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"str1": "fun", "str2": "function"}, "expected_output": [true]},
+    {"input": {"str1": "loop", "str2": "loophole"}, "expected_output": [true]},
+    {"input": {"str1": "math", "str2": "mathematics"}, "expected_output": [true]},
+    {"input": {"str1": "hello", "str2": "world"}, "expected_output": [false]}
+  ]
+}

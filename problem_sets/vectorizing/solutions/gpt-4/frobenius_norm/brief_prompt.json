@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "frobenius_norm",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef frobenius_norm(A):\n    A = np.array(A)\n    return np.linalg.norm(A)",
+    "feedback": null
+}

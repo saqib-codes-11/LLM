@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_8bffba85-1857-4797-9a0a-b8c4a6bb8874",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "8bffba85-1857-4797-9a0a-b8c4a6bb8874",
+    "solution_code": "def solve(n: int) -> int:\n    return sum(int(d) for d in str(256*n*n*n*n*n*n*n*n*n + 1152*n*n*n*n*n*n*n*n + 2304*n*n*n*n*n*n*n + 2304*n*n*n*n*n*n) if int(d) % 2 == 0)",
+    "feedback": null
+}

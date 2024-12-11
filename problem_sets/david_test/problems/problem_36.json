@@ -1,0 +1,32 @@
+{
+    "identifier": "problem_hashmap",
+    "description": "Implement a function to perform operations (insert, get, delete) on a hashmap.",
+    "function_prototype": {
+        "function_name": "hashmap_operation",
+        "parameters": [
+            {"name": "operation", "type": "str"},
+            {"name": "hashmap", "type": "Dict[int, int]"},
+            {"name": "key", "type": "int"},
+            {"name": "value", "type": "Optional[int]"}
+        ],
+        "return_values": [{"type": "Union[Dict[int, int], int]"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"operation": "insert", "hashmap": {}, "key": 1, "value": 100}, "expected_output": [{"1": 100}]},
+        {"input": {"operation": "get", "hashmap": {"1": 100, "2": 200}, "key": 1}, "expected_output": [100]},
+        {"input": {"operation": "get", "hashmap": {"1": 100, "2": 200}, "key": 3}, "expected_output": [-1]},
+        {"input": {"operation": "delete", "hashmap": {"1": 100, "2": 200}, "key": 1}, "expected_output": [{"2": 200}]}
+    ],
+    "tags": ["Hashmap", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the hashmap_operation function that performs insert, get, or delete operations on a hashmap. For insert, insert the key-value pair and return the updated hashmap. For get, return the associated value or -1. For delete, delete the key-value pair and return the updated hashmap.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"operation": "insert", "hashmap": {}, "key": 3, "value": 300}, "expected_output": [{"3": 300}]},
+                {"input": {"operation": "get", "hashmap": {"1": 100, "2": 200, "3": 300}, "key": 3}, "expected_output": [300]}
+            ]
+        }
+    ]
+}

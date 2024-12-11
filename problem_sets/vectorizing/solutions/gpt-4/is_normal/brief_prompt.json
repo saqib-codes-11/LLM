@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "is_normal",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef is_normal(A: np.ndarray) -> bool:\n    A_transpose = np.transpose(A)\n    return np.array_equal(np.dot(A, A_transpose), np.dot(A_transpose, A))",
+    "feedback": null
+}

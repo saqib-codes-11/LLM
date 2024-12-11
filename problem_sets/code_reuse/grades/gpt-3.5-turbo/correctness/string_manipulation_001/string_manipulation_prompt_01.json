@@ -1,0 +1,13 @@
+{
+    "problem_identifier": "string_manipulation_001",
+    "prompt_identifier": "string_manipulation_prompt_01",
+    "model_identifier": "gpt-3.5-turbo",
+    "score": 0.0,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Error encountered during execution for test case Input: s = hello; Expected Output: 2: name 'count_vowels' is not defined\nTraceback (most recent call last):\n  File \"C:\\Users\\skyle\\Desktop\\prompting\\LLMCodingBenchmarkingFramework\\execution.py\", line 76, in executor_script\n    result = function(*parameters)\n  File \"<string>\", line 4, in count_consonants\nNameError: name 'count_vowels' is not defined\n",
+        "Error encountered during execution for test case Input: s = world; Expected Output: 3: name 'count_vowels' is not defined\nTraceback (most recent call last):\n  File \"C:\\Users\\skyle\\Desktop\\prompting\\LLMCodingBenchmarkingFramework\\execution.py\", line 76, in executor_script\n    result = function(*parameters)\n  File \"<string>\", line 4, in count_consonants\nNameError: name 'count_vowels' is not defined\n",
+        "Error encountered during execution for test case Input: s = alphabet; Expected Output: 5: name 'count_vowels' is not defined\nTraceback (most recent call last):\n  File \"C:\\Users\\skyle\\Desktop\\prompting\\LLMCodingBenchmarkingFramework\\execution.py\", line 76, in executor_script\n    result = function(*parameters)\n  File \"<string>\", line 4, in count_consonants\nNameError: name 'count_vowels' is not defined\n",
+        "Error encountered during execution for test case Input: s = xyz; Expected Output: 3: name 'count_vowels' is not defined\nTraceback (most recent call last):\n  File \"C:\\Users\\skyle\\Desktop\\prompting\\LLMCodingBenchmarkingFramework\\execution.py\", line 76, in executor_script\n    result = function(*parameters)\n  File \"<string>\", line 4, in count_consonants\nNameError: name 'count_vowels' is not defined\n"
+    ]
+}

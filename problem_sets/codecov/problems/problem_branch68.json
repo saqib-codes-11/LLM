@@ -1,0 +1,36 @@
+{
+    "identifier": "branch68",
+    "description": "branch68",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch68(num1, num2, num3):\n\n    # Initialize variables\n    total1 = 0\n    total2 = 0\n    total3 = 0\n    total4 = 0\n\n    # Branches\n    if num1 > 0:\n        total1 = num1 * 2\n    elif num1 < 0:\n        total1 = num1 * -2\n    else:\n        total1 = 0\n    \n    if num2 > 0:\n        total2 = num2 * 3\n    elif num2 < 0:\n        total2 = num2 * -3\n    else:\n        total2 = 0\n    \n    if num3 > 0:\n        total3 = num3 * 4\n    elif num3 < 0:\n        total3 = num3 * -4\n    else:\n        total3 = 0\n    \n    # Final total\n    total4 = total1 + total2 + total3\n    \n    # Return value\n    return total4"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch68",
+        "parameters": [
+            {
+                "name": "num1",
+                "type": "int"
+            },
+            {
+                "name": "num2",
+                "type": "int"
+            },
+            {
+                "name": "num3",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

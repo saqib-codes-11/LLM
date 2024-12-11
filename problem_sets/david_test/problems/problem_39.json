@@ -1,0 +1,70 @@
+{
+    "identifier": "problem_restaurant_recommendations",
+    "description": "Implement a function to recommend restaurants based on user ratings.",
+    "function_prototype": {
+        "function_name": "recommend_restaurants",
+        "parameters": [
+            {"name": "ratings", "type": "Dict[int, Dict[int, int]]"},
+            {"name": "user_id", "type": "int"},
+            {"name": "num_recommendations", "type": "int", "default": 5}
+        ],
+        "return_values": [{"type": "List[int]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "ratings": {
+                    "1": {"101": 5, "102": 4},
+                    "2": {"101": 4, "103": 5},
+                    "3": {"104": 5}
+                },
+                "user_id": 1
+            },
+            "expected_output": [101, 102]
+        },
+        {
+            "input": {
+                "ratings": {
+                    "1": {"101": 3, "102": 4},
+                    "2": {"101": 4, "103": 5},
+                    "3": {"104": 2}
+                },
+                "user_id": 2
+            },
+            "expected_output": [103, 101]
+        }
+    ],
+    "tags": ["Recommendation System", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the recommend_restaurants function that takes a dictionary of user ratings (user_id mapped to restaurant_id mapped to rating), a user_id, and an optional number of recommendations (defaulting to 5). Return a list of restaurant IDs recommended for the user.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "ratings": {
+                            "1": {"105": 5, "106": 4, "107": 3},
+                            "2": {"105": 3, "108": 4},
+                            "3": {"109": 5, "110": 2}
+                        },
+                        "user_id": 3,
+                        "num_recommendations": 2
+                    },
+                    "expected_output": [109, 110]
+                },
+                {
+                    "input": {
+                        "ratings": {
+                            "4": {"111": 5, "112": 4},
+                            "5": {"111": 4, "113": 5},
+                            "6": {"114": 3}
+                        },
+                        "user_id": 4
+                    },
+                    "expected_output": [111, 112]
+                }
+            ]
+        }
+    ]
+}

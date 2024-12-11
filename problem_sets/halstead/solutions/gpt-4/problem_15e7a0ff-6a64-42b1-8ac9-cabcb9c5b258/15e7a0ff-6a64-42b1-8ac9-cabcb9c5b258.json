@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_15e7a0ff-6a64-42b1-8ac9-cabcb9c5b258",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "15e7a0ff-6a64-42b1-8ac9-cabcb9c5b258",
+    "solution_code": "def solve(n: int) -> int:\n    # Compute the sum of the fourteenth powers of the first n even numbers\n    sum_of_powers = n*(n+1)*(2*n+1)*(3*n**2 + 3*n - 1)*((2**14)/30)\n\n    # Convert sum_of_powers to a string and sum the even digits\n    str_sum = str(int(sum_of_powers))  # convert to integer to remove any decimal places\n    return sum(int(d) for d in str_sum if int(d) % 2 == 0)",
+    "feedback": null
+}

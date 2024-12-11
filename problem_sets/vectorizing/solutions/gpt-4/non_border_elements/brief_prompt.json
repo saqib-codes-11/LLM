@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "non_border_elements",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef non_border_elements(A):\n    A = np.array(A)  \n    return A[1:-1, 1:-1].flatten().tolist()",
+    "feedback": null
+}

@@ -1,0 +1,32 @@
+{
+    "identifier": "problem_log_analyzer",
+    "description": "Write a function to analyze logs and retrieve statistics.",
+    "function_prototype": {
+        "function_name": "log_analyzer",
+        "parameters": [
+            {"name": "operation", "type": "str"},
+            {"name": "logs", "type": "list", "optional": true},
+            {"name": "timestamp", "type": "str", "optional": true},
+            {"name": "event", "type": "str", "optional": true},
+            {"name": "date", "type": "str", "optional": true}
+        ],
+        "return_values": [{"type": "list/int"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"operation": "add_entry", "logs": [], "timestamp": "2023-01-01 12:00", "event": "Event A"}, "expected_output": [{"timestamp": "2023-01-01 12:00", "event": "Event A"}]},
+        {"input": {"operation": "events_by_day", "logs": [{"timestamp": "2023-01-01 12:00", "event": "Event A"}], "date": "2023-01-01"}, "expected_output": ["Event A"]},
+        {"input": {"operation": "total_events", "logs": [{"timestamp": "2023-01-01 12:00", "event": "Event A"}]}, "expected_output": [1]}
+    ],
+    "tags": ["Log Analysis", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the log_analyzer function to handle log operations such as adding entries, retrieving events by day, and getting the total number of events.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"operation": "add_entry", "logs": [], "timestamp": "2023-01-02 10:30", "event": "Sample Event"}, "expected_output": [{"timestamp": "2023-01-02 10:30", "event": "Sample Event"}]},
+                {"input": {"operation": "total_events", "logs": [{"timestamp": "2023-01-02 10:30", "event": "Sample Event"}]}, "expected_output": [1]}
+            ]
+        }
+    ]
+}

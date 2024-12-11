@@ -1,0 +1,43 @@
+{
+  "identifier": "factorial_calculator_and_zero_counter_001",
+  "prompts": [
+    {
+      "prompt_id": "factorial_calculator_and_zero_counter_prompt_01",
+      "prompt": "Write a parent function named 'calculate_factorial' that takes an integer n and returns n! (factorial of n). Then, write a child function named 'count_trailing_zeros' that takes an integer n and, using 'calculate_factorial', returns the number of trailing zeros in n!.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"n": 5},
+          "expected_output": [1]
+        },
+        {
+          "input": {"n": 12},
+          "expected_output": [2]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_factorial",
+    "parameters": [
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "count_trailing_zeros",
+    "parameters": [
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"n": 7}, "expected_output": [1]},
+    {"input": {"n": 11}, "expected_output": [2]},
+    {"input": {"n": 14}, "expected_output": [2]},
+    {"input": {"n": 20}, "expected_output": [4]}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "replace_diagonal",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef function(A, d):\n    np.fill_diagonal(A, d)\n    return A",
+    "feedback": null
+}

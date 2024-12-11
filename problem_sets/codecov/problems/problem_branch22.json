@@ -1,0 +1,36 @@
+{
+    "identifier": "branch22",
+    "description": "branch22",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch22(num1, num2, num3):\n    '''\n    A function with a lot of branches.\n    '''\n    if num1 == 0:\n        if num2 == 0:\n            if num3 == 0:\n                result = 0\n            else:\n                result = 1\n        elif num3 == 0:\n            result = 2\n        else:\n            result = 3\n    elif num2 == 0:\n        if num3 == 0:\n            result = 4\n        else:\n            result = 5\n    elif num3 == 0:\n        result = 6\n    else:\n        result = 7\n    return result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch22",
+        "parameters": [
+            {
+                "name": "num1",
+                "type": "int"
+            },
+            {
+                "name": "num2",
+                "type": "int"
+            },
+            {
+                "name": "num3",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

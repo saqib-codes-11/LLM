@@ -1,0 +1,29 @@
+{
+    "identifier": "identity_matrix",
+    "description": "Given an unvectorized code for identity_matrix, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `identity_matrix` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(n):\n        # UNVECTORIZE THIS\n        result = []\n        for i in range(n):\n            row = []\n            for j in range(n):\n                if i == j:\n                    row.append(1)\n                else:\n                    row.append(0)\n            result.append(row)\n        return result\n    #TAGS: loops, nested loops, comparison\n    \n    ### Problem 28: Flatten Matrix\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "identity_matrix",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

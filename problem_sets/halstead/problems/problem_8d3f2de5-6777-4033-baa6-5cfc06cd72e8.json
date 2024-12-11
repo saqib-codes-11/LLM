@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_8d3f2de5-6777-4033-baa6-5cfc06cd72e8",
+    "prompts": [
+        {
+            "prompt_id": "8d3f2de5-6777-4033-baa6-5cfc06cd72e8",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 1750), compute the sum of the third powers of the first n odd prime numbers. Return the product of its prime digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                14
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                10
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                5
+            ]
+        }
+    ]
+}

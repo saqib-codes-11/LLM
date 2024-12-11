@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_26924784-f89a-4755-b11a-a3557101670a",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "26924784-f89a-4755-b11a-a3557101670a",
+    "solution_code": "from typing import List\n\ndef solve(n: List[int]) -> int:\n    # Handle the edge case where n is an empty list\n    if not n:\n        return 0\n\n    # Sort the list and find the median\n    n.sort()\n    length = len(n)\n    median = (n[length // 2] + n[(length - 1) // 2]) / 2\n\n    # Find the numbers that are even and less than six times the median\n    count = sum(1 for number in n if number % 2 == 0 and number < 6 * median)\n\n    # Calculate the product of the digits of the count\n    product = 1\n    for digit in str(count):\n        product *= int(digit)\n\n    return product",
+    "feedback": null
+}

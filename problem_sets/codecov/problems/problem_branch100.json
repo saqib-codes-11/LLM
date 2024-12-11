@@ -1,0 +1,36 @@
+{
+    "identifier": "branch100",
+    "description": "branch100",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch100(num1, num2, num3):\n    \"\"\"This function is an example of a function with a lot of branches.\n    \n    Parameters:\n    num1 (int): a number\n    num2 (int): a number\n    num3 (int): a number\n    \n    Returns:\n    int: a result based on the branching logic\n    \"\"\"\n    if num1 == 0 and num2 == 0 and num3 == 0:\n        result = 0\n    elif num1 == 0 and num2 == 0 and num3 != 0:\n        result = num3\n    elif num1 == 0 and num2 != 0 and num3 == 0:\n        result = num2\n    elif num1 != 0 and num2 == 0 and num3 == 0:\n        result = num1\n    elif num1 == 0 and num2 != 0 and num3 != 0:\n        result = num2 + num3\n    elif num1 != 0 and num2 == 0 and num3 != 0:\n        result = num1 + num3\n    elif num1 != 0 and num2 != 0 and num3 == 0:\n        result = num1 + num2\n    else:\n        result = num1 + num2 + num3\n    return result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch100",
+        "parameters": [
+            {
+                "name": "num1",
+                "type": "int"
+            },
+            {
+                "name": "num2",
+                "type": "int"
+            },
+            {
+                "name": "num3",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "identifier": "branch56",
+    "description": "branch56",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch56(input1, input2):\n    # Create a new variable\n    result = 0\n    \n    # Check if input1 is greater than input2\n    if input1 > input2:\n        # If Yes, set result to the sum of input1 and input2\n        result = input1 + input2\n    elif input1 < input2:\n        # If No, set result to the difference of input1 and input2\n        result = input1 - input2\n    else:\n        # If input1 and input2 are equal, set result to 0\n        result = 0\n     \n    # Check if result is divisible by 3\n    if result % 3 == 0:\n        # If Yes, set result to the result divided by 3\n        result /= 3\n    else:\n        # If No, set result to the result multiplied by 3\n        result *= 3\n    \n    # Check if result is greater than 10\n    if result > 10:\n        # If Yes, set result to the result divided by 10\n        result /= 10\n    else:\n        # If No, set result to the result multiplied by 10\n        result *= 10\n    \n    # Return the result\n    return result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch56",
+        "parameters": [
+            {
+                "name": "input1",
+                "type": "int"
+            },
+            {
+                "name": "input2",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

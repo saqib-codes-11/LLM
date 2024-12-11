@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_46edba7f-63ff-4456-bc88-d04f4533bdba",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "46edba7f-63ff-4456-bc88-d04f4533bdba",
+    "solution_code": "from typing import List\nimport statistics\n\ndef solve(n: List[int]) -> int:\n    median = statistics.median(n)\n    count = sum(1 for num in n if num > median) \n    return sum(int(digit) for digit in str(count))",
+    "feedback": null
+}

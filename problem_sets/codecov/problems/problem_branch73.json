@@ -1,0 +1,36 @@
+{
+    "identifier": "branch73",
+    "description": "branch73",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch73(x, y, z):\n    # Initialize a variable\n    result = 0\n    \n    # Check for first condition\n    if x < y:\n        # Check for second condition\n        if y < z:\n            # Calculate result\n            result = x + y + z\n        else:\n            # Calculate result\n            result = x + (2 * y) - z\n    else:\n        # Check for second condition\n        if x == y:\n            # Calculate result\n            result = x + y + (2 * z)\n        else:\n            # Calculate result\n            result = x * y * z\n    \n    # Return the result\n    return result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch73",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "int"
+            },
+            {
+                "name": "y",
+                "type": "int"
+            },
+            {
+                "name": "z",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

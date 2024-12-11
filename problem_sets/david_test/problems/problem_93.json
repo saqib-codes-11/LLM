@@ -1,0 +1,25 @@
+{
+    "identifier": "problem_dna_analyzer",
+    "description": "Write a function to generate the reverse complement of a given DNA sequence.",
+    "function_prototype": {
+        "function_name": "generate_reverse_complement",
+        "parameters": [{"name": "dna_sequence", "type": "str"}],
+        "return_values": [{"type": "str"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"dna_sequence": "ATGC"}, "expected_output": ["GCAT"]},
+        {"input": {"dna_sequence": "TACG"}, "expected_output": ["CGTA"]}
+    ],
+    "tags": ["Bioinformatics", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the generate_reverse_complement function to return the reverse complement of the input DNA sequence.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"dna_sequence": "AGCT"}, "expected_output": ["TCGA"]},
+                {"input": {"dna_sequence": "CGAT"}, "expected_output": ["ATCG"]}
+            ]
+        }
+    ]
+}

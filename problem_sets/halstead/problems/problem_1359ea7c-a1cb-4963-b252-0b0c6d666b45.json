@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_1359ea7c-a1cb-4963-b252-0b0c6d666b45",
+    "prompts": [
+        {
+            "prompt_id": "1359ea7c-a1cb-4963-b252-0b0c6d666b45",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 700), compute the sum of the fourth powers of the first n odd prime numbers. Return the sum of its prime digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                7
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                10
+            ]
+        }
+    ]
+}

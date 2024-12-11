@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_53bc74e7-fbc4-4b3b-bdf6-a00a0188e270",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "53bc74e7-fbc4-4b3b-bdf6-a00a0188e270",
+    "solution_code": "def solve(n: int) -> int:\n    last_two = [5, 8]\n    for _ in range(n - 2):\n        last_two = [last_two[1], (3*last_two[0] - 2*last_two[1] + 6) % 10]\n    return last_two[-1]",
+    "feedback": null
+}

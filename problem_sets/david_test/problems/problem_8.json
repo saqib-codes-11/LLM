@@ -1,0 +1,51 @@
+{
+	"identifier": "problem_file_search",
+	"description": "Write a function to simulate the search for files with a specific extension in a simulated file system.",
+	"function_prototype": {
+		"function_name": "simulate_file_search",
+		"parameters": [
+			{"name": "file_system", "type": "Dict[str, Union[str, Dict]]"},
+			{"name": "file_extension", "type": "str"}
+		],
+		"return_values": [{"type": "List[str]"}]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {
+				"file_system": {
+					"root": {
+						"subdir1": ["fileA.txt", "fileB.jpg"],
+						"subdir2": {
+							"subsubdir1": ["fileC.txt", "fileD.doc"]
+						},
+						"subdir3": ["fileE.pdf", "fileF.txt"]
+					}
+				},
+				"file_extension": ".txt"
+			},
+			"expected_output": ["root/subdir1/fileA.txt", "root/subdir2/subsubdir1/fileC.txt", "root/subdir3/fileF.txt"]
+		}
+	],
+	"tags": ["Simulation", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the `simulate_file_search` function that simulates searching for files with a specific extension in a simulated file system. The file system is represented as nested dictionaries and lists.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {
+						"file_system": {
+							"root": {
+								"subdir1": ["sample.txt"],
+								"subdir2": ["image.jpg"]
+							}
+						},
+						"file_extension": ".txt"
+					},
+					"expected_output": ["root/subdir1/sample.txt"]
+				}
+			]
+		}
+	]
+}

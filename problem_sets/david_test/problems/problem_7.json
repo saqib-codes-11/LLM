@@ -1,0 +1,41 @@
+{
+	"identifier": "problem_task_scheduler",
+	"description": "Write a function to simulate the operations of a basic task scheduler.",
+	"function_prototype": {
+		"function_name": "simulate_task_scheduler",
+		"parameters": [{"name": "operations", "type": "List[Dict[str, Union[str, int]]]"}],
+		"return_values": [{"type": "List[str]"}]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {
+				"operations": [
+					{"action": "schedule_task", "task_id": 1, "interval_seconds": 10, "task_function": "print_hello"},
+					{"action": "schedule_task", "task_id": 2, "interval_seconds": 15, "task_function": "print_world"},
+					{"action": "cancel_task", "task_id": 1},
+					{"action": "cancel_task", "task_id": 3}
+				]
+			},
+			"expected_output": ["Task Scheduled", "Task Scheduled", "Task Canceled", "Task Not Found"]
+		}
+	],
+	"tags": ["Simulation", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the simulate_task_scheduler function that simulates the behavior of a basic task scheduler. The function will accept a list of operations and return a list of results for each operation.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {
+						"operations": [
+							{"action": "schedule_task", "task_id": 1, "interval_seconds": 10, "task_function": "print_hello"},
+							{"action": "cancel_task", "task_id": 1}
+						]
+					},
+					"expected_output": ["Task Scheduled", "Task Canceled"]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+    "identifier": "is_diagonal",
+    "description": "Given an unvectorized code for is_diagonal, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `is_diagonal` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                if i != j and A[i][j] != 0:\n                    return False\n        return True\n    #TAGS: loops, nested loops, comparison\n    \n    ### Problem 97: Elementwise Square Root\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "is_diagonal",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

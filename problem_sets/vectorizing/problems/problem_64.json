@@ -1,0 +1,29 @@
+{
+    "identifier": "sort_rows",
+    "description": "Given an unvectorized code for sort_rows, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `sort_rows` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        for i in range(len(A)):\n            A[i] = sorted(A[i])\n        return A\n    #TAGS: loops, sorting\n    \n    ### Problem 65: Column-wise Sorting\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "sort_rows",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

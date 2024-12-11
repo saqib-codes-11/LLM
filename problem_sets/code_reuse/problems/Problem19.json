@@ -1,0 +1,44 @@
+{
+  "identifier": "string_length_appending_001",
+  "prompts": [
+    {
+      "prompt_id": "string_length_appending_prompt_01",
+      "prompt": "Write a parent function named 'find_string_length' that takes a string as an argument and returns its length. Then, write a child function named 'append_chars_to_string' that takes a string and a character, and utilizes 'find_string_length' to append the character to the string as many times as the length of the string.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "abc", "char": "z"},
+          "expected_output": ["abczzz"]
+        },
+        {
+          "input": {"s": "hello", "char": "o"},
+          "expected_output": ["hellooooo"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "find_string_length",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "append_chars_to_string",
+    "parameters": [
+      {"name": "s", "type": "str"},
+      {"name": "char", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "test", "char": "x"}, "expected_output": ["testxxxx"]},
+    {"input": {"s": "py", "char": "y"}, "expected_output": ["pyyy"]},
+    {"input": {"s": "abcde", "char": "f"}, "expected_output": ["abcdefffff"]},
+    {"input": {"s": "gpt", "char": "4"}, "expected_output": ["gpt444"]}
+  ]
+}

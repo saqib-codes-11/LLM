@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_color_palette",
+    "description": "Manage a color palette based on a sequence of operations and return the final state or the colors after performing the operations.",
+    "function_prototype": {
+        "function_name": "manage_colors",
+        "parameters": [{"name": "initial_colors", "type": "list"}, {"name": "operations", "type": "list"}],
+        "return_values": [{"type": "list"}, {"type": "bool"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "initial_colors": ["red", "blue"],
+                "operations": [["add", "green"], ["get", "None"]]
+            },
+            "expected_output": ["red", "blue", "green"]
+        },
+        {
+            "input": {
+                "initial_colors": ["red", "blue"],
+                "operations": [["remove", "blue"], ["get", "None"]]
+            },
+            "expected_output": ["red"]
+        },
+        {
+            "input": {
+                "initial_colors": ["red", "blue"],
+                "operations": [["remove", "yellow"]]
+            },
+            "expected_output": ["False"]
+        }
+    ],
+    "tags": ["Lists", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the manage_colors function to manage a color palette based on a sequence of operations and return the final state or the colors after performing the operations.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "initial_colors": ["red"],
+                        "operations": [["add", "green"]]
+                    },
+                    "expected_output": ["red", "green"]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "identifier": "branch10",
+    "description": "branch10",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch10(a, b, operation):\n    if operation == 'add':\n        result = a + b\n    elif operation == 'subtract':\n        result = a - b\n    elif operation == 'multiply':\n        result = a * b\n    elif operation == 'divide':\n        if b != 0:\n            result = a / b\n        else:\n            return \"Cannot divide by zero!\"\n    else:\n        return \"Invalid operation\"\n    \n    if result < 0:\n        return \"Result is negative\"\n    elif result == 0:\n        return \"Result is zero\"\n    elif result > 0 and result < 10:\n        return \"Result is positive and less than 10\"\n    else:\n        return \"Result is positive and greater than or equal to 10\""
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch10",
+        "parameters": [
+            {
+                "name": "a",
+                "type": "int"
+            },
+            {
+                "name": "b",
+                "type": "int"
+            },
+            {
+                "name": "operation",
+                "type": "string"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            },
+            {
+                "type": "string"
+            }
+        ]
+    }
+}

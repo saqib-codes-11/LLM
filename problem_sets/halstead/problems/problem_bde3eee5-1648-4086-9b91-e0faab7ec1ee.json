@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_bde3eee5-1648-4086-9b91-e0faab7ec1ee",
+    "prompts": [
+        {
+            "prompt_id": "bde3eee5-1648-4086-9b91-e0faab7ec1ee",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 350), determine the nth number in the sequence defined as: a(n) = 15*a(n-1) - 11*a(n-2) + 18, a(1) = 17, a(2) = 20. Return its last digit.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                7
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                1
+            ]
+        }
+    ]
+}

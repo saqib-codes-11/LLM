@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_c403fca7-e395-45f5-b6e5-d894962544ac",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "c403fca7-e395-45f5-b6e5-d894962544ac",
+    "solution_code": "def solve(n: int) -> int:\n    # calculate the sum of the fifth powers of the first n even numbers\n    sum_fifth_powers = sum(i**5 for i in range(2, 2*n+1, 2))\n    \n    # find the even digits and calculate their product\n    product_even_digits = 1\n    for ch in str(sum_fifth_powers):\n        if int(ch) % 2 == 0:\n            product_even_digits *= int(ch)\n    \n    return product_even_digits",
+    "feedback": null
+}

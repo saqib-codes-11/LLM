@@ -1,0 +1,40 @@
+{
+	"identifier": "problem_most_common_words",
+	"description": "Write a function to retrieve the top n most common words from the given text, after cleaning it.",
+	"function_prototype": {
+		"function_name": "get_most_common_words",
+		"parameters": [
+			{"name": "text", "type": "str"},
+			{"name": "n", "type": "int"}
+		],
+		"return_values": [{"type": "List[Tuple[str, int]]"}]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {"text": "Hello, World! Hello again. Hello world!", "n": 2},
+			"expected_output": [["hello", 3], ["world", 2]]
+		},
+		{
+			"input": {"text": "Testing, testing. One, two, testing!", "n": 1},
+			"expected_output": [["testing", 3]]
+		}
+	],
+	"tags": ["Text Processing", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the get_most_common_words function that takes a text and an integer n, cleans the text, and returns the top n most common words with their frequencies.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {"text": "Example example. Example, testing!", "n": 2},
+					"expected_output": [["example", 3], ["testing", 1]]
+				},
+				{
+					"input": {"text": "Repeat repeat repeat. Stop stop.", "n": 1},
+					"expected_output": [["repeat", 3]]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_193c2a12-db66-433e-b561-b1ec33c231c5",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "193c2a12-db66-433e-b561-b1ec33c231c5",
+    "solution_code": "def solve(n):\n\n    if n == 1:\n        return 8\n    elif n == 2:\n        return 1\n    else:\n        a, b = 8, 1\n        for i in range(2,n):\n            a, b = b, (26*b - 22*a + 29)%10\n        return b",
+    "feedback": null
+}

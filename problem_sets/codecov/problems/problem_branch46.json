@@ -1,0 +1,32 @@
+{
+    "identifier": "branch46",
+    "description": "branch46",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch46(var1, var2):\n    if var1 == \"high\":\n        if var2 == \"low\":\n            return \"Result1\"\n        elif var2 == \"medium\":\n            return \"Result2\"\n        elif var2 == \"high\":\n            return \"Result3\"\n    elif var1 == \"medium\":\n        if var2 == \"low\":\n            return \"Result4\"\n        elif var2 == \"medium\":\n            return \"Result5\"\n        elif var2 == \"high\":\n            return \"Result6\"\n    elif var1 == \"low\":\n        if var2 == \"low\":\n            return \"Result7\"\n        elif var2 == \"medium\":\n            return \"Result8\"\n        elif var2 == \"high\":\n            return \"Result9\""
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch46",
+        "parameters": [
+            {
+                "name": "var1",
+                "type": "string"
+            },
+            {
+                "name": "var2",
+                "type": "string"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "string"
+            }
+        ]
+    }
+}

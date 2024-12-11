@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_f6691bc0-8491-424f-a715-8e7d38f30230",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "f6691bc0-8491-424f-a715-8e7d38f30230",
+    "solution_code": "# Reasoning\n\nGiven `n`, the nth number in the sequence defined as: `a(n) = 12*a(n-1) - 8*a(n-2) + 15, a(1) = 14, a(2) = 17` and `1 \u2264 n \u2264 290`, we are to determine what the last digit of `a(n)` is. \n\nWe realize that no matter how large `a(n)` is the there is always a pattern to which the last digit of the number repeats. From the sample testcase, the pattern that repeats is `7 4 7 4 7` for `n in n = 1 to n = 290`.\n\nWe can easily evaluate this solution by determine what the `n mod 5` is be and return the number in the sequence that corresponds to that index. This is thus inline with the pattern seen in the sequence for `n = 1 to n = 290`.\n  \nExample\n----------\nSuppose `n = 3` then `a(3) = 12*a(2) - 8*a(1) + 15 =  36`. Thus the last digit of `a(n)` would be `6`",
+    "feedback": null
+}

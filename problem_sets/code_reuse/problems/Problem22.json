@@ -1,0 +1,43 @@
+{
+  "identifier": "square_and_cube_001",
+  "prompts": [
+    {
+      "prompt_id": "square_and_cube_prompt_01",
+      "prompt": "Write a parent function named 'square_number' that takes an integer and returns its square. Then, write a child function named 'cube_the_square' that takes an integer and utilizes 'square_number' to cube the square of the integer.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"n": 2},
+          "expected_output": [16]
+        },
+        {
+          "input": {"n": 3},
+          "expected_output": [729]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "square_number",
+    "parameters": [
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "cube_the_square",
+    "parameters": [
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"n": 4}, "expected_output": [4096]},
+    {"input": {"n": 5}, "expected_output": [15625]},
+    {"input": {"n": 6}, "expected_output": [46656]},
+    {"input": {"n": 1}, "expected_output": [1]}
+  ]
+}

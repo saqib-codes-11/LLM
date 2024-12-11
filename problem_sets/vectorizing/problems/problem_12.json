@@ -1,0 +1,29 @@
+{
+    "identifier": "column_mean",
+    "description": "Given an unvectorized code for column_mean, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `column_mean` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        result = [0] * len(A[0])\n        for j in range(len(A[0])):\n            for i in range(len(A)):\n                result[j] += A[i][j]\n            result[j] /= len(A)\n        return result\n    #TAGS: loops, addition, nested loops, division\n    \n    ### Problem 13: Matrix Trace\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "column_mean",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

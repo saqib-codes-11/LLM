@@ -1,0 +1,40 @@
+{
+    "identifier": "problem_task_management_simulation",
+    "description": "Simulate operations on a task management system.",
+    "function_prototype": {
+        "function_name": "simulate_task_management",
+        "parameters": [{"name": "operations", "type": "List[Dict[str, Any]]"}],
+        "return_values": [{"type": "List[Any]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "operations": [
+                    {"action": "add_task", "name": "task1", "description": "description1", "priority": 5},
+                    {"action": "get_high_priority_tasks"}
+                ]
+            },
+            "expected_output": ["None", [{
+              "name": "task1", "description": "description1", "priority": 5, "completed": "False"}]]
+        }
+    ],
+    "tags": ["Simulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the simulate_task_management function to simulate the behavior of a task management system. The function will accept a list of operations and return a list of results for each operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "operations": [
+                            {"action": "add_task", "name": "task1", "description": "description1", "priority": 5},
+                            {"action": "get_high_priority_tasks"}
+                        ]
+                    },
+                    "expected_output": ["None", [{"name": "task1", "description": "description1", "priority": 5, "completed": "False"}]]
+                }
+            ]
+        }
+    ]
+}

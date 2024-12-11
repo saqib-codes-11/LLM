@@ -1,0 +1,31 @@
+{
+	"identifier": "max_product_of_two_integers",
+	"description": "This problem tests the ability to work with basic algorithms. The task is to find the maximum product of any two integers in a given list.",
+	"function_prototype": {
+		"function_name": "max_product",
+		"parameters": [{"name": "nums", "type": "List[int]"}],
+		"return_values": [{"type": "int"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"nums": [1, 2, 3, 4]}, "expected_output": [12]},
+		{"input": {"nums": [-1, -2, -3, -4]}, "expected_output": [12]}
+	],
+	"tags": ["Algorithms", "Lists"],
+	"prompts": [
+		{
+			"prompt_id": "prompt_only",
+			"prompt": "Implement a function that finds the maximum product of any two integers in a given list.",
+			"genericize": false,
+			"sample_inputs_outputs": []
+		},
+		{
+			"prompt_id": "prompt_with_tests",
+			"prompt": "Implement a function that finds the maximum product of any two integers in a given list.\n\nTest Cases:\n- Input: [1, 2, 3, 4]\n  Expected Output: 12\n- Input: [-1, -2, -3, -4]\n  Expected Output: 12",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"nums": [1, 2, 3, 4]}, "expected_output": [12]},
+				{"input": {"nums": [-1, -2, -3, -4]}, "expected_output": [12]}
+			]
+		}
+	]
+}

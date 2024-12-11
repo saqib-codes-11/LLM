@@ -1,0 +1,43 @@
+{
+  "identifier": "count_and_average_positives_001",
+  "prompts": [
+    {
+      "prompt_id": "count_and_average_positives_prompt_01",
+      "prompt": "Write a parent function named 'count_positives' that takes a list of integers `nums` and returns the count of positive integers in the list. Next, develop a child function named 'average_positives' that uses 'count_positives' to find the average of positive numbers in the list. If there are no positive numbers, the function should return 0.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [1, -2, 3, 4]},
+          "expected_output": [2.6666666666666665]
+        },
+        {
+          "input": {"nums": [-1, -2, -3, -4]},
+          "expected_output": [0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "count_positives",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "average_positives",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [1, 2, 3, 4]}, "expected_output": [2.5]},
+    {"input": {"nums": [1, -2, 3, -4]}, "expected_output": [2]},
+    {"input": {"nums": [-1, -2, -3, -4]}, "expected_output": [0]},
+    {"input": {"nums": [0, 0, 0, 0]}, "expected_output": [0]}
+  ]
+}

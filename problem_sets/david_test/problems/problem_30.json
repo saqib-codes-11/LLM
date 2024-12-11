@@ -1,0 +1,33 @@
+{
+    "identifier": "memoized_palindrome_substrings",
+    "description": "Find all palindrome substrings in a given string using memoization.",
+    "function_prototype": {
+        "function_name": "palindrome_substrings",
+        "parameters": [
+            {"name": "s", "type": "str"}
+        ],
+        "return_values": [{"type": "List[str]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"s": "abba"},
+            "expected_output": ["a", "b", "b", "a", "bb", "abba"]
+        },
+        {
+            "input": {"s": "abc"},
+            "expected_output": ["a", "b", "c"]
+        }
+    ],
+    "tags": ["String", "Memoization"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `palindrome_substrings` function to find all palindrome substrings in a given string. You are to determine the palindrome substrings using memoization for efficiency.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"s": "racecar"}, "expected_output": ["r", "a", "c", "e", "c", "a", "r", "cec", "aceca", "racecar"]},
+                {"input": {"s": "hello"}, "expected_output": ["h", "e", "l", "l", "o", "ll"]}
+            ]
+        }
+    ]
+}

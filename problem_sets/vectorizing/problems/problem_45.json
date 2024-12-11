@@ -1,0 +1,41 @@
+{
+    "identifier": "shear_matrix",
+    "description": "Given an unvectorized code for shear_matrix, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `shear_matrix` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A, k, i, j):\n        # UNVECTORIZE THIS (i-th row is changed by adding k times the j-th row)\n        for col in range(len(A[0])):\n            A[i][col] += k * A[j][col]\n        return A\n    #TAGS: loops, multiplication, addition\n    \n    ### Problem 46: Count Non-zero elements in Matrix\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "shear_matrix",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            },
+            {
+                "name": "k",
+                "type": "int"
+            },
+            {
+                "name": "i",
+                "type": "int"
+            },
+            {
+                "name": "j",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

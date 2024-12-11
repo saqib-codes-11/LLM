@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "sort_even_numbers_in_array",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "prompt_generic_tests",
+    "solution_code": "from typing import List\n\ndef sort_even_numbers(arr: List[int]) -> List[int]:\n    return sorted(arr, key=lambda x: x if x%2 != 0 else x + 100000000)",
+    "feedback": null
+}

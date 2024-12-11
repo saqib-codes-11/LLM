@@ -1,0 +1,32 @@
+{
+    "identifier": "branch39",
+    "description": "branch39",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch39(input1, input2):\n    # define a variable, result, to store the final result\n    result = 0\n    \n    # if the first input is a number\n    if type(input1) == int:\n        # if the second input is a string\n        if type(input2) == str:\n            # if the string is longer than 5 characters\n            if len(input2) > 5:\n                # multiply the two inputs\n                result = input1 * len(input2)\n            else:\n                # add the two inputs\n                result = input1 + len(input2)\n        \n        # if the second input is not a string\n        else:\n            # add the two inputs\n            result = input1 + input2\n    \n    # if the first input is not a number\n    else:\n        # if the second input is a string\n        if type(input2) == str:\n            # if the string is longer than 5 characters\n            if len(input2) > 5:\n                # multiply the length of the string with 10\n                result = len(input2) * 10\n            else:\n                # multiply the length of the string with 5\n                result = len(input2) * 5\n            \n        # if the second input is not a string\n        else:\n            # subtract the two inputs\n            result = input1 - input2\n    \n    # return the result    \n    return result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch39",
+        "parameters": [
+            {
+                "name": "input1",
+                "type": "any"
+            },
+            {
+                "name": "input2",
+                "type": "any"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

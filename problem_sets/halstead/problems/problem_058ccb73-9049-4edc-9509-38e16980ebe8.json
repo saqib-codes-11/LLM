@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_058ccb73-9049-4edc-9509-38e16980ebe8",
+    "prompts": [
+        {
+            "prompt_id": "058ccb73-9049-4edc-9509-38e16980ebe8",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 400), compute the sum of the cubes of the first n even numbers. Return the sum of its prime digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 5
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                9
+            ]
+        }
+    ]
+}

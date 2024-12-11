@@ -1,0 +1,29 @@
+{
+    "identifier": "is_magic_square",
+    "description": "Given an unvectorized code for is_magic_square, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `is_magic_square` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        if len(A) != len(A[0]):\n            return False\n    \n        total = sum(A[0])\n        for i in range(1, len(A)):\n            if sum(A[i]) != total:\n                return False\n    \n        for j in range(len(A[0])):\n            col_sum = 0\n            for i in range(len(A)):\n                col_sum += A[i][j]\n            if col_sum != total:\n                return False\n    \n        diag_sum1 = sum([A[i][i] for i in range(len(A))])\n        diag_sum2 = sum([A[i][len(A[0])-1-i] for i in range(len(A))])\n    \n        return diag_sum1 == total and diag_sum2 == total\n    #TAGS: loops, nested loops, addition, comparison\n    \n    ### Problem 92: Matrix Anti-diagonal Product\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "is_magic_square",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

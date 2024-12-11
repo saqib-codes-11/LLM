@@ -1,0 +1,44 @@
+{
+  "identifier": "reverse_and_concat_001",
+  "prompts": [
+    {
+      "prompt_id": "reverse_and_concat_prompt_01",
+      "prompt": "Develop a parent function named 'reverse_list' that takes a list of integers `nums` and returns a new list with the order of its elements reversed. Then, create a child function named 'concat_reversed' that uses 'reverse_list' to concatenate two reversed lists `nums1` and `nums2` and return the resulting list.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums1": [1, 2, 3], "nums2": [4, 5, 6]},
+          "expected_output": [3, 2, 1, 6, 5, 4]
+        },
+        {
+          "input": {"nums1": [], "nums2": [4, 5, 6]},
+          "expected_output": [6, 5, 4]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "reverse_list",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "concat_reversed",
+    "parameters": [
+      {"name": "nums1", "type": "List[int]"},
+      {"name": "nums2", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums1": [1, 2, 3], "nums2": [4, 5, 6]}, "expected_output": [3, 2, 1, 6, 5, 4]},
+    {"input": {"nums1": [], "nums2": [7, 8, 9]}, "expected_output": [9, 8, 7]},
+    {"input": {"nums1": [1, 2, 3], "nums2": []}, "expected_output": [3, 2, 1]},
+    {"input": {"nums1": [], "nums2": []}, "expected_output": []}
+  ]
+}

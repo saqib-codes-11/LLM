@@ -1,0 +1,33 @@
+{
+    "identifier": "count_digits",
+    "description": "This problem tests the ability to work with numbers. The task is to implement a function that counts the number of digits in a given integer.",
+    "function_prototype": {
+        "function_name": "count_digits",
+        "parameters": [{"name": "num", "type": "int"}],
+        "return_values": [{"type": "int"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"num": 0}, "expected_output": [1]},
+        {"input": {"num": 5}, "expected_output": [1]},
+        {"input": {"num": 348}, "expected_output": [3]}
+    ],
+    "tags": ["Math"],
+    "prompts": [
+        {
+            "prompt_id": "prompt_only",
+            "prompt": "Count digits in number.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "prompt_with_tests",
+            "prompt": "Write a function called `count_digits` that takes an integer and returns the number of digits. \n\nTest Cases:\n- Input: 0\n  Expected Output: 1\n- Input: 5\n  Expected Output: 1\n- Input: 348\n  Expected Output: 3",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"num": 0}, "expected_output": [1]},
+                {"input": {"num": 5}, "expected_output": [1]},
+                {"input": {"num": 348}, "expected_output": [3]}
+            ]
+        }
+    ]
+}

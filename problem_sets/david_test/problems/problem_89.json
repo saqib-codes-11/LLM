@@ -1,0 +1,30 @@
+{
+    "identifier": "problem_data_storage",
+    "description": "Write a function to perform operations on a custom data storage.",
+    "function_prototype": {
+        "function_name": "data_storage_operation",
+        "parameters": [
+            {"name": "operation", "type": "str"},
+            {"name": "key", "type": "str"},
+            {"name": "value", "type": "str", "optional": true}
+        ],
+        "return_values": [{"type": "str/None"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"operation": "store", "key": "key1", "value": "value1"}, "expected_output": [null]},
+        {"input": {"operation": "retrieve", "key": "key1"}, "expected_output": ["value1"]},
+        {"input": {"operation": "retrieve", "key": "key2"}, "expected_output": [null]}
+    ],
+    "tags": ["Data Storage", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the data_storage_operation function to handle data storage operations such as storing and retrieving data.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"operation": "store", "key": "sampleKey", "value": "sampleValue"}, "expected_output": [null]},
+                {"input": {"operation": "retrieve", "key": "sampleKey"}, "expected_output": ["sampleValue"]}
+            ]
+        }
+    ]
+}

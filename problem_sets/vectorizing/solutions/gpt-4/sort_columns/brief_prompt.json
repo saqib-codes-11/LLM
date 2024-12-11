@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "sort_columns",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef sort_columns(A):\n    A = np.array(A)\n    # argsort returns the indices that would sort an array.\n    # We use it along axis 0 (columns)\n    sorted_indices = np.argsort(A, axis=0)\n    # we then use fancy indexing to sort A vertically\n    A = A[sorted_indices, np.arange(A.shape[1])]\n    return A",
+    "feedback": null
+}

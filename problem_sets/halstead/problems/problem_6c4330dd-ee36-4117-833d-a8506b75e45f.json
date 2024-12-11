@@ -1,0 +1,74 @@
+{
+    "identifier": "problem_6c4330dd-ee36-4117-833d-a8506b75e45f",
+    "prompts": [
+        {
+            "prompt_id": "6c4330dd-ee36-4117-833d-a8506b75e45f",
+            "prompt": "Given a list of positive integers, find the largest sum obtained by adding exactly three numbers. Return the number of odd digits in that sum.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    10,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    2,
+                    1
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    66,
+                    55,
+                    44,
+                    33,
+                    22,
+                    11
+                ]
+            },
+            "expected_output": [
+                2
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    200,
+                    150,
+                    100,
+                    70,
+                    50,
+                    30
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        }
+    ]
+}

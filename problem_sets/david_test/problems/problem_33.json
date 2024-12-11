@@ -1,0 +1,40 @@
+{
+    "identifier": "linked_list_operations",
+    "description": "Perform operations on a singly linked list.",
+    "function_prototype": {
+        "function_name": "linked_list_operations",
+        "parameters": [
+            {"name": "initial_values", "type": "List[int]"},
+            {"name": "operation", "type": "str"},
+            {"name": "value", "type": "Optional[int]"}
+        ],
+        "return_values": [{"type": "Union[None, bool, List[int]]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"initial_values": [1, 2, 3], "operation": "insert_at_end", "value": 4},
+            "expected_output": ["None"]
+        },
+        {
+            "input": {"initial_values": [1, 2, 3, 4], "operation": "find", "value": 4},
+            "expected_output": ["True"]
+        },
+        {
+            "input": {"initial_values": [1, 2, 3, 4], "operation": "display"},
+            "expected_output": [1, 2, 3, 4]
+        }
+    ],
+    "tags": ["Linked List", "Data Structures"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `linked_list_operations` function to perform the specified operations on a singly linked list.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"initial_values": [1, 2], "operation": "insert_at_end", "value": 3}, "expected_output": ["None"]},
+                {"input": {"initial_values": [1, 2, 3], "operation": "find", "value": 2}, "expected_output": ["True"]},
+                {"input": {"initial_values": [1, 2, 3], "operation": "display"}, "expected_output": [1, 2, 3]}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_a206117a-e66c-47ea-8164-4cb61d4d8606",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "a206117a-e66c-47ea-8164-4cb61d4d8606",
+    "solution_code": "from typing import List\nfrom statistics import median\ndef solve(n: List[int]) -> int:\n    n.sort()\n    med = median(n)\n    count = len([x for x in n if x % 2 == 0 and x < 3*med])\n    return int(''.join(sorted(str(count), reverse=True)))",
+    "feedback": null
+}

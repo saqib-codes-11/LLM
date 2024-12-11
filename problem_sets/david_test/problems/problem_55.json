@@ -1,0 +1,25 @@
+{
+	"identifier": "problem_palindrome",
+	"description": "Write a function to check if a given string is a palindrome.",
+	"function_prototype": {
+		"function_name": "is_palindrome",
+		"parameters": [{"name": "s", "type": "str"}],
+		"return_values": [{"type": "bool"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"s": "radar"}, "expected_output": [true]},
+		{"input": {"s": "hello"}, "expected_output": [false]}
+	],
+	"tags": ["String", "Palindrome", "Easy"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the `is_palindrome` function to check if a given string is a palindrome.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"s": "level"}, "expected_output": [true]},
+				{"input": {"s": "world"}, "expected_output": [false]}
+			]
+		}
+	]
+}

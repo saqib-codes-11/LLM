@@ -1,0 +1,11 @@
+{
+    "problem_identifier": "problem_316c904d-193c-48ee-be8d-7b8f21add6f5",
+    "prompt_identifier": "316c904d-193c-48ee-be8d-7b8f21add6f5",
+    "model_identifier": "gpt-4",
+    "score": 0.3333333333333333,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Test failed:\n\tInput: n = [6, 6, 6, 6, 6, 6]; Expected Output: 27\n\tFunction prototype: solve(n: List[int]) -> int\n\tExpected result: 27 <class 'int'>\n\tActual result: 7776 <class 'int'>",
+        "Test failed:\n\tInput: n = [3, 2, 1, 6, 5, 4, 6, 6, 6, 7, 6, 6]; Expected Output: 27\n\tFunction prototype: solve(n: List[int]) -> int\n\tExpected result: 27 <class 'int'>\n\tActual result: 7776 <class 'int'>"
+    ]
+}

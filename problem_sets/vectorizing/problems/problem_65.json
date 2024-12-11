@@ -1,0 +1,29 @@
+{
+    "identifier": "sort_columns",
+    "description": "Given an unvectorized code for sort_columns, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `sort_columns` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        for j in range(len(A[0])):\n            # Extract column\n            col = [A[i][j] for i in range(len(A))]\n            # Sort column\n            col = sorted(col)\n            # Replace old column with sorted column\n            for i in range(len(A)):\n                A[i][j] = col[i]\n        return A\n    #TAGS: loops, nested loops, sorting\n    \n    ### Problem 66: Matrix Cumulative Sum\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "sort_columns",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

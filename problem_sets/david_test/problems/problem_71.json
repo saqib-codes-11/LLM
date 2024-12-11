@@ -1,0 +1,48 @@
+{
+    "identifier": "problem_password",
+    "description": "Validate a password based on certain rules and return the validation results.",
+    "function_prototype": {
+        "function_name": "validate_password",
+        "parameters": [{"name": "password", "type": "str"}],
+        "return_values": [{"type": "dict"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"password": "Password123"},
+            "expected_output": [{
+                "valid_length": "True",
+                "has_uppercase": "True",
+                "has_lowercase": "True",
+                "has_digit": "True"
+            }]
+        },
+        {
+            "input": {"password": "pass"},
+            "expected_output": [{
+                "valid_length": "False",
+                "has_uppercase": "False",
+                "has_lowercase": "True",
+                "has_digit": "False"
+            }]
+        }
+    ],
+    "tags": ["Strings", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the validate_password function to validate a password based on certain rules and return the validation results.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"password": "Abc123"},
+                    "expected_output": [{
+                        "valid_length": "False",
+                        "has_uppercase": "True",
+                        "has_lowercase": "True",
+                        "has_digit": "True"
+                    }]
+                }
+            ]
+        }
+    ]
+}

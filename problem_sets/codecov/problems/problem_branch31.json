@@ -1,0 +1,36 @@
+{
+    "identifier": "branch31",
+    "description": "branch31",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch31(a, b, c):\n  if a == 0:\n    return 0\n  elif a == 1:\n    if b == 0:\n      return 1\n    elif b == 1:\n      if c == 0:\n        return 2\n      elif c == 1:\n        return 3\n  elif a == 2:\n    if b == 0:\n      if c == 0:\n        return 4\n      elif c == 1:\n        return 5\n    elif b == 1:\n      return 6\n  elif a == 3:\n    if b == 0:\n      if c == 0:\n        return 7\n      elif c == 1:\n        return 8\n    elif b == 1:\n      if c == 0:\n        return 9\n      elif c == 1:\n        return 10"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch31",
+        "parameters": [
+            {
+                "name": "a",
+                "type": "int"
+            },
+            {
+                "name": "b",
+                "type": "int"
+            },
+            {
+                "name": "c",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

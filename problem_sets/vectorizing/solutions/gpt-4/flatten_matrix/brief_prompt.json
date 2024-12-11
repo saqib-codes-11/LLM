@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "flatten_matrix",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef flatten_matrix(A: np.array):\n    return A.flatten().tolist()",
+    "feedback": null
+}

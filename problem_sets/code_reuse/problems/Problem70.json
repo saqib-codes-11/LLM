@@ -1,0 +1,44 @@
+{
+  "identifier": "string_length_and_truncation_001",
+  "prompts": [
+    {
+      "prompt_id": "string_length_and_truncation_prompt_01",
+      "prompt": "Write a parent function named 'string_length' that takes a string and returns its length. Then, create a child function named 'truncate_string' that takes a string and an integer 'n' and, using 'string_length', truncates the string to the length specified by 'n' (or simply returns the string if it's shorter than 'n').",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "programming", "n": 5},
+          "expected_output": ["progr"]
+        },
+        {
+          "input": {"s": "python", "n": 10},
+          "expected_output": ["python"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "string_length",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "truncate_string",
+    "parameters": [
+      {"name": "s", "type": "str"},
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "Hello, World!", "n": 5}, "expected_output": ["Hello"]},
+    {"input": {"s": "Short", "n": 10}, "expected_output": ["Short"]},
+    {"input": {"s": "ExactLength", "n": 11}, "expected_output": ["ExactLength"]},
+    {"input": {"s": "Truncate", "n": 4}, "expected_output": ["Trun"]}
+  ]
+}

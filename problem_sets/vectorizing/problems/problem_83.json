@@ -1,0 +1,29 @@
+{
+    "identifier": "diagonal_average",
+    "description": "Given an unvectorized code for diagonal_average, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `diagonal_average` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        total = 0\n        for i in range(len(A)):\n            total += A[i][i]\n        return total / len(A)\n    #TAGS: loops, addition, division\n    \n    ### Problem 84: Sum of Border Elements of Matrix\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "diagonal_average",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

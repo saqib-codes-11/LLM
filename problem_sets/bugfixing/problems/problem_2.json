@@ -1,0 +1,38 @@
+{
+	"identifier": "problem_2",
+	"description": "Debug and fix the function to add two numbers.",
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "The provided function `add` attempts to return the sum of two integers, but it contains bugs. Debug and fix the function to return the correct sum.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"a": 5, "b": 6}, "expected_output": [11]},
+				{"input": {"a": 8, "b": 3}, "expected_output": [11]}
+			],
+			"input_code": "def add(a: int, b: int) -> int:\n    return a - b"
+		},
+		{
+			"prompt_id": "detailed_prompt",
+			"prompt": "The function named 'add' is intended to take two integer arguments, 'a' and 'b', and return their sum as an integer. However, it contains bugs. Debug and fix the function to ensure it returns the correct sum.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"a": 5, "b": 6}, "expected_output": [11]},
+				{"input": {"a": 8, "b": 3}, "expected_output": [11]}
+			],
+			"input_code": "def add(a: int, b: int) -> int:\n    return a * b"
+		}
+	],
+	"function_prototype": {
+		"function_name": "add",
+		"parameters": [{"name": "a", "type": "int"}, {"name": "b", "type": "int"}],
+		"return_values": [{"type": "int"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"a": 4, "b": 3}, "expected_output": [7]},
+		{"input": {"a": 7, "b": 2}, "expected_output": [9]}
+	],
+	"optimal_solution": "def add(a: int, b: int) -> int:\n    return a + b",
+	"additional_instructions": "Ensure that your function handles negative numbers as well.",
+	"tags": ["Debugging", "Easy"]
+}

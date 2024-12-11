@@ -1,0 +1,12 @@
+{
+    "problem_identifier": "problem_fda6b42d-ed89-4f4d-9f85-c9e76e18ee1a",
+    "prompt_identifier": "fda6b42d-ed89-4f4d-9f85-c9e76e18ee1a",
+    "model_identifier": "gpt-4",
+    "score": 0.0,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Error encountered during execution for test case Input: n = 1; Expected Output: 5: Function execution timed out after 5 seconds.\nNone",
+        "Error encountered during execution for test case Input: n = 2; Expected Output: 8: Function execution timed out after 5 seconds.\nNone",
+        "Error encountered during execution for test case Input: n = 3; Expected Output: 5: Function execution timed out after 5 seconds.\nNone"
+    ]
+}

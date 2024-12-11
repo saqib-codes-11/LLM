@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "row_sum",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef row_sum(A: int) -> float:\n    A = np.array(A)\n    result = np.sum(A, axis=1)\n    return result.tolist()",
+    "feedback": null
+}

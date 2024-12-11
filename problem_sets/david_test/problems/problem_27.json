@@ -1,0 +1,35 @@
+{
+    "identifier": "knapsack_problem",
+    "description": "Find the maximum value that can be obtained in the knapsack without exceeding its weight capacity.",
+    "function_prototype": {
+        "function_name": "knapsack_dp",
+        "parameters": [
+            {"name": "weights", "type": "List[int]"},
+            {"name": "values", "type": "List[int]"},
+            {"name": "capacity", "type": "int"}
+        ],
+        "return_values": [{"type": "int"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"weights": [10, 20, 30], "values": [60, 100, 120], "capacity": 50},
+            "expected_output": [220]
+        },
+        {
+            "input": {"weights": [5, 4, 6, 3], "values": [10, 40, 30, 50], "capacity": 10},
+            "expected_output": [90]
+        }
+    ],
+    "tags": ["Dynamic Programming", "Optimization"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `knapsack_dp` function to determine the maximum value that can be obtained in the knapsack without exceeding its weight capacity. You're provided with the weights, values of items, and the capacity of the knapsack.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"weights": [2, 3, 4, 5], "values": [3, 4, 5, 6], "capacity": 5}, "expected_output": [7]},
+                {"input": {"weights": [1, 2, 3], "values": [10, 15, 40], "capacity": 6}, "expected_output": [65]}
+            ]
+        }
+    ]
+}

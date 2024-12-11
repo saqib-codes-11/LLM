@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_316c904d-193c-48ee-be8d-7b8f21add6f5",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "316c904d-193c-48ee-be8d-7b8f21add6f5",
+    "solution_code": "from collections import Counter\nfrom typing import List\n\ndef solve(n: List[int]) -> int:\n    counter = Counter(n)\n    item = next(key for key, val in counter.items() if val == 6)\n    return sum(int(d)**5 for d in str(item))",
+    "feedback": null
+}

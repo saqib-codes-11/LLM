@@ -1,0 +1,99 @@
+{
+    "identifier": "problem_email_manager",
+    "description": "Write a function to manage email operations such as sending an email, retrieving the inbox, or getting sent emails.",
+    "function_prototype": {
+        "function_name": "email_operation",
+        "parameters": [
+            {"name": "operation", "type": "str"},
+            {"name": "email_data", "type": "dict"},
+            {"name": "current_emails", "type": "list", "default": "[]"}
+        ],
+        "return_values": [
+            {"type": "list", "description": "List of emails based on the operation type"}
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "operation": "send",
+                "email_data": {
+                    "sender": "a@example.com",
+                    "recipient": "b@example.com",
+                    "subject": "Hello",
+                    "message": "Hi there!"
+                },
+                "current_emails": []
+            },
+            "expected_output": [{
+                "sender": "a@example.com",
+                "recipient": "b@example.com",
+                "subject": "Hello",
+                "message": "Hi there!"
+            }]
+        },
+        {
+            "input": {
+                "operation": "get_inbox",
+                "email_data": {"email": "b@example.com"},
+                "current_emails": [{
+                    "sender": "a@example.com",
+                    "recipient": "b@example.com",
+                    "subject": "Hello",
+                    "message": "Hi there!"
+                }]
+            },
+            "expected_output": [{
+                "sender": "a@example.com",
+                "recipient": "b@example.com",
+                "subject": "Hello",
+                "message": "Hi there!"
+            }]
+        }
+    ],
+    "tags": ["String Manipulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the email_operation function to perform specified email management tasks, such as sending an email, retrieving the inbox, or getting sent emails.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "operation": "send",
+                        "email_data": {
+                            "sender": "test@example.com",
+                            "recipient": "user@example.com",
+                            "subject": "Test",
+                            "message": "This is a test email."
+                        },
+                        "current_emails": []
+                    },
+                    "expected_output": [{
+                        "sender": "test@example.com",
+                        "recipient": "user@example.com",
+                        "subject": "Test",
+                        "message": "This is a test email."
+                    }]
+                },
+                {
+                    "input": {
+                        "operation": "get_inbox",
+                        "email_data": {"email": "user@example.com"},
+                        "current_emails": [{
+                            "sender": "test@example.com",
+                            "recipient": "user@example.com",
+                            "subject": "Test",
+                            "message": "This is a test email."
+                        }]
+                    },
+                    "expected_output": [{
+                        "sender": "test@example.com",
+                        "recipient": "user@example.com",
+                        "subject": "Test",
+                        "message": "This is a test email."
+                    }]
+                }
+            ]
+        }
+    ]
+}

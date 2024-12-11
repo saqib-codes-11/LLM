@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_3bc1af8d-a03d-44bb-81bb-b98ce642fa5d",
+    "prompts": [
+        {
+            "prompt_id": "3bc1af8d-a03d-44bb-81bb-b98ce642fa5d",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 10000), find the nth Fibonacci number. Then, return the sum of its digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": 5
+            },
+            "expected_output": [
+                3
+            ]
+        }
+    ]
+}

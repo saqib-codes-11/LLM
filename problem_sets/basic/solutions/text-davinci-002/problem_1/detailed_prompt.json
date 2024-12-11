@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_1",
+    "model_identifier": "text-davinci-002",
+    "prompt_identifier": "detailed_prompt",
+    "solution_code": "\n\ndef add(a, b):\n    return a + b",
+    "feedback": null
+}

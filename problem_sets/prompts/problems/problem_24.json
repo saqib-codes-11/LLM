@@ -1,0 +1,31 @@
+{
+    "identifier": "longest_palindromic_substring",
+    "description": "This problem tests the ability to work with dynamic programming. The task is to implement a function that finds the longest palindromic substring in a given string.",
+    "function_prototype": {
+        "function_name": "longest_palindromic_substring",
+        "parameters": [{"name": "text", "type": "str"}],
+        "return_values": [{"type": "str"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"text": "babad"}, "expected_output": ["bab"]},
+        {"input": {"text": "cbbd"}, "expected_output": ["bb"]}
+    ],
+    "tags": ["Logic"],
+    "prompts": [
+        {
+            "prompt_id": "prompt_only",
+            "prompt": "Implement a function that finds the longest palindromic substring in a given string.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "prompt_with_tests",
+            "prompt": "Write a function that finds the longest palindromic substring in a given string. Include test cases for 'babad' and 'cbbd'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"text": "babad"}, "expected_output": ["bab"]},
+                {"input": {"text": "cbbd"}, "expected_output": ["bb"]}
+            ]
+        }
+    ]
+}

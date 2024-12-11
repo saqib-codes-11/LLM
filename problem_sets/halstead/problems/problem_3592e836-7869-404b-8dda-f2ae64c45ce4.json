@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_3592e836-7869-404b-8dda-f2ae64c45ce4",
+    "prompts": [
+        {
+            "prompt_id": "3592e836-7869-404b-8dda-f2ae64c45ce4",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 120), find the nth number in the sequence defined as: a(n) = 3*a(n-1) + a(n-2) - 2, a(1) = 3, a(2) = 8. Return its last digit.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                3
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                8
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                5
+            ]
+        }
+    ]
+}

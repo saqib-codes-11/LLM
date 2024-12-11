@@ -1,0 +1,32 @@
+{
+    "identifier": "branch23",
+    "description": "branch23",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch23(user_input1, user_input2):\n    if user_input1 == 1:\n        if user_input2 == 2:\n            return 3\n        else:\n            return 4\n    elif user_input1 == 2:\n        if user_input2 == 3:\n            return 5\n        else:\n            return 6\n    else:\n        return 7"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch23",
+        "parameters": [
+            {
+                "name": "user_input1",
+                "type": "int"
+            },
+            {
+                "name": "user_input2",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "identifier": "basic_arithmetic_001",
+  "prompts": [
+    {
+      "prompt_id": "basic_arithmetic_prompt_01",
+      "prompt": "Write a parent function named 'add_numbers' that takes two integers and returns their sum. Then, write a child function named 'subtract_numbers' that takes two integers and, utilizing 'add_numbers', returns the result of subtracting the second integer from the first without direct subtraction.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"a": 10, "b": 5},
+          "expected_output": [5]
+        },
+        {
+          "input": {"a": 7, "b": 3},
+          "expected_output": [4]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "add_numbers",
+    "parameters": [
+      {"name": "a", "type": "int"},
+      {"name": "b", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "subtract_numbers",
+    "parameters": [
+      {"name": "a", "type": "int"},
+      {"name": "b", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"a": 20, "b": 15}, "expected_output": [5]},
+    {"input": {"a": 12, "b": 4}, "expected_output": [8]},
+    {"input": {"a": 100, "b": 50}, "expected_output": [50]},
+    {"input": {"a": 17, "b": 9}, "expected_output": [8]}
+  ]
+}

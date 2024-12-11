@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_2de33e73-52a0-45c1-a638-ac0e5a4ec0f8",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "2de33e73-52a0-45c1-a638-ac0e5a4ec0f8",
+    "solution_code": "from typing import List\n\ndef solve(n: List[int]) -> int:\n    n.sort()\n    size = len(n)\n    median = n[size // 2] if size % 2 == 1 else (n[size // 2 - 1] + n[size // 2]) / 2\n\n    count = sum(1 for x in n if x < 8 * median and x % 2 == 0)\n    return eval('*'.join(str(count)))",
+    "feedback": null
+}

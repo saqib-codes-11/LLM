@@ -1,0 +1,32 @@
+{
+    "identifier": "branch49",
+    "description": "branch49",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch49(user_input1, user_input2):\n    if user_input1 == \"A\":\n        if user_input2 == \"B\":\n            return \"Option 1\"\n        elif user_input2 == \"C\":\n            return \"Option 2\"\n        else:\n            return \"Option 3\"\n    elif user_input1 == \"B\":\n        if user_input2 == \"A\":\n            return \"Option 4\"\n        elif user_input2 == \"C\":\n            return \"Option 5\"\n        else:\n            return \"Option 6\"\n    else:\n        if user_input2 == \"A\":\n            return \"Option 7\"\n        elif user_input2 == \"B\":\n            return \"Option 8\"\n        else:\n            return \"Option 9\""
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch49",
+        "parameters": [
+            {
+                "name": "user_input1",
+                "type": "str"
+            },
+            {
+                "name": "user_input2",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "identifier": "count_greater_than",
+    "description": "Given an unvectorized code for count_greater_than, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `count_greater_than` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A, value):\n        # UNVECTORIZE THIS\n        count = 0\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                if A[i][j] > value:\n                    count += 1\n        return count\n    #TAGS: loops, nested loops, comparison\n    \n    ### Problem 57: Matrix Elementwise Modulo\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "count_greater_than",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            },
+            {
+                "name": "value",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

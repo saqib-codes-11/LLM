@@ -1,0 +1,45 @@
+{
+  "identifier": "concatenate_and_replace_vowels_001",
+  "prompts": [
+    {
+      "prompt_id": "concatenate_and_replace_vowels_prompt_01",
+      "prompt": "Create a parent function named 'concatenate_strings' that takes two strings `s1` and `s2` and returns their concatenation. Then, build a child function named 'replace_vowels' that accepts two parameters, a string `s` and a character `c`, makes use of 'concatenate_strings' to concatenate `s` with itself, and replaces all the vowels in the concatenated string with character `c`.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "hello", "c": "x"},
+          "expected_output": ["hxllxohxllxo"]
+        },
+        {
+          "input": {"s": "world", "c": "y"},
+          "expected_output": ["wyrldwyrld"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "concatenate_strings",
+    "parameters": [
+      {"name": "s1", "type": "str"},
+      {"name": "s2", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "replace_vowels",
+    "parameters": [
+      {"name": "s", "type": "str"},
+      {"name": "c", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "example", "c": "z"}, "expected_output": ["zxzmplzxzmpl"]},
+    {"input": {"s": "testing", "c": "w"}, "expected_output": ["twstwngtwstwng"]},
+    {"input": {"s": "concatenation", "c": "p"}, "expected_output": ["cpcntpnptipcpcntpnptip"]},
+    {"input": {"s": "vowels", "c": "q"}, "expected_output": ["vqwqlsvqwqls"]}
+  ]
+}

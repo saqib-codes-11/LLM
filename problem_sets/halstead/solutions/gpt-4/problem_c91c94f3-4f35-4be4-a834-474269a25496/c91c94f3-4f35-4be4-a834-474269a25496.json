@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_c91c94f3-4f35-4be4-a834-474269a25496",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "c91c94f3-4f35-4be4-a834-474269a25496",
+    "solution_code": "from typing import List\n\ndef solve(n: List[int]) -> int:\n  smallest = min(n)\n  largest = max(n)\n  product = smallest * largest\n  return sum(map(int,str(product)))",
+    "feedback": null
+}

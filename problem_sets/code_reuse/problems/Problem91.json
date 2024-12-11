@@ -1,0 +1,43 @@
+{
+  "identifier": "duplicate_and_count_zeros_001",
+  "prompts": [
+    {
+      "prompt_id": "duplicate_and_count_zeros_prompt_01",
+      "prompt": "Implement a parent function named 'duplicate_list' that takes a list of integers `nums` and returns a new list that contains two copies of every element from the input list. Subsequently, create a child function named 'count_zeros' that takes a list of integers `nums`, makes use of 'duplicate_list' to obtain a list with duplicated elements, and returns the count of zeros in the duplicated list.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [0, 1, 2]},
+          "expected_output": [2]
+        },
+        {
+          "input": {"nums": [1, 2, 3]},
+          "expected_output": [0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "duplicate_list",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "count_zeros",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [0, 0, 0]}, "expected_output": [6]},
+    {"input": {"nums": [1, 2, 3, 0]}, "expected_output": [2]},
+    {"input": {"nums": [0, -1, -2]}, "expected_output": [2]},
+    {"input": {"nums": [-1, -2, -3]}, "expected_output": [0]}
+  ]
+}

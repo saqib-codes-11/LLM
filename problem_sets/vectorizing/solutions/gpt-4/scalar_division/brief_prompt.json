@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "scalar_division",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef vectorized_scalar_division(A, s):\n    A = np.array(A)\n    return A / s",
+    "feedback": null
+}

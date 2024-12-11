@@ -1,0 +1,43 @@
+{
+  "identifier": "mean_calculator_001",
+  "prompts": [
+    {
+      "prompt_id": "mean_calculator_prompt_01",
+      "prompt": "Write a parent function named 'calculate_arithmetic_mean' that takes a list of numbers and returns the arithmetic mean. Then, create a child function named 'calculate_harmonic_mean' that takes a list of numbers and, using 'calculate_arithmetic_mean', returns the harmonic mean.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [1, 4, 4]},
+          "expected_output": [2.0]
+        },
+        {
+          "input": {"nums": [1, 2, 3, 4]},
+          "expected_output": [1.92]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_arithmetic_mean",
+    "parameters": [
+      {"name": "nums", "type": "List[float]"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "calculate_harmonic_mean",
+    "parameters": [
+      {"name": "nums", "type": "List[float]"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [2, 3]}, "expected_output": [2.4]},
+    {"input": {"nums": [1, 1, 1, 1]}, "expected_output": [1.0]},
+    {"input": {"nums": [1, 2, 4]}, "expected_output": [1.714]},
+    {"input": {"nums": [2, 5, 5]}, "expected_output": [3.0]}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+    "identifier": "branch21",
+    "description": "branch21",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch21(num1, num2):\n    if num1 == 0 and num2 == 0:\n        return 0\n    elif num1 == 0 and num2 != 0:\n        return num2\n    elif num1 != 0 and num2 == 0:\n        return num1\n    elif num1 > 0 and num2 > 0:\n        return num1 + num2\n    elif num1 < 0 and num2 < 0:\n        return num1 * num2\n    elif num1 > 0 and num2 < 0:\n        return num1 - num2\n    elif num1 < 0 and num2 > 0:\n        return num2 - num1\n    elif num1 == num2:\n        return num1 * num2\n    else:\n        return 0"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch21",
+        "parameters": [
+            {
+                "name": "num1",
+                "type": "int"
+            },
+            {
+                "name": "num2",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

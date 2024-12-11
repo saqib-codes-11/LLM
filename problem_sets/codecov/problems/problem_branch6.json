@@ -1,0 +1,36 @@
+{
+    "identifier": "branch6",
+    "description": "branch6",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch6(a, b, c):\n    if a > 10:\n        if b < 5:\n            result = a + b\n        else:\n            result = a - b\n    elif a <= 10 and c == 'yes':\n        result = a * b\n    else:\n        if c == 'no':\n            result = a / b\n        else:\n            result = a % b\n    \n    return result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch6",
+        "parameters": [
+            {
+                "name": "a",
+                "type": "int"
+            },
+            {
+                "name": "b",
+                "type": "int"
+            },
+            {
+                "name": "c",
+                "type": "string"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

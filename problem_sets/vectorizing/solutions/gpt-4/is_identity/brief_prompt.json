@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "is_identity",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef is_identity(A):\n    # Create an identity matrix of same size as A.\n    I = np.identity(len(A))\n    \n    # Compare A with the identity matrix.\n    return np.array_equal(A, I)",
+    "feedback": null
+}

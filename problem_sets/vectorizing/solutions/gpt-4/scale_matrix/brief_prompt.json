@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "scale_matrix",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\n\ndef scale_matrix_np(A, scale_factor):\n    A_np = np.array(A)\n    scaled_A_np = A_np * scale_factor\n    return scaled_A_np.tolist()",
+    "feedback": null
+}

@@ -1,0 +1,29 @@
+{
+    "identifier": "replace_negatives_with_zero",
+    "description": "Given an unvectorized code for replace_negatives_with_zero, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `replace_negatives_with_zero` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                if A[i][j] < 0:\n                    A[i][j] = 0\n        return A\n    #TAGS: loops, nested loops, comparison\n    \n    ### Problem 41: Matrix Determinant (for 2x2 matrix)\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "replace_negatives_with_zero",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

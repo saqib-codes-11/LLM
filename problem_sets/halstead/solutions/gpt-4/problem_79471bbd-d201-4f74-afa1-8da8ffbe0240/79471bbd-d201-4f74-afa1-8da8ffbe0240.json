@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_79471bbd-d201-4f74-afa1-8da8ffbe0240",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "79471bbd-d201-4f74-afa1-8da8ffbe0240",
+    "solution_code": "def solve(n: int) -> int:\n    limit = 30000\n    sieve = [True] * limit\n    sieve[0] = sieve[1] = False\n    for ind, val in enumerate(sieve):\n        if val is True:\n            sieve[ind*2::ind] = [False] * (((limit - 1)//ind) - 1)\n    primes = [prime for prime, checked in enumerate(sieve) if checked and prime%2!=0]\n    sum_n_primes = sum(primes[:n])\n    prime_digits = [2, 3, 5, 7]\n    product = 1\n    for digit in str(sum_n_primes):\n        if int(digit) in prime_digits:\n            product *= int(digit)\n    return product",
+    "feedback": null
+}

@@ -1,0 +1,31 @@
+{
+    "identifier": "branch8",
+    "description": "branch8",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch8(input_value):\n    if input_value > 100:\n        result = input_value * 2\n    elif input_value <= 100 and input_value > 50:\n        result = input_value + 50\n    else:\n        if input_value % 2 == 0:\n            result = input_value // 2\n        else:\n            result = input_value * 3\n    \n    if result > 200:\n        return result, \"Result is greater than 200\"\n    elif result > 100:\n        return result, \"Result is between 100 and 200\"\n    else:\n        return result, \"Result is less than or equal to 100\""
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch8",
+        "parameters": [
+            {
+                "name": "input_value",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            },
+            {
+                "type": "string"
+            }
+        ]
+    }
+}

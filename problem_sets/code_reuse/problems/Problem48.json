@@ -1,0 +1,45 @@
+{
+  "identifier": "concatenation_and_repetition_001",
+  "prompts": [
+    {
+      "prompt_id": "concatenation_and_repetition_prompt_01",
+      "prompt": "Write a parent function named 'concatenate_strings' that takes two strings and returns their concatenation. Then, write a child function named 'repeat_string' that takes a string and an integer n, and utilizing 'concatenate_strings', returns the string repeated n times.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"string": "abc", "n": 3},
+          "expected_output": ["abcabcabc"]
+        },
+        {
+          "input": {"string": "xyz", "n": 2},
+          "expected_output": ["xyzxyz"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "concatenate_strings",
+    "parameters": [
+      {"name": "a", "type": "str"},
+      {"name": "b", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "repeat_string",
+    "parameters": [
+      {"name": "string", "type": "str"},
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"string": "hi", "n": 4}, "expected_output": ["hihihihi"]},
+    {"input": {"string": "bye", "n": 2}, "expected_output": ["byebye"]},
+    {"input": {"string": "go", "n": 3}, "expected_output": ["gogogo"]},
+    {"input": {"string": "stop", "n": 1}, "expected_output": ["stop"]}
+  ]
+}

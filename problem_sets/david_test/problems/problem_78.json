@@ -1,0 +1,29 @@
+{
+	"identifier": "problem_password_generator",
+	"description": "Generate a password with optional criteria of strength and special characters.",
+	"function_prototype": {
+		"function_name": "generate_password",
+		"parameters": [
+			{"name": "length", "type": "int"},
+			{"name": "special_chars", "type": "str"},
+			{"name": "strong", "type": "bool"}
+		],
+		"return_values": [{"type": "str"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"length": 8}, "expected_output": ["password123"]},
+		{"input": {"length": 12, "special_chars": "!@#", "strong": true}, "expected_output": ["P@ssw0rd!123"]}
+	],
+	"tags": ["String", "Generation"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the `generate_password` function to return a generated password based on provided criteria. If `strong` is set to True, it ensures the password is of a stronger criterion. If `special_chars` is provided, the password can include those characters as well.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"length": 6}, "expected_output": ["pass12"]},
+				{"input": {"length": 10, "special_chars": "&*%", "strong": true}, "expected_output": ["P@ss1&*12"]}
+			]
+		}
+	]
+}

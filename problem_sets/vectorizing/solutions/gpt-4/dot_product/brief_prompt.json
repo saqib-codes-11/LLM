@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "dot_product",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef dot_product(a: int, b: int) -> float:\n    a = np.array(a)\n    b = np.array(b)\n    return np.dot(a, b)",
+    "feedback": null
+}

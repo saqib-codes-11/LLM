@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_cccd492b-6ff7-4adf-b5ea-25900168e103",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "cccd492b-6ff7-4adf-b5ea-25900168e103",
+    "solution_code": "from functools import reduce\nfrom operator import mul\n\ndef solve(n: int) -> int:\n    even_sum = (n * (n + 1)) ** 2\n    odd_numbers = [int(d) for d in str(even_sum) if int(d) % 2 != 0]\n    return reduce(mul, odd_numbers, 1) if odd_numbers else 0",
+    "feedback": null
+}

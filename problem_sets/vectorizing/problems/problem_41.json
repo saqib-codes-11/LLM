@@ -1,0 +1,29 @@
+{
+    "identifier": "determinant_2x2",
+    "description": "Given an unvectorized code for determinant_2x2, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `determinant_2x2` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        return A[0][0] * A[1][1] - A[0][1] * A[1][0]\n    #TAGS: multiplication, subtraction\n    \n    ### Problem 42: Copy Matrix\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "determinant_2x2",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

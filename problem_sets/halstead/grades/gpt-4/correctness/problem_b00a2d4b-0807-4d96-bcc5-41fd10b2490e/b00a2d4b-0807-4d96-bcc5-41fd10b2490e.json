@@ -1,0 +1,12 @@
+{
+    "problem_identifier": "problem_b00a2d4b-0807-4d96-bcc5-41fd10b2490e",
+    "prompt_identifier": "b00a2d4b-0807-4d96-bcc5-41fd10b2490e",
+    "model_identifier": "gpt-4",
+    "score": 0.0,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Error encountered during execution for test case Input: n = 1; Expected Output: 0: 'int' object is not callable\nTraceback (most recent call last):\n  File \"/Users/vamsiimmanneni/Documents/Documents - Vamsi\u2019s MacBook Pro/Homework/SWE GPT/Integration/Strict/LLMCodingBenchmarkingFramework/execution.py\", line 76, in executor_script\n    result = function(*parameters)\n  File \"<string>\", line 6, in solve\nTypeError: 'int' object is not callable\n",
+        "Error encountered during execution for test case Input: n = 2; Expected Output: 10: 'int' object is not callable\nTraceback (most recent call last):\n  File \"/Users/vamsiimmanneni/Documents/Documents - Vamsi\u2019s MacBook Pro/Homework/SWE GPT/Integration/Strict/LLMCodingBenchmarkingFramework/execution.py\", line 76, in executor_script\n    result = function(*parameters)\n  File \"<string>\", line 6, in solve\nTypeError: 'int' object is not callable\n",
+        "Error encountered during execution for test case Input: n = 3; Expected Output: 16: 'int' object is not callable\nTraceback (most recent call last):\n  File \"/Users/vamsiimmanneni/Documents/Documents - Vamsi\u2019s MacBook Pro/Homework/SWE GPT/Integration/Strict/LLMCodingBenchmarkingFramework/execution.py\", line 76, in executor_script\n    result = function(*parameters)\n  File \"<string>\", line 6, in solve\nTypeError: 'int' object is not callable\n"
+    ]
+}

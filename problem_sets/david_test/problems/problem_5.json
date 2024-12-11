@@ -1,0 +1,37 @@
+{
+	"identifier": "problem_contact_book",
+	"description": "Write a function to simulate the operations of a contact book: add a contact, get a contact by name, and retrieve all contacts.",
+	"function_prototype": {
+		"function_name": "manage_contact_book",
+		"parameters": [{"name": "operations", "type": "List[str]"}],
+		"return_values": [{"type": "List[Union[str, List[Tuple[str, str]]]"}]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {"operations": ["add:John:1234567890", "add:Jane:0987654321", "get:John", "get:Jack", "get_all"]},
+			"expected_output": [["Added", "Added", "1234567890", "Not Found", [["John", "1234567890"], ["Jane", "0987654321"]]]]
+		},
+		{
+			"input": {"operations": ["add:Alex:1111222233", "get:Alex", "get_all", "get:John"]},
+			"expected_output": [["Added", "1111222233", [["Alex", "1111222233"]], "Not Found"]]
+		}
+	],
+	"tags": ["Data Management", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the manage_contact_book function that simulates the behavior of a basic contact book. The function will accept a list of operations and return a list of results for each operation.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {"operations": ["add:Mike:9876543210", "get:Mike", "get:John"]},
+					"expected_output": [["Added", "9876543210", "Not Found"]]
+				},
+				{
+					"input": {"operations": ["add:Anna:1234098765", "get_all", "get:Anna"]},
+					"expected_output": [["Added", [["Anna", "1234098765"]], "1234098765"]]
+				}
+			]
+		}
+	]
+}

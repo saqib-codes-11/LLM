@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_e72c3525-0c3f-4aff-a218-dd358d6faa7c",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "e72c3525-0c3f-4aff-a218-dd358d6faa7c",
+    "solution_code": "from typing import List\nimport statistics\n\ndef solve(n: List[int]) -> int:\n    median = statistics.median(n)\n    half_median = median / 2\n    odd_nums = [x for x in n if x % 2 != 0 and x < half_median]\n\n    num_odd = len(odd_nums)\n    if num_odd == 0: return 0\n\n    product = 1\n    for digit in str(num_odd):\n        product *= int(digit)\n\n    return product",
+    "feedback": null
+}

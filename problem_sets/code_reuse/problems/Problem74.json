@@ -1,0 +1,43 @@
+{
+  "identifier": "sum_and_zero_sum_finder_001",
+  "prompts": [
+    {
+      "prompt_id": "sum_and_zero_sum_finder_prompt_01",
+      "prompt": "Write a parent function named 'calculate_sum' that takes a list of numbers and returns their sum. Then, create a child function named 'find_zero_sum_subarrays' that takes a list of numbers and, using 'calculate_sum', returns all subarrays (continuous elements) that sum to zero.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [3, 4, -7, 3, 1, 3, 1, -4, -2, -2]},
+          "expected_output": [[[3, 4, -7], [4, -7, 3], [-7, 3, 1, 3], [3, 1, -4], [3, 1, 3, 1, -4, -2, -2]]]
+        },
+        {
+          "input": {"nums": [1, 2, -5, 1, 2, -1]},
+          "expected_output": [[[2, -5, 1, 2]]]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_sum",
+    "parameters": [
+      {"name": "nums", "type": "List[float]"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "find_zero_sum_subarrays",
+    "parameters": [
+      {"name": "nums", "type": "List[float]"}
+    ],
+    "return_values": [
+      {"type": "List[List[float]]"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [1, 2, -3, 3, 4, -4, 2]}, "expected_output": [[[1, 2, -3], [2, -3, 3, 4, -4, 2]]]},
+    {"input": {"nums": [0, 0, 0]}, "expected_output": [[[0], [0], [0], [0, 0], [0, 0], [0, 0, 0]]]},
+    {"input": {"nums": [3, 1, -3, 2, -2]}, "expected_output": [[[3, 1, -3], [1, -3, 2]]]},
+    {"input": {"nums": [-1, -1, 1, 1]}, "expected_output": [[[-1, -1, 1, 1], [-1, 1], [-1, 1]]]}
+  ]
+}

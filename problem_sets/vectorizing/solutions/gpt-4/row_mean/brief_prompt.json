@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "row_mean",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef row_mean(A):\n    # Convert input list to a numpy array\n    array_A = np.array(A)\n    \n    # Calculate the mean of each row\n    result = array_A.mean(axis=1)\n    \n    return result",
+    "feedback": null
+}

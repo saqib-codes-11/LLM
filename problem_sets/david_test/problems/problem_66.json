@@ -1,0 +1,25 @@
+{
+	"identifier": "problem_2",
+	"description": "Evaluate a given mathematical expression.",
+	"function_prototype": {
+		"function_name": "evaluate_expression",
+		"parameters": [{"name": "expression", "type": "str"}],
+		"return_values": [{"type": "float"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"expression": "3+4"}, "expected_output": [7.0]},
+		{"input": {"expression": "5*6"}, "expected_output": [30.0]}
+	],
+	"tags": ["Mathematics", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the evaluate_expression function to compute the result of a given mathematical expression.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"expression": "7-2"}, "expected_output": [5.0]},
+				{"input": {"expression": "8/4"}, "expected_output": [2.0]}
+			]
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_aecf1c0a-8df0-408a-8cc7-0547d14a62ef",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "aecf1c0a-8df0-408a-8cc7-0547d14a62ef",
+    "solution_code": "import primepy\n\ndef solve(n):\n    sum_first_n_odd_primes = 0\n    count = 0\n    num = 2\n    while count < n:\n        if primepy.primes.check(num):\n            sum_first_n_odd_primes += num\n            count += 1\n        num += 1\n    \n    product_of_prime_digits = 1\n    for digit in str(sum_first_n_odd_primes):\n        if int(digit) in [2, 3, 5, 7]:\n            product_of_prime_digits *= int(digit)\n    \n    return product_of_prime_digits",
+    "feedback": null
+}

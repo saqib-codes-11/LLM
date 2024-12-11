@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_058ccb73-9049-4edc-9509-38e16980ebe8",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "058ccb73-9049-4edc-9509-38e16980ebe8",
+    "solution_code": "def solve(n: int) -> int:\n    total_sum = 2*(n*(n+1))**2\n    prime_digits_sum = 0\n\n    for digit in str(total_sum):\n        if digit in ['2', '3', '5', '7']:\n            prime_digits_sum += int(digit)\n\n    return prime_digits_sum",
+    "feedback": null
+}

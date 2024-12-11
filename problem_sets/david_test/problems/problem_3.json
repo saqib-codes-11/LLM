@@ -1,0 +1,37 @@
+{
+	"identifier": "problem_queue_operations",
+	"description": "Write a function to simulate queue operations: enqueue, dequeue, and peek.",
+	"function_prototype": {
+		"function_name": "process_queue_operations",
+		"parameters": [{"name": "operations", "type": "List[str]"}],
+		"return_values": [{"type": "List[Union[int, str]]"}]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {"operations": ["enqueue:5", "enqueue:10", "peek", "dequeue", "peek", "dequeue", "peek"]},
+			"expected_output": [["Done", "Done", 5, 5, 10, 10, "Empty"]]
+		},
+		{
+			"input": {"operations": ["enqueue:1", "enqueue:2", "dequeue", "peek", "dequeue", "peek"]},
+			"expected_output": [["Done", "Done", 1, 1, 2, "Empty"]]
+		}
+	],
+	"tags": ["Queue", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the process_queue_operations function to simulate basic queue operations. The operations are provided as a list of strings: 'enqueue:x' (to enqueue x into the queue), 'dequeue' (to dequeue the front element), and 'peek' (to view the front element without removing it).",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {"operations": ["enqueue:7", "enqueue:8", "peek", "dequeue"]},
+					"expected_output": [["Done", "Done", 7, 7]]
+				},
+				{
+					"input": {"operations": ["enqueue:3", "peek", "dequeue", "peek"]},
+					"expected_output": [["Done", 3, 3, "Empty"]]
+				}
+			]
+		}
+	]
+}

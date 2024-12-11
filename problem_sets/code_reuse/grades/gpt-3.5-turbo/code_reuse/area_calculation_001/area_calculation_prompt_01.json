@@ -1,0 +1,8 @@
+{
+    "problem_identifier": "area_calculation_001",
+    "prompt_identifier": "area_calculation_prompt_01",
+    "model_identifier": "gpt-3.5-turbo",
+    "score": 1,
+    "sub_criteria_scores": null,
+    "issues": null
+}

@@ -1,0 +1,29 @@
+{
+    "identifier": "is_square",
+    "description": "Given an unvectorized code for is_square, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `is_square` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        return len(A) == len(A[0])\n    #TAGS: comparison\n    \n    ### Problem 96: Check if Matrix is Diagonal\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "is_square",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

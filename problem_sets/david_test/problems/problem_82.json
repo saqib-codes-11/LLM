@@ -1,0 +1,45 @@
+{
+	"identifier": "problem_student_enrollment",
+	"description": "Write a function to manage student course enrollments.",
+	"function_prototype": {
+		"function_name": "manage_enrollment",
+		"parameters": [
+			{"name": "action", "type": "str"},
+			{"name": "student", "type": "dict"},
+			{"name": "course", "type": "str"}
+		],
+		"return_values": [{"type": "dict"}]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {"action": "enroll", "student": {"name": "Alice", "courses": ["Math"]}, "course": "Science"},
+			"expected_output": [{"name": "Alice", "courses": ["Math", "Science"]}]
+		},
+		{
+			"input": {"action": "drop", "student": {"name": "Alice", "courses": ["Math", "Science"]}, "course": "Math"},
+			"expected_output": [{"name": "Alice", "courses": ["Science"]}]
+		},
+		{
+			"input": {"action": "get_courses", "student": {"name": "Alice", "courses": ["Science"]}, "course": "None"},
+			"expected_output": [{"name": "Alice", "courses": ["Science"]}]
+		}
+	],
+	"tags": ["Dictionaries", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the manage_enrollment function to handle actions related to student course enrollments.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {"action": "enroll", "student": {"name": "Bob", "courses": []}, "course": "History"},
+					"expected_output": [{"name": "Bob", "courses": ["History"]}]
+				},
+				{
+					"input": {"action": "drop", "student": {"name": "Bob", "courses": ["History"]}, "course": "History"},
+					"expected_output": [{"name": "Bob", "courses": []}]
+				}
+			]
+		}
+	]
+}

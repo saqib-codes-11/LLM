@@ -1,0 +1,79 @@
+{
+    "identifier": "problem_d5d61bb6-c8e3-4aa2-9f9d-62f9f889a0ba",
+    "prompts": [
+        {
+            "prompt_id": "d5d61bb6-c8e3-4aa2-9f9d-62f9f889a0ba",
+            "prompt": "Given a list of integers, find the number of elements that are odd and less than five times the median of the list. Return the product of the digits of this count.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ]
+            },
+            "expected_output": [
+                5
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    2,
+                    4,
+                    6,
+                    8,
+                    10,
+                    12,
+                    14,
+                    16,
+                    18
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    3,
+                    6,
+                    9,
+                    12,
+                    15,
+                    18,
+                    21,
+                    24,
+                    27
+                ]
+            },
+            "expected_output": [
+                9
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "row_product",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef row_product(A):\n    A = np.array(A)\n    result = np.prod(A, axis=1)\n    return result.tolist()",
+    "feedback": null
+}

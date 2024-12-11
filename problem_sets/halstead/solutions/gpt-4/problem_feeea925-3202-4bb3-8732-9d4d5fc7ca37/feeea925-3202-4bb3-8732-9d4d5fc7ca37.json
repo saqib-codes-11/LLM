@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_feeea925-3202-4bb3-8732-9d4d5fc7ca37",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "feeea925-3202-4bb3-8732-9d4d5fc7ca37",
+    "solution_code": "from typing import List\n\ndef solve(n: List[int]) -> int:\n    diff = max(n) - min(n)\n    return sum(1 for d in str(diff) if int(d) % 2 == 0)",
+    "feedback": null
+}

@@ -1,0 +1,45 @@
+{
+    "identifier": "inorder_traversal_problem",
+    "description": "Perform an inorder traversal on a binary tree using recursion.",
+    "function_prototype": {
+        "function_name": "inorder_traversal",
+        "parameters": [{"name": "root", "type": "TreeNode"}],
+        "return_values": [{"type": "List[int]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"root": {
+                "value": 1,
+                "right": {
+                    "value": 2,
+                    "left": {"value": 3}
+                }
+            }},
+            "expected_output": [1, 3, 2]
+        }
+    ],
+    "tags": ["Binary Tree", "Recursion", "Traversal"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the inorder_traversal function to perform an inorder traversal on a binary tree using recursion. The function should return a list of values obtained through the traversal.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"root": {
+                    "value": 1,
+                    "left": {"value": 2},
+                    "right": {"value": 3}
+                }}, "expected_output": [2, 1, 3]},
+                {"input": {"root": {
+                    "value": 4,
+                    "left": {
+                        "value": 2,
+                        "left": {"value": 1},
+                        "right": {"value": 3}
+                    },
+                    "right": {"value": 5}
+                }}, "expected_output": [1, 2, 3, 4, 5]}
+            ]
+        }
+    ]
+}

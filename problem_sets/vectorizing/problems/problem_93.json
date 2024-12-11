@@ -1,0 +1,29 @@
+{
+    "identifier": "non_border_elements",
+    "description": "Given an unvectorized code for non_border_elements, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `non_border_elements` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        result = []\n        for i in range(1, len(A)-1):\n            for j in range(1, len(A[0])-1):\n                result.append(A[i][j])\n        return result\n    #TAGS: loops, nested loops\n    \n    ### Problem 94: Matrix Rotation by 90 Degrees\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "non_border_elements",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

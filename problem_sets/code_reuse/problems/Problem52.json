@@ -1,0 +1,44 @@
+{
+  "identifier": "length_and_truncated_string_001",
+  "prompts": [
+    {
+      "prompt_id": "length_and_truncated_string_prompt_01",
+      "prompt": "Write a parent function named 'calculate_length' that takes a string and returns its length. Then, write a child function named 'truncate_string' that takes a string and an integer 'n', and utilizing 'calculate_length', returns the original string if 'n' is greater than or equal to its length, otherwise, it returns the first 'n' characters of the string.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"string": "apple", "n": 3},
+          "expected_output": ["app"]
+        },
+        {
+          "input": {"string": "banana", "n": 6},
+          "expected_output": ["banana"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_length",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "truncate_string",
+    "parameters": [
+      {"name": "string", "type": "str"},
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"string": "programming", "n": 5}, "expected_output": ["progr"]},
+    {"input": {"string": "python", "n": 8}, "expected_output": ["python"]},
+    {"input": {"string": "java", "n": 0}, "expected_output": [""]},
+    {"input": {"string": "csharp", "n": 3}, "expected_output": ["csh"]}
+  ]
+}

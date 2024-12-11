@@ -1,0 +1,77 @@
+{
+  "identifier": "add_numbers_001",
+  "prompts": [
+    {
+      "prompt_id": "add_numbers_prompt_01",
+      "prompt": "Write a parent function named 'add_two_numbers' that takes two numbers as arguments and returns their sum. Then, write a child function named 'add_three_numbers' that takes three numbers as arguments, utilizes 'add_two_numbers' to add the first two numbers, and then adds the third number to this sum.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"a": 1, "b": 2, "c": 3},
+          "expected_output": [6]
+        },
+        {
+          "input": {"a": -1, "b": 2, "c": 3},
+          "expected_output": [4]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "add_two_numbers",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "float"
+      },
+      {
+        "name": "b",
+        "type": "float"
+      }
+    ],
+    "return_values": [
+      {
+        "type": "float"
+      }
+    ]
+  },
+  "function_prototype": {
+    "function_name": "add_three_numbers",
+    "parameters": [
+      {
+        "name": "a",
+        "type": "float"
+      },
+      {
+        "name": "b",
+        "type": "float"
+      },
+      {
+        "name": "c",
+        "type": "float"
+      }
+    ],
+    "return_values": [
+      {
+        "type": "float"
+      }
+    ]
+  },
+  "correctness_test_suite": [
+    {
+      "input": {"a": 1, "b": 1, "c": 1},
+      "expected_output": [3]
+    },
+    {
+      "input": {"a": 0, "b": 0, "c": 0},
+      "expected_output": [0]
+    },
+    {
+      "input": {"a": 10, "b": 20, "c": 30},
+      "expected_output": [60]
+    },
+    {
+      "input": {"a": -5, "b": 5, "c": 10},
+      "expected_output": [10]
+    }
+  ]
+}

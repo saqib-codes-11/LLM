@@ -1,0 +1,45 @@
+{
+  "identifier": "add_and_subtract_001",
+  "prompts": [
+    {
+      "prompt_id": "add_and_subtract_prompt_01",
+      "prompt": "Write a parent function named 'add' that takes two numbers and returns their sum. Then, write a child function named 'subtract' that takes two numbers and, utilizing 'add', returns the difference between the two numbers.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"a": 15, "b": 10},
+          "expected_output": [5]
+        },
+        {
+          "input": {"a": 3, "b": 8},
+          "expected_output": [-5]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "add",
+    "parameters": [
+      {"name": "a", "type": "int"},
+      {"name": "b", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "subtract",
+    "parameters": [
+      {"name": "a", "type": "int"},
+      {"name": "b", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"a": 7, "b": 2}, "expected_output": [5]},
+    {"input": {"a": -3, "b": -7}, "expected_output": [4]},
+    {"input": {"a": 10, "b": 5}, "expected_output": [5]},
+    {"input": {"a": 100, "b": 100}, "expected_output": [0]}
+  ]
+}

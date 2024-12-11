@@ -1,0 +1,70 @@
+{
+    "identifier": "problem_2d4863f3-eef0-447b-bea3-40bf36b06976",
+    "prompts": [
+        {
+            "prompt_id": "2d4863f3-eef0-447b-bea3-40bf36b06976",
+            "prompt": "Given a list of integers, determine the smallest product obtained by multiplying exactly four numbers. Return the number of prime digits in that product.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    11,
+                    2,
+                    33,
+                    -4,
+                    5,
+                    -6
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    -10,
+                    -20,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        }
+    ]
+}

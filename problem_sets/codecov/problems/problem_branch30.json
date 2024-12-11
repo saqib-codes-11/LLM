@@ -1,0 +1,36 @@
+{
+    "identifier": "branch30",
+    "description": "branch30",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch30(x, y, z):\n    #x, y, and z are user input\n    \n    if x < 0:\n        if y > 10:\n            if z == 0:\n                return -1\n            else:\n                return 0\n        elif y < 10:\n            if z > 0:\n                return 1\n            else:\n                return 2\n    elif x > 0:\n        if y > 10:\n            if z == 0:\n                return 3\n            else:\n                return 4\n        elif y < 10:\n            if z > 0:\n                return 5\n            else:\n                return 6\n    else:\n        return 7"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch30",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "int"
+            },
+            {
+                "name": "y",
+                "type": "int"
+            },
+            {
+                "name": "z",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

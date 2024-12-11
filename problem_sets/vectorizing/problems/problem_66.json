@@ -1,0 +1,29 @@
+{
+    "identifier": "matrix_cumsum",
+    "description": "Given an unvectorized code for matrix_cumsum, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `matrix_cumsum` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        result = [[0] * len(A[0]) for _ in range(len(A))]\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                result[i][j] = A[i][j] + (result[i-1][j] if i > 0 else 0) + (result[i][j-1] if j > 0 else 0) - (result[i-1][j-1] if i > 0 and j > 0 else 0)\n        return result\n    #TAGS: loops, nested loops, addition, subtraction\n    \n    ### Problem 67: Matrix Reversal\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "matrix_cumsum",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_93df3694-e633-4c90-84ef-e633b76186ed",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "93df3694-e633-4c90-84ef-e633b76186ed",
+    "solution_code": "def solve(n: int) -> int:\n    dp = [0]*n\n    dp[0] = 21\n    if n > 1:\n        dp[1] = 24\n    for i in range(2, n):\n        dp[i] = 19*dp[i-1] - 15*dp[i-2] + 22\n    return dp[n-1]%10",
+    "feedback": null
+}

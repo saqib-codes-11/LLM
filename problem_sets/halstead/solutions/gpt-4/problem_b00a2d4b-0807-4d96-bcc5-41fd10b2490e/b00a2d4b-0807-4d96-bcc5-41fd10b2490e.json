@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_b00a2d4b-0807-4d96-bcc5-41fd10b2490e",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "b00a2d4b-0807-4d96-bcc5-41fd10b2490e",
+    "solution_code": "def solve(n: int) -> int:\n    total = 0\n    sum = 0\n    sum = sum((2 * i) ** 12 for i in range(1, n + 1))\n    s = str(sum)\n    for c in s:\n        if int(c) % 2 == 0:\n            total += int(c)\n    return total",
+    "feedback": null
+}

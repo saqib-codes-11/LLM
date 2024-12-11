@@ -1,0 +1,76 @@
+{
+    "identifier": "problem_98eb469f-c6ae-477f-819f-db07d6921609",
+    "prompts": [
+        {
+            "prompt_id": "98eb469f-c6ae-477f-819f-db07d6921609",
+            "prompt": "Given a list of positive integers, determine the number of elements that are less than the median of the list. Return the product of the digits of this count.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    100,
+                    200,
+                    300,
+                    400,
+                    500,
+                    600,
+                    700,
+                    800,
+                    900,
+                    1000
+                ]
+            },
+            "expected_output": [
+                5
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    1100,
+                    2200,
+                    3300,
+                    4400,
+                    5500,
+                    6600,
+                    5500
+                ]
+            },
+            "expected_output": [
+                3
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    1500,
+                    2500,
+                    500,
+                    3500,
+                    750,
+                    1550,
+                    2000
+                ]
+            },
+            "expected_output": [
+                3
+            ]
+        }
+    ]
+}

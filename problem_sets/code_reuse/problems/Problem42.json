@@ -1,0 +1,46 @@
+{
+  "identifier": "repeat_and_concatenate_001",
+  "prompts": [
+    {
+      "prompt_id": "repeat_and_concatenate_prompt_01",
+      "prompt": "Write a parent function named 'repeat_string' that takes a string and an integer, and returns the string repeated the number of times specified by the integer. Then, write a child function named 'concatenate_repeated' that takes two strings and an integer, utilizing 'repeat_string', it repeats the first string as per the integer and concatenates it with the second string, returning the resulting string.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"string1": "ab", "string2": "cd", "times": 3},
+          "expected_output": ["abababcd"]
+        },
+        {
+          "input": {"string1": "123", "string2": "456", "times": 2},
+          "expected_output": ["123123456"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "repeat_string",
+    "parameters": [
+      {"name": "string", "type": "str"},
+      {"name": "times", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "concatenate_repeated",
+    "parameters": [
+      {"name": "string1", "type": "str"},
+      {"name": "string2", "type": "str"},
+      {"name": "times", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"string1": "x", "string2": "yz", "times": 4}, "expected_output": ["xxxxyz"]},
+    {"input": {"string1": "foo", "string2": "bar", "times": 2}, "expected_output": ["foofoobar"]},
+    {"input": {"string1": "abc", "string2": "def", "times": 3}, "expected_output": ["abcabcabcdef"]},
+    {"input": {"string1": "1", "string2": "2", "times": 5}, "expected_output": ["111112"]}
+  ]
+}

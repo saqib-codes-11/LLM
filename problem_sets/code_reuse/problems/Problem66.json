@@ -1,0 +1,43 @@
+{
+  "identifier": "prime_checker_and_list_001",
+  "prompts": [
+    {
+      "prompt_id": "prime_checker_and_list_prompt_01",
+      "prompt": "Write a parent function named 'is_prime' that takes an integer and returns a boolean indicating whether the number is prime or not. Then, create a child function named 'list_primes' that takes an integer 'n' and, using 'is_prime', returns a list of all prime numbers up to 'n'.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"n": 10},
+          "expected_output": [[2, 3, 5, 7]]
+        },
+        {
+          "input": {"n": 20},
+          "expected_output": [[2, 3, 5, 7, 11, 13, 17, 19]]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "is_prime",
+    "parameters": [
+      {"name": "num", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "list_primes",
+    "parameters": [
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"n": 5}, "expected_output": [[2, 3, 5]]},
+    {"input": {"n": 15}, "expected_output": [[2, 3, 5, 7, 11, 13]]},
+    {"input": {"n": 30}, "expected_output": [[2, 3, 5, 7, 11, 13, 17, 19, 23, 29]]},
+    {"input": {"n": 1}, "expected_output": [[]]}
+  ]
+}

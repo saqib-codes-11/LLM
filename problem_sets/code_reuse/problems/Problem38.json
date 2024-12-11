@@ -1,0 +1,45 @@
+{
+  "identifier": "concatenate_and_reverse_001",
+  "prompts": [
+    {
+      "prompt_id": "concatenate_and_reverse_prompt_01",
+      "prompt": "Write a parent function named 'concatenate_strings' that takes two strings and returns their concatenation. Then, write a child function named 'reverse_concatenation' that takes two strings and, utilizing 'concatenate_strings', returns the reverse of the concatenated string.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"a": "Python", "b": "Programming"},
+          "expected_output": ["gnimmargorPnohtyP"]
+        },
+        {
+          "input": {"a": "Hello", "b": "World"},
+          "expected_output": ["dlroWolleH"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "concatenate_strings",
+    "parameters": [
+      {"name": "a", "type": "str"},
+      {"name": "b", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "reverse_concatenation",
+    "parameters": [
+      {"name": "a", "type": "str"},
+      {"name": "b", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"a": "Open", "b": "AI"}, "expected_output": ["IAnepO"]},
+    {"input": {"a": "Code", "b": "Reuse"}, "expected_output": ["esueRedoC"]},
+    {"input": {"a": "Smart", "b": "Code"}, "expected_output": ["edoCtramS"]},
+    {"input": {"a": "Learning", "b": "Model"}, "expected_output": ["ledoMgninraeL"]}
+  ]
+}

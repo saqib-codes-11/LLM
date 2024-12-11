@@ -1,0 +1,45 @@
+{
+  "identifier": "square_and_checking_square_in_range_001",
+  "prompts": [
+    {
+      "prompt_id": "square_and_checking_square_in_range_prompt_01",
+      "prompt": "Create a parent function named 'calculate_square' that takes an integer `n` and returns its square. Then, write a child function named 'is_square_in_range' that accepts three integers `n`, `low`, and `high`, utilizes 'calculate_square' to find the square of `n`, and checks if the square lies within the inclusive range `low` to `high`.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"n": 5, "low": 10, "high": 30},
+          "expected_output": [true]
+        },
+        {
+          "input": {"n": 3, "low": 10, "high": 15},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_square",
+    "parameters": [
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_square_in_range",
+    "parameters": [
+      {"name": "n", "type": "int"},
+      {"name": "low", "type": "int"},
+      {"name": "high", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"n": 6, "low": 30, "high": 40}, "expected_output": [true]},
+    {"input": {"n": 4, "low": 10, "high": 15}, "expected_output": [true]},
+    {"input": {"n": 7, "low": 50, "high": 60}, "expected_output": [true]},
+    {"input": {"n": 8, "low": 50, "high": 64}, "expected_output": [true]}
+  ]
+}

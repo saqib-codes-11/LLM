@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_2f3a7426-7828-40d9-ad0f-dd9f2e363144",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "2f3a7426-7828-40d9-ad0f-dd9f2e363144",
+    "solution_code": "from typing import List\nfrom collections import Counter\n\ndef solve(n: List[int]) -> int:\n    counted_elements = Counter(n)\n    repeat_five_time_element = [k for k, v in counted_elements.items() if v == 5]\n    return sum(list(map(int, str(repeat_five_time_element[0]))))**4",
+    "feedback": null
+}

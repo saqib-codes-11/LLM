@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_9a0d368d-bfe6-46ae-8d27-8c3d1e5a1951",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "9a0d368d-bfe6-46ae-8d27-8c3d1e5a1951",
+    "solution_code": "def solve(n: int) -> int:\n    sum_sixth_powers = sum((2*i)**6 for i in range(1, n+1))\n    prime_digits = [int(d) for d in str(sum_sixth_powers) if d in '2357']\n    return sum(prime_digits)",
+    "feedback": null
+}

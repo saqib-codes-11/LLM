@@ -1,0 +1,25 @@
+{
+    "identifier": "problem_is_prime",
+    "description": "Write a function to check if a number is prime.",
+    "function_prototype": {
+        "function_name": "is_prime",
+        "parameters": [{"name": "n", "type": "int"}],
+        "return_values": [{"type": "bool"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"n": 2}, "expected_output": ["True"]},
+        {"input": {"n": 4}, "expected_output": ["False"]}
+    ],
+    "tags": ["Math", "Number Theory", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `is_prime` function that checks if a given number is prime. Return True if the number is prime and False otherwise.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"n": 3}, "expected_output": ["True"]},
+                {"input": {"n": 9}, "expected_output": ["False"]}
+            ]
+        }
+    ]
+}

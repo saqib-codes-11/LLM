@@ -1,0 +1,32 @@
+{
+    "identifier": "branch60",
+    "description": "branch60",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch60(input1, input2):\n    # Determine which input is greater\n    if input1 > input2:\n        result1 = input1 - input2\n    elif input2 > input1:\n        result1 = input2 - input1\n    else:\n        result1 = 0\n\n    # Multiply the greater input by 3\n    if input1 > input2:\n        result2 = input1 * 3\n    elif input2 > input1:\n        result2 = input2 * 3\n    else:\n        result2 = 0\n\n    # Divide the greater input by 4\n    if input1 > input2:\n        result3 = input1 / 4\n    elif input2 > input1:\n        result3 = input2 / 4\n    else:\n        result3 = 0\n\n    # Add the two results\n    result4 = result2 + result3\n\n    # Check if the result is greater than 10\n    if result4 > 10:\n        final_result = result4 * 2\n    else:\n        final_result = result4 / 2\n\n    return final_result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch60",
+        "parameters": [
+            {
+                "name": "input1",
+                "type": "int"
+            },
+            {
+                "name": "input2",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

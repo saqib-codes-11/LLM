@@ -1,0 +1,35 @@
+{
+    "identifier": "problem_trie_operations",
+    "description": "Implement a function to perform a series of trie operations [insert, search, startswith] and return the outcomes of each.",
+    "function_prototype": {
+        "function_name": "trie_operations",
+        "parameters": [
+            {"name": "operations", "type": "List[List[str]]"}
+        ],
+        "return_values": [{"type": "List[Union[str, bool]]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "operations": [["insert", "apple"], ["search", "apple"], ["search", "app"], ["startswith", "app"], ["insert", "app"], ["search", "app"]]
+            },
+            "expected_output": ["None", "True", "False", "True", "None", "True"]
+        }
+    ],
+    "tags": ["Trie", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the trie_operations function that accepts a list of operations and performs them on a trie data structure. The function should return a list of results corresponding to each operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "operations": [["insert", "hello"], ["search", "hello"], ["search", "hell"], ["startswith", "hell"]]
+                    },
+                    "expected_output": ["None", "True", "False", "True"]
+                }
+            ]
+        }
+    ]
+}

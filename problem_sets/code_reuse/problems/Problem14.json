@@ -1,0 +1,43 @@
+{
+  "identifier": "list_operations_001",
+  "prompts": [
+    {
+      "prompt_id": "list_operations_prompt_01",
+      "prompt": "Write a parent function named 'sum_of_list' that takes a list of numbers as an argument and returns their sum. Then, write a child function named 'average_of_list' that takes a list of numbers as an argument and utilizes 'sum_of_list' to calculate and return the average of the numbers.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"numbers": [1, 2, 3, 4, 5]},
+          "expected_output": [3.0]
+        },
+        {
+          "input": {"numbers": [10, 20, 30, 40, 50]},
+          "expected_output": [30.0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "sum_of_list",
+    "parameters": [
+      {"name": "numbers", "type": "list"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "average_of_list",
+    "parameters": [
+      {"name": "numbers", "type": "list"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"numbers": [5, 10, 15, 20, 25]}, "expected_output": [15.0]},
+    {"input": {"numbers": [3, 3, 3, 3, 3]}, "expected_output": [3.0]},
+    {"input": {"numbers": [10, 12, 14, 16, 18]}, "expected_output": [14.0]},
+    {"input": {"numbers": [7, 14, 21, 28, 35]}, "expected_output": [21.0]}
+  ]
+}

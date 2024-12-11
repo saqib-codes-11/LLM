@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_257db52b-a8c3-440e-a4f0-702130893655",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "257db52b-a8c3-440e-a4f0-702130893655",
+    "solution_code": "def solve(n: int) -> int:\n    a, b = 24, 27\n    for _ in range(n - 2):\n        a, b = b, (22 * b - 18 * a + 25) % 10\n    return b % 10\n\nThe algorithm uses a technique of dynamic programming where it starts from the base case (`a=24` and `b=27`) and it calculates the next values using the formula `a(n) = 22*a(n-1) - 18*a(n-2) + 25` with a small modification; it takes the mod 10 of each operation (i.e., `(22 * b - 18 * a + 25) % 10`) to ensure we only keep the last digit of the number (since this is what the question asks for). The mod 10 operation is also done on `b` when returning the answer.\n\nThe space complexity is O(1) since it only uses two variables to keep track of the last two terms of the sequence. The time complexity is O(n) since it calculates each number in the sequence once. \n\nThe function has a low Halstead difficulty metric because it uses a very small set of unique operators and operands, and the operators are not nested deeply. The formula inside the loop is easy to understand because it directly implements the formula given in the problem statement.",
+    "feedback": null
+}

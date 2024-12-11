@@ -1,0 +1,42 @@
+{
+    "identifier": "branch24",
+    "description": "branch24",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch24(input1, input2, input3):\n \n    # initialize variables\n    output1 = 0\n    output2 = 0\n    output3 = 0\n \n    # if statements\n    if input1 == 0:\n        output1 = input2 * 2\n    elif input1 == 1:\n        output1 = input2 * 3\n    elif input1 == 2:\n        output1 = input2 * 4\n    else:\n        output1 = input2 * 5\n \n    # if/else statements\n    if input2 > 0:\n        output2 = input2 + input3\n    else:\n        output2 = input2 - input3\n \n    # nested if statements\n    if input3 == 0:\n        output3 = input1 * 2\n        if input2 > 0:\n            output3 += 1\n        else:\n            output3 -= 1\n    elif input3 == 1:\n        output3 = input1 * 3\n        if input2 > 0:\n            output3 += 2\n        else:\n            output3 -= 2\n    elif input3 == 2:\n        output3 = input1 * 4\n        if input2 > 0:\n            output3 += 3\n        else:\n            output3 -= 3\n    else:\n        output3 = input1 * 5\n        if input2 > 0:\n            output3 += 4\n        else:\n            output3 -= 4\n \n    return output1, output2, output3"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch24",
+        "parameters": [
+            {
+                "name": "input1",
+                "type": "int"
+            },
+            {
+                "name": "input2",
+                "type": "int"
+            },
+            {
+                "name": "input3",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            },
+            {
+                "type": "int"
+            },
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

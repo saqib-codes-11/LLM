@@ -1,0 +1,43 @@
+{
+  "identifier": "power_calculation_001",
+  "prompts": [
+    {
+      "prompt_id": "power_calculation_prompt_01",
+      "prompt": "Write a parent function named 'calculate_square' that takes a number as an argument and returns its square. Then, write a child function named 'calculate_cube' that takes a number as an argument and utilizes 'calculate_square' to calculate and return the cube of the number.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"num": 4.0},
+          "expected_output": [64.0]
+        },
+        {
+          "input": {"num": 3.0},
+          "expected_output": [27.0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_square",
+    "parameters": [
+      {"name": "num", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "calculate_cube",
+    "parameters": [
+      {"name": "num", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"num": 2.0}, "expected_output": [8.0]},
+    {"input": {"num": 5.0}, "expected_output": [125.0]},
+    {"input": {"num": -3.0}, "expected_output": [-27.0]},
+    {"input": {"num": 1.5}, "expected_output": [3.375]}
+  ]
+}

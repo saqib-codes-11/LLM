@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "is_magic_square",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef is_magic_square(A: np.array) -> bool:\n    # Check if matrix is not square\n    if A.shape[0] != A.shape[1]:\n        return False\n        \n    # Calculate total of the first row\n    total = np.sum(A[0])\n    \n    # Check if sums of all rows, columns are not equal to total\n    if not np.all(np.sum(A, axis=0) == total) or not np.all(np.sum(A, axis=1) == total):\n        return False\n    \n    # Check if sum of diagonals are not equal to total\n    if np.trace(A) != total or np.trace(np.fliplr(A)) != total:\n        return False\n    \n    return True",
+    "feedback": null
+}

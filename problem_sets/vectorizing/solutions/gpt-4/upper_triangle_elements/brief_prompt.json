@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "upper_triangle_elements",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef function(A):\n    i, j = np.triu_indices(A.shape[0], k=1)\n    result = A[i, j]\n    return result",
+    "feedback": null
+}

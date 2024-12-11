@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_5",
+    "model_identifier": "gpt-3.5-turbo",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "def factorial(n: int) -> int:\n    # base case: factorial of 0 or 1 is 1\n    if n == 0 or n == 1:\n        return 1\n    \n    # recursive case: multiply n with factorial of (n-1)\n    return n * factorial(n - 1)",
+    "feedback": null
+}

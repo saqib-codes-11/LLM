@@ -1,0 +1,29 @@
+{
+    "identifier": "frobenius_norm",
+    "description": "Given an unvectorized code for frobenius_norm, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `frobenius_norm` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        result = 0\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                result += A[i][j]**2\n        return result**0.5\n    #TAGS: loops, nested loops, power, square root\n    \n    ### Problem 56: Count Matrix Elements Greater than a Value\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "frobenius_norm",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

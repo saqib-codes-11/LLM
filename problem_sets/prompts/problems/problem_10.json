@@ -1,0 +1,31 @@
+{
+    "identifier": "factorial_recursive_2",
+    "description": "This problem tests the ability to work with recursion. The task is to implement a function that calculates the factorial of a given number using recursion.",
+    "function_prototype": {
+        "function_name": "factorial_recursive_2",
+        "parameters": [{"name": "n", "type": "int"}],
+        "return_values": [{"type": "int"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"n": 5}, "expected_output": [120]},
+        {"input": {"n": 1}, "expected_output": [1]}
+    ],
+    "tags": ["Recursion"],
+    "prompts": [
+        {
+            "prompt_id": "prompt_only",
+            "prompt": "Implement a function that calculates the factorial of a given number using recursion.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "prompt_with_tests",
+            "prompt": "Implement a function that calculates the factorial of a given number using recursion.\n\nTest Cases:\n- Input: 5\n  Expected Output: 120\n- Input: 1\n  Expected Output: 1",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"n": 5}, "expected_output": [120]},
+                {"input": {"n": 1}, "expected_output": [1]}
+            ]
+        }
+    ]
+}

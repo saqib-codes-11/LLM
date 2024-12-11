@@ -1,0 +1,49 @@
+{
+	"identifier": "problem_blog_management",
+	"description": "Write a function to simulate the operations of a blog platform including creating posts, adding comments, and listing posts.",
+	"function_prototype": {
+		"function_name": "manage_blog",
+		"parameters": [{"name": "operations", "type": "List[Dict[str, Union[str, int]]]"}],
+		"return_values": [{"type": "List[Union[int, str, List[Dict[str, Union[str, int, List[Dict[str, str]]]]]]"}]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {
+				"operations": [
+					{"action": "create_post", "title": "First Post", "content": "This is the first post."},
+					{"action": "create_post", "title": "Second Post", "content": "This is the second post."},
+					{"action": "add_comment", "post_id": 1, "author": "John", "content": "Great post!"},
+					{"action": "list_posts"}
+				]
+			},
+			"expected_output": [
+				1,
+				2,
+				"Comment added",
+				[
+					{"id": 1, "title": "First Post", "content": "This is the first post.", "comments": [{"author": "John", "content": "Great post!"}]},
+					{"id": 2, "title": "Second Post", "content": "This is the second post.", "comments": []}
+				]
+			]
+		}
+	],
+	"tags": ["Data Management", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the manage_blog function that simulates the behavior of a basic blog platform. The function will accept a list of operations and return a list of results for each operation.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {
+						"operations": [
+							{"action": "create_post", "title": "Sample Post", "content": "This is a sample post."},
+							{"action": "list_posts"}
+						]
+					},
+					"expected_output": [1, [{"id": 1, "title": "Sample Post", "content": "This is a sample post.", "comments": []}]]
+				}
+			]
+		}
+	]
+}

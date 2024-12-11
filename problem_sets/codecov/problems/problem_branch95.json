@@ -1,0 +1,32 @@
+{
+    "identifier": "branch95",
+    "description": "branch95",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch95(user_input_1, user_input_2):\n    \"\"\"\n    This function contains multiple branches depending on user inputs\n    \"\"\"\n\n    if user_input_1 == 'yes':\n        if user_input_2 == 'yes':\n            return 'Both inputs are yes'\n        else:\n            return 'User input 1 is yes, user input 2 is no'\n    elif user_input_1 == 'no':\n        if user_input_2 == 'yes':\n            return 'User input 1 is no, user input 2 is yes'\n        else:\n            return 'Both inputs are no'\n    else:\n        return 'Invalid user inputs'"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch95",
+        "parameters": [
+            {
+                "name": "user_input_1",
+                "type": "string"
+            },
+            {
+                "name": "user_input_2",
+                "type": "string"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "string"
+            }
+        ]
+    }
+}

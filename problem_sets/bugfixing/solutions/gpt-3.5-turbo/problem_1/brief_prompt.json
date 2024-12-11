@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_1",
+    "model_identifier": "gpt-3.5-turbo",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "def multiply(a: int, b: int) -> int:\n    return a * b",
+    "feedback": null
+}

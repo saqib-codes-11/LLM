@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_a9550f62-a637-4a48-b805-26f2e33b0e76",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "a9550f62-a637-4a48-b805-26f2e33b0e76",
+    "solution_code": "def solve(n):\n    a, b = 0, 1\n    sum = 0\n    for _ in range(n):\n        sum += a**5\n        a, b = b, a+b\n    product = 1\n    for d in str(sum):\n        if int(d) % 2 == 0:\n            product *= int(d)\n    return product",
+    "feedback": null
+}

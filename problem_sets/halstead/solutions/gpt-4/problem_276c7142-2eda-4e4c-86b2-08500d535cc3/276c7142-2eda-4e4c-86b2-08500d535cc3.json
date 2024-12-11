@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_276c7142-2eda-4e4c-86b2-08500d535cc3",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "276c7142-2eda-4e4c-86b2-08500d535cc3",
+    "solution_code": "from typing import List\n\ndef solve(n: List[int]) -> int:\n    n.sort()\n    size = len(n)\n    if size % 2 == 0:\n        median = (n[size // 2 - 1] + n[size // 2]) / 2\n    else:\n        median = n[size // 2]\n    \n    count = sum(1 for x in n if x % 2 != 0 and x > 4 * median)\n    \n    return 0 if count == 0 else int(str(count)[0]) * int(str(count)[1])",
+    "feedback": null
+}

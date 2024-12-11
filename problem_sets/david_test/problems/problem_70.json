@@ -1,0 +1,37 @@
+{
+    "identifier": "problem_bst",
+    "description": "Perform a series of operations on a Binary Search Tree and return the results.",
+    "function_prototype": {
+        "function_name": "bst_operations",
+        "parameters": [{"name": "operations", "type": "list"}],
+        "return_values": [{"type": "list"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"operations": [["insert", 5], ["search", 5]]},
+            "expected_output": ["None", "True"]
+        },
+        {
+            "input": {"operations": [["insert", 5], ["insert", 3], ["search", 3]]},
+            "expected_output": ["None", "None", "True"]
+        },
+        {
+            "input": {"operations": [["insert", 5], ["search", 7]]},
+            "expected_output": ["None", "False"]
+        }
+    ],
+    "tags": ["Binary Search Tree", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the bst_operations function to simulate operations on a Binary Search Tree and return the results.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"operations": [["insert", 5], ["search", 5]]},
+                    "expected_output": ["None", "True"]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_d31132e6-a3f5-49a9-81fe-3625b57983ee",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "d31132e6-a3f5-49a9-81fe-3625b57983ee",
+    "solution_code": "def solve(n: int) -> int:\n    size = 330\n    cycle = [0]*size\n    cycle[0], cycle[1] = 6, 9\n    for i in range(2, size):\n        cycle[i] = (14*cycle[i-1] - 10*cycle[i-2] + 17) % 10\n        if cycle[i-1] == cycle[1] and cycle[i] == cycle[0]:\n            return cycle[n%(i-1)]\n    return cycle[n%size]",
+    "feedback": null
+}

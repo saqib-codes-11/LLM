@@ -1,0 +1,43 @@
+{
+  "identifier": "min_and_max_001",
+  "prompts": [
+    {
+      "prompt_id": "min_and_max_prompt_01",
+      "prompt": "Write a parent function named 'find_min' that takes a list of integers and returns the smallest integer in the list. Then, write a child function named 'find_max' that takes a list of integers and, utilizing 'find_min', returns the largest integer in the list.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [2, 4, 6, 8]},
+          "expected_output": [8]
+        },
+        {
+          "input": {"nums": [-5, -3, -1, 0, 1]},
+          "expected_output": [1]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "find_min",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "find_max",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [3, 1, 4, 1, 5, 9]}, "expected_output": [9]},
+    {"input": {"nums": [2, 7, 1, 8, 2, 8]}, "expected_output": [8]},
+    {"input": {"nums": [0, 5, 3, 5, 8]}, "expected_output": [8]},
+    {"input": {"nums": [9, 7, 9, 3, 2]}, "expected_output": [9]}
+  ]
+}

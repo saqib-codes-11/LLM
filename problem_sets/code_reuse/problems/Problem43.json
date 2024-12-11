@@ -1,0 +1,45 @@
+{
+  "identifier": "subtract_and_divide_001",
+  "prompts": [
+    {
+      "prompt_id": "subtract_and_divide_prompt_01",
+      "prompt": "Write a parent function named 'subtract_numbers' that takes two integers and returns the result of subtracting the second from the first. Then, write a child function named 'divide_using_subtraction' that takes two integers and, utilizing 'subtract_numbers', returns the result of dividing the first number by the second by continuously subtracting the second number from the first and counting the number of subtractions until the first number is less than the second number. Return -1 if the division is not exact.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"a": 20, "b": 4},
+          "expected_output": [5]
+        },
+        {
+          "input": {"a": 18, "b": 3},
+          "expected_output": [6]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "subtract_numbers",
+    "parameters": [
+      {"name": "a", "type": "int"},
+      {"name": "b", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "divide_using_subtraction",
+    "parameters": [
+      {"name": "a", "type": "int"},
+      {"name": "b", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"a": 21, "b": 3}, "expected_output": [7]},
+    {"input": {"a": 40, "b": 8}, "expected_output": [5]},
+    {"input": {"a": 15, "b": 5}, "expected_output": [3]},
+    {"input": {"a": 16, "b": 4}, "expected_output": [4]}
+  ]
+}

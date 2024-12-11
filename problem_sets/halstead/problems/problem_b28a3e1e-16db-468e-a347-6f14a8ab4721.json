@@ -1,0 +1,76 @@
+{
+    "identifier": "problem_b28a3e1e-16db-468e-a347-6f14a8ab4721",
+    "prompts": [
+        {
+            "prompt_id": "b28a3e1e-16db-468e-a347-6f14a8ab4721",
+            "prompt": "Given a list of integers, determine the second largest element in the list. Return the sum of the digits of this element.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ]
+            },
+            "expected_output": [
+                9
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    11,
+                    22,
+                    33,
+                    44,
+                    55,
+                    66,
+                    55
+                ]
+            },
+            "expected_output": [
+                10
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    100,
+                    200,
+                    50,
+                    30,
+                    70,
+                    150,
+                    200
+                ]
+            },
+            "expected_output": [
+                6
+            ]
+        }
+    ]
+}

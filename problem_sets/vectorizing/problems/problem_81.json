@@ -1,0 +1,33 @@
+{
+    "identifier": "matrix_scalar_addition",
+    "description": "Given an unvectorized code for matrix_scalar_addition, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `matrix_scalar_addition` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A, scalar):\n        # UNVECTORIZE THIS\n        result = [[0] * len(A[0]) for _ in range(len(A))]\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                result[i][j] = A[i][j] + scalar\n        return result\n    #TAGS: loops, nested loops, addition\n    \n    ### Problem 82: Check if Matrix is Symmetric\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "matrix_scalar_addition",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            },
+            {
+                "name": "scalar",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

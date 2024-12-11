@@ -1,0 +1,31 @@
+{
+	"identifier": "problem_2",
+	"description": "Write a function to analyze student grades.",
+	"function_prototype": {
+		"function_name": "student_grade_statistics",
+		"parameters": [
+			{"name": "grades_data", "type": "dict"},
+			{"name": "student_name", "type": "str"},
+			{"name": "action", "type": "str"}
+		],
+		"return_values": [{"type": "float"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"grades_data": {"John Doe": [85.5, 90.0, 78.5]}, "student_name": "John Doe", "action": "average"}, "expected_output": [84.67]},
+		{"input": {"grades_data": {"John Doe": [85.5, 90.0, 78.5]}, "student_name": "John Doe", "action": "highest"}, "expected_output": [90.0]},
+		{"input": {"grades_data": {"John Doe": [85.5, 90.0, 78.5]}, "student_name": "John Doe", "action": "lowest"}, "expected_output": [78.5]}
+	],
+	"tags": ["Data Analysis", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "detailed_prompt",
+			"prompt": "Implement the `student_grade_statistics` function to analyze student grades. The function should be able to calculate the average, retrieve the highest grade, or retrieve the lowest grade for a specified student based on the action parameter ('average', 'highest', or 'lowest').",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"grades_data": {"Jane Doe": [75.0, 82.0, 68.5]}, "student_name": "Jane Doe", "action": "average"}, "expected_output": [75.17]},
+				{"input": {"grades_data": {"Jane Doe": [75.0, 82.0, 68.5]}, "student_name": "Jane Doe", "action": "highest"}, "expected_output": [82.0]},
+				{"input": {"grades_data": {"Jane Doe": [75.0, 82.0, 68.5]}, "student_name": "Jane Doe", "action": "lowest"}, "expected_output": [68.5]}
+			]
+		}
+	]
+}

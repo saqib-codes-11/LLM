@@ -1,0 +1,31 @@
+{
+    "identifier": "problem_word_analysis",
+    "description": "Write a function to analyze the words in a given text. This function should count the total words and can optionally return the most frequent words.",
+    "function_prototype": {
+        "function_name": "analyze_words",
+        "parameters": [
+            {"name": "text", "type": "str"},
+            {"name": "num_words", "type": "int", "optional": true}
+        ],
+        "return_values": [
+            {"type": "int"},
+            {"type": "list", "element_type": "tuple", "element_types": [{"type": "str"}, {"type": "int"}]}
+        ]
+    },
+    "correctness_test_suite": [
+        {"input": {"text": "This is a test. This is only a test.", "num_words": "None"}, "expected_output": [8]},
+        {"input": {"text": "This is a test. This is only a test.", "num_words": 2}, "expected_output": [8, [["This", 2], ["is", 2]]]}
+    ],
+    "tags": ["Text Analysis", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the analyze_words function that takes in a text and an optional num_words parameter. It should return the total word count, and if num_words is provided, it should also return a list of the top 'num_words' frequent words in the text.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"text": "Hello world! Have a great day.", "num_words": "None"}, "expected_output": [6]},
+                {"input": {"text": "Hello world! Hello everyone.", "num_words": 1}, "expected_output": [5, [["Hello", 2]]]}
+            ]
+        }
+    ]
+}

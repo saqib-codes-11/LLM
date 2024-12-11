@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "identity_matrix",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef identity_matrix(n: int):\n    return np.eye(n)",
+    "feedback": null
+}

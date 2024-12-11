@@ -1,0 +1,40 @@
+{
+    "identifier": "branch40",
+    "description": "branch40",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch40(num1, num2, num3, num4):\n    if num1 > 0 and num2 > 0 and num3 > 0:\n        result1 = num1 + num2 + num3\n        if num4 > 0:\n            result2 = result1 * num4\n            return result2\n        else:\n            return result1\n    elif num1 > 0 and num2 > 0 and num3 == 0:\n        result3 = num1 - num2\n        if num4 > 0:\n            result4 = result3 / num4\n            return result4\n        else:\n            return result3\n    elif num1 > 0 and num2 == 0 and num3 > 0:\n        result5 = num1 * num3\n        if num4 > 0:\n            result6 = result5 + num4\n            return result6\n        else:\n            return result5\n    elif num1 == 0 and num2 > 0 and num3 > 0:\n        result7 = num2 - num3\n        if num4 > 0:\n            result8 = result7 * num4\n            return result8\n        else:\n            return result7\n    else:\n        return 0"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch40",
+        "parameters": [
+            {
+                "name": "num1",
+                "type": "int"
+            },
+            {
+                "name": "num2",
+                "type": "int"
+            },
+            {
+                "name": "num3",
+                "type": "int"
+            },
+            {
+                "name": "num4",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

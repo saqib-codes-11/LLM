@@ -1,0 +1,39 @@
+{
+    "identifier": "branch7",
+    "description": "branch7",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch7(x, y, z):\n    if x > 0:\n        if y > 0:\n            result = x + y\n        else:\n            if z > 0:\n                result = x + z\n            else:\n                result = x\n    else:\n        if y > 0:\n            if z > 0:\n                result = y + z\n            else:\n                result = y\n        else:\n            result = z\n    \n    if result % 2 == 0:\n        result *= 2\n    else:\n        result -= 1\n    \n    if result > 10:\n        return \"Result is greater than 10\"\n    elif result < 0:\n        return \"Result is negative\"\n    else:\n        return result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch7",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "int"
+            },
+            {
+                "name": "y",
+                "type": "int"
+            },
+            {
+                "name": "z",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            },
+            {
+                "type": "string"
+            }
+        ]
+    }
+}

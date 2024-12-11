@@ -1,0 +1,97 @@
+{
+    "identifier": "problem_5457070e-f978-4a3e-bf5a-20d358fe69f9",
+    "prompts": [
+        {
+            "prompt_id": "5457070e-f978-4a3e-bf5a-20d358fe69f9",
+            "prompt": "Given a list of positive integers, find the element that appears exactly four times in the list. Return the sum of the digits of this element cubed.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    1,
+                    1,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    7,
+                    4,
+                    1,
+                    7,
+                    4,
+                    1,
+                    7,
+                    4,
+                    1,
+                    7,
+                    5,
+                    2,
+                    3,
+                    6,
+                    8,
+                    9
+                ]
+            },
+            "expected_output": [
+                10
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    9,
+                    9,
+                    9,
+                    8,
+                    8,
+                    8,
+                    7,
+                    7,
+                    7,
+                    6,
+                    6,
+                    6,
+                    6
+                ]
+            },
+            "expected_output": [
+                9
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_bde3eee5-1648-4086-9b91-e0faab7ec1ee",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "bde3eee5-1648-4086-9b91-e0faab7ec1ee",
+    "solution_code": "def solve(n: int) -> int:\n    a, b = 7, 0  # Set initial values\n    for _ in range(n - 1):\n        a, b = (15 * a - 11 * b + 18) % 10, a  # Update a and b while getting the last digit\n    return a  # Return the last digit of the nth number",
+    "feedback": null
+}

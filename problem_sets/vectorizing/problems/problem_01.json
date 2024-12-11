@@ -1,0 +1,33 @@
+{
+    "identifier": "dot_product",
+    "description": "Given an unvectorized code for dot_product, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `dot_product` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(a, b):\n        # UNVECTORIZE THIS\n        result = 0\n        for i in range(len(a)):\n            result += a[i] * b[i]\n        return result\n    #TAGS: loops, multiplication\n    \n    ### Problem 2: Matrix-Vector Multiplication\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "dot_product",
+        "parameters": [
+            {
+                "name": "a",
+                "type": "int"
+            },
+            {
+                "name": "b",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

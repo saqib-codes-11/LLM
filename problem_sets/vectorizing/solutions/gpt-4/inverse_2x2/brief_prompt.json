@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "inverse_2x2",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef inverse_2x2(A: np.ndarray) -> np.ndarray:\n    det = A[...,0,0] * A[...,1,1] - A[...,0,1] * A[...,1,0]\n    inv_det = 1 / det\n    result = np.empty_like(A)\n    result[...,0,0] = A[...,1,1] * inv_det\n    result[...,0,1] = -A[...,0,1] * inv_det\n    result[...,1,0] = -A[...,1,0] * inv_det\n    result[...,1,1] = A[...,0,0] * inv_det\n    return result",
+    "feedback": null
+}

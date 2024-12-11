@@ -1,0 +1,31 @@
+{
+    "identifier": "problem_grid_navigator",
+    "description": "Write a function to navigate a grid based on the provided direction.",
+    "function_prototype": {
+        "function_name": "navigate_grid",
+        "parameters": [
+            {"name": "position", "type": "tuple"},
+            {"name": "rows", "type": "int"},
+            {"name": "cols", "type": "int"},
+            {"name": "direction", "type": "str"}
+        ],
+        "return_values": [{"type": "tuple"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"position": [2, 2], "rows": 5, "cols": 5, "direction": "up"}, "expected_output": [[1, 2]]},
+        {"input": {"position": [0, 2], "rows": 5, "cols": 5, "direction": "up"}, "expected_output": [[0, 2]]},
+        {"input": {"position": [2, 4], "rows": 5, "cols": 5, "direction": "right"}, "expected_output": [[2, 4]]}
+    ],
+    "tags": ["Navigation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the navigate_grid function to move in a specified direction on a grid, and return the updated position.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"position": [1, 1], "rows": 3, "cols": 3, "direction": "down"}, "expected_output": [[2, 1]]},
+                {"input": {"position": [2, 0], "rows": 3, "cols": 3, "direction": "left"}, "expected_output": [[2, 0]]}
+            ]
+        }
+    ]
+}

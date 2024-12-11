@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_d0f7370f-e7df-44ca-9ff4-3faf4db32760",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "d0f7370f-e7df-44ca-9ff4-3faf4db32760",
+    "solution_code": "def solve(n:int) -> int:\n    dp = [0] * (n+1)\n    dp[1] = 29\n    dp[2] = 32\n    for i in range(3, n+1):\n        dp[i] = (27 * dp[i - 1] - 23 * dp[i - 2] + 30) % 10\n    return dp[n]",
+    "feedback": null
+}

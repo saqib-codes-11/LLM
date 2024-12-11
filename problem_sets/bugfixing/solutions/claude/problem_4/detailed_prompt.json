@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_4",
+    "model_identifier": "claude",
+    "prompt_identifier": "detailed_prompt",
+    "solution_code": "def concatenate(a: str, b: str) -> str:\n\treturn a + b\n",
+    "feedback": null
+}

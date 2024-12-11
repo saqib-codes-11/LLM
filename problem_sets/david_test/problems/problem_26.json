@@ -1,0 +1,34 @@
+{
+    "identifier": "longest_common_subsequence_problem",
+    "description": "Find the length of the longest common subsequence between two strings.",
+    "function_prototype": {
+        "function_name": "longest_common_subsequence",
+        "parameters": [
+            {"name": "text1", "type": "str"},
+            {"name": "text2", "type": "str"}
+        ],
+        "return_values": [{"type": "int"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"text1": "abcde", "text2": "ace"},
+            "expected_output": [3]
+        },
+        {
+            "input": {"text1": "abc", "text2": "def"},
+            "expected_output": [0]
+        }
+    ],
+    "tags": ["Dynamic Programming", "Strings"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `longest_common_subsequence` function to find the length of the longest common subsequence between two input strings `text1` and `text2`. The function should return an integer representing the length.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"text1": "abcde", "text2": "ade"}, "expected_output": [3]},
+                {"input": {"text1": "abc", "text2": "abc"}, "expected_output": [3]}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "identifier": "anti_diagonal_product",
+    "description": "Given an unvectorized code for anti_diagonal_product, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `anti_diagonal_product` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        product = 1\n        for i in range(len(A)):\n            product *= A[i][len(A[0])-1-i]\n        return product\n    #TAGS: loops, multiplication\n    \n    ### Problem 93: Extract Non-Border Elements\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "anti_diagonal_product",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

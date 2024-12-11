@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_5457070e-f978-4a3e-bf5a-20d358fe69f9",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "5457070e-f978-4a3e-bf5a-20d358fe69f9",
+    "solution_code": "from typing import List\nfrom collections import Counter\n\ndef solve(n: List[int]) -> int:\n    count = Counter(n)\n    for item in count:\n        if count[item] == 4:\n            return sum(int(digit) for digit in str(item**3))",
+    "feedback": null
+}

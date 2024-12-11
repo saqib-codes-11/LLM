@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_c898aa35-4cdd-4c41-8813-69ddfda95e8e",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "c898aa35-4cdd-4c41-8813-69ddfda95e8e",
+    "solution_code": "from typing import List\nfrom collections import Counter\n\ndef solve(n: List[int]) -> int:\n    freq = Counter(n)\n    for k, v in freq.items():\n        if v == 3:\n            return sum(int(digit) for digit in str(k)) ** 2",
+    "feedback": null
+}

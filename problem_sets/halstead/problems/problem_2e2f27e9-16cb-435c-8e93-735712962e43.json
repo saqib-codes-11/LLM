@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_2e2f27e9-16cb-435c-8e93-735712962e43",
+    "prompts": [
+        {
+            "prompt_id": "2e2f27e9-16cb-435c-8e93-735712962e43",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 450), determine the nth number in the sequence defined as: a(n) = 20*a(n-1) - 16*a(n-2) + 23, a(1) = 22, a(2) = 25. Return its last digit.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                2
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                5
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                1
+            ]
+        }
+    ]
+}

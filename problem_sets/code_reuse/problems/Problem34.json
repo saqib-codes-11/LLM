@@ -1,0 +1,43 @@
+{
+  "identifier": "reverse_and_palindrome_001",
+  "prompts": [
+    {
+      "prompt_id": "reverse_and_palindrome_prompt_01",
+      "prompt": "Write a parent function named 'reverse_string' that takes a string and returns its reverse. Then, write a child function named 'is_palindrome' that takes a string and, utilizing 'reverse_string', returns True if the string is a palindrome and False otherwise.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "radar"},
+          "expected_output": [true]
+        },
+        {
+          "input": {"s": "python"},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "reverse_string",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_palindrome",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "level"}, "expected_output": [true]},
+    {"input": {"s": "openai"}, "expected_output": [false]},
+    {"input": {"s": "deed"}, "expected_output": [true]},
+    {"input": {"s": "check"}, "expected_output": [false]}
+  ]
+}

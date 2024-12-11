@@ -1,0 +1,42 @@
+{
+    "identifier": "problem_school_system",
+    "description": "Simulate operations on a school system.",
+    "function_prototype": {
+        "function_name": "school_system",
+        "parameters": [{"name": "operations", "type": "List[Dict[str, Any]]"}],
+        "return_values": [{"type": "List[Any]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "operations": [
+                    {"action": "add_student", "student_id": 1, "name": "Alice"},
+                    {"action": "add_grade", "student_id": 1, "course": "Math", "grade": 85},
+                    {"action": "get_average_grade", "student_id": 1},
+                    {"action": "get_highest_average"}
+                ]
+            },
+            "expected_output": ["None", "None", 85, {"student_id": 1, "average": 85}]
+        }
+    ],
+    "tags": ["Simulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the school_system function to simulate the behavior of a school system. The function will accept a list of operations and return a list of results for each operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "operations": [
+                            {"action": "add_student", "student_id": 1, "name": "Alice"},
+                            {"action": "add_grade", "student_id": 1, "course": "Math", "grade": 85},
+                            {"action": "get_average_grade", "student_id": 1}
+                        ]
+                    },
+                    "expected_output": ["None", "None", 85]
+                }
+            ]
+        }
+    ]
+}

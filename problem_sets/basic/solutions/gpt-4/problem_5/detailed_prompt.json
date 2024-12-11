@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_5",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "detailed_prompt",
+    "solution_code": "def remainder(a: int, b: int) -> int:\n    return a % b",
+    "feedback": null
+}

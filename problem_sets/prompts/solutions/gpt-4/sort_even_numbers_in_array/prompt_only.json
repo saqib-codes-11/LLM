@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "sort_even_numbers_in_array",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "prompt_only",
+    "solution_code": "from typing import List\n\ndef sort_even_numbers(arr: List[int]) -> List[int]:\n    # list containing even numbers in arr in ascending order\n    even_numbers = sorted(x for x in arr if x % 2 == 0)\n    \n    # for each number in arr\n    for i in range(len(arr)):\n        # if the number is even\n        if arr[i] % 2 == 0:\n            # replace it with the next even number in even_numbers\n            arr[i] = even_numbers.pop(0)\n   \n    return arr",
+    "feedback": null
+}

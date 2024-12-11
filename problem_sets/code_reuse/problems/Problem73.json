@@ -1,0 +1,44 @@
+{
+  "identifier": "concatenation_and_palindrome_001",
+  "prompts": [
+    {
+      "prompt_id": "concatenation_and_palindrome_prompt_01",
+      "prompt": "Write a parent function named 'concatenate_strings' that takes two strings and returns their concatenation. Then, create a child function named 'create_palindrome' that takes a string and, using 'concatenate_strings', returns a palindrome created by appending the reverse of the string to itself.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "abc"},
+          "expected_output": ["abcba"]
+        },
+        {
+          "input": {"s": "rad"},
+          "expected_output": ["radar"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "concatenate_strings",
+    "parameters": [
+      {"name": "a", "type": "str"},
+      {"name": "b", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "create_palindrome",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "level"}, "expected_output": ["levellevel"]},
+    {"input": {"s": "mad"}, "expected_output": ["madam"]},
+    {"input": {"s": "wow"}, "expected_output": ["wowow"]},
+    {"input": {"s": "noon"}, "expected_output": ["noonnoon"]}
+  ]
+}

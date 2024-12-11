@@ -1,0 +1,41 @@
+{
+	"identifier": "problem_shopping_cart",
+	"description": "Simulate operations on a ShoppingCart.",
+	"function_prototype": {
+		"function_name": "shopping_cart_operations",
+		"parameters": [{"name": "operations", "type": "list of dict"}],
+		"return_values": [{"type": "list"}]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {
+				"operations": [
+					{ "operation": "add_item", "product": {"product_id": 1, "name": "apple", "price": 0.5}, "quantity": 3 },
+				    { "operation": "add_item", "product": {"product_id": 2, "name": "banana", "price": 0.3}, "quantity": 2 },
+				    { "operation": "view_cart" },
+				    { "operation": "calculate_total" }
+				]
+			},
+			"expected_output": ["None", "None", "apple x3, banana x2", 2.1]
+		}
+	],
+	"tags": ["Simulation", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the shopping_cart_operations function to simulate the behavior of an online shopping cart. The function will accept a list of operations and return a list of results for each operation.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {
+						"operations": [
+							{ "operation": "add_item", "product": {"product_id": 1, "name": "apple", "price": 0.5}, "quantity": 3 },
+							{ "operation": "view_cart" }
+						]
+					},
+					"expected_output": ["None", "apple x3"]
+				}
+			]
+		}
+	]
+}

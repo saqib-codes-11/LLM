@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_75fe9a6e-9cb3-46ac-974a-56bf42e31665",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "75fe9a6e-9cb3-46ac-974a-56bf42e31665",
+    "solution_code": "def solve(n):\n    # Sort the list\n    n.sort()\n    length = len(n)\n    # Compute the median\n    if length % 2 == 0:\n        median = (n[length // 2] + n[length // 2 - 1]) / 2\n    else:\n        median = n[length // 2]\n    # Find the number of elements that are odd and less than seven times the median\n    count = sum(1 for i in n if i % 2 != 0 and i < 7 * median)\n    # Return the product of the digits of this count\n    return int(''.join([str(int(k)) for k in str(count)]))",
+    "feedback": null
+}

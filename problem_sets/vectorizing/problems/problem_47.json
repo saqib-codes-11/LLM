@@ -1,0 +1,29 @@
+{
+    "identifier": "inverse_2x2",
+    "description": "Given an unvectorized code for inverse_2x2, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `inverse_2x2` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        det = A[0][0] * A[1][1] - A[0][1] * A[1][0]\n        inv_det = 1 / det\n        result = [[A[1][1] * inv_det, -A[0][1] * inv_det],\n                  [-A[1][0] * inv_det, A[0][0] * inv_det]]\n        return result\n    #TAGS: multiplication, subtraction, division\n    \n    ### Problem 48: Check if Matrix is Invertible (for 2x2 matrix)\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "inverse_2x2",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

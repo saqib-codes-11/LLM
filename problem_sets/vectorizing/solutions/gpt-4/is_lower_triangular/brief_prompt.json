@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "is_lower_triangular",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef is_lower_triangular(A):\n    mask = np.tri(*A.shape, dtype=bool, k=-1) # create a mask for triangular part\n    mask = np.logical_not(mask) # invert mask to exclude the lower triangular part\n    return not np.any(A[mask]) # check if any non-zero element exists in the upper triangular part",
+    "feedback": null
+}

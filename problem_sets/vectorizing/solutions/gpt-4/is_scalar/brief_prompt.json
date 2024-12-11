@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "is_scalar",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef is_scalar(A: np.array) -> bool:\n    return np.all(A == np.diag([A[0][0]] * A.shape[0]))",
+    "feedback": null
+}

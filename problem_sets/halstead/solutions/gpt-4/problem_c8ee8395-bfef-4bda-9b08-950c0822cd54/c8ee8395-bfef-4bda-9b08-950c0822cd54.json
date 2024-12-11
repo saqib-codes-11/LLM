@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_c8ee8395-bfef-4bda-9b08-950c0822cd54",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "c8ee8395-bfef-4bda-9b08-950c0822cd54",
+    "solution_code": "def solve(n: int) -> int:\n    last_digits = [0, 6, 9, 9]\n    for _ in range(20):\n        last_digits.append((4*last_digits[-1] - last_digits[-2] + 7) % 10)\n    return last_digits[n]",
+    "feedback": null
+}

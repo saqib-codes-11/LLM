@@ -1,0 +1,43 @@
+{
+  "identifier": "vowel_consonant_count_001",
+  "prompts": [
+    {
+      "prompt_id": "vowel_consonant_count_prompt_01",
+      "prompt": "Write a parent function named 'count_vowels' that takes a string and returns the number of vowels in it. Then, write a child function named 'count_consonants' that takes a string, and utilizing 'count_vowels', returns the number of consonants in the string.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "alphabet"},
+          "expected_output": [5]
+        },
+        {
+          "input": {"s": "python"},
+          "expected_output": [4]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "count_vowels",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "count_consonants",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "programming"}, "expected_output": [9]},
+    {"input": {"s": "computer"}, "expected_output": [5]},
+    {"input": {"s": "algorithm"}, "expected_output": [6]},
+    {"input": {"s": "testing"}, "expected_output": [6]}
+  ]
+}

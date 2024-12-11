@@ -1,0 +1,35 @@
+{
+    "identifier": "divmod",
+    "description": "divmod",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def divmod(x, y):\n    if y == 0:\n        raise ZeroDivisionError(\"division by zero\")\n    quotient = x // y\n    remainder = x % y\n    return quotient, remainder"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "divmod",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "int"
+            },
+            {
+                "name": "y",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            },
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

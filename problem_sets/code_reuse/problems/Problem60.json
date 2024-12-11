@@ -1,0 +1,44 @@
+{
+  "identifier": "vowels_count_and_replace_001",
+  "prompts": [
+    {
+      "prompt_id": "vowels_count_and_replace_prompt_01",
+      "prompt": "Write a parent function named 'count_vowels' that takes a string and returns the number of vowels in it. Then, write a child function named 'replace_vowels' that takes a string and a character, and utilizing 'count_vowels', returns the string with all vowels replaced by the provided character.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "hello", "char": "*"},
+          "expected_output": ["h*ll*"]
+        },
+        {
+          "input": {"s": "programming", "char": "-"},
+          "expected_output": ["pr-gr-mm-ng"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "count_vowels",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "replace_vowels",
+    "parameters": [
+      {"name": "s", "type": "str"},
+      {"name": "char", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "apple", "char": "#"}, "expected_output": ["#ppl#"]},
+    {"input": {"s": "banana", "char": "@"}, "expected_output": ["b@n@n@"]},
+    {"input": {"s": "grape", "char": "+"}, "expected_output": ["gr+p+"]},
+    {"input": {"s": "orange", "char": "&"}, "expected_output": ["&r&ng&"]}
+  ]
+}

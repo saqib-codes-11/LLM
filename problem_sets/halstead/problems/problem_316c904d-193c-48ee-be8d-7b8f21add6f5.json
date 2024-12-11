@@ -1,0 +1,79 @@
+{
+    "identifier": "problem_316c904d-193c-48ee-be8d-7b8f21add6f5",
+    "prompts": [
+        {
+            "prompt_id": "316c904d-193c-48ee-be8d-7b8f21add6f5",
+            "prompt": "Given a list of positive integers, find the element that appears exactly six times in the list. Return the sum of the digits of this element to the fifth power.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6
+                ]
+            },
+            "expected_output": [
+                27
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    3,
+                    2,
+                    1,
+                    6,
+                    5,
+                    4,
+                    6,
+                    6,
+                    6,
+                    7,
+                    6,
+                    6
+                ]
+            },
+            "expected_output": [
+                27
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    7,
+                    8,
+                    9
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        }
+    ]
+}

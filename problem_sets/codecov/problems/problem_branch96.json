@@ -1,0 +1,36 @@
+{
+    "identifier": "branch96",
+    "description": "branch96",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch96(a,b,c):\n    \n    # First branch\n    if a == 0:\n        x = b * c\n    elif a == 1:\n        x = b + c\n    else:\n        x = b - c\n        \n    # Second branch\n    if x < 0:\n        y = 0\n    elif x == 0:\n        y = 1\n    else:\n        y = x + 1\n        \n    # Third branch\n    if y % 2 == 0:\n        z = y + c\n    else:\n        z = y - c\n        \n    return z"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch96",
+        "parameters": [
+            {
+                "name": "a",
+                "type": "int"
+            },
+            {
+                "name": "b",
+                "type": "int"
+            },
+            {
+                "name": "c",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

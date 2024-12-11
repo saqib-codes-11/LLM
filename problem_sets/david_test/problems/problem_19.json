@@ -1,0 +1,40 @@
+{
+    "identifier": "problem_weighted_graph",
+    "description": "Perform operations on a weighted graph.",
+    "function_prototype": {
+        "function_name": "graph_operations",
+        "parameters": [{"name": "operations", "type": "List[Dict[str, Union[str, List[str], Tuple[str, str, int]]]]"}],
+        "return_values": [{"type": "List[Union[str, List[str]]]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "operations": [
+                    {"action": "add_edge", "source": "A", "destination": "B", "weight": 5},
+                    {"action": "add_edge", "source": "B", "destination": "C", "weight": 3},
+                    {"action": "shortest_path", "source": "A", "destination": "C"}
+                ]
+            },
+            "expected_output": ["Edge Added", "Edge Added", ["A", "B", "C"]]
+        }
+    ],
+    "tags": ["Graphs", "Shortest Path", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the graph_operations function that performs operations on a weighted graph. The function will accept a list of operations and return a list of results for each operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "operations": [
+                            {"action": "add_edge", "source": "X", "destination": "Y", "weight": 2},
+                            {"action": "shortest_path", "source": "X", "destination": "Y"}
+                        ]
+                    },
+                    "expected_output": ["Edge Added", ["X", "Y"]]
+                }
+            ]
+        }
+    ]
+}

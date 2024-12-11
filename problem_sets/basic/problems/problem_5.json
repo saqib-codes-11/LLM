@@ -1,0 +1,34 @@
+{
+  "identifier": "problem_5",
+  "description": "Write a function to find the remainder of two numbers.",
+  "function_prototype": {
+	"function_name": "remainder",
+	"parameters": [{"name": "a", "type": "int"}, {"name": "b", "type": "int"}],
+	"return_values": [{"type": "int"}]
+  },
+  "correctness_test_suite": [
+	{"input": {"a": 10, "b": 3}, "expected_output": [1]},
+	{"input": {"a": 8, "b": 2}, "expected_output": [0]}
+  ],
+  "tags": ["Arithmetic", "Medium"],
+  "prompts": [
+	{
+		"prompt_id": "brief_prompt",
+	  "prompt": "Implement the remainder function to return the remainder of two integers.",
+	  "genericize": false,
+	  "sample_inputs_outputs": [
+		{"input": {"a": 11, "b": 3}, "expected_output": [2]},
+		{"input": {"a": 15, "b": 4}, "expected_output": [3]}
+	  ]
+	},
+	{
+		"prompt_id": "detailed_prompt",
+	  "prompt": "Write a function named 'remainder' that takes two integer arguments, 'a' and 'b', and returns their remainder as an integer.",
+	  "genericize": true,
+	  "sample_inputs_outputs": [
+		{"input": {"a": 11, "b": 3}, "expected_output": [2]},
+		{"input": {"a": 15, "b": 4}, "expected_output": [3]}
+	  ]
+	}
+  ]
+}

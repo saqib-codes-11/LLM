@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_9f340bc0-f030-445c-bf93-b7b30aef4223",
+    "prompts": [
+        {
+            "prompt_id": "9f340bc0-f030-445c-bf93-b7b30aef4223",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 1350), compute the sum of the second powers of the first n odd prime numbers. Return the product of its prime digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                3
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                147
+            ]
+        }
+    ]
+}

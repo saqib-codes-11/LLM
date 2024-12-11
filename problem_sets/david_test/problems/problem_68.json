@@ -1,0 +1,31 @@
+{
+	"identifier": "problem_temperature_converter",
+	"description": "Convert a temperature value between Celsius and Fahrenheit scales.",
+	"function_prototype": {
+		"function_name": "convert_temperature",
+		"parameters": [
+            {"name": "value", "type": "float"},
+            {"name": "from_scale", "type": "str"},
+            {"name": "to_scale", "type": "str"}
+        ],
+		"return_values": [{"type": "float"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"value": 0, "from_scale": "Celsius", "to_scale": "Fahrenheit"}, "expected_output": [32.0]},
+		{"input": {"value": 32, "from_scale": "Fahrenheit", "to_scale": "Celsius"}, "expected_output": [0.0]},
+        {"input": {"value": 100, "from_scale": "Celsius", "to_scale": "Fahrenheit"}, "expected_output": [212.0]},
+        {"input": {"value": 212, "from_scale": "Fahrenheit", "to_scale": "Celsius"}, "expected_output": [100.0]}
+	],
+	"tags": ["Conversion", "Temperature"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the convert_temperature function to convert temperatures between Celsius and Fahrenheit.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"value": 25, "from_scale": "Celsius", "to_scale": "Fahrenheit"}, "expected_output": [77.0]},
+				{"input": {"value": 77, "from_scale": "Fahrenheit", "to_scale": "Celsius"}, "expected_output": [25.0]}
+			]
+		}
+	]
+}

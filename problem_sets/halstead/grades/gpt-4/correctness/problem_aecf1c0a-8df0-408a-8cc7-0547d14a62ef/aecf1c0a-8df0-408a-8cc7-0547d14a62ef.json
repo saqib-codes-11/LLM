@@ -1,0 +1,12 @@
+{
+    "problem_identifier": "problem_aecf1c0a-8df0-408a-8cc7-0547d14a62ef",
+    "prompt_identifier": "aecf1c0a-8df0-408a-8cc7-0547d14a62ef",
+    "model_identifier": "gpt-4",
+    "score": 0.0,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Error encountered during execution for test case Input: n = 1; Expected Output: 3: No module named 'primepy'\nTraceback (most recent call last):\n  File \"/Users/vamsiimmanneni/Documents/Documents - Vamsi\u2019s MacBook Pro/Homework/SWE GPT/Integration/Strict/LLMCodingBenchmarkingFramework/execution.py\", line 56, in executor_script\n    exec(function_code, exec_globals)\n  File \"<string>\", line 3, in <module>\nModuleNotFoundError: No module named 'primepy'\n",
+        "Error encountered during execution for test case Input: n = 2; Expected Output: 0: No module named 'primepy'\nTraceback (most recent call last):\n  File \"/Users/vamsiimmanneni/Documents/Documents - Vamsi\u2019s MacBook Pro/Homework/SWE GPT/Integration/Strict/LLMCodingBenchmarkingFramework/execution.py\", line 56, in executor_script\n    exec(function_code, exec_globals)\n  File \"<string>\", line 3, in <module>\nModuleNotFoundError: No module named 'primepy'\n",
+        "Error encountered during execution for test case Input: n = 3; Expected Output: 5: No module named 'primepy'\nTraceback (most recent call last):\n  File \"/Users/vamsiimmanneni/Documents/Documents - Vamsi\u2019s MacBook Pro/Homework/SWE GPT/Integration/Strict/LLMCodingBenchmarkingFramework/execution.py\", line 56, in executor_script\n    exec(function_code, exec_globals)\n  File \"<string>\", line 3, in <module>\nModuleNotFoundError: No module named 'primepy'\n"
+    ]
+}

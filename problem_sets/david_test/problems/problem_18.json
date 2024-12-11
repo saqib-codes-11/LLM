@@ -1,0 +1,41 @@
+{
+    "identifier": "problem_process_scheduler",
+    "description": "Simulate a basic process scheduling system.",
+    "function_prototype": {
+        "function_name": "simulate_process_scheduling",
+        "parameters": [{"name": "operations", "type": "List[Dict[str, Union[int, List[Dict[str, int]]]]"}],
+        "return_values": [{"type": "List[int]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "operations": [
+                    {"action": "add_process", "process": {"process_id": 1, "burst_time": 5}},
+                    {"action": "add_process", "process": {"process_id": 2, "burst_time": 3}},
+                    {"action": "simulate_scheduling"}
+                ]
+            },
+            "expected_output": [2, 1]
+        }
+    ],
+    "tags": ["Simulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the simulate_process_scheduling function that simulates a basic process scheduling system. The function will accept a list of operations and return a list of process IDs in the order they are scheduled.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "operations": [
+                            {"action": "add_process", "process": {"process_id": 3, "burst_time": 2}},
+                            {"action": "add_process", "process": {"process_id": 4, "burst_time": 4}},
+                            {"action": "simulate_scheduling"}
+                        ]
+                    },
+                    "expected_output": [3, 4]
+                }
+            ]
+        }
+    ]
+}

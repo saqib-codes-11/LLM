@@ -1,0 +1,33 @@
+{
+    "identifier": "zero_matrix",
+    "description": "Given an unvectorized code for zero_matrix, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `zero_matrix` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(rows, cols):\n        # UNVECTORIZE THIS\n        result = []\n        for i in range(rows):\n            row = []\n            for j in range(cols):\n                row.append(0)\n            result.append(row)\n        return result\n    #TAGS: loops, nested loops\n    \n    ### Problem 27: Identity Matrix\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "zero_matrix",
+        "parameters": [
+            {
+                "name": "rows",
+                "type": "int"
+            },
+            {
+                "name": "cols",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

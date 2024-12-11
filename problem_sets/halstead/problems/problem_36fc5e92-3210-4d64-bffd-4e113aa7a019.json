@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_36fc5e92-3210-4d64-bffd-4e113aa7a019",
+    "prompts": [
+        {
+            "prompt_id": "36fc5e92-3210-4d64-bffd-4e113aa7a019",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 100), find the nth number in the sequence defined as: a(n) = a(n-1) * a(n-2) + 1, a(1) = 1, a(2) = 2. Return the sum of its digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                2
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                3
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_c9114ca9-e25c-4062-84f8-799f58334d3d",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "c9114ca9-e25c-4062-84f8-799f58334d3d",
+    "solution_code": "def solve(n: 'List[int]'):\n    # Calculating the average and initial smallest numbers from the provided list of numbers\n    avg = sum(n) / len(n)\n    smallest = float(\"inf\")\n  \n    for i in n:\n        # Check if number is greater than the average and if it's less than the current smallest one\n        if i > avg and i < smallest:\n            smallest = i\n  \n    # Obtain the product of the digits of the smallest number and return the result\n    product_of_digits = 1\n    while smallest:\n        product_of_digits *= smallest % 10\n        smallest //= 10\n\n    return product_of_digits",
+    "feedback": null
+}

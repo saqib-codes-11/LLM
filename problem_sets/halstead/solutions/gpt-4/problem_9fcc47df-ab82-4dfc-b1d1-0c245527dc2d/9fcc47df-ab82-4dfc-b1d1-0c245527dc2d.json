@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_9fcc47df-ab82-4dfc-b1d1-0c245527dc2d",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "9fcc47df-ab82-4dfc-b1d1-0c245527dc2d",
+    "solution_code": "from itertools import islice, compress\nfrom functools import reduce\nfrom operator import mul\n\ndef primes():\n    D = {}\n    q = 2\n    while True:\n        if q not in D:\n            yield q\n            D[q * q] = [q]\n        else:\n            for p in D[q]:\n                D.setdefault(p + q, []).append(p)\n            del D[q]\n        q += 1\n\ndef odd_primes(n):\n    return islice((p for p in primes() if p%2 != 0), n)\n\ndef prime_digits(n):\n    return [int(d) for d in str(n) if d in '2357']\n\ndef prod_prime_digits(n):\n    return reduce(mul, prime_digits(n), 1)\n\ndef solve(n: int) -> int:\n    return sum(prod_prime_digits(pow(p, 3)) for p in odd_primes(n))",
+    "feedback": null
+}

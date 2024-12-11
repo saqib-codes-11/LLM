@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "rotate_90",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef rotate_90(A):\n    return np.rot90(A, 3)",
+    "feedback": null
+}

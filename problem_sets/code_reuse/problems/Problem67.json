@@ -1,0 +1,45 @@
+{
+  "identifier": "exponential_calculator_and_checker_001",
+  "prompts": [
+    {
+      "prompt_id": "exponential_calculator_and_checker_prompt_01",
+      "prompt": "Write a parent function named 'calculate_exponential' that takes two integers 'base' and 'exponent' and returns the calculated exponential. Then, create a child function named 'is_exponential_of' that takes two integers 'num' and 'base', and using 'calculate_exponential', returns a boolean indicating whether 'num' is an exponential of 'base'.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"num": 8, "base": 2},
+          "expected_output": [true]
+        },
+        {
+          "input": {"num": 9, "base": 3},
+          "expected_output": [true]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_exponential",
+    "parameters": [
+      {"name": "base", "type": "int"},
+      {"name": "exponent", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_exponential_of",
+    "parameters": [
+      {"name": "num", "type": "int"},
+      {"name": "base", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"num": 27, "base": 3}, "expected_output": [true]},
+    {"input": {"num": 100, "base": 10}, "expected_output": [true]},
+    {"input": {"num": 31, "base": 2}, "expected_output": [false]},
+    {"input": {"num": 81, "base": 3}, "expected_output": [true]}
+  ]
+}

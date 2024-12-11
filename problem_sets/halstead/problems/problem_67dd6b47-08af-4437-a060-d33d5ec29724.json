@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_67dd6b47-08af-4437-a060-d33d5ec29724",
+    "prompts": [
+        {
+            "prompt_id": "67dd6b47-08af-4437-a060-d33d5ec29724",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 550), determine the nth number in the sequence defined as: a(n) = 25*a(n-1) - 21*a(n-2) + 28, a(1) = 27, a(2) = 30. Return its last digit.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                7
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                1
+            ]
+        }
+    ]
+}

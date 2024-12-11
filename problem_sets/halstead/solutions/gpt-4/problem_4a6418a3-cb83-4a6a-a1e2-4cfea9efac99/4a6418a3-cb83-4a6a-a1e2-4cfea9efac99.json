@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_4a6418a3-cb83-4a6a-a1e2-4cfea9efac99",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "4a6418a3-cb83-4a6a-a1e2-4cfea9efac99",
+    "solution_code": "def solve(n: int) -> int:\n    sequence = [None] * 240  # Pre-allocated list for the sequence\n    \n    # Set the first two terms \n    sequence[:3] = [0, 1, 4]\n\n    # Start main loop. Compute the sequence values.\n    for i in range(3, n+1):\n        sequence[i] = (9*sequence[i-2] - 5*sequence[i-1] + 2) % 10\n\n    return sequence[n]  # Return the nth term",
+    "feedback": null
+}

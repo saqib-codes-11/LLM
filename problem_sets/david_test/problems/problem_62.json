@@ -1,0 +1,25 @@
+{
+    "identifier": "problem_longest_palindrome",
+    "description": "Find the longest palindrome substring in a given string.",
+    "function_prototype": {
+        "function_name": "longest_palindrome_substring",
+        "parameters": [{"name": "s", "type": "str"}],
+        "return_values": [{"type": "str"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"s": "babad"}, "expected_output": ["bab"]},
+        {"input": {"s": "cbbd"}, "expected_output": ["bb"]}
+    ],
+    "tags": ["String Analysis", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the longest_palindrome_substring function to return the longest palindrome substring in a given string.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"s": "racecar"}, "expected_output": ["racecar"]},
+                {"input": {"s": "apple"}, "expected_output": ["pp"]}
+            ]
+        }
+    ]
+}

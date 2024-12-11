@@ -1,0 +1,30 @@
+{
+    "identifier": "problem_roman_conversion",
+    "description": "Convert between Roman numerals and integers.",
+    "function_prototype": {
+        "function_name": "convert_numeral",
+        "parameters": [
+            {"name": "roman_numeral", "type": "str", "optional": true},
+            {"name": "integer", "type": "int", "optional": true}
+        ],
+        "return_values": [{"type": "union", "types": ["int", "str"]}]
+    },
+    "correctness_test_suite": [
+        {"input": {"roman_numeral": "IV"}, "expected_output": [4]},
+        {"input": {"integer": 9}, "expected_output": ["IX"]},
+        {"input": {"roman_numeral": "XII"}, "expected_output": [12]},
+        {"input": {"integer": 40}, "expected_output": ["XL"]}
+    ],
+    "tags": ["Roman Numerals", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the convert_numeral function to convert between Roman numerals and integers. Only one of the inputs (roman_numeral or integer) should be provided for conversion.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"roman_numeral": "V"}, "expected_output": [5]},
+                {"input": {"integer": 7}, "expected_output": ["VII"]}
+            ]
+        }
+    ]
+}

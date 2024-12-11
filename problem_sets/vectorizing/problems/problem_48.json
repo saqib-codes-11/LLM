@@ -1,0 +1,29 @@
+{
+    "identifier": "is_invertible_2x2",
+    "description": "Given an unvectorized code for is_invertible_2x2, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `is_invertible_2x2` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        det = A[0][0] * A[1][1] - A[0][1] * A[1][0]\n        return det != 0\n    #TAGS: multiplication, subtraction, comparison\n    \n    ### Problem 49: Matrix Translation (Add a constant to every element)\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "is_invertible_2x2",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

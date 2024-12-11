@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "elementwise_absolute",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np \n\ndef vector_elementwise_absolute(A):\n        A = np.array(A)\n        return np.abs(A)",
+    "feedback": null
+}

@@ -1,0 +1,40 @@
+{
+    "identifier": "problem_filesystem_simulation",
+    "description": "Simulate operations on a file system.",
+    "function_prototype": {
+        "function_name": "simulate_filesystem",
+        "parameters": [{"name": "operations", "type": "List[Dict[str, Any]]"}],
+        "return_values": [{"type": "List[Any]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "operations": [
+                    {"action": "add_file", "name": "file1", "size": 100},
+                    {"action": "get_total_size"}
+                ]
+            },
+            "expected_output": ["None", 100]
+        }
+    ],
+    "tags": ["Simulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the simulate_filesystem function to simulate the behavior of a file system. The function will accept a list of operations and return a list of results for each operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "operations": [
+                            {"action": "add_file", "name": "file1", "size": 100},
+                            {"action": "add_subfolder", "name": "folder1"},
+                            {"action": "get_total_size"}
+                        ]
+                    },
+                    "expected_output": ["None", "None", 100]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "matrix_vector_multiplication",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef matrix_vector_multiplication(A: int, v: int) -> float:\n    return np.dot(A, v)",
+    "feedback": null
+}

@@ -1,0 +1,11 @@
+{
+    "problem_identifier": "sort_even_numbers_in_array",
+    "prompt_identifier": "prompt_with_tests",
+    "model_identifier": "gpt-4",
+    "score": 0.0,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Test failed: Input: arr = [5, 3, 2, 8, 1, 4]; Expected Output: [5, 3, 2, 4, 1, 8] Result: None",
+        "Test failed: Input: arr = [0, 1, 2, 3, 4, 5]; Expected Output: [0, 1, 2, 3, 4, 5] Result: None"
+    ]
+}

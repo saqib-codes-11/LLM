@@ -1,0 +1,38 @@
+{
+	"identifier": "problem_3",
+	"description": "Debug and fix the function to divide two numbers.",
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "The provided function `divide` attempts to return the quotient of two numbers, but it contains bugs. Debug and fix the function to return the correct quotient.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"a": 10, "b": 2}, "expected_output": [5.0]},
+				{"input": {"a": 15, "b": 3}, "expected_output": [5.0]}
+			],
+			"input_code": "def divide(a: float, b: float) -> float:\n    return a * b"
+		},
+		{
+			"prompt_id": "detailed_prompt",
+			"prompt": "The function named 'divide' is intended to take two float arguments, 'a' and 'b', and return their quotient as a float. However, it contains bugs. Debug and fix the function to ensure it returns the correct quotient.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"a": 10, "b": 2}, "expected_output": [5.0]},
+				{"input": {"a": 15, "b": 3}, "expected_output": [5.0]}
+			],
+			"input_code": "def divide(a: float, b: float) -> float:\n    return a + b"
+		}
+	],
+	"function_prototype": {
+		"function_name": "divide",
+		"parameters": [{"name": "a", "type": "float"}, {"name": "b", "type": "float"}],
+		"return_values": [{"type": "float"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"a": 8.0, "b": 4.0}, "expected_output": [2.0]},
+		{"input": {"a": 9.0, "b": 3.0}, "expected_output": [3.0]}
+	],
+	"optimal_solution": "def divide(a: float, b: float) -> float:\n    return a / b",
+	"additional_instructions": "Ensure that your function handles division by zero and returns `None` in such cases.",
+	"tags": ["Debugging", "Easy"]
+}

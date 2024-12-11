@@ -1,0 +1,75 @@
+{
+	"identifier": "problem_calendar_event",
+	"description": "Determine the duration of an event and check if two events overlap.",
+	"function_prototype": {
+		"function_name": "event_info",
+		"parameters": [
+            {"name": "event_name1", "type": "str"},
+            {"name": "start_time1", "type": "str"},
+            {"name": "end_time1", "type": "str"},
+            {"name": "event_name2", "type": "str"},
+            {"name": "start_time2", "type": "str"},
+            {"name": "end_time2", "type": "str"}
+        ],
+		"return_values": [
+            {"type": "int"},
+            {"type": "bool"}
+        ]
+	},
+	"correctness_test_suite": [
+		{
+            "input": {
+                "event_name1": "Meeting",
+                "start_time1": "10:00",
+                "end_time1": "11:00",
+                "event_name2": "Lunch",
+                "start_time2": "12:00",
+                "end_time2": "13:00"
+            },
+            "expected_output": [60, false]
+        },
+		{
+            "input": {
+                "event_name1": "Meeting",
+                "start_time1": "10:00",
+                "end_time1": "12:30",
+                "event_name2": "Lunch",
+                "start_time2": "12:00",
+                "end_time2": "13:00"
+            },
+            "expected_output": [150, true]
+        }
+	],
+	"tags": ["DateTime", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the `event_info` function to determine the duration of the first event and check if the two events overlap.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+                    "input": {
+                        "event_name1": "Workshop",
+                        "start_time1": "14:00",
+                        "end_time1": "15:30",
+                        "event_name2": "Break",
+                        "start_time2": "16:00",
+                        "end_time2": "16:15"
+                    },
+                    "expected_output": [90, false]
+                },
+				{
+                    "input": {
+                        "event_name1": "Workshop",
+                        "start_time1": "14:00",
+                        "end_time1": "16:05",
+                        "event_name2": "Break",
+                        "start_time2": "16:00",
+                        "end_time2": "16:15"
+                    },
+                    "expected_output": [125, true]
+                }
+			]
+		}
+	]
+}

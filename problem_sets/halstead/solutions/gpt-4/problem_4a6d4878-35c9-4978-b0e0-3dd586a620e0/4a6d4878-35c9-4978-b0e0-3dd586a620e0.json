@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_4a6d4878-35c9-4978-b0e0-3dd586a620e0",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "4a6d4878-35c9-4978-b0e0-3dd586a620e0",
+    "solution_code": "def solve(n: int) -> int:\n    a, b = 20, 23\n    for i in range(3, n + 1):\n        a, b = b, (18 * b - 14 * a + 21) % 10\n    return b if n > 1 else a",
+    "feedback": null
+}

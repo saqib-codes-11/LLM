@@ -1,0 +1,35 @@
+{
+    "identifier": "array_operations",
+    "description": "Perform various operations on a 2D array.",
+    "function_prototype": {
+        "function_name": "array_operations",
+        "parameters": [
+            {"name": "operation", "type": "str"},
+            {"name": "array", "type": "List[List[int]]"},
+            {"name": "args", "type": "List[int]"}
+        ],
+        "return_values": [{"type": "Union[int, List[List[int]]]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"operation": "set_value", "array": [[0,0],[0,0]], "args": [0, 1, 5]},
+            "expected_output": [[0,5],[0,0]]
+        },
+        {
+            "input": {"operation": "get_value", "array": [[1,2],[3,4]], "args": [1, 0]},
+            "expected_output": [3]
+        }
+    ],
+    "tags": ["2D Array", "Operations"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `array_operations` function to perform various operations on a 2D array. You will be given an operation name and respective parameters. The function will return the appropriate result based on the operation or an updated state of the array.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"operation": "row_sum", "array": [[1,2],[3,4]], "args": [0]}, "expected_output": [3]},
+                {"input": {"operation": "col_sum", "array": [[1,2],[3,4]], "args": [1]}, "expected_output": [6]}
+            ]
+        }
+    ]
+}

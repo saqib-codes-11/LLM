@@ -1,0 +1,76 @@
+{
+    "identifier": "problem_c9114ca9-e25c-4062-84f8-799f58334d3d",
+    "prompts": [
+        {
+            "prompt_id": "c9114ca9-e25c-4062-84f8-799f58334d3d",
+            "prompt": "Given a list of positive integers, find the smallest element in the list that is greater than the average of all elements. Return the product of its digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ]
+            },
+            "expected_output": [
+                6
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    11,
+                    22,
+                    33,
+                    44,
+                    55,
+                    66,
+                    55
+                ]
+            },
+            "expected_output": [
+                16
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    100,
+                    200,
+                    50,
+                    30,
+                    70,
+                    150,
+                    200
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        }
+    ]
+}

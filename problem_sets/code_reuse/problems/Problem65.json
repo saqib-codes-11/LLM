@@ -1,0 +1,44 @@
+{
+  "identifier": "factorial_and_permutation_001",
+  "prompts": [
+    {
+      "prompt_id": "factorial_and_permutation_prompt_01",
+      "prompt": "Write a parent function named 'calculate_factorial' that takes an integer and returns its factorial. Then, create a child function named 'calculate_permutation' that takes two integers, 'n' and 'r', and, utilizing 'calculate_factorial', returns the permutation of nPr.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"n": 5, "r": 2},
+          "expected_output": [20]
+        },
+        {
+          "input": {"n": 7, "r": 3},
+          "expected_output": [210]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_factorial",
+    "parameters": [
+      {"name": "num", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "calculate_permutation",
+    "parameters": [
+      {"name": "n", "type": "int"},
+      {"name": "r", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"n": 10, "r": 4}, "expected_output": [5040]},
+    {"input": {"n": 6, "r": 2}, "expected_output": [30]},
+    {"input": {"n": 8, "r": 3}, "expected_output": [336]},
+    {"input": {"n": 4, "r": 4}, "expected_output": [24]}
+  ]
+}

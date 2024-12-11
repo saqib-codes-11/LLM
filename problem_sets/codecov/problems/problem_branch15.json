@@ -1,0 +1,32 @@
+{
+    "identifier": "branch15",
+    "description": "branch15",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch15(user_input1, user_input2):\n    '''\n    This function has a lot of branches\n    '''\n    output = None\n    if user_input1 == 1:\n        if user_input2 == 1:\n            output = 'a'\n        elif user_input2 == 2:\n            output = 'b'\n        else:\n            output = 'c'\n    elif user_input1 == 2:\n        if user_input2 == 1:\n            output = 'd'\n        elif user_input2 == 2:\n            output = 'e'\n        else:\n            output = 'f'\n    elif user_input1 == 3:\n        if user_input2 == 1:\n            output = 'g'\n        elif user_input2 == 2:\n            output = 'h'\n        else:\n            output = 'i'\n    else:\n        output = 'j'\n    \n    return output"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch15",
+        "parameters": [
+            {
+                "name": "user_input1",
+                "type": "int"
+            },
+            {
+                "name": "user_input2",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "string"
+            }
+        ]
+    }
+}

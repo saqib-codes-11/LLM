@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "matrix_scalar_addition",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef function(A, scalar):\n    # Convert the input list of lists to a numpy array\n    A = np.array(A)\n    # Add the scalar to the array. NumPy allows scalar operations on arrays directly.\n    result = A + scalar\n    return result.tolist() # Convert the result back to a list of lists and return",
+    "feedback": null
+}

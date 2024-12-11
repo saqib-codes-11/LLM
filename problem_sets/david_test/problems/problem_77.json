@@ -1,0 +1,29 @@
+{
+	"identifier": "problem_2",
+	"description": "Write a function to compute the sum of the diagonals of a matrix.",
+	"function_prototype": {
+		"function_name": "diagonal_sum",
+		"parameters": [{"name": "matrix", "type": "list[list[int]]"}],
+		"return_values": [{"type": "int"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"matrix": [[1,2,3],[4,5,6],[7,8,9]]}, "expected_output": [30]},
+		{"input": {"matrix": [[1,0,1],[0,1,0],[1,0,1]]}, "expected_output": [5]}
+	],
+	"tags": ["Matrix", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the diagonal_sum function to return the sum of the diagonals of a given matrix.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"matrix": [[1,2],[3,4]]}, "expected_output": [10]},
+				{"input": {"matrix": [[1,0],[0,1]]}, "expected_output": [3]}
+			]
+		}
+	]
+}
+
+
+
+

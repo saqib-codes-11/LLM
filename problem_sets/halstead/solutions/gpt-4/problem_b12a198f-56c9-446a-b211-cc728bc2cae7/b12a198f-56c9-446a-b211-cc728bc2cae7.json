@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_b12a198f-56c9-446a-b211-cc728bc2cae7",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "b12a198f-56c9-446a-b211-cc728bc2cae7",
+    "solution_code": "def solve(n: int) -> int:\n    product = 1\n    for i in range(2, 2*n+1, 2):\n        product *= i\n    return sum(int(digit) for digit in str(product) if int(digit) % 2 == 1)",
+    "feedback": null
+}

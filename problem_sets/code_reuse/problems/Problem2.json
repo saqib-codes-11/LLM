@@ -1,0 +1,65 @@
+{
+  "identifier": "string_manipulation_001",
+  "prompts": [
+    {
+      "prompt_id": "string_manipulation_prompt_01",
+      "prompt": "Write a parent function named 'count_vowels' that takes a string as an argument and returns the number of vowels in it. Then, write a child function named 'count_consonants' that takes a string as an argument, utilizes 'count_vowels' to determine the number of vowels, and then calculates and returns the number of consonants.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "programming"},
+          "expected_output": [7]
+        },
+        {
+          "input": {"s": "aeiou"},
+          "expected_output": [0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "count_vowels",
+    "parameters": [
+      {
+        "name": "s",
+        "type": "str"
+      }
+    ],
+    "return_values": [
+      {
+        "type": "int"
+      }
+    ]
+  },
+  "function_prototype": {
+    "function_name": "count_consonants",
+    "parameters": [
+      {
+        "name": "s",
+        "type": "str"
+      }
+    ],
+    "return_values": [
+      {
+        "type": "int"
+      }
+    ]
+  },
+  "correctness_test_suite": [
+    {
+      "input": {"s": "hello"},
+      "expected_output": [2]
+    },
+    {
+      "input": {"s": "world"},
+      "expected_output": [3]
+    },
+    {
+      "input": {"s": "alphabet"},
+      "expected_output": [5]
+    },
+    {
+      "input": {"s": "xyz"},
+      "expected_output": [3]
+    }
+  ]
+}

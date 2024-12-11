@@ -1,0 +1,33 @@
+{
+    "identifier": "capitalize",
+    "description": "This problem tests the ability to work with strings. The task is to implement a function that capitalizes the first letter of each word in a given string.",
+    "function_prototype": {
+        "function_name": "capitalize",
+        "parameters": [{"name": "text", "type": "str"}],
+        "return_values": [{"type": "str"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"text": ""}, "expected_output": [""]},
+        {"input": {"text": "hello"}, "expected_output": ["Hello"]},
+        {"input": {"text": "hello world"}, "expected_output": ["Hello World"]}
+    ],
+    "tags": ["String"],
+    "prompts": [
+        {
+            "prompt_id": "prompt_only",
+            "prompt": "Capitalize words in string.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "prompt_with_tests",
+            "prompt": "Write a function called `capitalize` that takes a string and returns a copy with the first letter of each word capitalized. \n\nTest Cases:\n- Input: ''\n  Expected Output: ''\n- Input: 'hello'\n  Expected Output: 'Hello'\n- Input: 'hello world'\n  Expected Output: 'Hello World'",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"text": ""}, "expected_output": [""]},
+                {"input": {"text": "hello"}, "expected_output": ["Hello"]},
+                {"input": {"text": "hello world"}, "expected_output": ["Hello World"]}
+            ]
+        }
+    ]
+}

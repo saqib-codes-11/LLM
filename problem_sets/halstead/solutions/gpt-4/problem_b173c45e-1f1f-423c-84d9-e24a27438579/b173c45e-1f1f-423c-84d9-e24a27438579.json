@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_b173c45e-1f1f-423c-84d9-e24a27438579",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "b173c45e-1f1f-423c-84d9-e24a27438579",
+    "solution_code": "def solve(n: int) -> int:\n    def multiply(a, b):\n        c = [[0, 0], [0, 0]]\n        for i in range(2):\n            for j in range(2):\n                for k in range(2):\n                    c[i][j] = (c[i][j] + a[i][k] * b[k][j]) % 10\n        return c\n\n    def power(k):\n        if k == 1:\n            return [[29, 32], [1, 0]]\n        elif k % 2 == 0:\n            temp = power(k // 2)\n            return multiply(temp, temp)\n        else:\n            return multiply(power(k - 1), [[29, 32], [1, 0]])\n\n    if n == 1:\n        return 1\n    elif n == 2:\n        return 4\n    else:\n        res = power(n - 1)\n        return (res[0][0] * 4 + res[0][1] * 1) % 10",
+    "feedback": null
+}

@@ -1,0 +1,33 @@
+{
+    "identifier": "left_rotate_matrix",
+    "description": "Given an unvectorized code for left_rotate_matrix, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `left_rotate_matrix` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A, k):\n        # UNVECTORIZE THIS\n        num_cols = len(A[0])\n        k %= num_cols\n        result = [[0] * num_cols for _ in range(len(A))]\n        for j in range(num_cols):\n            for i in range(len(A)):\n                result[i][j] = A[i][(j + k) % num_cols]\n        return result\n    #TAGS: loops, nested loops, modulo\n    \n    ### Problem 80: Matrix Right Rotation (Rotate Columns to the Right)\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "left_rotate_matrix",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            },
+            {
+                "name": "k",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

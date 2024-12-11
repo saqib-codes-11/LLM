@@ -1,0 +1,44 @@
+{
+  "identifier": "fibonacci_sequencer_and_value_checker_001",
+  "prompts": [
+    {
+      "prompt_id": "fibonacci_sequencer_and_value_checker_prompt_01",
+      "prompt": "Write a parent function named 'generate_fibonacci' that takes an integer n and returns a list of the first n Fibonacci numbers. Subsequently, implement a child function named 'is_fibonacci_value' that takes two integers n and val, uses 'generate_fibonacci' to get the first n Fibonacci numbers, and checks whether val is among them.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"n": 10, "val": 13},
+          "expected_output": [true]
+        },
+        {
+          "input": {"n": 10, "val": 30},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "generate_fibonacci",
+    "parameters": [
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_fibonacci_value",
+    "parameters": [
+      {"name": "n", "type": "int"},
+      {"name": "val", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"n": 8, "val": 21}, "expected_output": [true]},
+    {"input": {"n": 8, "val": 22}, "expected_output": [false]},
+    {"input": {"n": 15, "val": 377}, "expected_output": [true]},
+    {"input": {"n": 15, "val": 378}, "expected_output": [false]}
+  ]
+}

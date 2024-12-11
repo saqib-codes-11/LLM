@@ -1,0 +1,32 @@
+{
+    "identifier": "branch89",
+    "description": "branch89",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch89(user_input1, user_input2):\n    if user_input1 == 'A':\n        if user_input2 == '1':\n            return 'Option A1 has been chosen'\n        elif user_input2 == '2':\n            return 'Option A2 has been chosen'\n        else:\n            return 'No valid option chosen'\n    elif user_input1 == 'B':\n        if user_input2 == '1':\n            return 'Option B1 has been chosen'\n        elif user_input2 == '2':\n            return 'Option B2 has been chosen'\n        else:\n            return 'No valid option chosen'\n    else:\n        return 'No valid option chosen'"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch89",
+        "parameters": [
+            {
+                "name": "user_input1",
+                "type": "str"
+            },
+            {
+                "name": "user_input2",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            }
+        ]
+    }
+}

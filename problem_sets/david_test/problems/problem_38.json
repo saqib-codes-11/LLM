@@ -1,0 +1,52 @@
+{
+    "identifier": "problem_matrix_multiply",
+    "description": "Implement a function to multiply two matrices.",
+    "function_prototype": {
+        "function_name": "matrix_multiply",
+        "parameters": [
+            {"name": "A", "type": "List[List[int]]"},
+            {"name": "B", "type": "List[List[int]]"}
+        ],
+        "return_values": [{"type": "List[List[int]]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "A": [[1, 2], [3, 4]],
+                "B": [[2, 0], [1, 3]]
+            },
+            "expected_output": [[4, 6], [10, 12]]
+        },
+        {
+            "input": {
+                "A": [[1, 0], [0, 1]],
+                "B": [[4, 1], [2, 2]]
+            },
+            "expected_output": [[4, 1], [2, 2]]
+        }
+    ],
+    "tags": ["Matrix", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the matrix_multiply function that takes two matrices (represented as lists of lists) as arguments and returns the resulting matrix after multiplication.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "A": [[1, 2, 3], [4, 5, 6]],
+                        "B": [[7, 8], [9, 10], [11, 12]]
+                    },
+                    "expected_output": [[58, 64], [139, 154]]
+                },
+                {
+                    "input": {
+                        "A": [[5, 8], [6, 7]],
+                        "B": [[1, 2], [3, 4]]
+                    },
+                    "expected_output": [[29, 38], [27, 34]]
+                }
+            ]
+        }
+    ]
+}

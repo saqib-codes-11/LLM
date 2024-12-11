@@ -1,0 +1,36 @@
+{
+    "identifier": "branch90",
+    "description": "branch90",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch90(x, y, z):\n    if x == 1:\n        if y == 2:\n            if z == 3:\n                return 'Result 1'\n            elif z == 4:\n                return 'Result 2'\n            else:\n                return 'Result 3'\n        elif y == 3:\n            return 'Result 4'\n        elif y == 4:\n            return 'Result 5'\n        else:\n            return 'Result 6'\n    elif x == 2:\n        if y == 2:\n            if z == 3:\n                return 'Result 7'\n            elif z == 4:\n                return 'Result 8'\n            else:\n                return 'Result 9'\n        elif y == 3:\n            return 'Result 10'\n        elif y == 4:\n            return 'Result 11'\n        else:\n            return 'Result 12'\n    else:\n        return 'Result 13'"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch90",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "int"
+            },
+            {
+                "name": "y",
+                "type": "int"
+            },
+            {
+                "name": "z",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "string"
+            }
+        ]
+    }
+}

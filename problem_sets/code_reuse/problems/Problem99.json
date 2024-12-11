@@ -1,0 +1,43 @@
+{
+  "identifier": "square_and_sum_001",
+  "prompts": [
+    {
+      "prompt_id": "square_and_sum_prompt_01",
+      "prompt": "Construct a parent function named 'square_elements' that takes a list of integers `nums` and returns a new list with each element squared. Next, create a child function named 'sum_of_squares' that uses 'square_elements' to compute and return the sum of the squared elements from the list `nums`. If the list is empty, the function should return 0.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [1, 2, 3]},
+          "expected_output": [14]
+        },
+        {
+          "input": {"nums": []},
+          "expected_output": [0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "square_elements",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "sum_of_squares",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [1, 2, 3]}, "expected_output": [14]},
+    {"input": {"nums": [-1, -2, -3]}, "expected_output": [14]},
+    {"input": {"nums": []}, "expected_output": [0]},
+    {"input": {"nums": [0, 0, 0]}, "expected_output": [0]}
+  ]
+}

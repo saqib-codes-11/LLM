@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_31baecf4-5b57-4087-af28-e4b1eb7177cc",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "31baecf4-5b57-4087-af28-e4b1eb7177cc",
+    "solution_code": "from sympy import primerange\n\ndef solve(n: int) -> int:\n    # get first n prime numbers and store in a list\n    primes = [p for p in primerange(1, 999999)][:n]\n    \n    # calculate the product of squares of all primes\n    product = 1\n    for prime in primes:\n        product *= prime**2\n    \n    # sum the even digits in the product\n    sum_even_digits = 0\n    for digit in str(product):\n        if int(digit) % 2 == 0:\n            sum_even_digits += int(digit)\n    \n    return sum_even_digits",
+    "feedback": null
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_3592e836-7869-404b-8dda-f2ae64c45ce4",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "3592e836-7869-404b-8dda-f2ae64c45ce4",
+    "solution_code": "def solve(n: int) -> int:\n    last_digits = [0]*121\n    last_digits[1] = 3\n    last_digits[2] = 8\n\n    for i in range(3, 121):\n        last_digits[i] = (3 * last_digits[i-1] + last_digits[i-2] - 2) % 10\n\n    return last_digits[n]",
+    "feedback": null
+}

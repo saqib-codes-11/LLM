@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "reverse_matrix",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef reverse_matrix(A: np.ndarray) -> np.ndarray:\n    return np.flip(A)",
+    "feedback": null
+}

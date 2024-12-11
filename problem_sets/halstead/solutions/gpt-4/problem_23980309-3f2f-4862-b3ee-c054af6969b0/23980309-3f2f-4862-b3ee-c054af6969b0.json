@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_23980309-3f2f-4862-b3ee-c054af6969b0",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "23980309-3f2f-4862-b3ee-c054af6969b0",
+    "solution_code": "def solve(n: int) -> int:\n    sum_of_triangular_numbers = n * (n + 1) * (n + 2) // 6\n    product = 1\n    for digit in str(sum_of_triangular_numbers):\n        product *= int(digit)\n    return product",
+    "feedback": null
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "elementwise_modulo",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "def vectorized_elementwise_modulo(A, mod_value):\n    return np.mod(A, mod_value)",
+    "feedback": null
+}

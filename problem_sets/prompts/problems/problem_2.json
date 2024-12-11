@@ -1,0 +1,31 @@
+{
+	"identifier": "reverse_vowels_in_string",
+	"description": "This problem tests the ability to manipulate strings. The task is to implement a function that reverses the vowels in a given string.",
+	"function_prototype": {
+		"function_name": "reverse_vowels",
+		"parameters": [{"name": "s", "type": "str"}],
+		"return_values": [{"type": "str"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"s": "hello"}, "expected_output": ["holle"]},
+		{"input": {"s": "world"}, "expected_output": ["world"]}
+	],
+	"tags": ["Strings", "Manipulation"],
+	"prompts": [
+		{
+			"prompt_id": "prompt_only",
+			"prompt": "Implement a function that reverses the vowels in a given string.",
+			"genericize": false,
+			"sample_inputs_outputs": []
+		},
+		{
+			"prompt_id": "prompt_with_tests",
+			"prompt": "Implement a function that reverses the vowels in a given string.\n\nTest Cases:\n- Input: 'hello'\n  Expected Output: 'holle'\n- Input: 'world'\n  Expected Output: 'world'",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"s": "hello"}, "expected_output": ["holle"]},
+				{"input": {"s": "world"}, "expected_output": ["world"]}
+			]
+		}
+	]
+}

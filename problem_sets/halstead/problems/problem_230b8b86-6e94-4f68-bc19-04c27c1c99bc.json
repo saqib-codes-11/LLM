@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_230b8b86-6e94-4f68-bc19-04c27c1c99bc",
+    "prompts": [
+        {
+            "prompt_id": "230b8b86-6e94-4f68-bc19-04c27c1c99bc",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 950), compute the sum of the ninth powers of the first n odd numbers. Return the product of its prime digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                14
+            ]
+        }
+    ]
+}

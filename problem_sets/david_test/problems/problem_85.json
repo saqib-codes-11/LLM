@@ -1,0 +1,32 @@
+{
+    "identifier": "problem_password_manager",
+    "description": "Manage user passwords based on the given operation.",
+    "function_prototype": {
+        "function_name": "manage_passwords",
+        "parameters": [
+            {"name": "operation", "type": "str"},
+            {"name": "username", "type": "str"},
+            {"name": "password", "type": "str"},
+            {"name": "old_password", "type": "str", "optional": true},
+            {"name": "new_password", "type": "str", "optional": true}
+        ],
+        "return_values": [{"type": "str"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"operation": "register", "username": "user1", "password": "password123"}, "expected_output": ["Registered"]},
+        {"input": {"operation": "verify", "username": "user1", "password": "password123"}, "expected_output": [true]},
+        {"input": {"operation": "change", "username": "user1", "password": "password123", "old_password": "password123", "new_password": "password456"}, "expected_output": ["Changed"]}
+    ],
+    "tags": ["Password Management", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the manage_passwords function to handle user password operations such as registration, verification, and changing passwords.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"operation": "register", "username": "user2", "password": "password789"}, "expected_output": ["Registered"]},
+                {"input": {"operation": "verify", "username": "user2", "password": "password789"}, "expected_output": [true]}
+            ]
+        }
+    ]
+}

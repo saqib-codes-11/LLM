@@ -1,0 +1,44 @@
+{
+  "identifier": "power_set_generator_and_checker_001",
+  "prompts": [
+    {
+      "prompt_id": "power_set_generator_and_checker_prompt_01",
+      "prompt": "Write a parent function named 'generate_power_set' that takes a list of integers `lst` and returns a list of lists representing the power set of `lst`. Then create a child function named 'is_in_power_set' that takes a list of integers `lst` and a list of integers `sub_lst`, uses 'generate_power_set' to get the power set of `lst`, and checks whether `sub_lst` is a subset of the power set.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"lst": [1, 2], "sub_lst": [1]},
+          "expected_output": [true]
+        },
+        {
+          "input": {"lst": [1, 2, 3], "sub_lst": [1, 4]},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "generate_power_set",
+    "parameters": [
+      {"name": "lst", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "List[List[int]]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_in_power_set",
+    "parameters": [
+      {"name": "lst", "type": "List[int]"},
+      {"name": "sub_lst", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"lst": [1, 2, 3], "sub_lst": [2, 3]}, "expected_output": [true]},
+    {"input": {"lst": [1, 2, 3], "sub_lst": [1, 2, 3, 4]}, "expected_output": [false]},
+    {"input": {"lst": [1], "sub_lst": []}, "expected_output": [true]},
+    {"input": {"lst": [1, 2], "sub_lst": [3]}, "expected_output": [false]}
+  ]
+}

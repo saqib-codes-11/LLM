@@ -1,0 +1,37 @@
+{
+    "identifier": "problem_shopping_cart",
+    "description": "Perform a series of operations on a shopping cart and return the results.",
+    "function_prototype": {
+        "function_name": "shopping_cart_operations",
+        "parameters": [{"name": "operations", "type": "list"}],
+        "return_values": [{"type": "list"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"operations": [["add_item", "apple", 0.5, 4], ["get_total"]]},
+            "expected_output": ["None", 2.0]
+        },
+        {
+            "input": {"operations": [["add_item", "apple", 0.5, 4], ["add_item", "banana", 0.3, 3], ["get_total"]]},
+            "expected_output": ["None", "None", 2.9]
+        },
+        {
+            "input": {"operations": [["add_item", "apple", 0.5, 4], ["remove_item", "apple"], ["get_total"]]},
+            "expected_output": ["None", "None", 0.0]
+        }
+    ],
+    "tags": ["List Manipulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the shopping_cart_operations function to simulate operations on a shopping cart and return the results.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"operations": [["add_item", "apple", 0.5, 4], ["get_total"]]},
+                    "expected_output": ["None", 2.0]
+                }
+            ]
+        }
+    ]
+}

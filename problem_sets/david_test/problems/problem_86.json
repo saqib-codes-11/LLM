@@ -1,0 +1,28 @@
+{
+    "identifier": "problem_email_validator",
+    "description": "Write a function to validate an email based on a domain whitelist.",
+    "function_prototype": {
+        "function_name": "validate_email",
+        "parameters": [
+            {"name": "domain_whitelist", "type": "list"},
+            {"name": "email", "type": "str"}
+        ],
+        "return_values": [{"type": "bool"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"domain_whitelist": ["example.com"], "email": "test@example.com"}, "expected_output": [true]},
+        {"input": {"domain_whitelist": ["example.com"], "email": "test@sample.com"}, "expected_output": [false]}
+    ],
+    "tags": ["Validation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the validate_email function to determine if an email address is valid based on a domain whitelist.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"domain_whitelist": ["example.net"], "email": "user@example.net"}, "expected_output": [true]},
+                {"input": {"domain_whitelist": ["example.net"], "email": "user@example.com"}, "expected_output": [false]}
+            ]
+        }
+    ]
+}

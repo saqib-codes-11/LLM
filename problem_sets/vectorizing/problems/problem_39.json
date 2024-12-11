@@ -1,0 +1,29 @@
+{
+    "identifier": "elementwise_sqrt",
+    "description": "Given an unvectorized code for elementwise_sqrt, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `elementwise_sqrt` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        result = [[0] * len(A[0]) for _ in range(len(A))]\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                result[i][j] = A[i][j] ** 0.5\n        return result\n    #TAGS: loops, nested loops, power\n    \n    ### Problem 40: Replace Negative Numbers with Zero\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "elementwise_sqrt",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

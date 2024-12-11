@@ -1,0 +1,67 @@
+{
+    "identifier": "problem_276c7142-2eda-4e4c-86b2-08500d535cc3",
+    "prompts": [
+        {
+            "prompt_id": "276c7142-2eda-4e4c-86b2-08500d535cc3",
+            "prompt": "Given a list of integers, find the number of elements that are odd and greater than four times the median of the list. Return the product of the digits of this count.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    3,
+                    8,
+                    12,
+                    16,
+                    20
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    5,
+                    10,
+                    15,
+                    25,
+                    30
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    7,
+                    14,
+                    21,
+                    35,
+                    42
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        }
+    ]
+}

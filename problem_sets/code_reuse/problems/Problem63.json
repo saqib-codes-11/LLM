@@ -1,0 +1,43 @@
+{
+  "identifier": "divisors_and_sum_001",
+  "prompts": [
+    {
+      "prompt_id": "divisors_and_sum_prompt_01",
+      "prompt": "Write a parent function named 'get_divisors' that takes an integer and returns a list of its divisors. Then, write a child function named 'sum_of_divisors' that takes an integer and, utilizing 'get_divisors', returns the sum of its divisors.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"num": 28},
+          "expected_output": [56]
+        },
+        {
+          "input": {"num": 12},
+          "expected_output": [28]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "get_divisors",
+    "parameters": [
+      {"name": "num", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "sum_of_divisors",
+    "parameters": [
+      {"name": "num", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"num": 10}, "expected_output": [18]},
+    {"input": {"num": 20}, "expected_output": [42]},
+    {"input": {"num": 100}, "expected_output": [217]},
+    {"input": {"num": 11}, "expected_output": [12]}
+  ]
+}

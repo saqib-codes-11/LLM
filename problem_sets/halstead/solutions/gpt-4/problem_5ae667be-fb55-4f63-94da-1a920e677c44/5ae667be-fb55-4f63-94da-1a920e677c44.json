@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_5ae667be-fb55-4f63-94da-1a920e677c44",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "5ae667be-fb55-4f63-94da-1a920e677c44",
+    "solution_code": "def solve(n: int) -> int:\n    sequence = [23, 26]\n    sequence += [(21 * sequence[-1] - 17 * sequence[-2] + 24) % 10 for _ in range(18)]\n    return sequence[(n - 1) % 20]",
+    "feedback": null
+}

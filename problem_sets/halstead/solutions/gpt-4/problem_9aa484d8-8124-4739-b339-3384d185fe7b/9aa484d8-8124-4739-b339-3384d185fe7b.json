@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_9aa484d8-8124-4739-b339-3384d185fe7b",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "9aa484d8-8124-4739-b339-3384d185fe7b",
+    "solution_code": "def solve(n: int) -> int:\n    sum_even_sixth_powers = (2*n)**6 * ((2*n+1)**6) // 42\n    evens_sum = sum(int(digit) for digit in str(sum_even_sixth_powers) if int(digit) % 2 == 0)\n    return evens_sum",
+    "feedback": null
+}

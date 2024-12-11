@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_d4521582-afec-47a6-bf46-70e44e41f038",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "d4521582-afec-47a6-bf46-70e44e41f038",
+    "solution_code": "from collections import Counter\nfrom typing import List \n\ndef solve(n: List[int]) -> int:\n    counts = Counter(n)\n    for num, count in counts.items():\n        if count % 2 == 0:\n            return sum(int(digit)**2 for digit in str(num))\n    return -1",
+    "feedback": null
+}

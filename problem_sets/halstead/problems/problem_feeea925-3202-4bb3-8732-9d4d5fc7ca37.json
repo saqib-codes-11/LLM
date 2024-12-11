@@ -1,0 +1,74 @@
+{
+    "identifier": "problem_feeea925-3202-4bb3-8732-9d4d5fc7ca37",
+    "prompts": [
+        {
+            "prompt_id": "feeea925-3202-4bb3-8732-9d4d5fc7ca37",
+            "prompt": "Given a list of positive integers, determine the largest difference between any two numbers. Return the number of even digits in that difference.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    11,
+                    22,
+                    33,
+                    44,
+                    55,
+                    66
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    100,
+                    200,
+                    50,
+                    30,
+                    70,
+                    150
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        }
+    ]
+}

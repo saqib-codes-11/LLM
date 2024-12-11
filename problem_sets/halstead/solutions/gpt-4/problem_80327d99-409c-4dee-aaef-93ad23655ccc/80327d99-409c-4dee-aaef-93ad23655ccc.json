@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_80327d99-409c-4dee-aaef-93ad23655ccc",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "80327d99-409c-4dee-aaef-93ad23655ccc",
+    "solution_code": "from typing import List\n\ndef solve(n: List[int]) -> int:\n    # variables to store the minimum product and the calculations\n    min_prod = 1\n    result = float('inf')\n\n    # Loop through all the elements in the list.\n    for num in n:\n        # If the number is zero, then reset min_prod and continue.\n        if num == 0:\n            min_prod = 1\n            continue\n        # Calculate the new product.\n        min_prod *= num\n        # If this new product is smaller, then update the result.\n        if min_prod < result:\n            result = min_prod\n\n    # Count prime digits in result\n    return len([c for c in str(result) if c in '2357'])",
+    "feedback": null
+}

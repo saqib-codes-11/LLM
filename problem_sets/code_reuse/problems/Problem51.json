@@ -1,0 +1,43 @@
+{
+  "identifier": "square_and_sum_of_squares_001",
+  "prompts": [
+    {
+      "prompt_id": "square_and_sum_of_squares_prompt_01",
+      "prompt": "Write a parent function named 'calculate_square' that takes an integer and returns its square. Then, write a child function named 'calculate_sum_of_squares' that takes a list of integers and, utilizing 'calculate_square', returns the sum of their squares.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"numbers": [1, 2, 3]},
+          "expected_output": [14]
+        },
+        {
+          "input": {"numbers": [4, 5]},
+          "expected_output": [41]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_square",
+    "parameters": [
+      {"name": "a", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "calculate_sum_of_squares",
+    "parameters": [
+      {"name": "numbers", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"numbers": [6, 8]}, "expected_output": [100]},
+    {"input": {"numbers": [2, 3, 4]}, "expected_output": [29]},
+    {"input": {"numbers": [-1, -2, -3]}, "expected_output": [14]},
+    {"input": {"numbers": [0, 0, 0]}, "expected_output": [0]}
+  ]
+}

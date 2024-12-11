@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_41490273-310f-4f1b-9553-f0f1d3e06323",
+    "prompts": [
+        {
+            "prompt_id": "41490273-310f-4f1b-9553-f0f1d3e06323",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 1250), compute the sum of the fifteenth powers of the first n odd prime numbers. Return the product of its prime digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                21
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                3780
+            ]
+        },
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                21
+            ]
+        }
+    ]
+}

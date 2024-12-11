@@ -1,0 +1,29 @@
+{
+    "identifier": "is_orthogonal",
+    "description": "Given an unvectorized code for is_orthogonal, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `is_orthogonal` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        # Assuming A is a square matrix\n        for i in range(len(A)):\n            for j in range(len(A)):\n                dot_product = 0\n                for k in range(len(A)):\n                    dot_product += A[i][k] * A[j][k]\n                if i == j and dot_product != 1:\n                    return False\n                elif i != j and dot_product != 0:\n                    return False\n        return True\n    #TAGS: loops, triple nested loops, multiplication, addition, comparison\n    \n    ### Problem 62: Matrix Anti-Diagonal (Elements from top right to bottom left)\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "is_orthogonal",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "identifier": "branch77",
+    "description": "branch77",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch77(x, y, z):\n    \"\"\"This function takes three user input parameters and returns a final value.\"\"\"\n    if x == 1:\n        if y == 2:\n            if z == 3:\n                return \"x, y, and z are all equal to 1, 2, and 3!\"\n            elif z > 3:\n                return \"x and y are equal to 1 and 2, and z is greater than 3!\"\n            else:\n                return \"x and y are equal to 1 and 2, and z is less than 3!\"\n        elif y > 2:\n            if z == 3:\n                return \"x is equal to 1, y is greater than 2, and z is equal to 3!\"\n            elif z > 3:\n                return \"x is equal to 1, y is greater than 2, and z is greater than 3!\"\n            else:\n                return \"x is equal to 1, y is greater than 2, and z is less than 3!\"\n        else:\n            if z == 3:\n                return \"x is equal to 1, y is less than 2, and z is equal to 3!\"\n            elif z > 3:\n                return \"x is equal to 1, y is less than 2, and z is greater than 3!\"\n            else:\n                return \"x is equal to 1, y is less than 2, and z is less than 3!\"\n    elif x > 1:\n        if y == 2:\n            if z == 3:\n                return \"x is greater than 1, y is equal to 2, and z is equal to 3!\"\n            elif z > 3:\n                return \"x is greater than 1, y is equal to 2, and z is greater than 3!\"\n            else:\n                return \"x is greater than 1, y is equal to 2, and z is less than 3!\"\n        elif y > 2:\n            if z == 3:\n                return \"x is greater than 1, y is greater than 2, and z is equal to 3!\"\n            elif z > 3:\n                return \"x is greater than 1, y is greater than 2, and z is greater than 3!\"\n            else:\n                return \"x is greater than 1, y is greater than 2, and z is less than 3!\"\n        else:\n            if z == 3:\n                return \"x is greater than 1, y is less than 2, and z is equal to 3!\"\n            elif z > 3:\n                return \"x is greater than 1, y is less than 2, and z is greater than 3!\"\n            else:\n                return \"x is greater than 1, y is less than 2, and z is less than 3!\"\n    else:\n        if y == 2:\n            if z == 3:\n                return \"x is less than 1, y is equal to 2, and z is equal to 3!\"\n            elif z > 3:\n                return \"x is less than 1, y is equal to 2, and z is greater than 3!\"\n            else:\n                return \"x is less than 1, y is equal to 2, and z is less than 3!\"\n        elif y > 2:\n            if z == 3:\n                return \"x is less than 1, y is greater than 2, and z is equal to 3!\"\n            elif z > 3:\n                return \"x is less than 1, y is greater than 2, and z is greater than 3!\"\n            else:\n                return \"x is less than 1, y is greater than 2, and z is less than 3!\"\n        else:\n            if z == 3:\n                return \"x is less than 1, y is less than 2, and z is equal to 3!\"\n            elif z > 3:\n                return \"x is less than 1, y is less than 2, and z is greater than 3!\"\n            else:\n                return \"x is less than 1, y is less than 2, and z is less than 3!\""
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch77",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "int"
+            },
+            {
+                "name": "y",
+                "type": "int"
+            },
+            {
+                "name": "z",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "string"
+            }
+        ]
+    }
+}

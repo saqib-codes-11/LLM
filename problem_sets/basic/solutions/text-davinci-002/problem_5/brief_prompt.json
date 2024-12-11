@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_5",
+    "model_identifier": "text-davinci-002",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "\n*/\n\nfunction remainder(a, b) {\n  return a % b;\n}",
+    "feedback": null
+}

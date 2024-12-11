@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_39070428-14a4-4e54-9185-03fa3685f187",
+    "prompts": [
+        {
+            "prompt_id": "39070428-14a4-4e54-9185-03fa3685f187",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 1800), compute the sum of the twenty-sixth powers of the first n even numbers. Return the sum of its even digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                32
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                4
+            ]
+        }
+    ]
+}

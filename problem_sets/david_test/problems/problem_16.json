@@ -1,0 +1,39 @@
+{
+    "identifier": "problem_online_shopping_simulation",
+    "description": "Simulate operations on an online shopping system.",
+    "function_prototype": {
+        "function_name": "online_shopping_simulation",
+        "parameters": [{"name": "operations", "type": "List[Dict[str, Any]]"}],
+        "return_values": [{"type": "List[Any]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "operations": [
+                    {"action": "add_product", "product_id": 1, "name": "Laptop", "price": 1000.0},
+                    {"action": "calculate_total"}
+                ]
+            },
+            "expected_output": ["None", 1000.0]
+        }
+    ],
+    "tags": ["Simulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the online_shopping_simulation function to simulate the behavior of an online shopping system. The function will accept a list of operations and return a list of results for each operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "operations": [
+                            {"action": "add_product", "product_id": 1, "name": "Laptop", "price": 1000.0},
+                            {"action": "calculate_total"}
+                        ]
+                    },
+                    "expected_output": ["None", 1000.0]
+                }
+            ]
+        }
+    ]
+}

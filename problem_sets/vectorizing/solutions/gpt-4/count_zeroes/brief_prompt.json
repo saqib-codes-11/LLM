@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "count_zeroes",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef count_zeroes(A):\n    return np.count_nonzero(np.array(A) == 0)",
+    "feedback": null
+}

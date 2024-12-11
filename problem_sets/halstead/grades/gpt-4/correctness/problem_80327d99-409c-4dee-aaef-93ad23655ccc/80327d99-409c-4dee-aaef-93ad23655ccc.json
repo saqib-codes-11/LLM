@@ -1,0 +1,10 @@
+{
+    "problem_identifier": "problem_80327d99-409c-4dee-aaef-93ad23655ccc",
+    "prompt_identifier": "80327d99-409c-4dee-aaef-93ad23655ccc",
+    "model_identifier": "gpt-4",
+    "score": 0.6666666666666666,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Test failed:\n\tInput: n = [-1, 2, 3, 4, -5, 6]; Expected Output: 2\n\tFunction prototype: solve(n: List[int]) -> int\n\tExpected result: 2 <class 'int'>\n\tActual result: 1 <class 'int'>"
+    ]
+}

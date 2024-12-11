@@ -1,0 +1,47 @@
+{
+    "identifier": "problem_social_network_operations",
+    "description": "Implement a function to perform a set of operations on a social network and return the respective outputs.",
+    "function_prototype": {
+        "function_name": "social_network_operations",
+        "parameters": [
+            {"name": "operations", "type": "List[Tuple[str, union[str, Tuple[str, str]]]]"}
+        ],
+        "return_values": [{"type": "List[Union[List[str], bool, str]]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "operations": [["add_user", "Alice"], ["add_user", "Bob"], ["add_connection", ["Alice", "Bob"]], ["get_friends", "Alice"], ["are_connected", ["Alice", "Bob"]], ["get_user_with_max_friends", ""]]
+            },
+            "expected_output": ["None", "None", "None", ["Bob"], "True", "Alice"]
+        },
+        {
+            "input": {
+                "operations": [["add_user", "Charlie"], ["get_friends", "Charlie"], ["get_user_with_max_friends", ""]]
+            },
+            "expected_output": ["None", [], "Charlie"]
+        }
+    ],
+    "tags": ["Social Network", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the social_network_operations function that takes a list of operations and performs the respective actions on a social network. The function should return a list of results corresponding to each operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "operations": [["add_user", "Dave"], ["add_user", "Eve"], ["get_user_with_max_friends", ""]]
+                    },
+                    "expected_output": ["None", "None", "Dave"]
+                },
+                {
+                    "input": {
+                        "operations": [["add_user", "Frank"], ["add_user", "Grace"], ["add_connection", ["Frank", "Grace"]], ["get_common_friends", ["Frank", "Grace"]]]
+                    },
+                    "expected_output": ["None", "None", "None", []]
+                }
+            ]
+        }
+    ]
+}

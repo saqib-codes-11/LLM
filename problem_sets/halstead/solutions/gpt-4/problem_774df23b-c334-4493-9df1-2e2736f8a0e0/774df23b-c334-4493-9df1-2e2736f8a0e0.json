@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_774df23b-c334-4493-9df1-2e2736f8a0e0",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "774df23b-c334-4493-9df1-2e2736f8a0e0",
+    "solution_code": "from typing import List\nfrom collections import Counter\n\ndef solve(n: List[int]) -> int:\n    counter = Counter(n)\n    for key, value in counter.items():\n        if value == 8:\n            digits_sum = sum(int(digit) for digit in str(key))\n            return pow(digits_sum, 7)",
+    "feedback": null
+}

@@ -1,0 +1,36 @@
+{
+    "identifier": "branch80",
+    "description": "branch80",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch80(num1,num2,num3):\n    # Initialize a variable to store the returned value \n    result = 0 \n    \n    # If num1 is greater than num2, add num3 to result\n    if num1 > num2:\n        result += num3 \n    # If num1 is greater than or equal to num2, subtract num3 from result\n    elif num1 >= num2:\n        result -= num3\n    # If num1 is equal to num2, multiply result by num3\n    elif num1 == num2:\n        result *= num3\n    # If num1 is not greater than, greater than or equal to, or equal to num2, divide result by num3\n    else:\n        result /= num3 \n    \n    # Return the final result \n    return result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch80",
+        "parameters": [
+            {
+                "name": "num1",
+                "type": "int"
+            },
+            {
+                "name": "num2",
+                "type": "int"
+            },
+            {
+                "name": "num3",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

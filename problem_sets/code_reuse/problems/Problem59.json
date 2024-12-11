@@ -1,0 +1,43 @@
+{
+  "identifier": "capitalize_and_title_001",
+  "prompts": [
+    {
+      "prompt_id": "capitalize_and_title_prompt_01",
+      "prompt": "Write a parent function named 'capitalize_first' that takes a string and returns the string with its first letter capitalized. Then, write a child function named 'title_case' that takes a string and, utilizing 'capitalize_first', returns the string with the first letter of every word capitalized.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "hello world"},
+          "expected_output": ["Hello World"]
+        },
+        {
+          "input": {"s": "python programming"},
+          "expected_output": ["Python Programming"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "capitalize_first",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "title_case",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "make it work"}, "expected_output": ["Make It Work"]},
+    {"input": {"s": "keep it simple"}, "expected_output": ["Keep It Simple"]},
+    {"input": {"s": "stay focused"}, "expected_output": ["Stay Focused"]},
+    {"input": {"s": "never give up"}, "expected_output": ["Never Give Up"]}
+  ]
+}

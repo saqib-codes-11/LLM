@@ -1,0 +1,11 @@
+{
+    "problem_identifier": "problem_3",
+    "prompt_identifier": "detailed_prompt",
+    "model_identifier": "text-davinci-002",
+    "score": 0.0,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Test failed: Input: a = 8.0, b = 4.0; Expected Output: 2.0 Result: {'exception': 'unexpected indent (<string>, line 3)', 'traceback': 'Traceback (most recent call last):\\n  File \"/Users/morgang/code/LLMCodingBenchmarkingFramework/execution.py\", line 30, in executor_script\\n    exec(function_code, exec_globals)\\n  File \"<string>\", line 3\\n    The sample inputs and expected outputs above will be used for testing.\\nIndentationError: unexpected indent\\n', 'parameters': [8.0, 4.0], 'function_code': ' The sample inputs and expected outputs above will be used for testing.\\n\\ndef divide(a: float, b: float) -> float:\\n    return a / b'}",
+        "Test failed: Input: a = 9.0, b = 3.0; Expected Output: 3.0 Result: {'exception': 'unexpected indent (<string>, line 3)', 'traceback': 'Traceback (most recent call last):\\n  File \"/Users/morgang/code/LLMCodingBenchmarkingFramework/execution.py\", line 30, in executor_script\\n    exec(function_code, exec_globals)\\n  File \"<string>\", line 3\\n    The sample inputs and expected outputs above will be used for testing.\\nIndentationError: unexpected indent\\n', 'parameters': [9.0, 3.0], 'function_code': ' The sample inputs and expected outputs above will be used for testing.\\n\\ndef divide(a: float, b: float) -> float:\\n    return a / b'}"
+    ]
+}

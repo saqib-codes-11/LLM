@@ -1,0 +1,44 @@
+{
+  "identifier": "prime_generation_and_checking_factors_001",
+  "prompts": [
+    {
+      "prompt_id": "prime_generation_and_checking_factors_prompt_01",
+      "prompt": "Write a parent function named 'generate_primes' that takes an integer `n` and returns the first `n` prime numbers in a list. Then create a child function named 'is_factor_of_primes' that takes two integers `n` and `val`, uses 'generate_primes' to get the first `n` prime numbers, and checks whether `val` is a factor of any of those prime numbers.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"n": 5, "val": 3},
+          "expected_output": [true]
+        },
+        {
+          "input": {"n": 5, "val": 6},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "generate_primes",
+    "parameters": [
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_factor_of_primes",
+    "parameters": [
+      {"name": "n", "type": "int"},
+      {"name": "val", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"n": 10, "val": 2}, "expected_output": [true]},
+    {"input": {"n": 10, "val": 12}, "expected_output": [false]},
+    {"input": {"n": 6, "val": 5}, "expected_output": [true]},
+    {"input": {"n": 6, "val": 16}, "expected_output": [false]}
+  ]
+}

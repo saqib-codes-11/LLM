@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_4",
+    "model_identifier": "gpt-3.5-turbo",
+    "prompt_identifier": "detailed_prompt",
+    "solution_code": "def concatenate(a: str, b: str) -> str:\n    return a + b",
+    "feedback": null
+}

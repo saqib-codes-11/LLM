@@ -1,0 +1,25 @@
+{
+	"identifier": "problem_binary_to_decimal",
+	"description": "Write a function to convert a binary number to its decimal representation.",
+	"function_prototype": {
+		"function_name": "binary_to_decimal",
+		"parameters": [{"name": "binary_num", "type": "str"}],
+		"return_values": [{"type": "int"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"binary_num": "101"}, "expected_output": [5]},
+		{"input": {"binary_num": "10"}, "expected_output": [2]}
+	],
+	"tags": ["Number Conversion", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the binary_to_decimal function to convert a binary number to its decimal representation.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"binary_num": "11"}, "expected_output": [3]},
+				{"input": {"binary_num": "100"}, "expected_output": [4]}
+			]
+		}
+	]
+}

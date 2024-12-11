@@ -1,0 +1,44 @@
+{
+  "identifier": "factorial_and_check_divisibility_001",
+  "prompts": [
+    {
+      "prompt_id": "factorial_and_check_divisibility_prompt_01",
+      "prompt": "Write a parent function named 'calculate_factorial' that takes an integer `n` and returns the factorial of `n`. Then create a child function named 'is_factorial_divisible' that takes two integers `a` and `b`, uses 'calculate_factorial' to get the factorials of `a` and `b`, and checks whether the factorial of `a` is divisible by the factorial of `b`.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"a": 5, "b": 3},
+          "expected_output": [true]
+        },
+        {
+          "input": {"a": 3, "b": 5},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_factorial",
+    "parameters": [
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_factorial_divisible",
+    "parameters": [
+      {"name": "a", "type": "int"},
+      {"name": "b", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"a": 6, "b": 4}, "expected_output": [true]},
+    {"input": {"a": 4, "b": 6}, "expected_output": [false]},
+    {"input": {"a": 7, "b": 0}, "expected_output": [true]},
+    {"input": {"a": 0, "b": 7}, "expected_output": [false]}
+  ]
+}

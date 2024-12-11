@@ -1,0 +1,31 @@
+{
+    "identifier": "depth_first_search",
+    "description": "This problem tests the ability to work with graphs. The task is to implement a function that performs a depth-first search on a graph represented as an adjacency list.",
+    "function_prototype": {
+        "function_name": "depth_first_search",
+        "parameters": [{"name": "graph", "type": "Dict[int, List[int]]"}, {"name": "start", "type": "int"}],
+        "return_values": [{"type": "List[int]"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"graph": {"1": [2, 3], "2": [4], "3": [], "4": []}, "start": 1}, "expected_output": [1, 2, 4, 3]},
+        {"input": {"graph": {"1": [2, 3], "2": [1], "3": [1]}, "start": 1}, "expected_output": [1, 2, 3]}
+    ],
+    "tags": ["Graphs", "DFS"],
+    "prompts": [
+        {
+            "prompt_id": "prompt_only",
+            "prompt": "Implement a function that performs a depth-first search on a graph represented as an adjacency list.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "prompt_with_tests",
+            "prompt": "Implement a function that performs a depth-first search on a graph represented as an adjacency list.\n\nTest Cases:\n- Input: graph = {1: [2, 3], 2: [4], 3: [], 4: []}, start = 1\n  Expected Output: [1, 2, 4, 3]\n- Input: graph = {1: [2, 3], 2: [1], 3: [1]}, start = 1\n  Expected Output: [1, 2, 3]",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"graph": {"1": [2, 3], "2": [4], "3": [], "4": []}, "start": 1}, "expected_output": [1, 2, 4, 3]},
+                {"input": {"graph": {"1": [2, 3], "2": [1], "3": [1]}, "start": 1}, "expected_output": [1, 2, 3]}
+            ]
+        }
+    ]
+}

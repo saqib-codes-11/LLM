@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "count_greater_than",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef count_greater_than(A, value):\n    return np.sum(np.array(A) > value)",
+    "feedback": null
+}

@@ -1,0 +1,44 @@
+{
+  "identifier": "list_reversal_retrieval_001",
+  "prompts": [
+    {
+      "prompt_id": "list_reversal_retrieval_prompt_01",
+      "prompt": "Write a parent function named 'reverse_list' that takes a list as an argument and returns the reversed list. Then, write a child function named 'retrieve_element_from_reversed' that takes a list and an index as arguments, and utilizes 'reverse_list' to retrieve the element at the specified index from the reversed list.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"lst": [1, 2, 3, 4, 5], "index": 1},
+          "expected_output": [4]
+        },
+        {
+          "input": {"lst": ["apple", "banana", "cherry"], "index": 0},
+          "expected_output": ["cherry"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "reverse_list",
+    "parameters": [
+      {"name": "lst", "type": "list"}
+    ],
+    "return_values": [
+      {"type": "list"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "retrieve_element_from_reversed",
+    "parameters": [
+      {"name": "lst", "type": "list"},
+      {"name": "index", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "any"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"lst": [10, 20, 30, 40, 50], "index": 3}, "expected_output": [20]},
+    {"input": {"lst": ["dog", "cat", "mouse"], "index": 2}, "expected_output": ["dog"]},
+    {"input": {"lst": [5, 4, 3, 2, 1], "index": 0}, "expected_output": [1]},
+    {"input": {"lst": ["a", "b", "c", "d", "e"], "index": 4}, "expected_output": ["a"]}
+  ]
+}

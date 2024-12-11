@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "count_negative",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef count_negative(A):\n    return np.sum(np.array(A) < 0)",
+    "feedback": null
+}

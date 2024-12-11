@@ -1,0 +1,36 @@
+{
+    "identifier": "branch54",
+    "description": "branch54",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch54(num1, num2, num3):\n  if num1 > num2:\n    if num1 > num3:\n      return num1\n    else:\n      return num3\n  else:\n    if num2 > num3:\n      return num2\n    else:\n      return num3"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch54",
+        "parameters": [
+            {
+                "name": "num1",
+                "type": "int"
+            },
+            {
+                "name": "num2",
+                "type": "int"
+            },
+            {
+                "name": "num3",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

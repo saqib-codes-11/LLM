@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "translate_matrix",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef translate_matrix(A, c):\n    # Convert list of lists A to a numpy array\n    A = np.array(A)\n    \n    # Add c to every element of A\n    result = A + c\n    \n    return result.tolist()",
+    "feedback": null
+}

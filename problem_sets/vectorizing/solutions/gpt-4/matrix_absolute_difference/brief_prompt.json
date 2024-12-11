@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "matrix_absolute_difference",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef matrix_absolute_difference(A, B):\n    A = np.array(A)\n    B = np.array(B)\n    \n    result = np.abs(A - B)\n    \n    return result",
+    "feedback": null
+}

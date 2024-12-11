@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_8bffba85-1857-4797-9a0a-b8c4a6bb8874",
+    "prompts": [
+        {
+            "prompt_id": "8bffba85-1857-4797-9a0a-b8c4a6bb8874",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 1400), compute the sum of the eighth powers of the first n even numbers. Return the sum of its even digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                8
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                8
+            ]
+        }
+    ]
+}

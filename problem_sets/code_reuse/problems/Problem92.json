@@ -1,0 +1,43 @@
+{
+  "identifier": "reverse_and_sum_elements_001",
+  "prompts": [
+    {
+      "prompt_id": "reverse_and_sum_elements_prompt_01",
+      "prompt": "Develop a parent function named 'reverse_list' that takes a list of integers `nums` and returns a list with the order of elements reversed. Then, create a child function named 'sum_reversed' that takes a list of integers `nums`, uses 'reverse_list' to reverse the order of its elements, and returns the sum of all elements in the reversed list.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [1, 2, 3]},
+          "expected_output": [6]
+        },
+        {
+          "input": {"nums": [-1, -2, -3]},
+          "expected_output": [-6]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "reverse_list",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "sum_reversed",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [1, 1, 1]}, "expected_output": [3]},
+    {"input": {"nums": [3, 2, 1]}, "expected_output": [6]},
+    {"input": {"nums": [-1, 2, -3]}, "expected_output": [-2]},
+    {"input": {"nums": [0, 0, 0]}, "expected_output": [0]}
+  ]
+}

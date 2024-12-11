@@ -1,0 +1,32 @@
+{
+    "identifier": "branch63",
+    "description": "branch63",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch63(input1, input2):\n    if input1 == 1 and input2 == 1:\n        return 0\n    elif input1 == 1 and input2 == 2:\n        return 1\n    elif input1 == 1 and input2 == 3:\n        return 2\n    elif input1 == 2 and input2 == 1:\n        return 3\n    elif input1 == 2 and input2 == 2:\n        return 4\n    elif input1 == 2 and input2 == 3:\n        return 5\n    elif input1 == 3 and input2 == 1:\n        return 6\n    elif input1 == 3 and input2 == 2:\n        return 7\n    elif input1 == 3 and input2 == 3:\n        return 8"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch63",
+        "parameters": [
+            {
+                "name": "input1",
+                "type": "int"
+            },
+            {
+                "name": "input2",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

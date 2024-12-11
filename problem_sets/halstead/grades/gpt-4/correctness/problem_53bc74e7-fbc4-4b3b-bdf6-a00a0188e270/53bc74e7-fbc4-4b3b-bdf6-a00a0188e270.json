@@ -1,0 +1,10 @@
+{
+    "problem_identifier": "problem_53bc74e7-fbc4-4b3b-bdf6-a00a0188e270",
+    "prompt_identifier": "53bc74e7-fbc4-4b3b-bdf6-a00a0188e270",
+    "model_identifier": "gpt-4",
+    "score": 0.6666666666666666,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Test failed:\n\tInput: n = 1; Expected Output: 5\n\tFunction prototype: solve(n: int) -> int\n\tExpected result: 5 <class 'int'>\n\tActual result: 8 <class 'int'>"
+    ]
+}

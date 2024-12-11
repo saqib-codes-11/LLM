@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_36fc5e92-3210-4d64-bffd-4e113aa7a019",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "36fc5e92-3210-4d64-bffd-4e113aa7a019",
+    "solution_code": "def solve(n: int) -> int:\n    a, b = 1, 2\n    for i in range(2, n):\n        a, b = b, a * b + 1\n    return sum(map(int, str(b)))",
+    "feedback": null
+}

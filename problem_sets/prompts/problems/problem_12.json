@@ -1,0 +1,33 @@
+{
+    "identifier": "count_vowels",
+    "description": "This problem tests the ability to work with strings. The task is to implement a function that counts the number of vowels in a given string.",
+    "function_prototype": {
+        "function_name": "count_vowels",
+        "parameters": [{"name": "text", "type": "str"}],
+        "return_values": [{"type": "int"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"text": ""}, "expected_output": [0]},
+        {"input": {"text": "try"}, "expected_output": [0]},
+        {"input": {"text": "apple"}, "expected_output": [2]}
+    ],
+    "tags": ["String"],
+    "prompts": [
+        {
+            "prompt_id": "prompt_only",
+            "prompt": "Count vowels in a string.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "prompt_with_tests",
+            "prompt": "Write a function called `count_vowels` that takes a string and returns the number of vowels. \n\nTest Cases:\n- Input: ''\n  Expected Output: 0\n- Input: 'try'\n  Expected Output: 0\n- Input: 'apple'\n  Expected Output: 2",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"text": ""}, "expected_output": [0]},
+                {"input": {"text": "try"}, "expected_output": [0]},
+                {"input": {"text": "apple"}, "expected_output": [2]}
+            ]
+        }
+    ]
+}

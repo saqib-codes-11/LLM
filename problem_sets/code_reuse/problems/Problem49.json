@@ -1,0 +1,44 @@
+{
+  "identifier": "division_and_reciprocal_001",
+  "prompts": [
+    {
+      "prompt_id": "division_and_reciprocal_prompt_01",
+      "prompt": "Write a parent function named 'divide_numbers' that takes two floats and returns their division as a float rounded to two decimal places. Then, write a child function named 'find_reciprocal' that takes a float and, utilizing 'divide_numbers', returns its reciprocal rounded to two decimal places. Return 'undefined' if the reciprocal cannot be found.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"number": 4.0},
+          "expected_output": [0.25]
+        },
+        {
+          "input": {"number": 0.5},
+          "expected_output": [2.0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "divide_numbers",
+    "parameters": [
+      {"name": "a", "type": "float"},
+      {"name": "b", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "find_reciprocal",
+    "parameters": [
+      {"name": "number", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"number": 3.0}, "expected_output": [0.33]},
+    {"input": {"number": -4.0}, "expected_output": [-0.25]},
+    {"input": {"number": 0.0}, "expected_output": ["undefined"]},
+    {"input": {"number": 2.0}, "expected_output": [0.5]}
+  ]
+}

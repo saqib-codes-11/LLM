@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_99c24df1-98b0-4d91-9f7e-f6842642b062",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "99c24df1-98b0-4d91-9f7e-f6842642b062",
+    "solution_code": "We can observe a pattern in the last digit of the sequence. \n\nThe first few terms of the sequence are: \n\n12, 15, 113, 1058, 10475, 103688, ...\n\nSo, the last digits of the terms are:\n\n2, 5, 3, 8, 5, 8, ...\n\nWe can observe that after the first two terms, the pattern of last digits starts to repeat every four terms. The pattern is 2, 5, 3, 8.\n\nSo, the solution is to find the remainder of n modulo 4, and map it to the corresponding term in the repeating pattern of last digits.\n\n\ndef solve(n: int) -> int:\n    # Map remainder of n modulo 4 to corresponding term in repeating pattern of last digits.\n    return {0: 2, 1: 5, 2: 3, 3: 8}[n % 4]",
+    "feedback": null
+}

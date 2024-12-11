@@ -1,0 +1,52 @@
+{
+    "identifier": "problem_voting_winner",
+    "description": "Given a list of candidates and a list of votes, determine the candidate with the most votes. If there's a tie, return a list of tied candidate names.",
+    "function_prototype": {
+        "function_name": "calculate_winner",
+        "parameters": [
+            {"name": "candidates", "type": "List[str]"},
+            {"name": "votes", "type": "List[str]"}
+        ],
+        "return_values": [{"type": "Union[str, List[str]]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "candidates": ["Alice", "Bob", "Charlie"],
+                "votes": ["Alice", "Bob", "Charlie", "Alice", "Charlie", "Charlie"]
+            },
+            "expected_output": ["Charlie"]
+        },
+        {
+            "input": {
+                "candidates": ["Alice", "Bob"],
+                "votes": ["Alice", "Bob", "Alice", "Bob"]
+            },
+            "expected_output": ["Alice", "Bob"]
+        }
+    ],
+    "tags": ["Voting", "List Manipulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the calculate_winner function to determine the winning candidate based on the list of votes. If multiple candidates tie for the most votes, return all of them.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "candidates": ["Alice", "Bob", "Charlie"],
+                        "votes": ["Alice", "Bob", "Charlie", "Alice", "Charlie", "Charlie"]
+                    },
+                    "expected_output": ["Charlie"]
+                },
+                {
+                    "input": {
+                        "candidates": ["Alice", "Bob"],
+                        "votes": ["Alice", "Bob", "Alice", "Bob"]
+                    },
+                    "expected_output": ["Alice", "Bob"]
+                }
+            ]
+        }
+    ]
+}

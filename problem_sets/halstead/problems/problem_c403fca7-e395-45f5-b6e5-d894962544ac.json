@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_c403fca7-e395-45f5-b6e5-d894962544ac",
+    "prompts": [
+        {
+            "prompt_id": "c403fca7-e395-45f5-b6e5-d894962544ac",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 650), calculate the sum of the fifth powers of the first n even numbers. Return the product of its even digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                2
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                6
+            ]
+        }
+    ]
+}

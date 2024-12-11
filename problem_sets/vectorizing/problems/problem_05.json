@@ -1,0 +1,33 @@
+{
+    "identifier": "scalar_multiplication",
+    "description": "Given an unvectorized code for scalar_multiplication, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `scalar_multiplication` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A, s):\n        # UNVECTORIZE THIS\n        result = [[0] * len(A[0]) for _ in range(len(A))]\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                result[i][j] = A[i][j] * s\n        return result\n    #TAGS: loops, multiplication, nested loops\n    \n    ### Problem 6: Row-wise Sum\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "scalar_multiplication",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            },
+            {
+                "name": "s",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

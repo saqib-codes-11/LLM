@@ -1,0 +1,40 @@
+{
+    "identifier": "problem_library_system",
+    "description": "Simulate operations on a library system.",
+    "function_prototype": {
+        "function_name": "library_operations",
+        "parameters": [{"name": "operations", "type": "List[Dict[str, Any]]"}],
+        "return_values": [{"type": "List[Any]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "operations": [
+                    {"action": "add_book", "title": "Book1", "author": "Author1", "isbn": "123"},
+                    {"action": "check_out", "isbn": "123"},
+                    {"action": "find_available_books"}
+                ]
+            },
+            "expected_output": ["None", "None", []]
+        }
+    ],
+    "tags": ["Simulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the library_operations function to simulate the behavior of a library system. The function will accept a list of operations and return a list of results for each operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "operations": [
+                            {"action": "add_book", "title": "Book1", "author": "Author1", "isbn": "123"},
+                            {"action": "find_available_books"}
+                        ]
+                    },
+                    "expected_output": ["None", [{"title": "Book1", "author": "Author1", "isbn": "123", "available": "True"}]]
+                }
+            ]
+        }
+    ]
+}

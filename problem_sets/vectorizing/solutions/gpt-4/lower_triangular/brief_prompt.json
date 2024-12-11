@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "lower_triangular",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "def lower_triangular(A):\n    A = np.array(A)\n    return np.tril(A)",
+    "feedback": null
+}

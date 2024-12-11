@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_1",
+    "model_identifier": "text-davinci-002",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "\n\ndef multiply(a: int, b: int) -> int:\n    return a * b",
+    "feedback": null
+}

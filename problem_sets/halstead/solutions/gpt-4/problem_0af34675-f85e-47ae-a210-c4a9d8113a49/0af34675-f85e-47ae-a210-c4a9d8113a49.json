@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_0af34675-f85e-47ae-a210-c4a9d8113a49",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "0af34675-f85e-47ae-a210-c4a9d8113a49",
+    "solution_code": "from typing import List\n\ndef solve(n: List[int]) -> int:\n    # Calculating the median of the input list\n    median = sorted(n)[len(n)//2]\n    # Counting the number of elements in the list that are odd and less than the median\n    cnt = sum(1 for i in n if i < median and i % 2 == 1)\n    # Calculating the product of the digits of the count\n    res = 1\n    for dig in str(cnt):\n        res *= int(dig)\n    return res",
+    "feedback": null
+}

@@ -1,0 +1,27 @@
+{
+    "identifier": "problem_array_operations",
+    "description": "Implement a function to perform complex operations on an array: compute the product of all pairs of elements, count the number of odd elements, and return a list of unique elements.",
+    "function_prototype": {
+        "function_name": "array_operations",
+        "parameters": [
+            {"name": "arr", "type": "List[int]"}
+        ],
+        "return_values": [{"type": "List[int, int, List[int]]"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"arr": [1, 2, 3]}, "expected_output": [6, 2, [1, 2, 3]]},
+        {"input": {"arr": [1, 1, 2]}, "expected_output": [2, 1, [1, 2]]}
+    ],
+    "tags": ["Array", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the array_operations function that computes the product of all pairs of elements in the array, counts the number of odd elements, and returns a list of unique elements. The function should return a tuple containing these three results respectively.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"arr": [2, 4, 6]}, "expected_output": [48, 0, [2, 4, 6]]},
+                {"input": {"arr": [5, 5, 7]}, "expected_output": [35, 3, [5, 7]]}
+            ]
+        }
+    ]
+}

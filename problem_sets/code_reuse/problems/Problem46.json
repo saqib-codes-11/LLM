@@ -1,0 +1,43 @@
+{
+  "identifier": "maximum_and_second_maximum_001",
+  "prompts": [
+    {
+      "prompt_id": "maximum_and_second_maximum_prompt_01",
+      "prompt": "Write a parent function named 'find_maximum' that takes a list of numbers and returns the maximum number. Then, write a child function named 'find_second_maximum' that takes a list of numbers and, utilizing 'find_maximum', returns the second maximum number.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"numbers": [1, 2, 3, 4, 5]},
+          "expected_output": [4]
+        },
+        {
+          "input": {"numbers": [11, 33, 22]},
+          "expected_output": [22]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "find_maximum",
+    "parameters": [
+      {"name": "numbers", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "find_second_maximum",
+    "parameters": [
+      {"name": "numbers", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"numbers": [2, 5, 1, 8, 7]}, "expected_output": [7]},
+    {"input": {"numbers": [12, 14, 15, 13]}, "expected_output": [14]},
+    {"input": {"numbers": [6, 4, 5, 6]}, "expected_output": [6]},
+    {"input": {"numbers": [1, 3, 2]}, "expected_output": [2]}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "count_non_zero",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef vectorized_count_non_zero(A):\n    return np.count_nonzero(A)",
+    "feedback": null
+}

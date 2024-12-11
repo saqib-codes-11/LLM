@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_3bc1af8d-a03d-44bb-81bb-b98ce642fa5d",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "3bc1af8d-a03d-44bb-81bb-b98ce642fa5d",
+    "solution_code": "import math\n\ndef solve(n: int) -> int:\n    phi = (1 + math.sqrt(5)) / 2\n    return sum(int(digit) for digit in str(round((phi ** n) / math.sqrt(5))))",
+    "feedback": null
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "is_orthogonal",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef is_orthogonal(A):\n    A = np.array(A)\n    product = np.dot(A, A.T)\n    \n    # check if product is an identity matrix\n    identity = np.eye(A.shape[0])\n    return np.allclose(product, identity)",
+    "feedback": null
+}

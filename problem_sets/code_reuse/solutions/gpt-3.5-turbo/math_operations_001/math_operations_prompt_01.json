@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "math_operations_001",
+    "model_identifier": "gpt-3.5-turbo",
+    "prompt_identifier": "math_operations_prompt_01",
+    "solution_code": "import math\n\ndef calculate_square(n: float) -> float:\n    return n ** 2\n\ndef calculate_square_root(n: float) -> float:\n    guess = n / 2\n    while abs(guess ** 2 - n) > 0.0001:\n        guess = (guess + n / guess) / 2\n        \n    return guess\n\n# Run test cases\nprint(calculate_square_root(9))  # Expected output: 3\nprint(calculate_square_root(25))  # Expected output: 5",
+    "feedback": null
+}

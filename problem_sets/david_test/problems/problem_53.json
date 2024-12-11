@@ -1,0 +1,25 @@
+{
+    "identifier": "problem_gc_content",
+    "description": "Write a function to calculate the GC content of a DNA sequence.",
+    "function_prototype": {
+        "function_name": "calculate_gc_content",
+        "parameters": [{"name": "sequence", "type": "str"}],
+        "return_values": [{"type": "float"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"sequence": "GATTACA"}, "expected_output": [28.5714]},
+        {"input": {"sequence": "CCGGAA"}, "expected_output": [50.0]}
+    ],
+    "tags": ["Biology", "Strings", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `calculate_gc_content` function that takes a DNA sequence string as input and returns the GC content of the sequence as a percentage (rounded to 4 decimal places).",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"sequence": "GCAT"}, "expected_output": [50.0000]},
+                {"input": {"sequence": "ATATAT"}, "expected_output": [0.0000]}
+            ]
+        }
+    ]
+}

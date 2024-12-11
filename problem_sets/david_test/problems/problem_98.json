@@ -1,0 +1,31 @@
+{
+    "identifier": "problem_order_processor",
+    "description": "Given a list of orders, return a list of processed orders.",
+    "function_prototype": {
+        "function_name": "process_orders",
+        "parameters": [
+            {"name": "orders", "type": "List[Dict[str, Union[str, int]]]"}
+        ],
+        "return_values": [{"type": "List[Dict[str, Union[str, int, str]]]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"orders": [{"item": "apple", "quantity": 5}, {"item": "banana", "quantity": 3}]},
+            "expected_output": [{"item": "apple", "quantity": 5, "status": "Processed"}, {"item": "banana", "quantity": 3, "status": "Processed"}]
+        }
+    ],
+    "tags": ["Queue", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "order_processor_description",
+            "prompt": "Implement the process_orders function to return a list of processed orders. Each processed order should have 'item', 'quantity', and 'status' keys with 'status' always being 'Processed'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"orders": [{"item": "orange", "quantity": 2}, {"item": "grape", "quantity": 7}]},
+                    "expected_output": [{"item": "orange", "quantity": 2, "status": "Processed"}, {"item": "grape", "quantity": 7, "status": "Processed"}]
+                }
+            ]
+        }
+    ]
+}

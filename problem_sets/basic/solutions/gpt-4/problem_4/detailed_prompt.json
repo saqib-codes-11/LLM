@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_4",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "detailed_prompt",
+    "solution_code": "def divide(a: float, b: float) -> float:\n    return a / b",
+    "feedback": null
+}

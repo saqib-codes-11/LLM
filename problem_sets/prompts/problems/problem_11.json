@@ -1,0 +1,33 @@
+{
+    "identifier": "multiply_list",
+    "description": "This problem tests the ability to work with lists. The task is to implement a function that multiplies all numbers in a list.",
+    "function_prototype": {
+        "function_name": "multiply_list",
+        "parameters": [{"name": "nums", "type": "List[int]"}],
+        "return_values": [{"type": "int"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"nums": []}, "expected_output": [1]},
+        {"input": {"nums": [2]}, "expected_output": [2]},
+        {"input": {"nums": [1, 2, 3]}, "expected_output": [6]}
+    ],
+    "tags": ["Lists", "Math"],
+    "prompts": [
+        {
+            "prompt_id": "prompt_only",
+            "prompt": "Write a function to multiply numbers in a list.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "prompt_with_tests",
+            "prompt": "Write a function called `multiply_list` that takes a list of numbers and returns the product of all the numbers. \n\nTest Cases:\n- Input: nums = []\n  Expected Output: 1\n- Input: nums = [2]\n  Expected Output: 2\n- Input: nums = [1, 2, 3]\n  Expected Output: 6",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"nums": []}, "expected_output": [1]},
+                {"input": {"nums": [2]}, "expected_output": [2]},
+                {"input": {"nums": [1, 2, 3]}, "expected_output": [6]}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_3c2279b4-5ad2-45f4-8c8c-e700541e645b",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "3c2279b4-5ad2-45f4-8c8c-e700541e645b",
+    "solution_code": "import math\n\ndef solve(n: int) -> int:\n    \n    def is_prime(num: int) -> bool:\n        square = math.isqrt(num) + 1\n        for divisor in range(2, square):\n            if num % divisor == 0:\n                return False\n        return True\n    \n    primes = []\n    count = 0\n    while len(primes) < n:\n        count += 1\n        if is_prime(count):\n            primes.append(count)\n    digital_sum = sum(int(digit) for digit in str(sum(primes)))\n    return digital_sum",
+    "feedback": null
+}

@@ -1,0 +1,25 @@
+{
+	"identifier": "word_frequency_operations_problem",
+	"description": "Implement a function to process a series of word frequency operations and return the corresponding results.",
+	"function_prototype": {
+		"function_name": "word_frequency_operations",
+		"parameters": [
+            {"name": "operations", "type": "List[Tuple[str, Union[str, int]]]"}
+        ],
+		"return_values": [{"type": "List[Union[int, List[Tuple[str, int]]]]"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"operations": [["add", "apple"], ["add", "apple"], ["add", "banana"], ["get_count", "apple"], ["get_most_common", 2]]}, "expected_output": [["None", "None", "None", 2, [["apple", 2], ["banana", 1]]]]}
+	],
+	"tags": ["Data Structures", "Dictionary"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the 'word_frequency_operations' function that takes in a list of operations and performs them on a word frequency counter, returning the corresponding results.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"operations": [["add", "hello"], ["get_count", "hello"], ["add", "world"], ["get_most_common", 1]]}, "expected_output": [["None", 1, "None", [["hello", 1]]]]}
+			]
+		}
+	]
+}

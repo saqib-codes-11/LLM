@@ -1,0 +1,69 @@
+{
+    "identifier": "problem_3916586a-19bb-4adb-bd33-c0ad57a62265",
+    "prompts": [
+        {
+            "prompt_id": "3916586a-19bb-4adb-bd33-c0ad57a62265",
+            "prompt": "Given a list of positive integers, find the element that appears exactly twice in the list. Return the sum of the digits of this element squared.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    1
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    10,
+                    20,
+                    30,
+                    40,
+                    50,
+                    10
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    250,
+                    350,
+                    150,
+                    250,
+                    450
+                ]
+            },
+            "expected_output": [
+                13
+            ]
+        }
+    ]
+}

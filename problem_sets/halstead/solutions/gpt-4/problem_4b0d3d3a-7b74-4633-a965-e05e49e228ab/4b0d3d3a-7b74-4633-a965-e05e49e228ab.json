@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_4b0d3d3a-7b74-4633-a965-e05e49e228ab",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "4b0d3d3a-7b74-4633-a965-e05e49e228ab",
+    "solution_code": "def solve(n: int) -> int:\n    # Precalculate the numbers in the sequence.\n    precalculated = [0]*191\n    precalculated[1] = 8\n    precalculated[2] = 11\n    for i in range(3, 191):\n        precalculated[i] = 6*precalculated[i-1] - 2*precalculated[i-2] + 9\n\n    # Return the first digit of the nth number in the sequence.\n    return int(str(precalculated[n])[0])",
+    "feedback": null
+}

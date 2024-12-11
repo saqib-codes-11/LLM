@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "is_square",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef is_square(A):\n        # VECTORIZE THIS\n        return A.shape[0] == A.shape[1]",
+    "feedback": null
+}

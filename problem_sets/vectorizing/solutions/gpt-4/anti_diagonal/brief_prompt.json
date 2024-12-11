@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "anti_diagonal",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef anti_diagonal(A):\n    A = np.array(A)\n    return np.flip(A).diagonal().tolist()",
+    "feedback": null
+}

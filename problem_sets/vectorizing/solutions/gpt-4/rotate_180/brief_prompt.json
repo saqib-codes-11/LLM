@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "rotate_180",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef rotate_180(A):\n    # Convert the list to numpy array\n    A = np.array(A)\n    \n    # Using numpy flip, reverse the order of elements in the array along both the axis to get the rotated matrix\n    result = np.flip(np.flip(A, 0), 1)\n    \n    return result.tolist()",
+    "feedback": null
+}

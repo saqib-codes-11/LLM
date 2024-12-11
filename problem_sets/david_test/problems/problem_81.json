@@ -1,0 +1,28 @@
+{
+    "identifier": "problem_2",
+    "description": "Write a function to validate phone numbers based on a set of rules.",
+    "function_prototype": {
+        "function_name": "validate_phone_number",
+        "parameters": [
+            {"name": "phone_number", "type": "str"},
+            {"name": "validation_functions", "type": "list[callable]"}
+        ],
+        "return_values": [{"type": "bool"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"phone_number": "9876543210", "validation_functions": ["has_ten_digits", "starts_with_9"]}, "expected_output": [true]},
+        {"input": {"phone_number": "8765432109", "validation_functions": ["has_ten_digits", "starts_with_9"]}, "expected_output": [false]}
+    ],
+    "tags": ["Validation", "Intermediate"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the validate_phone_number function to determine if a phone number is valid based on the given validation functions.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"phone_number": "1234567890", "validation_functions": ["has_ten_digits"]}, "expected_output": [true]},
+                {"input": {"phone_number": "12345", "validation_functions": ["has_ten_digits"]}, "expected_output": [false]}
+            ]
+        }
+    ]
+}

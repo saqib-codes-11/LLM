@@ -1,0 +1,37 @@
+{
+	"identifier": "problem_stack_operations",
+	"description": "Write a function to simulate stack operations: push, pop, and peek.",
+	"function_prototype": {
+		"function_name": "process_stack_operations",
+		"parameters": [{"name": "operations", "type": "List[str]"}],
+		"return_values": [{"type": "List[Union[int, str]]"}]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {"operations": ["push:5", "push:10", "peek", "pop", "peek", "pop", "peek"]},
+			"expected_output": [["Done", "Done", 10, 10, 5, 5, "Empty"]]
+		},
+		{
+			"input": {"operations": ["push:3", "push:4", "pop", "peek", "pop", "peek"]},
+			"expected_output": [["Done", "Done", 4, 3, 3, "Empty"]]
+		}
+	],
+	"tags": ["Stack", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the process_stack_operations function to simulate basic stack operations. The operations are provided as a list of strings: 'push:x' (to push x onto the stack), 'pop' (to pop the topmost item), and 'peek' (to view the topmost item without removing it).",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {"operations": ["push:2", "push:3", "peek", "pop"]},
+					"expected_output": [["Done", "Done", 3, 3]]
+				},
+				{
+					"input": {"operations": ["push:10", "peek", "pop", "peek"]},
+					"expected_output": [["Done", 10, 10, "Empty"]]
+				}
+			]
+		}
+	]
+}

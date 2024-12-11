@@ -1,0 +1,49 @@
+{
+	"identifier": "grocery_store_operations_problem",
+	"description": "You are given a list of commands to simulate the operations of a grocery store. Implement the function that processes these commands.",
+	"function_prototype": {
+		"function_name": "grocery_store_operations",
+		"parameters": [
+            {"name": "commands", "type": "List[List[Union[str, float]]]"}
+        ],
+		"return_values": [{"type": "List[Union[str, float]]"}]
+	},
+	"correctness_test_suite": [
+		{
+            "input": {
+                "commands": [
+                    ["initialize"],
+                    ["add_item", "apple", 0.5, 100],
+                    ["add_item", "banana", 0.3, 50],
+                    ["calculate_total", ["apple", "banana"]],
+                    ["remove_item", "banana"],
+                    ["calculate_total", ["apple", "banana"]]
+                ]
+            },
+            "expected_output": ["None", "None", "None", 0.8, "None", 0.5]
+        }
+	],
+	"tags": ["Simulation", "Lists", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the grocery_store_operations function to process a list of commands and simulate the operations of a grocery store.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+                    "input": {
+                        "commands": [
+                            ["initialize"],
+                            ["add_item", "apple", 0.5, 100],
+                            ["add_item", "banana", 0.3, 50],
+                            ["calculate_total", ["apple", "banana"]],
+                            ["remove_item", "banana"],
+                            ["calculate_total", ["apple", "banana"]]
+                        ]
+                    },
+                    "expected_output": ["None", "None", "None", 0.8, "None", 0.5]
+                }
+			]
+		}
+	]
+}

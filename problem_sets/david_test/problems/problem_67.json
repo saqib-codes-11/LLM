@@ -1,0 +1,82 @@
+{
+    "identifier": "problem_2",
+    "description": "Manage users' following and followers in a social media application.",
+    "function_prototype": {
+        "function_name": "manage_users",
+        "parameters": [
+            {"name": "action", "type": "str"},
+            {"name": "users", "type": "dict"},
+            {"name": "username", "type": "str"},
+            {"name": "other_username", "type": "str or None"}
+        ],
+        "return_values": [{"type": "dict or set"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "action": "follow",
+                "users": {
+                    "alice": {
+                        "followers": [],
+                        "following": []
+                    },
+                    "bob": {
+                        "followers": [],
+                        "following": []
+                    }
+                },
+                "username": "alice",
+                "other_username": "bob"
+            },
+            "expected_output": [{
+                "alice": {
+                    "followers": [],
+                    "following": ["bob"]
+                },
+                "bob": {
+                    "followers": ["alice"],
+                    "following": []
+                }
+            }]
+        }
+
+    ],
+    "tags": ["Social Media", "User Management"],
+    "prompts": [
+        {
+            "prompt_id": "detailed_prompt",
+            "prompt": "Implement the `manage_users` function to manage users' following and followers based on the given action. The available actions are 'follow', 'unfollow', 'get_followers', and 'get_following'.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "action": "follow",
+                        "users": {
+                            "charlie": {
+                                "followers": [],
+                                "following": []
+                            },
+                            "david": {
+                                "followers": [],
+                                "following": []
+                            }
+                        },
+                        "username": "charlie",
+                        "other_username": "david"
+                    },
+                    "expected_output": [{
+                        "charlie": {
+                            "followers": [],
+                            "following": ["david"]
+                        },
+                        "david": {
+                            "followers": ["charlie"],
+                            "following": []
+                        }
+                    }]
+                }
+
+            ]
+        }
+    ]
+}

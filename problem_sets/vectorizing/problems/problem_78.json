@@ -1,0 +1,29 @@
+{
+    "identifier": "anti_diagonal_sum",
+    "description": "Given an unvectorized code for anti_diagonal_sum, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `anti_diagonal_sum` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        result = 0\n        for i in range(len(A)):\n            result += A[i][len(A[0])-1-i]\n        return result\n    #TAGS: loops\n    \n    ### Problem 79: Matrix Left Rotation (Rotate Columns to the Left)\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "anti_diagonal_sum",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

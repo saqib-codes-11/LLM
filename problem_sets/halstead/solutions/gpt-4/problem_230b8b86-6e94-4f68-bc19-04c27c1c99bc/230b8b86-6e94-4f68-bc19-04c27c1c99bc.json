@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_230b8b86-6e94-4f68-bc19-04c27c1c99bc",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "230b8b86-6e94-4f68-bc19-04c27c1c99bc",
+    "solution_code": "def solve(n: int) -> int:\n    sum_ninth_powers = n**2 * (n**2 - 1)**2\n    prime_digits = [int(digit) for digit in str(sum_ninth_powers) if digit in '2357']\n    product = 1\n    for p in prime_digits:\n        product *= p\n    return product",
+    "feedback": null
+}

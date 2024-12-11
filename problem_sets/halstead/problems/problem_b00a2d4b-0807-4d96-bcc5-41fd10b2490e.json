@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_b00a2d4b-0807-4d96-bcc5-41fd10b2490e",
+    "prompts": [
+        {
+            "prompt_id": "b00a2d4b-0807-4d96-bcc5-41fd10b2490e",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 1100), compute the sum of the twelfth powers of the first n even numbers. Return the sum of its even digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                10
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                16
+            ]
+        }
+    ]
+}

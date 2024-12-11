@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "diagonal_average",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef diagonal_average(A: np.ndarray) -> float:\n    return np.trace(A) / len(A)",
+    "feedback": null
+}

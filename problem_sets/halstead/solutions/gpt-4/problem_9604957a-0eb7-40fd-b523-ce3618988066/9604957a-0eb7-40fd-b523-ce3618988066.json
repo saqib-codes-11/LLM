@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_9604957a-0eb7-40fd-b523-ce3618988066",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "9604957a-0eb7-40fd-b523-ce3618988066",
+    "solution_code": "def solve(n: int) -> int:\n    # Define the sequence of last digits\n    sequence_of_last_digits = [3, 8, 0, 5, 6, 9, 2, 7, 4, 1]\n\n    # Return the last digit that corresponds to the given number\n    return sequence_of_last_digits[n % 10 - 1]",
+    "feedback": null
+}

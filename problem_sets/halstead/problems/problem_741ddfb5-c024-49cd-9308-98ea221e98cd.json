@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_741ddfb5-c024-49cd-9308-98ea221e98cd",
+    "prompts": [
+        {
+            "prompt_id": "741ddfb5-c024-49cd-9308-98ea221e98cd",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 550), calculate the product of the squares of the first n odd numbers. Return the sum of its even digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                0
+            ]
+        }
+    ]
+}

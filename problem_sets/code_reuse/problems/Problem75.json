@@ -1,0 +1,44 @@
+{
+  "identifier": "length_calculator_and_filter_001",
+  "prompts": [
+    {
+      "prompt_id": "length_calculator_and_filter_prompt_01",
+      "prompt": "Write a parent function named 'calculate_length' that takes a string and returns its length. Then, create a child function named 'filter_by_length' that takes a list of strings and an integer 'n', and using 'calculate_length', returns a new list with strings that have a length greater than 'n'.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"strings": ["apple", "banana", "cherry", "date"], "n": 5},
+          "expected_output": [["banana", "cherry"]]
+        },
+        {
+          "input": {"strings": ["cat", "dog", "elephant"], "n": 3},
+          "expected_output": [["elephant"]]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_length",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "filter_by_length",
+    "parameters": [
+      {"name": "strings", "type": "List[str]"},
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "List[str]"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"strings": ["a", "aa", "aaa", "aaaa"], "n": 2}, "expected_output": [["aaa", "aaaa"]]},
+    {"input": {"strings": ["short", "muchlonger", "longest"], "n": 8}, "expected_output": [["muchlonger", "longest"]]},
+    {"input": {"strings": ["tiny", "small", "medium", "large"], "n": 4}, "expected_output": [["small", "medium", "large"]]},
+    {"input": {"strings": ["hello", "world", "python", "code"], "n": 4}, "expected_output": [["hello", "world", "python"]]}
+  ]
+}

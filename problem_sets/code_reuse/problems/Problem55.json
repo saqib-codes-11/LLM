@@ -1,0 +1,44 @@
+{
+  "identifier": "sqrt_and_distance_001",
+  "prompts": [
+    {
+      "prompt_id": "sqrt_and_distance_prompt_01",
+      "prompt": "Write a parent function named 'calculate_sqrt' that takes a float number and returns its square root. Then, write a child function named 'calculate_distance' that takes two points (each represented as a list of two floats) and, utilizing 'calculate_sqrt', returns the Euclidean distance between those two points.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"p1": [1.0, 1.0], "p2": [4.0, 5.0]},
+          "expected_output": [5.0]
+        },
+        {
+          "input": {"p1": [2.0, 3.0], "p2": [2.0, 6.0]},
+          "expected_output": [3.0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_sqrt",
+    "parameters": [
+      {"name": "x", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "calculate_distance",
+    "parameters": [
+      {"name": "p1", "type": "List[float]"},
+      {"name": "p2", "type": "List[float]"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"p1": [0.0, 0.0], "p2": [3.0, 4.0]}, "expected_output": [5.0]},
+    {"input": {"p1": [0.0, 0.0], "p2": [0.0, 0.0]}, "expected_output": [0.0]},
+    {"input": {"p1": [-1.0, -1.0], "p2": [-4.0, -5.0]}, "expected_output": [5.0]},
+    {"input": {"p1": [1.5, 2.5], "p2": [4.5, 6.5]}, "expected_output": [5.0]}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "sort_rows",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef sort_rows(A):\n    return np.sort(A, axis=1)",
+    "feedback": null
+}

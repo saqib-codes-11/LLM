@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "elementwise_power",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef elementwise_power(A, power):\n    return np.power(A, power)",
+    "feedback": null
+}

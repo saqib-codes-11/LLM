@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "all_elements_equal",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef all_elements_equal(A: np.array) -> bool:\n    unique_elements = np.unique(A)\n    if len(unique_elements) == 1:\n        return True\n    else:\n        return False",
+    "feedback": null
+}

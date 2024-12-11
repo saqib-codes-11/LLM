@@ -1,0 +1,29 @@
+{
+    "identifier": "border_sum",
+    "description": "Given an unvectorized code for border_sum, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `border_sum` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        total = 0\n        for i in range(len(A)):\n            total += A[i][0] + A[i][-1]\n        for j in range(1, len(A[0]) - 1):\n            total += A[0][j] + A[-1][j]\n        return total\n    #TAGS: loops, addition\n    \n    ### Problem 85: Matrix Transpose\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "border_sum",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_3",
+    "model_identifier": "claude",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "def divide(a: float, b: float) -> float:\n  if b == 0:\n    raise ValueError(\"Divisor cannot be 0\")\n\n  return a / b\n",
+    "feedback": null
+}

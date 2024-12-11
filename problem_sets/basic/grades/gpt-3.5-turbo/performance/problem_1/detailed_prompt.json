@@ -1,0 +1,8 @@
+{
+    "problem_identifier": "problem_1",
+    "prompt_identifier": "detailed_prompt",
+    "model_identifier": "gpt-3.5-turbo",
+    "score": 7.288461538460964,
+    "sub_criteria_scores": null,
+    "issues": []
+}

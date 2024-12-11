@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_4",
+    "model_identifier": "text-davinci-002",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "\n\n\"\"\"\n\ndef divide(a,b):\n    return a/b\n\n \n#remove the pass line after implementing the function above\n\n\"\"\"\nYou may also define a main function if you want to test your function by directly calling it from the terminal/command line.\n\nWrite your markdown explanation in the space below.\n\n\n\"\"\"",
+    "feedback": null
+}

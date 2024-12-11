@@ -1,0 +1,29 @@
+{
+    "identifier": "row_min",
+    "description": "Given an unvectorized code for row_min, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `row_min` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        result = [float('inf')] * len(A)\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                if A[i][j] < result[i]:\n                    result[i] = A[i][j]\n        return result\n    #TAGS: loops, nested loops, comparison\n    \n    ### Problem 22: Column-wise Minimum\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "row_min",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

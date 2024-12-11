@@ -1,0 +1,43 @@
+{
+  "identifier": "sqrt_and_perfect_square_001",
+  "prompts": [
+    {
+      "prompt_id": "sqrt_and_perfect_square_prompt_01",
+      "prompt": "Write a parent function named 'calculate_sqrt' that takes an integer and returns its square root. Then, create a child function named 'is_perfect_square' that takes an integer and, using 'calculate_sqrt', returns a boolean indicating whether the number is a perfect square or not.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"num": 25},
+          "expected_output": [true]
+        },
+        {
+          "input": {"num": 17},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_sqrt",
+    "parameters": [
+      {"name": "num", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_perfect_square",
+    "parameters": [
+      {"name": "num", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"num": 4}, "expected_output": [true]},
+    {"input": {"num": 18}, "expected_output": [false]},
+    {"input": {"num": 49}, "expected_output": [true]},
+    {"input": {"num": 99}, "expected_output": [false]}
+  ]
+}

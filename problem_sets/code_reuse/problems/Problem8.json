@@ -1,0 +1,43 @@
+{
+  "identifier": "number_systems_conversion_001",
+  "prompts": [
+    {
+      "prompt_id": "number_systems_conversion_prompt_01",
+      "prompt": "Write a parent function named 'decimal_to_binary' that takes a non-negative integer as an argument and returns its binary representation as a string. Then, write a child function named 'binary_to_decimal' that takes a binary string as an argument and utilizes 'decimal_to_binary' to calculate and return the decimal representation of the binary string.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"num": 13},
+          "expected_output": ["1101"]
+        },
+        {
+          "input": {"num": 31},
+          "expected_output": ["11111"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "decimal_to_binary",
+    "parameters": [
+      {"name": "num", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "binary_to_decimal",
+    "parameters": [
+      {"name": "binary_str", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"binary_str": "1101"}, "expected_output": [13]},
+    {"input": {"binary_str": "10101"}, "expected_output": [21]},
+    {"input": {"binary_str": "1001"}, "expected_output": [9]},
+    {"input": {"binary_str": "111111"}, "expected_output": [63]}
+  ]
+}

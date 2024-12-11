@@ -1,0 +1,38 @@
+{
+    "identifier": "problem_statistical_analysis",
+    "description": "Perform statistical analysis on two datasets to calculate the mean, standard deviation",
+    "function_prototype": {
+        "function_name": "statistical_analysis",
+        "parameters": [
+            {"name": "data1", "type": "List[float]"},
+            {"name": "data2", "type": "List[float]"}
+        ],
+        "return_values": [{"type": "List[float]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "data1": [2.0, 4.0, 6.0, 8.0, 10.0],
+                "data2": [1.0, 2.0, 3.0, 4.0, 5.0]
+            },
+            "expected_output": [6.0, 3.162, 3.0, 1.581]
+        }
+    ],
+    "tags": ["Statistics", "SciPy", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the function 'statistical_analysis' to perform statistical analysis on two datasets, which calculates the mean, standard deviation",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "data1": [1.0, 2.0, 3.0],
+                        "data2": [4.0, 5.0, 6.0]
+                    },
+                    "expected_output": [2.0, 0.816, 5.0, 0.816]
+                }
+            ]
+        }
+    ]
+}

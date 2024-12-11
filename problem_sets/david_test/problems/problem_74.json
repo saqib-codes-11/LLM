@@ -1,0 +1,41 @@
+{
+    "identifier": "problem_file_manager",
+    "description": "Perform a sequence of operations on a file and return the final content of the file.",
+    "function_prototype": {
+        "function_name": "manage_file",
+        "parameters": [
+            {"name": "filename", "type": "str"},
+            {"name": "initial_content", "type": "str"},
+            {"name": "operations", "type": "list"}
+        ],
+        "return_values": [{"type": "str"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "filename": "sample.txt",
+                "initial_content": "Hello",
+                "operations": [["write", " World"], ["read", ""]]
+            },
+            "expected_output": ["Hello World"]
+        }
+    ],
+    "tags": ["File Operations", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the manage_file function to perform a sequence of operations on a file and return the final content of the file.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "filename": "test.txt",
+                        "initial_content": "Test",
+                        "operations": [["write", "ing"], ["read", ""]]
+                    },
+                    "expected_output": ["Testing"]
+                }
+            ]
+        }
+    ]
+}

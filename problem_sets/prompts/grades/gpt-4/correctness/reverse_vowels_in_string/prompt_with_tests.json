@@ -1,0 +1,11 @@
+{
+    "problem_identifier": "reverse_vowels_in_string",
+    "prompt_identifier": "prompt_with_tests",
+    "model_identifier": "gpt-4",
+    "score": 0.0,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Test failed: Input: s = hello; Expected Output: holle Result: None",
+        "Test failed: Input: s = world; Expected Output: world Result: None"
+    ]
+}

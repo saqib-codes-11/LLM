@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_3",
+    "model_identifier": "text-davinci-002",
+    "prompt_identifier": "detailed_prompt",
+    "solution_code": " \n*/\n\n// Write your multiply function here. \n\nint multiply(int a, int b){\n    return a*b;\n}",
+    "feedback": null
+}

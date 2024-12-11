@@ -1,0 +1,25 @@
+{
+    "identifier": "problem_is_anagram",
+    "description": "Check if two given strings are anagrams of each other.",
+    "function_prototype": {
+        "function_name": "is_anagram",
+        "parameters": [{"name": "s1", "type": "str"}, {"name": "s2", "type": "str"}],
+        "return_values": [{"type": "bool"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"s1": "listen", "s2": "silent"}, "expected_output": [true]},
+        {"input": {"s1": "hello", "s2": "world"}, "expected_output": [false]}
+    ],
+    "tags": ["String Analysis", "Easy"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the is_anagram function to check if two given strings are anagrams of each other.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"s1": "night", "s2": "thing"}, "expected_output": [true]},
+                {"input": {"s1": "cat", "s2": "dog"}, "expected_output": [false]}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+  "identifier": "concatenate_repeat_strings_001",
+  "prompts": [
+    {
+      "prompt_id": "concatenate_repeat_strings_prompt_01",
+      "prompt": "Write a parent function named 'concatenate_strings' that takes two strings and returns them concatenated. Then, write a child function named 'repeat_and_concatenate' that takes a string and an integer n, and utilizing 'concatenate_strings', returns the string concatenated to itself n times.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "abc", "n": 3},
+          "expected_output": ["abcabcabc"]
+        },
+        {
+          "input": {"s": "123", "n": 4},
+          "expected_output": ["123123123123"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "concatenate_strings",
+    "parameters": [
+      {"name": "a", "type": "str"},
+      {"name": "b", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "repeat_and_concatenate",
+    "parameters": [
+      {"name": "s", "type": "str"},
+      {"name": "n", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "xyz", "n": 2}, "expected_output": ["xyzxyz"]},
+    {"input": {"s": "01", "n": 5}, "expected_output": ["0101010101"]},
+    {"input": {"s": "ab", "n": 4}, "expected_output": ["abababab"]},
+    {"input": {"s": "pqrs", "n": 3}, "expected_output": ["pqrspqrspqrs"]}
+  ]
+}

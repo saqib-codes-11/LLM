@@ -1,0 +1,47 @@
+{
+    "identifier": "problem_code_analyzer",
+    "description": "Implement a function to analyze a piece of code and report the count of unique keywords used.",
+    "function_prototype": {
+        "function_name": "analyze_code_keywords",
+        "parameters": [
+            {"name": "code", "type": "str"}
+        ],
+        "return_values": [{"type": "Dict[str, int]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "code": "def add(a, b):\n    return a + b\nprint(add(1, 2))"
+            },
+            "expected_output": [{"def": 1, "return": 1, "print": 1}]
+        },
+        {
+            "input": {
+                "code": "for i in range(10):\n    if i % 2 == 0:\n        print(i)"
+            },
+            "expected_output": [{"for": 1, "in": 1, "range": 1, "if": 1, "print": 1}]
+        }
+    ],
+    "tags": ["String Processing", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the analyze_code_keywords function that takes a string representing code. Return a dictionary with unique keywords as keys and their counts as values.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "code": "class Test:\n    def __init__(self):\n        pass\n\n    def test_func(self):\n        return 'test'"
+                    },
+                    "expected_output": [{"class": 1, "def": 2, "return": 1}]
+                },
+                {
+                    "input": {
+                        "code": "while True:\n    pass"
+                    },
+                    "expected_output": [{"while": 1, "True": 1, "pass": 1}]
+                }
+            ]
+        }
+    ]
+}

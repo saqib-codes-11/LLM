@@ -1,0 +1,29 @@
+{
+    "identifier": "all_elements_equal",
+    "description": "Given an unvectorized code for all_elements_equal, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `all_elements_equal` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        value = A[0][0]\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                if A[i][j] != value:\n                    return False\n        return True\n    #TAGS: loops, nested loops, comparison\n    \n    ### Problem 60: Matrix Rank (Number of Non-zero Rows)\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "all_elements_equal",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

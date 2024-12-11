@@ -1,0 +1,44 @@
+{
+    "identifier": "problem_numerical_integration",
+    "description": "Approximate the definite integral of a function using the trapezoidal rule.",
+    "function_prototype": {
+        "function_name": "integrate_trapezoidal_rule",
+        "parameters": [
+            {"name": "f", "type": "function"},
+            {"name": "a", "type": "float"},
+            {"name": "b", "type": "float"},
+            {"name": "n", "type": "int"}
+        ],
+        "return_values": [{"type": "float"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "f": "lambda x: x**2",
+                "a": 0,
+                "b": 2,
+                "n": 1000
+            },
+            "expected_output": [2.666666666666667]
+        }
+    ],
+    "tags": ["Numerical Integration", "Trapezoidal Rule", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the function 'integrate_trapezoidal_rule' to approximate the definite integral of a given function using the trapezoidal rule.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "f": "lambda x: x",
+                        "a": 0,
+                        "b": 1,
+                        "n": 1000
+                    },
+                    "expected_output": [0.5]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "identifier": "problem_c91c94f3-4f35-4be4-a834-474269a25496",
+    "prompts": [
+        {
+            "prompt_id": "c91c94f3-4f35-4be4-a834-474269a25496",
+            "prompt": "Given a list of integers, determine the product of the largest and smallest elements in the list. Return the sum of the digits of this product.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    10,
+                    20,
+                    30,
+                    40,
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    110,
+                    220,
+                    330,
+                    440,
+                    550,
+                    660,
+                    550
+                ]
+            },
+            "expected_output": [
+                15
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    150,
+                    250,
+                    50,
+                    350,
+                    75,
+                    155,
+                    200
+                ]
+            },
+            "expected_output": [
+                13
+            ]
+        }
+    ]
+}

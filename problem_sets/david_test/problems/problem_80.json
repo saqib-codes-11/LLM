@@ -1,0 +1,41 @@
+{
+	"identifier": "problem_vending_machine",
+	"description": "Simulate operations on a vending machine.",
+	"function_prototype": {
+		"function_name": "vending_machine_operation",
+		"parameters": [
+		    {"name": "operation", "type": "str"},
+		    {"name": "item_name", "type": "str"},
+		    {"name": "quantity_price_paid", "type": "List"}
+		],
+		"return_values": [{"type": "str"}]
+	},
+	"correctness_test_suite": [
+		{
+		    "input": {"operation": "add", "item_name": "Soda", "quantity_price_paid": [10, 1.5]},
+		    "expected_output": ["Item Soda added with quantity 10 and price 1.5"]
+		},
+		{
+		    "input": {"operation": "purchase", "item_name": "Soda", "quantity_price_paid": [2.0,""]},
+		    "expected_output": ["Purchased Soda for 2.0"]
+		}
+	],
+	"tags": ["Simulation", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the vending_machine_operation function to simulate adding items to and purchasing from a vending machine.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+				    "input": {"operation": "add", "item_name": "Water", "quantity_price_paid": [5, 1.0]},
+				    "expected_output": ["Item Water added with quantity 5 and price 1.0"]
+				},
+				{
+				    "input": {"operation": "purchase", "item_name": "Water", "quantity_price_paid": [1.5,""]},
+				    "expected_output": ["Purchased Water for 1.5"]
+				}
+			]
+		}
+	]
+}

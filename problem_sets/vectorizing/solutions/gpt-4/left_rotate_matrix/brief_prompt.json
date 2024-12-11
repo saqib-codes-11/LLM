@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "left_rotate_matrix",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef left_rotate_matrix(A: int, k: int):\n    A_np = np.array(A)\n    return np.roll(A_np, -k, axis=1).tolist()",
+    "feedback": null
+}

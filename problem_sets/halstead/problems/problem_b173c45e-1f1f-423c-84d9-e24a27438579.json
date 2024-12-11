@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_b173c45e-1f1f-423c-84d9-e24a27438579",
+    "prompts": [
+        {
+            "prompt_id": "b173c45e-1f1f-423c-84d9-e24a27438579",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 630), determine the nth number in the sequence defined as: a(n) = 29*a(n-1) - 25*a(n-2) + 32, a(1) = 31, a(2) = 34. Return its last digit.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                4
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                3
+            ]
+        }
+    ]
+}

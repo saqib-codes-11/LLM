@@ -1,0 +1,33 @@
+{
+    "identifier": "scale_matrix",
+    "description": "Given an unvectorized code for scale_matrix, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `scale_matrix` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A, scale_factor):\n        # UNVECTORIZE THIS\n        result = [[0] * len(A[0]) for _ in range(len(A))]\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                result[i][j] = A[i][j] * scale_factor\n        return result\n    #TAGS: loops, nested loops, multiplication\n    \n    ### Problem 44: Matrix Reflection (Reflect over main diagonal)\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "scale_matrix",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            },
+            {
+                "name": "scale_factor",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

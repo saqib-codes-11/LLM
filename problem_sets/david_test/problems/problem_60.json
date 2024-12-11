@@ -1,0 +1,28 @@
+{
+    "identifier": "problem_matrix_operation",
+    "description": "Perform specified matrix operations.",
+    "function_prototype": {
+        "function_name": "matrix_operation",
+        "parameters": [
+            {"name": "matrix", "type": "List[List[int]]"},
+            {"name": "operation", "type": "str"}
+        ],
+        "return_values": [{"type": "List[List[int]]"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"matrix": [[1,2], [3,4]], "operation": "transpose"}, "expected_output": [[1,3], [2,4]]},
+        {"input": {"matrix": [[1,2], [3,4]], "operation": "rotate_clockwise"}, "expected_output": [[3,1], [4,2]]}
+    ],
+    "tags": ["Matrix Operations", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the matrix_operation function to either transpose or rotate a given matrix based on the specified operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"matrix": [[1,2,3], [4,5,6], [7,8,9]], "operation": "transpose"}, "expected_output": [[1,4,7], [2,5,8], [3,6,9]]},
+                {"input": {"matrix": [[1,2,3], [4,5,6], [7,8,9]], "operation": "rotate_clockwise"}, "expected_output": [[7,4,1], [8,5,2], [9,6,3]]}
+            ]
+        }
+    ]
+}

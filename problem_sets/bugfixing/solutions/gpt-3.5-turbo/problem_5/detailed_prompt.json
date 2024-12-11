@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_5",
+    "model_identifier": "gpt-3.5-turbo",
+    "prompt_identifier": "detailed_prompt",
+    "solution_code": "def factorial(n: int) -> int:\n    if n == 1:\n        return 1\n    return n * factorial(n - 1)",
+    "feedback": null
+}

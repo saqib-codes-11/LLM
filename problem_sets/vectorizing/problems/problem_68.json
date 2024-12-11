@@ -1,0 +1,29 @@
+{
+    "identifier": "upside_down_matrix",
+    "description": "Given an unvectorized code for upside_down_matrix, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `upside_down_matrix` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        result = [[0] * len(A[0]) for _ in range(len(A))]\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                result[i][j] = A[len(A)-1-i][j]\n        return result\n    #TAGS: loops, nested loops\n    \n    ### Problem 69: Extract Unique Elements\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "upside_down_matrix",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

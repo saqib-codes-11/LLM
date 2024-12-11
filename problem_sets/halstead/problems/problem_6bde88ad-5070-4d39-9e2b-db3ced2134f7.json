@@ -1,0 +1,68 @@
+{
+    "identifier": "problem_6bde88ad-5070-4d39-9e2b-db3ced2134f7",
+    "prompts": [
+        {
+            "prompt_id": "6bde88ad-5070-4d39-9e2b-db3ced2134f7",
+            "prompt": "Given a list of positive integers, find the number of elements that are even and greater than twice the median of the list. Return the sum of the digits of this count.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    10,
+                    20,
+                    30,
+                    40,
+                    50
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    3,
+                    6,
+                    9,
+                    12,
+                    15,
+                    18
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        }
+    ]
+}

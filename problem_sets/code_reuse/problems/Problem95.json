@@ -1,0 +1,46 @@
+{
+  "identifier": "append_and_find_element_001",
+  "prompts": [
+    {
+      "prompt_id": "append_and_find_element_prompt_01",
+      "prompt": "Create a parent function named 'append_element' that takes a list of integers `nums` and an integer `x`, and returns a new list with `x` appended to it. Subsequently, implement a child function named 'element_exists' that takes a list of integers `nums`, an integer `x` to be appended, and an integer `y` to find, utilizes 'append_element' to append `x` to `nums`, and returns True if `y` exists in the modified list, otherwise False.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [1, 2, 3], "x": 4, "y": 4},
+          "expected_output": [true]
+        },
+        {
+          "input": {"nums": [1, 2, 3], "x": 4, "y": 5},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "append_element",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"},
+      {"name": "x", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "element_exists",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"},
+      {"name": "x", "type": "int"},
+      {"name": "y", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [1, 2, 3], "x": 3, "y": 3}, "expected_output": [true]},
+    {"input": {"nums": [1, 2, 3], "x": 4, "y": 5}, "expected_output": [false]},
+    {"input": {"nums": [], "x": 1, "y": 1}, "expected_output": [true]},
+    {"input": {"nums": [1, 2, 3], "x": 5, "y": 0}, "expected_output": [false]}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+    "identifier": "longest_substring_with_k_distinct_characters",
+    "description": "This problem tests the ability to work with hash maps. The task is to implement a function that finds the longest substring with k distinct characters in a given string.",
+    "function_prototype": {
+        "function_name": "longest_substring_with_k_distinct_characters",
+        "parameters": [{"name": "text", "type": "str"}, {"name": "k", "type": "int"}],
+        "return_values": [{"type": "str"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"text": "abcabcbb", "k": 3}, "expected_output": ["abc"]},
+        {"input": {"text": "bbbbb", "k": 3}, "expected_output": [""]}
+    ],
+    "tags": ["Logic"],
+    "prompts": [
+        {
+            "prompt_id": "prompt_only",
+            "prompt": "Implement a function that finds the longest substring with k distinct characters in a given string.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "prompt_with_tests",
+            "prompt": "Write a function that finds the longest substring with k distinct characters in a given string. Include test cases for 'abcabcbb' with k=3 and 'bbbbb' with k=3.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"text": "abcabcbb", "k": 3}, "expected_output": ["abc"]},
+                {"input": {"text": "bbbbb", "k": 3}, "expected_output": [""]}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "identifier": "problem_check_magic_square",
+    "description": "Implement a function to check if a given matrix is a magic square.",
+    "function_prototype": {
+        "function_name": "check_magic_square",
+        "parameters": [
+            {"name": "matrix", "type": "list[list[int]]"}
+        ],
+        "return_values": [{"type": "bool"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "matrix": [[8, 1, 6], [3, 5, 7], [4, 9, 2]]
+            },
+            "expected_output": [true]
+        },
+        {
+            "input": {
+                "matrix": [[8, 2, 6], [3, 5, 7], [4, 9, 2]]
+            },
+            "expected_output": [false]
+        }
+    ],
+    "tags": ["Matrix", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the check_magic_square function that takes a matrix as input and returns True if it is a magic square and False otherwise.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "matrix": [[2, 7, 6], [9, 5, 1], [4, 3, 8]]
+                    },
+                    "expected_output": [true]
+                },
+                {
+                    "input": {
+                        "matrix": [[2, 7, 6], [9, 6, 1], [4, 3, 8]]
+                    },
+                    "expected_output": [false]
+                }
+            ]
+        }
+    ]
+}

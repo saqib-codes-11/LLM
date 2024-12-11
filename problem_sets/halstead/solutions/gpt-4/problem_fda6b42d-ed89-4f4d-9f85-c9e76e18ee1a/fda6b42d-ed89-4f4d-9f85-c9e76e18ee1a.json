@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_fda6b42d-ed89-4f4d-9f85-c9e76e18ee1a",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "fda6b42d-ed89-4f4d-9f85-c9e76e18ee1a",
+    "solution_code": "def solve(n):\n    seq = [25, 28]\n    i = 2\n    while (seq[i-2:i] != [25,28]) or i<4:\n      seq.append((23*seq[i-1] - 19*seq[i-2] + 26) % 10)\n      i += 1\n    period = len(seq) - 2\n    return seq[n % period - 1]",
+    "feedback": null
+}

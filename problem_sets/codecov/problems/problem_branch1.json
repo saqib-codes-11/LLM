@@ -1,0 +1,36 @@
+{
+    "identifier": "branch1",
+    "description": "branch1",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch1(param1, param2, param3):\n    result = 0\n    if param1 > 10:\n        if param2 < 20:\n            result = param1 * param2\n        else:\n            result = param1 + param2\n    elif param1 <= 10:\n        if param3 > 30:\n            result = param1 * param3\n        elif param3 <= 30 and param3 >= 10:\n            result = param1 + param3\n        else:\n            result = param1 - param3\n    else:\n        result = param1 + param2 + param3\n    return result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch1",
+        "parameters": [
+            {
+                "name": "param1",
+                "type": "int"
+            },
+            {
+                "name": "param2",
+                "type": "int"
+            },
+            {
+                "name": "param3",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

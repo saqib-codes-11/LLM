@@ -1,0 +1,41 @@
+{
+    "identifier": "problem_load_balancer_simulation",
+    "description": "Simulate operations on a load balancer system.",
+    "function_prototype": {
+        "function_name": "simulate_load_balancer",
+        "parameters": [{"name": "operations", "type": "List[Dict[str, Any]]"}],
+        "return_values": [{"type": "List[Any]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "operations": [
+                    {"action": "add_server", "server_id": 1, "load": 10},
+                    {"action": "add_server", "server_id": 2, "load": 5},
+                    {"action": "get_server_with_lowest_load"}
+                ]
+            },
+            "expected_output": ["None", "None", 2]
+        }
+    ],
+    "tags": ["Simulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the simulate_load_balancer function to simulate the behavior of a load balancer system. The function will accept a list of operations and return a list of results for each operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "operations": [
+                            {"action": "add_server", "server_id": 3, "load": 15},
+                            {"action": "add_server", "server_id": 4, "load": 7},
+                            {"action": "get_server_with_lowest_load"}
+                        ]
+                    },
+                    "expected_output": ["None", "None", 4]
+                }
+            ]
+        }
+    ]
+}

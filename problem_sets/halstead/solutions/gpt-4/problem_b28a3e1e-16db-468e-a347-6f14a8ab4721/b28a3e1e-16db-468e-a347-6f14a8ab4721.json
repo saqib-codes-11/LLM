@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_b28a3e1e-16db-468e-a347-6f14a8ab4721",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "b28a3e1e-16db-468e-a347-6f14a8ab4721",
+    "solution_code": "def solve(n):\n    n = list(set(n))\n    n.sort(reverse=True)\n    return sum(int(i) for i in str(n[1]))",
+    "feedback": null
+}

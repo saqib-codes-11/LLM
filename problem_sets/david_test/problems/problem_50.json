@@ -1,0 +1,30 @@
+{
+	"identifier": "problem_password_validator",
+	"description": "Write a function that validates a password based on given criteria.",
+	"function_prototype": {
+		"function_name": "validate_password",
+		"parameters": [
+            {"name": "password", "type": "str"},
+            {"name": "min_length", "type": "int", "default": 8},
+            {"name": "require_digit", "type": "bool", "default": true},
+            {"name": "require_special_char", "type": "bool", "default": true}
+        ],
+		"return_values": [{"type": "bool"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"password": "abcdef", "min_length": 6}, "expected_output": [false]},
+		{"input": {"password": "abcdef1!"}, "expected_output": [true]}
+	],
+	"tags": ["Validation", "String Manipulation"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the `validate_password` function that checks if a password meets certain criteria including a minimum length, the presence of digits, and special characters.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"password": "hello123$"}, "expected_output": [true]},
+				{"input": {"password": "password", "require_digit": false, "require_special_char": false}, "expected_output": [true]}
+			]
+		}
+	]
+}

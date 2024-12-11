@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_c8ee8395-bfef-4bda-9b08-950c0822cd54",
+    "prompts": [
+        {
+            "prompt_id": "c8ee8395-bfef-4bda-9b08-950c0822cd54",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 170), identify the nth number in the sequence defined as: a(n) = 4*a(n-1) - a(n-2) + 7, a(1) = 6, a(2) = 9. Return its last digit.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                6
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                9
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                7
+            ]
+        }
+    ]
+}

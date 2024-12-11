@@ -1,0 +1,43 @@
+{
+  "identifier": "abs_value_and_distance_001",
+  "prompts": [
+    {
+      "prompt_id": "abs_value_and_distance_prompt_01",
+      "prompt": "Write a parent function named 'calculate_abs' that takes a float and returns its absolute value. Then, write a child function named 'calculate_origin_distance' that takes a point (represented as a list of two floats) and, utilizing 'calculate_abs', returns the distance of the point from the origin (0,0).",
+      "sample_inputs_outputs": [
+        {
+          "input": {"point": [3.0, 4.0]},
+          "expected_output": [5.0]
+        },
+        {
+          "input": {"point": [-3.0, -4.0]},
+          "expected_output": [5.0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_abs",
+    "parameters": [
+      {"name": "num", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "calculate_origin_distance",
+    "parameters": [
+      {"name": "point", "type": "List[float]"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"point": [0.0, 0.0]}, "expected_output": [0.0]},
+    {"input": {"point": [6.0, 8.0]}, "expected_output": [10.0]},
+    {"input": {"point": [-6.0, -8.0]}, "expected_output": [10.0]},
+    {"input": {"point": [5.0, 12.0]}, "expected_output": [13.0]}
+  ]
+}

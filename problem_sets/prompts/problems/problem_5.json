@@ -1,0 +1,31 @@
+{
+	"identifier": "count_occurrences",
+	"description": "This problem tests the ability to search and count occurrences within strings. The task is to implement a function that counts the occurrences of a substring in a given string.",
+	"function_prototype": {
+		"function_name": "count_occurrences",
+		"parameters": [{"name": "s", "type": "str"}, {"name": "substr", "type": "str"}],
+		"return_values": [{"type": "int"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"s": "hello world", "substr": "o"}, "expected_output": [2]},
+		{"input": {"s": "mississippi", "substr": "is"}, "expected_output": [2]}
+	],
+	"tags": ["Strings", "Search"],
+	"prompts": [
+		{
+			"prompt_id": "prompt_only",
+			"prompt": "Implement a function that counts the occurrences of a substring in a given string.",
+			"genericize": false,
+			"sample_inputs_outputs": []
+		},
+		{
+			"prompt_id": "prompt_with_tests",
+			"prompt": "Implement a function that counts the occurrences of a substring in a given string.\n\nTest Cases:\n- Input: 'hello world', 'o'\n  Expected Output: 2\n- Input: 'mississippi', 'is'\n  Expected Output: 2",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"s": "hello world", "substr": "o"}, "expected_output": [2]},
+				{"input": {"s": "mississippi", "substr": "is"}, "expected_output": [2]}
+			]
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+    "identifier": "branch29",
+    "description": "branch29",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch29(x, y):\n    \"\"\"\n    This function takes two parameters and returns a value based on a branching structure.\n    \"\"\"\n    if x > 0 and y > 0:\n        return x + y\n    elif x > 0 and y <= 0:\n        return x - y\n    elif x <= 0 and y > 0:\n        return y - x\n    else:\n        return x * y"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch29",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "int"
+            },
+            {
+                "name": "y",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

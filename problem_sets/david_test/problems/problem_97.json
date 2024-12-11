@@ -1,0 +1,27 @@
+{
+	"identifier": "problem_bfs",
+	"description": "Given the number of edges, a list of edges, and a starting vertex, return the BFS traversal order of the graph.",
+	"function_prototype": {
+		"function_name": "bfs_traversal",
+		"parameters": [
+			{"name": "num_edges", "type": "int"},
+			{"name": "edges", "type": "List[Tuple[int, int]]"},
+			{"name": "start_vertex", "type": "int"}
+		],
+		"return_values": [{"type": "List[int]"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"num_edges": 3, "edges": [[0, 1], [1, 2], [2, 3]], "start_vertex": 0}, "expected_output": [0, 1, 2, 3]}
+	],
+	"tags": ["Graph", "BFS", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "bfs_description",
+			"prompt": "Implement the bfs_traversal function to return the BFS traversal order of the graph.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"num_edges": 4, "edges": [[0, 1], [0, 2], [1, 3], [2, 4]], "start_vertex": 0}, "expected_output": [0, 1, 2, 3, 4]}
+			]
+		}
+	]
+}

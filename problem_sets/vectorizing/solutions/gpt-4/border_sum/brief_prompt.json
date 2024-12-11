@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "border_sum",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "def border_sum(A: np.array) -> float:\n    A = np.array(A)  # Ensures A is a NumPy array \n    return np.sum(A[:, 0]) + np.sum(A[:, -1]) + np.sum(A[0, 1:-1]) + np.sum(A[-1, 1:-1])",
+    "feedback": null
+}

@@ -1,0 +1,82 @@
+{
+    "identifier": "problem_8fc1d866-a661-46d0-a8b8-fb62fb212bf6",
+    "prompts": [
+        {
+            "prompt_id": "8fc1d866-a661-46d0-a8b8-fb62fb212bf6",
+            "prompt": "Given a list of positive integers, find the element that appears exactly nine times in the list. Return the sum of the digits of this element to the eighth power.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    5,
+                    2,
+                    9,
+                    5,
+                    7,
+                    4,
+                    9,
+                    1,
+                    2,
+                    9
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    3,
+                    6,
+                    9,
+                    6,
+                    9,
+                    6,
+                    3,
+                    9,
+                    3,
+                    9,
+                    6
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        }
+    ]
+}

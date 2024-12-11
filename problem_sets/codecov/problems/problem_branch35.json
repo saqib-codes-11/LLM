@@ -1,0 +1,31 @@
+{
+    "identifier": "branch35",
+    "description": "branch35",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch35(user_input):\n    if user_input == 'A':\n        print('You chose A')\n        return 'A'\n    elif user_input == 'B':\n        print('You chose B')\n        return 'B'\n    elif user_input == 'C':\n        print('You chose C')\n        return 'C'\n    elif user_input == 'D':\n        print('You chose D')\n        return 'D'\n    elif user_input == 'E':\n        print('You chose E')\n        return 'E'\n    elif user_input == 'F':\n        print('You chose F')\n        return 'F'\n    elif user_input == 'G':\n        print('You chose G')\n        return 'G'\n    elif user_input == 'H':\n        print('You chose H')\n        return 'H'\n    else:\n        print('Error: Invalid input')\n        return False"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch35",
+        "parameters": [
+            {
+                "name": "user_input",
+                "type": "str"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "str"
+            },
+            {
+                "type": "bool"
+            }
+        ]
+    }
+}

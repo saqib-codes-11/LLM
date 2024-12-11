@@ -1,0 +1,29 @@
+{
+    "identifier": "elementwise_absolute",
+    "description": "Given an unvectorized code for elementwise_absolute, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `elementwise_absolute` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        result = [[0] * len(A[0]) for _ in range(len(A))]\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                result[i][j] = abs(A[i][j])\n        return result\n    #TAGS: loops, nested loops, absolute\n    \n    ### Problem 31: Replace Diagonal\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "elementwise_absolute",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

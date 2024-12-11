@@ -1,0 +1,43 @@
+{
+  "identifier": "string_transformations_001",
+  "prompts": [
+    {
+      "prompt_id": "string_transformations_prompt_01",
+      "prompt": "Write a parent function named 'reverse_string' that takes a string as an argument and returns the string reversed. Then, write a child function named 'make_palindrome' that takes a string as an argument and utilizes 'reverse_string' to return a palindrome by appending the reversed string to the original.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "abcd"},
+          "expected_output": ["abcddcba"]
+        },
+        {
+          "input": {"s": "radar"},
+          "expected_output": ["radarradar"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "reverse_string",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "make_palindrome",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "level"}, "expected_output": ["levellevel"]},
+    {"input": {"s": "python"}, "expected_output": ["pythonnohtyp"]},
+    {"input": {"s": "racecar"}, "expected_output": ["racecarracecar"]},
+    {"input": {"s": "hello"}, "expected_output": ["helloolleh"]}
+  ]
+}

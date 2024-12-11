@@ -1,0 +1,33 @@
+{
+    "identifier": "matrix_multiplication",
+    "description": "Given an unvectorized code for matrix_multiplication, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `matrix_multiplication` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A, B):\n        # UNVECTORIZE THIS\n        result = [[0] * len(B[0]) for _ in range(len(A))]\n        for i in range(len(A)):\n            for j in range(len(B[0])):\n                for k in range(len(B)):\n                    result[i][j] += A[i][k] * B[k][j]\n        return result\n    #TAGS: loops, multiplication, triple nested loops\n    \n    ### Problem 10: Elementwise Multiplication\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "matrix_multiplication",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            },
+            {
+                "name": "B",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

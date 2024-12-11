@@ -1,0 +1,43 @@
+{
+  "identifier": "length_and_sum_001",
+  "prompts": [
+    {
+      "prompt_id": "length_and_sum_prompt_01",
+      "prompt": "Develop a parent function named 'find_length' that accepts a list of integers `nums` and returns the length of the list. Then, implement a child function named 'compute_sum' that uses 'find_length' and calculates the sum of the integers in the list `nums`. If the list is empty, the function should return 0.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [1, 2, 3, 4]},
+          "expected_output": [10]
+        },
+        {
+          "input": {"nums": []},
+          "expected_output": [0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "find_length",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "compute_sum",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [1, 2, 3, 4]}, "expected_output": [10]},
+    {"input": {"nums": [-1, -2, 3, 4]}, "expected_output": [4]},
+    {"input": {"nums": []}, "expected_output": [0]},
+    {"input": {"nums": [0, 0, 0, 0]}, "expected_output": [0]}
+  ]
+}

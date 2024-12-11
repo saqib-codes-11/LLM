@@ -1,0 +1,32 @@
+{
+    "identifier": "branch45",
+    "description": "branch45",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch45(x,y):\n  if x > y:\n    result1 = x + y\n  elif x < y:\n    result1 = x * y\n  else:\n    result1 = x ** y\n\n  if result1 > 10:\n    result2 = result1 - 10\n  elif result1 < 10:\n    result2 = result1 + 10\n  else:\n    result2 = result1 * 10\n\n  if result2 % 2 == 0:\n    result3 = result2 / 2\n  else:\n    result3 = result2 * 2\n\n  return result3"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch45",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "int"
+            },
+            {
+                "name": "y",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

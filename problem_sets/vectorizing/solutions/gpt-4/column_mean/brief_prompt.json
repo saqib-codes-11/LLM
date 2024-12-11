@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "column_mean",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef column_mean(A: int) -> float:\n    # Convert A to numpy array\n    A = np.array(A)\n    \n    # Use numpy's mean function along axis 0 (columns)\n    result = np.mean(A, axis=0)\n    \n    return result.tolist()",
+    "feedback": null
+}

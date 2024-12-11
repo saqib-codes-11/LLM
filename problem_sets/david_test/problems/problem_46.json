@@ -1,0 +1,47 @@
+{
+    "identifier": "problem_autocomplete",
+    "description": "Simulate a basic autocomplete system that supports insertion of sentences with their popularity scores and searches for the three most popular sentences with a given prefix.",
+    "function_prototype": {
+        "function_name": "autocomplete_system",
+        "parameters": [
+            {"name": "commands", "type": "List[Tuple[str, Union[str, int, Tuple[str, int]]]]"}
+        ],
+        "return_values": [
+            {"type": "List[List[str]]"}
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "commands": [
+                    ["insert", ["apple", 5]],
+                    ["insert", ["appetizer", 3]],
+                    ["insert", ["applied", 4]],
+                    ["search", "app"]
+                ]
+            },
+            "expected_output": [["apple", "applied", "appetizer"]]
+        }
+    ],
+    "tags": ["Trie", "Search", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `autocomplete_system` function to simulate a basic autocomplete system. The function should support insertion of sentences with their popularity scores and searches for the three most popular sentences with a given prefix.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "commands": [
+                            ["insert", ["apple", 5]],
+                            ["insert", ["appetizer", 3]],
+                            ["insert", ["applied", 4]],
+                            ["search", "app"]
+                        ]
+                    },
+                    "expected_output": [["apple", "applied", "appetizer"]]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_3",
+    "model_identifier": "text-davinci-002",
+    "prompt_identifier": "detailed_prompt",
+    "solution_code": " The sample inputs and expected outputs above will be used for testing.\n\ndef divide(a: float, b: float) -> float:\n    return a / b",
+    "feedback": null
+}

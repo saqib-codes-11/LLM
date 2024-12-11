@@ -1,0 +1,45 @@
+{
+  "identifier": "multiply_and_power_001",
+  "prompts": [
+    {
+      "prompt_id": "multiply_and_power_prompt_01",
+      "prompt": "Write a parent function named 'multiply' that takes two numbers and returns their product. Then, write a child function named 'power' that takes two numbers and, utilizing 'multiply', returns the first number raised to the power of the second number without using the power operator or functions.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"base": 2, "exp": 3},
+          "expected_output": [8]
+        },
+        {
+          "input": {"base": 5, "exp": 4},
+          "expected_output": [625]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "multiply",
+    "parameters": [
+      {"name": "a", "type": "int"},
+      {"name": "b", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "power",
+    "parameters": [
+      {"name": "base", "type": "int"},
+      {"name": "exp", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"base": 3, "exp": 3}, "expected_output": [27]},
+    {"input": {"base": 4, "exp": 2}, "expected_output": [16]},
+    {"input": {"base": 7, "exp": 0}, "expected_output": [1]},
+    {"input": {"base": 10, "exp": 1}, "expected_output": [10]}
+  ]
+}

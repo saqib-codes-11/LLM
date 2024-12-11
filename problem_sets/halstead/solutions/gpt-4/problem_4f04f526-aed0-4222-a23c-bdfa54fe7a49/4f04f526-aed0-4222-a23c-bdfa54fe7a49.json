@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_4f04f526-aed0-4222-a23c-bdfa54fe7a49",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "4f04f526-aed0-4222-a23c-bdfa54fe7a49",
+    "solution_code": "from typing import List\n\ndef solve(n: List[int]) -> int:\n    n.sort()\n    l = len(n)\n    if l % 2 == 0:\n        m = (n[l//2 - 1] + n[l//2]) / 2\n    else:\n        m = n[l//2]\n    res = len([i for i in n if i < 9 * m and i % 2 != 0])\n    return res if res < 10 else int(str(res)[0]) * int(str(res)[1])",
+    "feedback": null
+}

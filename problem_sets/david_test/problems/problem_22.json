@@ -1,0 +1,47 @@
+{
+    "identifier": "problem_differential_equation",
+    "description": "Numerically solve a first-order ordinary differential equation using Euler's method.",
+    "function_prototype": {
+        "function_name": "solve_euler_method",
+        "parameters": [
+            {"name": "f", "type": "function"},
+            {"name": "y0", "type": "float"},
+            {"name": "t0", "type": "float"},
+            {"name": "h", "type": "float"},
+            {"name": "num_steps", "type": "int"}
+        ],
+        "return_values": [{"type": "List[float]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "f": "lambda t, y: y",
+                "y0": 1,
+                "t0": 0,
+                "h": 0.1,
+                "num_steps": 5
+            },
+            "expected_output": [1, 1.1, 1.21, 1.331, 1.4641, 1.61051]
+        }
+    ],
+    "tags": ["Numerical Methods", "Euler's Method", "Differential Equations", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the function 'solve_euler_method' to numerically solve a first-order ordinary differential equation using Euler's method.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "f": "lambda t, y: t + y",
+                        "y0": 0,
+                        "t0": 0,
+                        "h": 0.5,
+                        "num_steps": 4
+                    },
+                    "expected_output": [0, 0.5, 1.5, 3.25, 5.875]
+                }
+            ]
+        }
+    ]
+}

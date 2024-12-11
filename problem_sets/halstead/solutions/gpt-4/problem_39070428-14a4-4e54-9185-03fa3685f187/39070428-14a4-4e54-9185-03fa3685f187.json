@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_39070428-14a4-4e54-9185-03fa3685f187",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "39070428-14a4-4e54-9185-03fa3685f187",
+    "solution_code": "def solve(n: int) -> int:\n    # Calculate the sum of the twenty-sixth powers of the first n even numbers\n    sum_val = sum(i ** 26 for i in range(2, 2 * n + 1, 2))\n    \n    # Find the sum of the even digits of sum_val\n    even_sum = sum(int(c) for c in str(sum_val) if int(c) % 2 == 0)\n    return even_sum",
+    "feedback": null
+}

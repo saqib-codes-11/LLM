@@ -1,0 +1,33 @@
+{
+    "identifier": "elementwise_modulo",
+    "description": "Given an unvectorized code for elementwise_modulo, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `elementwise_modulo` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A, mod_value):\n        # UNVECTORIZE THIS\n        result = [[0] * len(A[0]) for _ in range(len(A))]\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                result[i][j] = A[i][j] % mod_value\n        return result\n    #TAGS: loops, nested loops, modulo\n    \n    ### Problem 58: Replace Matrix Elements Less than a Value\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "elementwise_modulo",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            },
+            {
+                "name": "mod_value",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

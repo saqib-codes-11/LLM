@@ -1,0 +1,68 @@
+{
+    "identifier": "problem_80327d99-409c-4dee-aaef-93ad23655ccc",
+    "prompts": [
+        {
+            "prompt_id": "80327d99-409c-4dee-aaef-93ad23655ccc",
+            "prompt": "Given a list of integers, find the smallest continuous subarray product. Return the number of prime digits in that product.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    -2,
+                    -3,
+                    7,
+                    5
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    -1,
+                    2,
+                    3,
+                    4,
+                    -5,
+                    6
+                ]
+            },
+            "expected_output": [
+                2
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    -2,
+                    3,
+                    -4,
+                    5,
+                    -6
+                ]
+            },
+            "expected_output": [
+                2
+            ]
+        }
+    ]
+}

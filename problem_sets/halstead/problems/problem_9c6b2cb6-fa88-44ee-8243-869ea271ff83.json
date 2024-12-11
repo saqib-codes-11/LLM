@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_9c6b2cb6-fa88-44ee-8243-869ea271ff83",
+    "prompts": [
+        {
+            "prompt_id": "9c6b2cb6-fa88-44ee-8243-869ea271ff83",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 1050), compute the sum of the eleventh powers of the first n odd numbers. Return the product of its prime digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                49
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                210
+            ]
+        }
+    ]
+}

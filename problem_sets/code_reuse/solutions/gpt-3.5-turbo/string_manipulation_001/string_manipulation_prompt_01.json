@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "string_manipulation_001",
+    "model_identifier": "gpt-3.5-turbo",
+    "prompt_identifier": "string_manipulation_prompt_01",
+    "solution_code": "def count_consonants(s: str) -> int:\n    vowel_count = count_vowels(s)\n    consonant_count = len(s) - vowel_count\n    return consonant_count",
+    "feedback": null
+}

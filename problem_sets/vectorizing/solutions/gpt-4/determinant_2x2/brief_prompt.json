@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "determinant_2x2",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef determinant_2x2(A):\n    return np.linalg.det(A)",
+    "feedback": null
+}

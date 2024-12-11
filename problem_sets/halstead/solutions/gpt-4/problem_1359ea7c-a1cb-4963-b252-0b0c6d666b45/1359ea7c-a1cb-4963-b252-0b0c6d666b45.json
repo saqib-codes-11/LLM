@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_1359ea7c-a1cb-4963-b252-0b0c6d666b45",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "1359ea7c-a1cb-4963-b252-0b0c6d666b45",
+    "solution_code": "def solve(n):\n    def sieve(N):\n        odd_primes = [2]\n        sieve = [True] * (N + 1)\n        for x in range(3, int(N**0.5) + 1, 2):\n            for y in range(3, (N//x) + 1, 2):\n                sieve[(x*y)] = False\n\n        for p in range(3, N + 1, 2):\n            if sieve[p]:\n                odd_primes.append(p)\n        return odd_primes[:n]\n\n    def prime_digits(s):\n        return sum(int(d) for d in str(s) if d in '2357')\n\n    sum_of_fourth_powers = sum(x**4 for x in sieve(10**4))\n    return prime_digits(sum_of_fourth_powers)",
+    "feedback": null
+}

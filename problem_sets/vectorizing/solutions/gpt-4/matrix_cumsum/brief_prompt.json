@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "matrix_cumsum",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef matrix_cumsum(A):\n    A = np.array(A)\n    result = np.cumsum(np.cumsum(A, axis=0), axis=1)\n    result = result - np.pad(np.cumsum(np.cumsum(A[:-1, :-1], axis=0), axis=1), ((1, 0), (1, 0)), mode='constant')\n    return result.tolist()",
+    "feedback": null
+}

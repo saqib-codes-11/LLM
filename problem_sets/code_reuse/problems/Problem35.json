@@ -1,0 +1,47 @@
+{
+  "identifier": "max_and_min_001",
+  "prompts": [
+    {
+      "prompt_id": "max_and_min_prompt_01",
+      "prompt": "Write a parent function named 'find_maximum' that takes three numbers and returns the maximum among them. Then, write a child function named 'find_minimum' that takes three numbers and, utilizing 'find_maximum', returns the minimum among them without using direct comparison operators.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"a": 3, "b": 4, "c": 2},
+          "expected_output": [2]
+        },
+        {
+          "input": {"a": -5, "b": -3, "c": -8},
+          "expected_output": [-8]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "find_maximum",
+    "parameters": [
+      {"name": "a", "type": "int"},
+      {"name": "b", "type": "int"},
+      {"name": "c", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "find_minimum",
+    "parameters": [
+      {"name": "a", "type": "int"},
+      {"name": "b", "type": "int"},
+      {"name": "c", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"a": 3, "b": 7, "c": 5}, "expected_output": [3]},
+    {"input": {"a": 10, "b": 10, "c": 10}, "expected_output": [10]},
+    {"input": {"a": -1, "b": -2, "c": -3}, "expected_output": [-3]},
+    {"input": {"a": 2, "b": 3, "c": 1}, "expected_output": [1]}
+  ]
+}

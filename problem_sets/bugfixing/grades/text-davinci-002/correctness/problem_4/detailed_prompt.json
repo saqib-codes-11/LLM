@@ -1,0 +1,11 @@
+{
+    "problem_identifier": "problem_4",
+    "prompt_identifier": "detailed_prompt",
+    "model_identifier": "text-davinci-002",
+    "score": 0.0,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Test failed: Input: a = 'Hi ', b = 'there!'; Expected Output: 'Hi there!' Result: {'exception': 'unexpected indent (<string>, line 3)', 'traceback': 'Traceback (most recent call last):\\n  File \"/Users/morgang/code/LLMCodingBenchmarkingFramework/execution.py\", line 30, in executor_script\\n    exec(function_code, exec_globals)\\n  File \"<string>\", line 3\\n    Do not any include test code after the Markdown code block.\\nIndentationError: unexpected indent\\n', 'parameters': ['Hi ', 'there!'], 'function_code': ' Do not any include test code after the Markdown code block.\\n\\ndef concatenate(a: str, b: str) -> str:\\n    return a + b'}",
+        "Test failed: Input: a = 'See ', b = 'you!'; Expected Output: 'See you!' Result: {'exception': 'unexpected indent (<string>, line 3)', 'traceback': 'Traceback (most recent call last):\\n  File \"/Users/morgang/code/LLMCodingBenchmarkingFramework/execution.py\", line 30, in executor_script\\n    exec(function_code, exec_globals)\\n  File \"<string>\", line 3\\n    Do not any include test code after the Markdown code block.\\nIndentationError: unexpected indent\\n', 'parameters': ['See ', 'you!'], 'function_code': ' Do not any include test code after the Markdown code block.\\n\\ndef concatenate(a: str, b: str) -> str:\\n    return a + b'}"
+    ]
+}

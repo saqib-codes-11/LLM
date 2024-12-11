@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_59111ace-3be7-46bc-b0a5-75108a754392",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "59111ace-3be7-46bc-b0a5-75108a754392",
+    "solution_code": "from sympy import isprime\nfrom operator import mul\nfrom functools import reduce\n\ndef solve(n):\n    primes = []\n    i = 1\n    while len(primes) < n:\n        if i > 1 and isprime(i) and i % 2 != 0:\n            primes.append(i)\n        i += 1\n    sum_of_powers = sum([p ** 9 for p in primes])\n    prime_digits = [int(d) for d in str(sum_of_powers) if int(d) in [2, 3, 5, 7]]\n    return reduce(mul, prime_digits)",
+    "feedback": null
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "add_numbers_001",
+    "model_identifier": "gpt-3.5-turbo",
+    "prompt_identifier": "add_numbers_prompt_01",
+    "solution_code": "def add_two_numbers(a: float, b: float) -> float:\n    \"\"\"\n    This function takes two numbers as arguments and returns their sum.\n    \"\"\"\n    return a + b\n\ndef add_three_numbers(a: float, b: float, c: float) -> float:\n    \"\"\"\n    This function takes three numbers as arguments, utilizes 'add_two_numbers'\n    to add the first two numbers, and then adds the third number to this sum.\n    \"\"\"\n    sum_ab = add_two_numbers(a, b)\n    return sum_ab + c",
+    "feedback": null
+}

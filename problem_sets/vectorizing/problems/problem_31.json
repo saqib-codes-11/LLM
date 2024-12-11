@@ -1,0 +1,33 @@
+{
+    "identifier": "replace_diagonal",
+    "description": "Given an unvectorized code for replace_diagonal, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `replace_diagonal` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A, d):\n        # UNVECTORIZE THIS\n        for i in range(len(A)):\n            A[i][i] = d[i]\n        return A\n    #TAGS: loops\n    \n    ### Problem 32: Upper Triangular Matrix\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "replace_diagonal",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            },
+            {
+                "name": "d",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

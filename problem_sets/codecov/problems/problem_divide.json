@@ -1,0 +1,37 @@
+{
+    "identifier": "divide",
+    "description": "divide",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def divide(x, y):\n    if y == 0:\n        raise ZeroDivisionError(\"Divide by 0\")\n    else:\n        return x / y\n    "
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "divide",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "float"
+            },
+            {
+                "name": "y",
+                "type": "float"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ],
+        "exception": [
+            {
+                "type": "ZeroDivisionError"
+            }
+        ]
+    }
+}

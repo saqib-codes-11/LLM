@@ -1,0 +1,38 @@
+{
+    "identifier": "palindrome_rearrangement",
+    "description": "Determine if it is possible to rearrange characters of a given string to form a palindrome.",
+    "function_prototype": {
+        "function_name": "can_form_palindrome",
+        "parameters": [
+            {"name": "s", "type": "str"}
+        ],
+        "return_values": [{"type": "bool"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"s": "aabbcc"},
+            "expected_output": ["True"]
+        },
+        {
+            "input": {"s": "aabbccx"},
+            "expected_output": ["True"]
+        },
+        {
+            "input": {"s": "abc"},
+            "expected_output": ["False"]
+        }
+    ],
+    "tags": ["String Manipulation", "Palindrome"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `can_form_palindrome` function to determine if it is possible to rearrange the characters of a given string to form a palindrome.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"s": "aabb"}, "expected_output": ["True"]},
+                {"input": {"s": "racecar"}, "expected_output": ["True"]},
+                {"input": {"s": "hello"}, "expected_output": ["False"]}
+            ]
+        }
+    ]
+}

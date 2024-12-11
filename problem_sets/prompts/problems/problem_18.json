@@ -1,0 +1,33 @@
+{
+    "identifier": "factorial",
+    "description": "This problem tests the ability to compute the factorial of a number.",
+    "function_prototype": {
+        "function_name": "factorial",
+        "parameters": [{"name": "num", "type": "int"}],
+        "return_values": [{"type": "int"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"num": 0}, "expected_output": [1]},
+        {"input": {"num": 1}, "expected_output": [1]},
+        {"input": {"num": 5}, "expected_output": [120]}
+    ],
+    "tags": ["Math"],
+    "prompts": [
+        {
+            "prompt_id": "prompt_only",
+            "prompt": "Calculate factorial of a number.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "prompt_with_tests",
+            "prompt": "Write a function called `factorial` that takes a number and returns its factorial. Include test cases for 0, 1, and 5.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"num": 0}, "expected_output": [1]},
+                {"input": {"num": 1}, "expected_output": [1]},
+                {"input": {"num": 5}, "expected_output": [120]}
+            ]
+        }
+    ]
+}

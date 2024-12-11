@@ -1,0 +1,45 @@
+{
+  "identifier": "area_perimeter_rectangle_001",
+  "prompts": [
+    {
+      "prompt_id": "area_perimeter_rectangle_prompt_01",
+      "prompt": "Write a parent function named 'calculate_area' that takes the length and width of a rectangle as arguments and returns its area. Then, write a child function named 'calculate_perimeter' that takes the length and width of a rectangle and returns its perimeter.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"length": 5, "width": 10},
+          "expected_output": [50]
+        },
+        {
+          "input": {"length": 6, "width": 7},
+          "expected_output": [42]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_area",
+    "parameters": [
+      {"name": "length", "type": "int"},
+      {"name": "width", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "calculate_perimeter",
+    "parameters": [
+      {"name": "length", "type": "int"},
+      {"name": "width", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"length": 4, "width": 6}, "expected_output": [20]},
+    {"input": {"length": 3, "width": 8}, "expected_output": [22]},
+    {"input": {"length": 10, "width": 10}, "expected_output": [40]},
+    {"input": {"length": 2, "width": 9}, "expected_output": [22]}
+  ]
+}

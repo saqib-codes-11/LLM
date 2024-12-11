@@ -1,0 +1,43 @@
+{
+  "identifier": "min_value_and_pair_difference_001",
+  "prompts": [
+    {
+      "prompt_id": "min_value_and_pair_difference_prompt_01",
+      "prompt": "Write a parent function named 'find_min_value' that takes a list of integers and returns the smallest integer in the list. Then, write a child function named 'find_min_difference' that takes a list of integers and, utilizing 'find_min_value', returns the smallest absolute difference between any pair of integers in the list.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"numbers": [3, 8, 15, 23]},
+          "expected_output": [5]
+        },
+        {
+          "input": {"numbers": [1, 4, 12, 15]},
+          "expected_output": [3]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "find_min_value",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "find_min_difference",
+    "parameters": [
+      {"name": "numbers", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"numbers": [2, 9, 3, 5]}, "expected_output": [1]},
+    {"input": {"numbers": [10, 20, 30, 40]}, "expected_output": [10]},
+    {"input": {"numbers": [-1, -2, -3, -4]}, "expected_output": [1]},
+    {"input": {"numbers": [1, 1, 1, 1]}, "expected_output": [0]}
+  ]
+}

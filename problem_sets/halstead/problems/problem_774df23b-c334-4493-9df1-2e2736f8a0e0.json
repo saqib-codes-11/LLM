@@ -1,0 +1,84 @@
+{
+    "identifier": "problem_774df23b-c334-4493-9df1-2e2736f8a0e0",
+    "prompts": [
+        {
+            "prompt_id": "774df23b-c334-4493-9df1-2e2736f8a0e0",
+            "prompt": "Given a list of positive integers, find the element that appears exactly eight times in the list. Return the sum of the digits of this element to the seventh power.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    3
+                ]
+            },
+            "expected_output": [
+                11
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
+                ]
+            },
+            "expected_output": [
+                18
+            ]
+        }
+    ]
+}

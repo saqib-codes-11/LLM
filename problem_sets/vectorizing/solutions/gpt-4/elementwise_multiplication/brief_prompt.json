@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "elementwise_multiplication",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef elementwise_multiplication(A: np.array, B: np.array) -> np.array:\n    return np.multiply(A, B)",
+    "feedback": null
+}

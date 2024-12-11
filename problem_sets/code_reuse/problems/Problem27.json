@@ -1,0 +1,43 @@
+{
+  "identifier": "string_alterations_001",
+  "prompts": [
+    {
+      "prompt_id": "string_alterations_prompt_01",
+      "prompt": "Write a parent function named 'to_uppercase' that takes a string and returns it in uppercase. Then, write a child function named 'alternate_case' that takes a string and, utilizing 'to_uppercase', returns the string where every other letter is in lowercase starting from the second letter.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "alphabet"},
+          "expected_output": ["AlPhAbEt"]
+        },
+        {
+          "input": {"s": "python"},
+          "expected_output": ["PyThOn"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "to_uppercase",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "alternate_case",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "programming"}, "expected_output": ["PrOgRaMmInG"]},
+    {"input": {"s": "coding"}, "expected_output": ["CoDiNg"]},
+    {"input": {"s": "machine"}, "expected_output": ["MaChInE"]},
+    {"input": {"s": "learning"}, "expected_output": ["LeArNiNg"]}
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "identifier": "max_min_number_001",
+  "prompts": [
+    {
+      "prompt_id": "max_min_number_prompt_01",
+      "prompt": "Write a parent function named 'find_maximum' that takes a list of integers and returns the maximum number. Then, write a child function named 'find_minimum' that takes a list of integers and, utilizing 'find_maximum', returns the minimum number without using built-in min() function.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [1, 2, 3, 4, 5]},
+          "expected_output": [1]
+        },
+        {
+          "input": {"nums": [-1, -2, -3, -4, -5]},
+          "expected_output": [-5]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "find_maximum",
+    "parameters": [
+      {"name": "nums", "type": "list of int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "find_minimum",
+    "parameters": [
+      {"name": "nums", "type": "list of int"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [10, 20, 30, 40, 50]}, "expected_output": [10]},
+    {"input": {"nums": [-1, -10, -5, -20, -30]}, "expected_output": [-30]},
+    {"input": {"nums": [100, 200, 150, 180, 220]}, "expected_output": [100]},
+    {"input": {"nums": [0, -10, 10, -20, 20]}, "expected_output": [-20]}
+  ]
+}

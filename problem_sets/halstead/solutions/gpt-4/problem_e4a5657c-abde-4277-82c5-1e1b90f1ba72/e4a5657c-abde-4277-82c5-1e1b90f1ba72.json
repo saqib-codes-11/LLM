@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_e4a5657c-abde-4277-82c5-1e1b90f1ba72",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "e4a5657c-abde-4277-82c5-1e1b90f1ba72",
+    "solution_code": "def solve(n):\n    s = sum([int(c) for c in str(int(1024/11 * pow(n, 11))) if int(c) % 2 == 0])\n    return s",
+    "feedback": null
+}

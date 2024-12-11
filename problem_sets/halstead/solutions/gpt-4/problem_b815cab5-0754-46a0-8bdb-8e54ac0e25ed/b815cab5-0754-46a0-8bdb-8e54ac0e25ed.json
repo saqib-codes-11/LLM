@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_b815cab5-0754-46a0-8bdb-8e54ac0e25ed",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "b815cab5-0754-46a0-8bdb-8e54ac0e25ed",
+    "solution_code": "from typing import List\nimport math\ndef solve(n: List[int]) -> int:\n    n.sort()\n    median = n[math.ceil(len(n)/2)-1]\n    count = 0\n    for i in n:\n        if i > median and i%2==0:\n            count += 1\n    return sum(int(i) for i in str(count))",
+    "feedback": null
+}

@@ -1,0 +1,43 @@
+{
+  "identifier": "string_uppercase_concatenation_001",
+  "prompts": [
+    {
+      "prompt_id": "string_uppercase_concatenation_prompt_01",
+      "prompt": "Write a parent function named 'convert_to_uppercase' that takes a string as an argument and returns the string converted to uppercase. Then, write a child function named 'concatenate_uppercase' that takes a string as an argument, and utilizes 'convert_to_uppercase' to concatenate the original string with the uppercase version of the string.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "abc"},
+          "expected_output": ["abcABC"]
+        },
+        {
+          "input": {"s": "hello"},
+          "expected_output": ["helloHELLO"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "convert_to_uppercase",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "concatenate_uppercase",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "python"}, "expected_output": ["pythonPYTHON"]},
+    {"input": {"s": "gpt"}, "expected_output": ["gptGPT"]},
+    {"input": {"s": "code"}, "expected_output": ["codeCODE"]},
+    {"input": {"s": "ai"}, "expected_output": ["aiAI"]}
+  ]
+}

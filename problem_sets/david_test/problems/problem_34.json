@@ -1,0 +1,38 @@
+{
+    "identifier": "binary_tree_height",
+    "description": "Compute the height of a binary tree.",
+    "function_prototype": {
+        "function_name": "binary_tree_height",
+        "parameters": [
+            {"name": "tree_structure", "type": "List[Optional[int]]"}
+        ],
+        "return_values": [{"type": "int"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"tree_structure": [1,2,3,"None","None",4,5]},
+            "expected_output": [3]
+        },
+        {
+            "input": {"tree_structure": [1,2,"None",3,"None",4]},
+            "expected_output": [4]
+        },
+        {
+            "input": {"tree_structure": [1]},
+            "expected_output": [1]
+        }
+    ],
+    "tags": ["Binary Tree", "Data Structures"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `binary_tree_height` function to compute the height of a binary tree represented by a list in level order traversal.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"tree_structure": [1,2,3]}, "expected_output": [2]},
+                {"input": {"tree_structure": [1,2,"None",3]}, "expected_output": [3]},
+                {"input": {"tree_structure": [1,"None",2,"None",3]}, "expected_output": [3]}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "is_toeplitz",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "NumPy provides us with option to perform operations on matrix in convenient way. NumPy provides `numpy.linalg.norm(a - np.roll(a, 1), ord=np.inf) == 0` which can be used to solve this problem. \n\nWhere `a - np.roll(a, 1)` will give us the element wise subtraction of array a and it's previous elements. `linalg.norm` will give us the infinity norm of the result (which is max absolute value). If it is 0 then all values are equal to diagonals else not.\n\nFunction Signature:\nvectorized_is_toeplitz(A: int) -> bool\n\ndef vectorized_is_toeplitz(A):\n    import numpy as np\n    A = np.array(A)\n    return np.linalg.norm(A - np.roll(A, 1, axis = (0,1)), ord=np.inf) == 0",
+    "feedback": null
+}

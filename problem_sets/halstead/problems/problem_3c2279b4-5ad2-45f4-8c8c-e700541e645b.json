@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_3c2279b4-5ad2-45f4-8c8c-e700541e645b",
+    "prompts": [
+        {
+            "prompt_id": "3c2279b4-5ad2-45f4-8c8c-e700541e645b",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 1000), calculate the sum of the first n prime numbers and then return the sum of the digits of that result.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                2
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                5
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                1
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "problem_identifier": "problem_2f3a7426-7828-40d9-ad0f-dd9f2e363144",
+    "prompt_identifier": "2f3a7426-7828-40d9-ad0f-dd9f2e363144",
+    "model_identifier": "gpt-4",
+    "score": 0.3333333333333333,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Test failed:\n\tInput: n = [5, 5, 5, 5, 5, 6, 7, 8, 9, 10]; Expected Output: 13\n\tFunction prototype: solve(n: List[int]) -> int\n\tExpected result: 13 <class 'int'>\n\tActual result: 625 <class 'int'>",
+        "Error encountered during execution for test case Input: n = [2, 3, 4, 5, 6, 7, 8, 9, 10]; Expected Output: 0: list index out of range\nTraceback (most recent call last):\n  File \"/Users/vamsiimmanneni/Documents/Documents - Vamsi\u2019s MacBook Pro/Homework/SWE GPT/Integration/Strict/LLMCodingBenchmarkingFramework/execution.py\", line 76, in executor_script\n    result = function(*parameters)\n  File \"<string>\", line 9, in solve\nIndexError: list index out of range\n"
+    ]
+}

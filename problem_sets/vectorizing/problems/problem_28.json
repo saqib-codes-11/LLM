@@ -1,0 +1,29 @@
+{
+    "identifier": "flatten_matrix",
+    "description": "Given an unvectorized code for flatten_matrix, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `flatten_matrix` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        result = []\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                result.append(A[i][j])\n        return result\n    #TAGS: loops, nested loops\n    \n    ### Problem 29: Check Symmetry\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "flatten_matrix",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

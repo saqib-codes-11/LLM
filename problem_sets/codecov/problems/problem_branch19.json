@@ -1,0 +1,39 @@
+{
+    "identifier": "branch19",
+    "description": "branch19",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch19(x, y, z):\n  if x == 0:\n    if y == 0:\n      return True\n    else:\n      return False\n  else:\n    if z == 0:\n      return False\n    else:\n      if x > 0:\n        return x + y - z\n      else:\n        return x - y + z"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch19",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "int"
+            },
+            {
+                "name": "y",
+                "type": "int"
+            },
+            {
+                "name": "z",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "bool"
+            },
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "problem_identifier": "problem_1",
+    "prompt_identifier": "detailed_prompt",
+    "model_identifier": "text-davinci-002",
+    "score": 4.902676399027462,
+    "sub_criteria_scores": null,
+    "issues": []
+}

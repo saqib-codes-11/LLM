@@ -1,0 +1,76 @@
+{
+    "identifier": "problem_c898aa35-4cdd-4c41-8813-69ddfda95e8e",
+    "prompts": [
+        {
+            "prompt_id": "c898aa35-4cdd-4c41-8813-69ddfda95e8e",
+            "prompt": "Given a list of positive integers, find the element that appears exactly thrice in the list. Return the sum of the digits of this element squared.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    2,
+                    3,
+                    2,
+                    3,
+                    3
+                ]
+            },
+            "expected_output": [
+                9
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    5,
+                    5,
+                    7,
+                    7,
+                    7,
+                    9,
+                    9
+                ]
+            },
+            "expected_output": [
+                13
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    8,
+                    8,
+                    8,
+                    8,
+                    10,
+                    10,
+                    10,
+                    10,
+                    12,
+                    12,
+                    12
+                ]
+            },
+            "expected_output": [
+                9
+            ]
+        }
+    ]
+}

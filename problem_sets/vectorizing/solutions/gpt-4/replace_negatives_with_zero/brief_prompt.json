@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "replace_negatives_with_zero",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef replace_negatives_with_zero(A):\n    A = np.where(A < 0, 0, A)\n    return A",
+    "feedback": null
+}

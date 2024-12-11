@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_c6d49df8-0ce1-4db3-8641-914cf598899e",
+    "prompts": [
+        {
+            "prompt_id": "c6d49df8-0ce1-4db3-8641-914cf598899e",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 600), calculate the sum of the fourth powers of the first n prime numbers. Return the product of its prime digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                7
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                28
+            ]
+        }
+    ]
+}

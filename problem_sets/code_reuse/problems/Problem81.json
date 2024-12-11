@@ -1,0 +1,44 @@
+{
+  "identifier": "palindrome_generator_and_checker_001",
+  "prompts": [
+    {
+      "prompt_id": "palindrome_generator_and_checker_prompt_01",
+      "prompt": "Write a parent function named 'generate_palindromes' that takes two integers n and m and returns a list of all numeric palindromes within the range [n, m]. Subsequently, implement a child function named 'is_palindrome_word' that takes a string word, and checks whether it is a palindrome.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"n": 10, "m": 100, "word": "madam"},
+          "expected_output": [true]
+        },
+        {
+          "input": {"n": 1000, "m": 1100, "word": "python"},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "generate_palindromes",
+    "parameters": [
+      {"name": "n", "type": "int"},
+      {"name": "m", "type": "int"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_palindrome_word",
+    "parameters": [
+      {"name": "word", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"word": "racecar"}, "expected_output": [true]},
+    {"input": {"word": "example"}, "expected_output": [false]},
+    {"input": {"word": "level"}, "expected_output": [true]},
+    {"input": {"word": "openai"}, "expected_output": [false]}
+  ]
+}

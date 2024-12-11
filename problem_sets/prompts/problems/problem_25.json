@@ -1,0 +1,31 @@
+{
+    "identifier": "longest_common_substring",
+    "description": "This problem tests the ability to work with dynamic programming. The task is to implement a function that finds the longest common substring between two strings.",
+    "function_prototype": {
+        "function_name": "longest_common_substring",
+        "parameters": [{"name": "text1", "type": "str"}, {"name": "text2", "type": "str"}],
+        "return_values": [{"type": "str"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"text1": "abcde", "text2": "bcde"}, "expected_output": ["bcde"]},
+        {"input": {"text1": "abcdef", "text2": "abef"}, "expected_output": ["abe"]}
+    ],
+    "tags": ["Logic"],
+    "prompts": [
+        {
+            "prompt_id": "prompt_only",
+            "prompt": "Implement a function that finds the longest common substring between two strings.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "prompt_with_tests",
+            "prompt": "Write a function that finds the longest common substring between two strings. Include test cases for 'abcde' and 'abcdef'.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"text1": "abcde", "text2": "bcde"}, "expected_output": ["bcde"]},
+                {"input": {"text1": "abcdef", "text2": "abef"}, "expected_output": ["abe"]}
+            ]
+        }
+    ]
+}

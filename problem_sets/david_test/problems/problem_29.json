@@ -1,0 +1,35 @@
+{
+    "identifier": "shape_area_calculator",
+    "description": "Compute the area of a given geometric shape - either a rectangle or a circle.",
+    "function_prototype": {
+        "function_name": "compute_area",
+        "parameters": [
+            {"name": "shape", "type": "str"},
+            {"name": "dimension1", "type": "float"},
+            {"name": "dimension2", "type": "float"}
+        ],
+        "return_values": [{"type": "float"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"shape": "rectangle", "dimension1": 2.0, "dimension2": 3.0},
+            "expected_output": [6.0]
+        },
+        {
+            "input": {"shape": "circle", "dimension1": 1.0, "dimension2": "None"},
+            "expected_output": [3.141592653589793]
+        }
+    ],
+    "tags": ["Geometry", "Math"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `compute_area` function to compute the area of a given geometric shape. You are to determine the area of either a rectangle (given its width and height) or a circle (given its radius).",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"shape": "rectangle", "dimension1": 4.0, "dimension2": 5.0}, "expected_output": [20.0]},
+                {"input": {"shape": "circle", "dimension1": 2.0, "dimension2": "None"}, "expected_output": [12.56637061435]}
+            ]
+        }
+    ]
+}

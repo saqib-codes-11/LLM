@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_9a0d368d-bfe6-46ae-8d27-8c3d1e5a1951",
+    "prompts": [
+        {
+            "prompt_id": "9a0d368d-bfe6-46ae-8d27-8c3d1e5a1951",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 800), compute the sum of the sixth powers of the first n even numbers. Return the sum of its prime digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                0
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "identifier": "reverse_string",
+    "description": "This problem tests the ability to work with strings. The task is to implement a function that reverses a given string.",
+    "function_prototype": {
+        "function_name": "reverse_string",
+        "parameters": [{"name": "text", "type": "str"}],
+        "return_values": [{"type": "str"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"text": ""}, "expected_output": [""]},
+        {"input": {"text": "a"}, "expected_output": ["a"]},
+        {"input": {"text": "abc"}, "expected_output": ["cba"]}
+    ],
+    "tags": ["String"],
+    "prompts": [
+        {
+            "prompt_id": "prompt_only",
+            "prompt": "Reverse a string.",
+            "genericize": false,
+            "sample_inputs_outputs": []
+        },
+        {
+            "prompt_id": "prompt_with_tests",
+            "prompt": "Write a function called `reverse_string` that takes a string and returns it reversed. \n\nTest Cases:\n- Input: ''\n  Expected Output: ''\n- Input: 'a'\n  Expected Output: 'a'\n- Input: 'abc'\n  Expected Output: 'cba'",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {"input": {"text": ""}, "expected_output": [""]},
+                {"input": {"text": "a"}, "expected_output": ["a"]},
+                {"input": {"text": "abc"}, "expected_output": ["cba"]}
+            ]
+        }
+    ]
+}

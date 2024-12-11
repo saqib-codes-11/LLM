@@ -1,0 +1,11 @@
+{
+    "problem_identifier": "problem_1",
+    "prompt_identifier": "brief_prompt",
+    "model_identifier": "gpt-4",
+    "score": 0.0,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Error encountered during execution for test case Input: a = 1, b = 2; Expected Output: 3: invalid syntax (<string>, line 3)\nTraceback (most recent call last):\n  File \"/Users/xihanfu/Downloads/LLMCodingBenchmarkingFramework/execution.py\", line 56, in executor_script\n    exec(function_code, exec_globals)\n  File \"<string>\", line 3\n    Here is the function definition:\n                ^\nSyntaxError: invalid syntax\n",
+        "Error encountered during execution for test case Input: a = -1, b = 2; Expected Output: 1: invalid syntax (<string>, line 3)\nTraceback (most recent call last):\n  File \"/Users/xihanfu/Downloads/LLMCodingBenchmarkingFramework/execution.py\", line 56, in executor_script\n    exec(function_code, exec_globals)\n  File \"<string>\", line 3\n    Here is the function definition:\n                ^\nSyntaxError: invalid syntax\n"
+    ]
+}

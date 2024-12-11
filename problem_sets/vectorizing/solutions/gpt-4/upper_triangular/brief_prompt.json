@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "upper_triangular",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef upper_triangular(A):\n    return np.triu(A).tolist()",
+    "feedback": null
+}

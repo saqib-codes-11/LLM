@@ -1,0 +1,45 @@
+{
+    "identifier": "problem_shopping_system",
+    "description": "Design and manage a simple online shopping system with various commands such as adding products, adding users, simulating product purchases, and retrieving user purchases.",
+    "function_prototype": {
+        "function_name": "manage_shopping_system",
+        "parameters": [
+            {"name": "commands", "type": "List[Tuple[str, Union[str, int, float]]]"}
+        ],
+        "return_values": [{"type": "List[Union[str, List[str]]]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "commands": [
+                    ["add_product", 1, "apple", 0.5],
+                    ["add_user", 1001, "John"],
+                    ["purchase_product", 1001, 1],
+                    ["get_user_purchases", 1001]
+                ]
+            },
+            "expected_output": ["None", "None", "None", ["apple"]]
+        }
+    ],
+    "tags": ["System Design", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "shopping_system_description",
+            "prompt": "Implement the manage_shopping_system function to handle multiple shopping system commands like adding products, adding users, simulating product purchases, and retrieving user purchases. Return a list with the results of each command.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "commands": [
+                            ["add_product", 2, "banana", 0.3],
+                            ["add_user", 1002, "Alice"],
+                            ["purchase_product", 1002, 2],
+                            ["get_user_purchases", 1002]
+                        ]
+                    },
+                    "expected_output": ["None", "None", "None", ["banana"]]
+                }
+            ]
+        }
+    ]
+}

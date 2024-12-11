@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_b14351ef-8e76-4618-844a-7b0f8029f336",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "b14351ef-8e76-4618-844a-7b0f8029f336",
+    "solution_code": "def solve(n: int) -> int:\n    # the sequence repeats every 20 terms, to reduce the problem size we take n modulo 20\n    n = n % 20\n    # if n is 0, we set it to 20 since the sequence repeats every 20 terms\n    if n == 0:\n        n = 20\n    # initialize the terms a1 and a2 with the given base cases\n    a1, a2 = 26, 29\n    # iterate from the third term onwards up to the nth term\n    for _ in range(3, n+1):\n        # calculate the next term under modulo 10\n        a1, a2 = a2, (24*a2 - 20*a1 + 27) % 10\n    # return the last term (a2) as the result\n    return a2",
+    "feedback": null
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_b7ab9275-bff7-4ead-ac82-5f76af05bc2c",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "b7ab9275-bff7-4ead-ac82-5f76af05bc2c",
+    "solution_code": "from typing import List\n\ndef solve(n: List[int]) -> int:\n    n.sort()\n    middle = len(n) // 2\n    median = n[middle] if len(n) % 2 else (n[middle - 1] + n[middle]) // 2\n    return eval(\"*\".join(str(median)))",
+    "feedback": null
+}

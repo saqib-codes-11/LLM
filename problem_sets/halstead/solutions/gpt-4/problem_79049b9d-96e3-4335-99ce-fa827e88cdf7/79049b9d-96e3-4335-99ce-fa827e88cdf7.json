@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_79049b9d-96e3-4335-99ce-fa827e88cdf7",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "79049b9d-96e3-4335-99ce-fa827e88cdf7",
+    "solution_code": "def solve(n: int) -> int:\n    a, b = 8, 1\n    for _ in range(n-1):\n        a, b = (16*b - 12*a + 19) % 10, a\n    return a",
+    "feedback": null
+}

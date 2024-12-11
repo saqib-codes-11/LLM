@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_abc2b20c-d50e-48dd-bc2c-bc46b0ea4e27",
+    "prompts": [
+        {
+            "prompt_id": "abc2b20c-d50e-48dd-bc2c-bc46b0ea4e27",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 210), identify the nth number in the sequence defined as: a(n) = 8*a(n-1) - 4*a(n-2) + 11, a(1) = 10, a(2) = 13. Return its last digit.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                3
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                5
+            ]
+        }
+    ]
+}

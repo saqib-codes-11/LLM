@@ -1,0 +1,38 @@
+{
+	"identifier": "problem_5",
+	"description": "Debug and fix the function to find the factorial of a number.",
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "The provided function `factorial` attempts to return the factorial of a given integer, but it contains bugs. Debug and fix the function to return the correct factorial.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"n": 5}, "expected_output": [120]},
+				{"input": {"n": 3}, "expected_output": [6]}
+			],
+			"input_code": "def factorial(n: int) -> int:\n    return n * factorial(n - 1)"
+		},
+		{
+			"prompt_id": "detailed_prompt",
+			"prompt": "The function named 'factorial' is intended to take an integer argument 'n', and return the factorial of 'n' as an integer. However, it contains bugs. Debug and fix the function to ensure it returns the correct factorial.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"n": 5}, "expected_output": [120]},
+				{"input": {"n": 3}, "expected_output": [6]}
+			],
+			"input_code": "def factorial(n: int) -> int:\n    if n == 0:\n        return 1\n    return n + factorial(n - 1)"
+		}
+	],
+	"function_prototype": {
+		"function_name": "factorial",
+		"parameters": [{"name": "n", "type": "int"}],
+		"return_values": [{"type": "int"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"n": 4}, "expected_output": [24]},
+		{"input": {"n": 6}, "expected_output": [720]}
+	],
+	"optimal_solution": "def factorial(n: int) -> int:\n    if n == 0 or n == 1:\n        return 1\n    return n * factorial(n - 1)",
+	"additional_instructions": "Ensure that your function handles the base case correctly.",
+	"tags": ["Debugging", "Recursion", "Medium"]
+}

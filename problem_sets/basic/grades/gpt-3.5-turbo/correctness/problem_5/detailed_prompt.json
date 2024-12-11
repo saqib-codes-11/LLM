@@ -1,0 +1,11 @@
+{
+    "problem_identifier": "problem_5",
+    "prompt_identifier": "detailed_prompt",
+    "model_identifier": "gpt-3.5-turbo",
+    "score": 0.0,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Error encountered during execution for test case Input: a = 10, b = 3; Expected Output: 1: invalid syntax (<string>, line 5)\nTraceback (most recent call last):\n  File \"C:\\Users\\skyle\\Desktop\\proompting\\LLMCodingBenchmarkingFramework\\execution.py\", line 56, in executor_script\n    exec(function_code, exec_globals)\n  File \"<string>\", line 5\n    To find the remainder of two integers `a` and `b`, I will use the modulo operator `%`.\n       ^\nSyntaxError: invalid syntax\n",
+        "Error encountered during execution for test case Input: a = 8, b = 2; Expected Output: 0: invalid syntax (<string>, line 5)\nTraceback (most recent call last):\n  File \"C:\\Users\\skyle\\Desktop\\proompting\\LLMCodingBenchmarkingFramework\\execution.py\", line 56, in executor_script\n    exec(function_code, exec_globals)\n  File \"<string>\", line 5\n    To find the remainder of two integers `a` and `b`, I will use the modulo operator `%`.\n       ^\nSyntaxError: invalid syntax\n"
+    ]
+}

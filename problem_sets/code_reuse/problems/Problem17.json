@@ -1,0 +1,43 @@
+{
+  "identifier": "string_reversal_concatenation_001",
+  "prompts": [
+    {
+      "prompt_id": "string_reversal_concatenation_prompt_01",
+      "prompt": "Write a parent function named 'reverse_string' that takes a string as an argument and returns the reversed string. Then, write a child function named 'concatenate_original_reversed' that takes a string as an argument, and utilizes 'reverse_string' to concatenate the reversed string to the original string and return the result.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"s": "abc"},
+          "expected_output": ["abccba"]
+        },
+        {
+          "input": {"s": "python"},
+          "expected_output": ["pythonnohtyp"]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "reverse_string",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "concatenate_original_reversed",
+    "parameters": [
+      {"name": "s", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"s": "hello"}, "expected_output": ["helloolleh"]},
+    {"input": {"s": "world"}, "expected_output": ["worlddlrow"]},
+    {"input": {"s": "openai"}, "expected_output": ["openaiianepo"]},
+    {"input": {"s": "gpt"}, "expected_output": ["gpttpg"]}
+  ]
+}

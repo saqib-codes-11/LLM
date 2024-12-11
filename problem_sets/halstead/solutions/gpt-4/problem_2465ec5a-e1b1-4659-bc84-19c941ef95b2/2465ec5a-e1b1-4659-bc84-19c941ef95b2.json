@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_2465ec5a-e1b1-4659-bc84-19c941ef95b2",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "2465ec5a-e1b1-4659-bc84-19c941ef95b2",
+    "solution_code": "def solve(n: int) -> int:\n    # Initialize the first two numbers in the sequence.\n    a, b = 2, 5\n\n    # Calculate the sequence iteratively.\n    for _ in range(3, n+1):\n        a, b = b, (2*b - a + 3) % 10\n  \n    # Return the last digit of nth number in the sequence.\n    return b",
+    "feedback": null
+}

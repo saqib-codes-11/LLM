@@ -1,0 +1,65 @@
+{
+  "identifier": "math_operations_001",
+  "prompts": [
+    {
+      "prompt_id": "math_operations_prompt_01",
+      "prompt": "Write a parent function named 'calculate_square' that takes a number as an argument and returns its square. Then, write a child function named 'calculate_square_root' that takes a number as an argument and utilizes 'calculate_square' to determine the square root of the number using an iterative method, such as the Newton-Raphson method.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"n": 9},
+          "expected_output": [3]
+        },
+        {
+          "input": {"n": 25},
+          "expected_output": [5]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_square",
+    "parameters": [
+      {
+        "name": "n",
+        "type": "float"
+      }
+    ],
+    "return_values": [
+      {
+        "type": "float"
+      }
+    ]
+  },
+  "function_prototype": {
+    "function_name": "calculate_square_root",
+    "parameters": [
+      {
+        "name": "n",
+        "type": "float"
+      }
+    ],
+    "return_values": [
+      {
+        "type": "float"
+      }
+    ]
+  },
+  "correctness_test_suite": [
+    {
+      "input": {"n": 16},
+      "expected_output": [4]
+    },
+    {
+      "input": {"n": 4},
+      "expected_output": [2]
+    },
+    {
+      "input": {"n": 81},
+      "expected_output": [9]
+    },
+    {
+      "input": {"n": 1},
+      "expected_output": [1]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+    "identifier": "branch25",
+    "description": "branch25",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch25 (user_input1, user_input2):\n\n    # Initialize Variables\n    result1 = 0\n    result2 = 0\n    flag = False\n\n    # Check if user input1 is less than 10\n    if user_input1 < 10:\n        result1 = user_input1 + 5\n    else:\n        result1 = user_input1 - 5\n\n    # Check if user input2 is greater than 10\n    if user_input2 > 10:\n        result2 = user_input2 + 5\n    else:\n        result2 = user_input2 - 5\n\n    # Check if both user inputs are equal\n    if user_input1 == user_input2:\n        flag = True\n\n    # Return combined results\n    return result1, result2, flag"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch25",
+        "parameters": [
+            {
+                "name": "user_input1",
+                "type": "int"
+            },
+            {
+                "name": "user_input2",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            },
+            {
+                "type": "int"
+            },
+            {
+                "type": "bool"
+            }
+        ]
+    }
+}

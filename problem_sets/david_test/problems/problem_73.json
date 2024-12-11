@@ -1,0 +1,41 @@
+{
+    "identifier": "problem_tic_tac_toe",
+    "description": "Simulate a game of Tic Tac Toe based on a sequence of moves and return the final state of the board, the winner, and whether the board is full.",
+    "function_prototype": {
+        "function_name": "play_tic_tac_toe",
+        "parameters": [{"name": "moves", "type": "list"}],
+        "return_values": [{"type": "list"}, {"type": "str"}, {"type": "bool"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "moves": [[0, 0], [1, 1], [0, 1], [2, 2], [0, 2]]
+            },
+            "expected_output": [
+                [["X", "X", "X"], [" ", "O", " "], [" ", " ", "O"]],
+                "X",
+                "False"
+            ]
+        }
+    ],
+    "tags": ["Simulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the play_tic_tac_toe function to simulate a game of Tic Tac Toe based on a sequence of moves and return the final state of the board, the winner, and whether the board is full.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "moves": [[0, 0], [1, 1], [0, 1]]
+                    },
+                    "expected_output": [
+                        [["X", "X", " "], [" ", "O", " "], [" ", " ", " "]],
+                        "None",
+                        "False"
+                    ]
+                }
+            ]
+        }
+    ]
+}

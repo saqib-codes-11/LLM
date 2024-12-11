@@ -1,0 +1,29 @@
+{
+    "identifier": "problem_data_processor",
+    "description": "Write a function to process data based on the specified operation.",
+    "function_prototype": {
+        "function_name": "process_data",
+        "parameters": [
+            {"name": "data_list", "type": "list"},
+            {"name": "operation", "type": "str"}
+        ],
+        "return_values": [{"type": "list/float"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"data_list": [1, -3, 4, 5], "operation": "filter"}, "expected_output": [[1, 4, 5]]},
+        {"input": {"data_list": [1, -3, 4, 5], "operation": "average"}, "expected_output": [1.75]},
+        {"input": {"data_list": [1, -3, 4, 5], "operation": "maximum"}, "expected_output": [5]}
+    ],
+    "tags": ["Data Processing", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the process_data function to handle data operations such as filtering for positive numbers, computing the average, and finding the maximum value.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"data_list": [2, 3, -1, 4], "operation": "filter"}, "expected_output": [[2, 3, 4]]},
+                {"input": {"data_list": [2, 3, -1, 4], "operation": "average"}, "expected_output": [2.0]}
+            ]
+        }
+    ]
+}

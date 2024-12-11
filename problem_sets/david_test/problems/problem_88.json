@@ -1,0 +1,30 @@
+{
+    "identifier": "problem_matrix_operations",
+    "description": "Write a function to perform operations on a matrix.",
+    "function_prototype": {
+        "function_name": "matrix_operation",
+        "parameters": [
+            {"name": "matrix", "type": "list[list[int]]"},
+            {"name": "operation", "type": "str"},
+            {"name": "scalar", "type": "int", "optional": true}
+        ],
+        "return_values": [{"type": "list[list[int]]/int"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"matrix": [[1, 2], [3, 4]], "operation": "transpose"}, "expected_output": [[1, 3], [2, 4]]},
+        {"input": {"matrix": [[1, 2], [3, 4]], "operation": "determinant"}, "expected_output": [-2]},
+        {"input": {"matrix": [[1, 2], [3, 4]], "operation": "multiply", "scalar": 2}, "expected_output": [[2, 4], [6, 8]]}
+    ],
+    "tags": ["Matrix", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the matrix_operation function to handle matrix operations such as transposition, calculating the determinant, and multiplying by a scalar.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"matrix": [[2, 3], [4, 5]], "operation": "transpose"}, "expected_output": [[2, 4], [3, 5]]},
+                {"input": {"matrix": [[2, 3], [4, 5]], "operation": "multiply", "scalar": 3}, "expected_output": [[6, 9], [12, 15]]}
+            ]
+        }
+    ]
+}

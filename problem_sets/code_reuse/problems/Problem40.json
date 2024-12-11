@@ -1,0 +1,45 @@
+{
+  "identifier": "append_and_extend_001",
+  "prompts": [
+    {
+      "prompt_id": "append_and_extend_prompt_01",
+      "prompt": "Write a parent function named 'append_to_list' that takes a list and a single item, appending the item to the list, and returning the modified list. Then, write a child function named 'extend_list' that takes two lists and, utilizing 'append_to_list', appends all elements from the second list to the first one, returning the extended list.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"list1": [1, 2, 3], "list2": [4, 5, 6]},
+          "expected_output": [[1, 2, 3, 4, 5, 6]]
+        },
+        {
+          "input": {"list1": ["a", "b"], "list2": ["c", "d", "e"]},
+          "expected_output": [["a", "b", "c", "d", "e"]]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "append_to_list",
+    "parameters": [
+      {"name": "list1", "type": "list"},
+      {"name": "item", "type": "any"}
+    ],
+    "return_values": [
+      {"type": "list"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "extend_list",
+    "parameters": [
+      {"name": "list1", "type": "list"},
+      {"name": "list2", "type": "list"}
+    ],
+    "return_values": [
+      {"type": "list"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"list1": [1, 2], "list2": [3, 4]}, "expected_output": [[1, 2, 3, 4]]},
+    {"input": {"list1": ["apple"], "list2": ["banana", "cherry"]}, "expected_output": [["apple", "banana", "cherry"]]},
+    {"input": {"list1": [100, 200], "list2": [300, 400]}, "expected_output": [[100, 200, 300, 400]]},
+    {"input": {"list1": ["x", "y"], "list2": ["z"]}, "expected_output": [["x", "y", "z"]]}
+  ]
+}

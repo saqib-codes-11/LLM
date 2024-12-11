@@ -1,0 +1,38 @@
+{
+	"identifier": "problem_1",
+	"description": "Debug and fix the function to multiply two numbers.",
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "The provided function `multiply` attempts to return the product of two integers, but it contains bugs. Debug and fix the function to return the correct product.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"a": 5, "b": 6}, "expected_output": [30]},
+				{"input": {"a": 8, "b": 3}, "expected_output": [24]}
+			],
+			"input_code": "def multiply(a: int, b: int) -> int:\n    return a + b"
+		},
+		{
+			"prompt_id": "detailed_prompt",
+			"prompt": "The function named 'multiply' is intended to take two integer arguments, 'a' and 'b', and return their product as an integer. However, it contains bugs. Debug and fix the function to ensure it returns the correct product.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"a": 5, "b": 6}, "expected_output": [30]},
+				{"input": {"a": 8, "b": 3}, "expected_output": [24]}
+			],
+			"input_code": "def multiply(a: int, b: int) -> int:\n    return a * b * 2  # bug: incorrect operation"
+		}
+	],
+	"function_prototype": {
+		"function_name": "multiply",
+		"parameters": [{"name": "a", "type": "int"}, {"name": "b", "type": "int"}],
+		"return_values": [{"type": "int"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"a": 4, "b": 3}, "expected_output": [12]},
+		{"input": {"a": 7, "b": 2}, "expected_output": [14]}
+	],
+	"optimal_solution": "def multiply(a: int, b: int) -> int:\n    return a * b",
+	"additional_instructions": "Ensure that your function handles negative numbers as well.",
+	"tags": ["Debugging", "Easy"]
+}

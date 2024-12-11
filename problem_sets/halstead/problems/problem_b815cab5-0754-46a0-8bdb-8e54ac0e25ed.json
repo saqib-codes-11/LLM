@@ -1,0 +1,73 @@
+{
+    "identifier": "problem_b815cab5-0754-46a0-8bdb-8e54ac0e25ed",
+    "prompts": [
+        {
+            "prompt_id": "b815cab5-0754-46a0-8bdb-8e54ac0e25ed",
+            "prompt": "Given a list of positive integers, find the number of elements that are both even and greater than the median of the list. Return the sum of the digits of this count.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    2,
+                    4,
+                    6,
+                    8,
+                    10
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    5,
+                    10,
+                    15,
+                    20,
+                    25,
+                    30
+                ]
+            },
+            "expected_output": [
+                2
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ]
+            },
+            "expected_output": [
+                3
+            ]
+        }
+    ]
+}

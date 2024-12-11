@@ -1,0 +1,31 @@
+{
+	"identifier": "validate_email_address",
+	"description": "This problem tests the ability to work with string manipulation and regular expressions. The task is to implement a function that validates an email address according to certain rules.",
+	"function_prototype": {
+		"function_name": "validate_email",
+		"parameters": [{"name": "email", "type": "str"}],
+		"return_values": [{"type": "int"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"email": "test@example.com"}, "expected_output": [1]},
+		{"input": {"email": "test.example.com"}, "expected_output": [0]}
+	],
+	"tags": ["Strings", "Regular Expressions"],
+	"prompts": [
+		{
+			"prompt_id": "prompt_only",
+			"prompt": "Implement a function that validates an email address according to certain rules.",
+			"genericize": false,
+			"sample_inputs_outputs": []
+		},
+		{
+			"prompt_id": "prompt_with_tests",
+			"prompt": "Implement a function that validates an email address according to certain rules.\n\nTest Cases:\n- Input: 'test@example.com'\n  Expected Output: True\n- Input: 'test.example.com'\n  Expected Output: False",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"email": "test@example.com"}, "expected_output": [1]},
+				{"input": {"email": "test.example.com"}, "expected_output": [0]}
+			]
+		}
+	]
+}

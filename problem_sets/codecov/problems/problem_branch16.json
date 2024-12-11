@@ -1,0 +1,36 @@
+{
+    "identifier": "branch16",
+    "description": "branch16",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch16(in_1, in_2, in_3):\n  # first branch\n  if in_1 == 1:\n    out_1 = in_2 + in_3\n  elif in_1 == 2:\n    out_1 = in_2 - in_3\n  elif in_1 == 3:\n    out_1 = in_2 * in_3\n  else:\n    out_1 = in_2 / in_3\n  \n  # second branch\n  if out_1 > 0:\n    out_2 = out_1 + in_1\n  elif out_1 < 0:\n    out_2 = out_1 - in_1\n  else:\n    out_2 = out_1 * in_1\n  \n  # third branch\n  if out_2 > 0 and in_3 > 0:\n    out_3 = out_2 * in_3\n  elif out_2 < 0 and in_3 < 0:\n    out_3 = out_2 / in_3\n  else:\n    out_3 = out_2 + in_3\n  \n  # fourth branch\n  if out_3 > 0:\n    out_4 = out_3 + in_1\n  elif out_3 < 0:\n    out_4 = out_3 - in_1\n  else:\n    out_4 = out_3 * in_1\n  \n  return out_4"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch16",
+        "parameters": [
+            {
+                "name": "in_1",
+                "type": "int"
+            },
+            {
+                "name": "in_2",
+                "type": "int"
+            },
+            {
+                "name": "in_3",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

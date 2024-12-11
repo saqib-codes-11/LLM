@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "right_rotate_matrix",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef right_rotate_matrix(A, k):\n    A = np.array(A)\n    k %= A.shape[1]\n    return np.roll(A, -k, axis=0).tolist()",
+    "feedback": null
+}

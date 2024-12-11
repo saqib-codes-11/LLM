@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_d925b34d-1347-4329-a3ae-6bbc6a017923",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "d925b34d-1347-4329-a3ae-6bbc6a017923",
+    "solution_code": "def solve(n: int) -> int:\n    sum_of_powers = (2 * n ** 3) ** 2\n    sum_of_even_digits = 0\n    for digit in str(sum_of_powers):\n        if int(digit) % 2 == 0:\n            sum_of_even_digits += int(digit)\n    return sum_of_even_digits",
+    "feedback": null
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_c3c1ce8a-ca2a-4c87-b657-a59ec1704cc4",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "c3c1ce8a-ca2a-4c87-b657-a59ec1704cc4",
+    "solution_code": "def solve(n: int) -> int:\n    a, b = 7, 10\n    for i in range(3, n + 1):\n        a, b = b, (5*a - 3*b + 8) % 10\n    return b",
+    "feedback": null
+}

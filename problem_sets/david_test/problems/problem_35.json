@@ -1,0 +1,40 @@
+{
+    "identifier": "perform_set_operations",
+    "description": "Perform union, intersection, or difference operations on two given sets.",
+    "function_prototype": {
+        "function_name": "perform_set_operations",
+        "parameters": [
+            {"name": "set1", "type": "List[int]"},
+            {"name": "set2", "type": "List[int]"},
+            {"name": "operation", "type": "str"}
+        ],
+        "return_values": [{"type": "List[int]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"set1": [1,2,3], "set2": [2,3,4], "operation": "union"},
+            "expected_output": [1,2,3,4]
+        },
+        {
+            "input": {"set1": [1,2,3], "set2": [2,3,4], "operation": "intersection"},
+            "expected_output": [2,3]
+        },
+        {
+            "input": {"set1": [1,2,3], "set2": [2,3,4], "operation": "difference"},
+            "expected_output": [1]
+        }
+    ],
+    "tags": ["Set Operations"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the `perform_set_operations` function to compute union, intersection, or difference of two sets, based on the given operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"set1": [1,2,3], "set2": [3,4,5], "operation": "union"}, "expected_output": [1,2,3,4,5]},
+                {"input": {"set1": [1,2,3], "set2": [3,4,5], "operation": "intersection"}, "expected_output": [3]},
+                {"input": {"set1": [1,2,3], "set2": [3,4,5], "operation": "difference"}, "expected_output": [1,2]}
+            ]
+        }
+    ]
+}

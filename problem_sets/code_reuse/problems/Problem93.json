@@ -1,0 +1,45 @@
+{
+  "identifier": "concatenate_and_length_001",
+  "prompts": [
+    {
+      "prompt_id": "concatenate_and_length_prompt_01",
+      "prompt": "Write a parent function named 'concatenate_strings' that accepts two strings `str1` and `str2` and returns a single string which is a concatenation of the two input strings. Furthermore, develop a child function named 'length_of_concatenation' which accepts two strings `str1` and `str2`, utilizes 'concatenate_strings' to concatenate them, and returns the length of the concatenated string.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"str1": "Hello", "str2": "World"},
+          "expected_output": [10]
+        },
+        {
+          "input": {"str1": "foo", "str2": "bar"},
+          "expected_output": [6]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "concatenate_strings",
+    "parameters": [
+      {"name": "str1", "type": "str"},
+      {"name": "str2", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "str"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "length_of_concatenation",
+    "parameters": [
+      {"name": "str1", "type": "str"},
+      {"name": "str2", "type": "str"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"str1": "abc", "str2": "def"}, "expected_output": [6]},
+    {"input": {"str1": "123", "str2": "456"}, "expected_output": [6]},
+    {"input": {"str1": "Hello", "str2": "123"}, "expected_output": [8]},
+    {"input": {"str1": "", "str2": ""}, "expected_output": [0]}
+  ]
+}

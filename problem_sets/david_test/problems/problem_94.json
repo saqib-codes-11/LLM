@@ -1,0 +1,29 @@
+{
+    "identifier": "problem_string_manipulator",
+    "description": "Write a function to perform specified string manipulation operations such as reversing the string or removing duplicate characters.",
+    "function_prototype": {
+        "function_name": "string_operation",
+        "parameters": [
+            {"name": "input_string", "type": "str"},
+            {"name": "operation", "type": "str"}
+        ],
+        "return_values": [{"type": "str"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"input_string": "hello", "operation": "reverse"}, "expected_output": ["olleh"]},
+        {"input": {"input_string": "hello", "operation": "remove_duplicates"}, "expected_output": ["helo"]},
+        {"input": {"input_string": "programming", "operation": "remove_duplicates"}, "expected_output": ["progamin"]}
+    ],
+    "tags": ["String Manipulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the string_operation function to perform the specified string manipulation operation, such as reversing the string or removing duplicate characters, on the input string.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"input_string": "world", "operation": "reverse"}, "expected_output": ["dlrow"]},
+                {"input": {"input_string": "apple", "operation": "remove_duplicates"}, "expected_output": ["aple"]}
+            ]
+        }
+    ]
+}

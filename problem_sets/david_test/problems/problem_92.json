@@ -1,0 +1,30 @@
+{
+    "identifier": "problem_perfect_numbers",
+    "description": "Write a function to perform operations related to perfect numbers.",
+    "function_prototype": {
+        "function_name": "perfect_numbers_operation",
+        "parameters": [
+            {"name": "operation", "type": "str"},
+            {"name": "limit", "type": "int"},
+            {"name": "num", "type": "int", "optional": true}
+        ],
+        "return_values": [{"type": "bool/list"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"operation": "is_perfect", "limit": 1000, "num": 28}, "expected_output": [true]},
+        {"input": {"operation": "is_perfect", "limit": 1000, "num": 10}, "expected_output": [false]},
+        {"input": {"operation": "find_perfect_numbers", "limit": 1000}, "expected_output": [[6, 28, 496]]}
+    ],
+    "tags": ["Number Theory", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the perfect_numbers_operation function to handle perfect number operations such as checking if a number is perfect and finding all perfect numbers within a specified limit.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"operation": "is_perfect", "limit": 500, "num": 6}, "expected_output": [true]},
+                {"input": {"operation": "find_perfect_numbers", "limit": 30}, "expected_output": [[6, 28]]}
+            ]
+        }
+    ]
+}

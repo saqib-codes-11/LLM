@@ -1,0 +1,35 @@
+{
+    "identifier": "branch38",
+    "description": "branch38",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch38(input1, input2):\n    # Set up initial variables\n    result1 = 0\n    result2 = 0\n    # Branch 1\n    if input1 == 1:\n        result1 = input2 * 3\n    # Branch 2\n    elif input1 == 2:\n        result1 = input2 * 5\n    # Branch 3\n    elif input1 == 3:\n        result1 = input2 * 7\n    # Branch 4\n    elif input1 == 4:\n        result1 = input2 * 11\n    # Branch 5\n    elif input1 == 5:\n        result1 = input2 * 13\n    # Branch 6\n    elif input1 == 6:\n        result1 = input2 * 17\n    # Branch 7\n    elif input1 == 7:\n        result1 = input2 * 19\n    # Branch 8\n    elif input1 == 8:\n        result1 = input2 * 23\n    # Branch 9\n    elif input1 == 9:\n        result1 = input2 * 29\n    # Branch 10\n    elif input1 == 10:\n        result1 = input2 * 31\n    # Branch 11\n    elif input1 == 11:\n        result1 = input2 * 37\n    # Branch 12\n    elif input1 == 12:\n        result1 = input2 * 41\n    # Branch 13\n    elif input1 == 13:\n        result1 = input2 * 43\n    # Branch 14\n    elif input1 == 14:\n        result1 = input2 * 47\n    # Branch 15\n    elif input1 == 15:\n        result1 = input2 * 53\n    # Branch 16\n    elif input1 == 16:\n        result1 = input2 * 59\n    # Branch 17\n    elif input1 == 17:\n        result1 = input2 * 61\n    # Branch 18\n    elif input1 == 18:\n        result1 = input2 * 67\n    # Branch 19\n    elif input1 == 19:\n        result1 = input2 * 71\n    # Branch 20\n    elif input1 == 20:\n        result1 = input2 * 73\n    # Branch 21\n    elif input1 == 21:\n        result1 = input2 * 79\n    # Branch 22\n    elif input1 == 22:\n        result1 = input2 * 83\n    # Branch 23\n    elif input1 == 23:\n        result1 = input2 * 89\n    # Branch 24\n    elif input1 == 24:\n        result1 = input2 * 97\n    # Branch 25\n    elif input1 == 25:\n        result1 = input2 * 101\n    # Branch 26\n    elif input1 == 26:\n        result1 = input2 * 103\n    # Branch 27\n    elif input1 == 27:\n        result1 = input2 * 107\n    # Branch 28\n    elif input1 == 28:\n        result1 = input2 * 109\n    # Branch 29\n    elif input1 == 29:\n        result1 = input2 * 113\n    # Branch 30\n    elif input1 == 30:\n        result1 = input2 * 127\n    # Branch 31\n    elif input1 == 31:\n        result1 = input2 * 131\n    # Branch 32\n    elif input1 == 32:\n        result1 = input2 * 137\n    # Branch 33\n    elif input1 == 33:\n        result1 = input2 * 139\n    # Branch 34\n    elif input1 == 34:\n        result1 = input2 * 149\n    # Branch 35\n    elif input1 == 35:\n        result1 = input2 * 151\n    # Branch 36\n    elif input1 == 36:\n        result1 = input2 * 157\n    # Branch 37\n    elif input1 == 37:\n        result1 = input2 * 163\n    # Branch 38\n    elif input1 == 38:\n        result1 = input2 * 167\n    # Add the results\n    result2 = result1 + input2\n    # Return the results\n    return result1, result2"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch38",
+        "parameters": [
+            {
+                "name": "input1",
+                "type": "int"
+            },
+            {
+                "name": "input2",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            },
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

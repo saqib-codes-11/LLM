@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "matrix_addition",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef matrix_addition(A, B):\n    # transform input lists into numpy arrays\n    array_A = np.array(A)\n    array_B = np.array(B)\n    # perform element-wise addition\n    result = array_A + array_B\n    # transform the result into a list of lists and return\n    return result.tolist()",
+    "feedback": null
+}

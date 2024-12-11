@@ -1,0 +1,36 @@
+{
+    "identifier": "branch57",
+    "description": "branch57",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch57(num1, num2, num3):\n\t\n\tif num1 > num2 and num1 > num3:\n\t\treturn num1\n\telif num2 > num1 and num2 > num3:\n\t\treturn num2\n\telif num3 > num1 and num3 > num2:\n\t\treturn num3\n\telif num1 == num2 and num1 > num3:\n\t\treturn num1\n\telif num2 == num3 and num2 > num1:\n\t\treturn num2\n\telif num1 == num3 and num1 > num2:\n\t\treturn num1\n\telse:\n\t\treturn None"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch57",
+        "parameters": [
+            {
+                "name": "num1",
+                "type": "int"
+            },
+            {
+                "name": "num2",
+                "type": "int"
+            },
+            {
+                "name": "num3",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

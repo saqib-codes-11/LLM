@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_9c6b2cb6-fa88-44ee-8243-869ea271ff83",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "9c6b2cb6-fa88-44ee-8243-869ea271ff83",
+    "solution_code": "def solve(n: int) -> int:\n    # Define the sequence\n    seq = [0]\n    \n    # Populate the sequence with the first (n + 1) elements\n    for i in range(1, n+1):\n        seq.append(seq[-1] + (2*i - 1)**11)\n    \n    # Compute the sum\n    s = seq[n]\n    \n    # List of prime digits\n    primes = [2, 3, 5, 7]\n    \n    # Compute the product of prime digits\n    prod = 1\n    for digit in str(s):\n        if int(digit) in primes:\n            prod *= int(digit)\n    \n    return prod",
+    "feedback": null
+}

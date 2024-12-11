@@ -1,0 +1,25 @@
+{
+    "identifier": "max_subarray_bruteforce_problem",
+    "description": "Find the maximum subarray sum of a list of integers using a brute force approach.",
+    "function_prototype": {
+        "function_name": "max_subarray_bruteforce",
+        "parameters": [{"name": "arr", "type": "List[int]"}],
+        "return_values": [{"type": "int"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"arr": [-2, 1, -3, 4, -1, 2, 1, -5, 4]}, "expected_output": [6]},
+        {"input": {"arr": [-2, -1, -3]}, "expected_output": [-1]}
+    ],
+    "tags": ["Array", "Brute Force"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the max_subarray_bruteforce function to find the maximum subarray sum in a list of integers using a brute force approach.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"arr": [1, 2, 3, -2, 5]}, "expected_output": [9]},
+                {"input": {"arr": [-1, -2, -3, -4]}, "expected_output": [-1]}
+            ]
+        }
+    ]
+}

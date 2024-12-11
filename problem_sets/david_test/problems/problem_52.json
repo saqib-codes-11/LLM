@@ -1,0 +1,25 @@
+{
+	"identifier": "problem_unique_words",
+	"description": "Write a function that takes a string as input and returns the number of unique words in the string.",
+	"function_prototype": {
+		"function_name": "count_unique_words",
+		"parameters": [{"name": "text", "type": "str"}],
+		"return_values": [{"type": "int"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"text": "The quick brown fox jumped over the lazy dog. The fox was quick."}, "expected_output": [9]},
+		{"input": {"text": "Hello world. Hello again."}, "expected_output": [4]}
+	],
+	"tags": ["Strings", "Easy"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the `count_unique_words` function that takes a string `text` as input and returns the number of unique words in the given text. Words are considered case-sensitive.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"text": "apple orange apple banana"}, "expected_output": [3]},
+				{"input": {"text": "a A a A"}, "expected_output": [2]}
+			]
+		}
+	]
+}

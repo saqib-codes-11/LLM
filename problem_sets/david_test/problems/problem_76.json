@@ -1,0 +1,48 @@
+{
+    "identifier": "problem_fibonacci_properties",
+    "description": "Calculate a specified property of the Fibonacci sequence.",
+    "function_prototype": {
+        "function_name": "fibonacci_properties",
+        "parameters": [
+            {"name": "n", "type": "int"},
+            {"name": "operation", "type": "str"}
+        ],
+        "return_values": [{"type": "list or int or float"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {"n": 5, "operation": "sequence"},
+            "expected_output": [[0, 1, 1, 2, 3]]
+        },
+        {
+            "input": {"n": 5, "operation": "sum"},
+            "expected_output": [7]
+        },
+        {
+            "input": {"n": 5, "operation": "average"},
+            "expected_output": [1.4]
+        }
+    ],
+    "tags": ["Fibonacci", "Mathematics", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the fibonacci_properties function to calculate a specified property of the Fibonacci sequence.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {"n": 6, "operation": "sequence"},
+                    "expected_output": [[0, 1, 1, 2, 3, 5]]
+                },
+                {
+                    "input": {"n": 4, "operation": "sum"},
+                    "expected_output": [4]
+                },
+                {
+                    "input": {"n": 4, "operation": "average"},
+                    "expected_output": [1.0]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "identifier": "branch66",
+    "description": "branch66",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch66(number, word):\n  if number > 0 and word == 'yes':\n    return 'positive'\n  elif number > 0 and word == 'no':\n    return 'positive but negative'\n  elif number < 0 and word == 'yes':\n    return 'negative but positive'\n  elif number < 0 and word == 'no':\n    return 'negative'\n  else:\n    return 'invalid input'"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch66",
+        "parameters": [
+            {
+                "name": "number",
+                "type": "int"
+            },
+            {
+                "name": "word",
+                "type": "string"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "string"
+            }
+        ]
+    }
+}

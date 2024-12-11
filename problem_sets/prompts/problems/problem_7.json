@@ -1,0 +1,31 @@
+{
+	"identifier": "range_bitwise_and",
+	"description": "This problem tests the ability to work with bitwise operations. The task is to implement a function that calculates the bitwise AND of all numbers in a range from m to n.",
+	"function_prototype": {
+		"function_name": "range_bitwise_and",
+		"parameters": [{"name": "m", "type": "int"}, {"name": "n", "type": "int"}],
+		"return_values": [{"type": "int"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"m": 5, "n": 7}, "expected_output": [4]},
+		{"input": {"m": 0, "n": 1}, "expected_output": [0]}
+	],
+	"tags": ["Bitwise Operations", "Math"],
+	"prompts": [
+		{
+			"prompt_id": "prompt_only",
+			"prompt": "Implement a function that calculates the bitwise AND of all numbers in a range from m to n.",
+			"genericize": false,
+			"sample_inputs_outputs": []
+		},
+		{
+			"prompt_id": "prompt_with_tests",
+			"prompt": "Implement a function that calculates the bitwise AND of all numbers in a range from m to n.\n\nTest Cases:\n- Input: m = 5, n = 7\n  Expected Output: 4\n- Input: m = 0, n = 1\n  Expected Output: 0",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"m": 5, "n": 7}, "expected_output": [4]},
+				{"input": {"m": 0, "n": 1}, "expected_output": [0]}
+			]
+		}
+	]
+}

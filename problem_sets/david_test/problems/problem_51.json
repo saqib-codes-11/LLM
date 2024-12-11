@@ -1,0 +1,41 @@
+{
+	"identifier": "problem_encryption",
+	"description": "Design a function to encrypt or decrypt a message based on a given key and mode.",
+	"function_prototype": {
+		"function_name": "encrypt_decrypt",
+		"parameters": [
+            {"name": "message", "type": "str"},
+            {"name": "key", "type": "str"},
+            {"name": "mode", "type": "str"}
+        ],
+		"return_values": [{"type": "str"}]
+	},
+	"correctness_test_suite": [
+		{
+            "input": {"message": "hello", "key": "key123", "mode": "encrypt"},
+            "expected_output": ["khoor"]
+        },
+        {
+            "input": {"message": "khoor", "key": "key123", "mode": "decrypt"},
+            "expected_output": ["hello"]
+        }
+	],
+	"tags": ["Encryption", "String Manipulation"],
+	"prompts": [
+		{
+			"prompt_id": "encrypt_decrypt_prompt",
+			"prompt": "Implement the 'encrypt_decrypt' function to either encrypt or decrypt a message based on the given key and mode.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+                    "input": {"message": "example", "key": "sample_key", "mode": "encrypt"},
+                    "expected_output": ["h[dpsoh"]
+                },
+                {
+                    "input": {"message": "h[dpsoh", "key": "sample_key", "mode": "decrypt"},
+                    "expected_output": ["example"]
+                }
+			]
+		}
+	]
+}

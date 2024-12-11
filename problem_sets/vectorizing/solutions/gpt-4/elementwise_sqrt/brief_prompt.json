@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "elementwise_sqrt",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef elementwise_sqrt(A: int) -> float:\n    return np.sqrt(A)",
+    "feedback": null
+}

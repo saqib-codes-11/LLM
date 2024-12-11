@@ -1,0 +1,57 @@
+{
+    "identifier": "problem_time_converter",
+    "description": "Convert time based on a specified operation.",
+    "function_prototype": {
+        "function_name": "convert_time",
+        "parameters": [
+            {"name": "hours", "type": "int"},
+            {"name": "minutes", "type": "int"},
+            {"name": "operation", "type": "str"}
+        ],
+        "return_values": [{"type": "int or str"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "hours": 2,
+                "minutes": 30,
+                "operation": "to_minutes"
+            },
+            "expected_output": [150]
+        },
+        {
+            "input": {
+                "hours": 14,
+                "minutes": 45,
+                "operation": "to_24_hour_format"
+            },
+            "expected_output": ["14:45"]
+        }
+    ],
+    "tags": ["Time Conversion", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the convert_time function to convert time based on a specified operation.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "hours": 1,
+                        "minutes": 15,
+                        "operation": "to_minutes"
+                    },
+                    "expected_output": [75]
+                },
+                {
+                    "input": {
+                        "hours": 23,
+                        "minutes": 5,
+                        "operation": "to_24_hour_format"
+                    },
+                    "expected_output": ["23:05"]
+                }
+            ]
+        }
+    ]
+}

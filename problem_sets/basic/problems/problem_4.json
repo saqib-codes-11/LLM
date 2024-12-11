@@ -1,0 +1,34 @@
+{
+  "identifier": "problem_4",
+  "description": "Write a function to divide two numbers.",
+  "function_prototype": {
+	"function_name": "divide",
+	"parameters": [{"name": "a", "type": "float"}, {"name": "b", "type": "float"}],
+	"return_values": [{"type": "float"}]
+  },
+  "correctness_test_suite": [
+	{"input": {"a": 6.0, "b": 3.0}, "expected_output": [2.0]},
+	{"input": {"a": 8.0, "b": 2.0}, "expected_output": [4.0]}
+  ],
+  "tags": ["Arithmetic", "Medium"],
+  "prompts": [
+	{
+	  "prompt_id": "brief_prompt",
+	  "prompt": "Implement the divide function to return the result of division of two floats.",
+	  "genericize": false,
+	  "sample_inputs_outputs": [
+		{"input": {"a": 10.0, "b": 5.0}, "expected_output": [2.0]},
+		{"input": {"a": 15.0, "b": 3.0}, "expected_output": [5.0]}
+	  ]
+	},
+	{
+		"prompt_id": "detailed_prompt",
+	  "prompt": "Write a function named 'divide' that takes two float arguments, 'a' and 'b', and returns their division result as a float.",
+	  "genericize": true,
+	  "sample_inputs_outputs": [
+		{"input": {"a": 10.0, "b": 5.0}, "expected_output": [2.0]},
+		{"input": {"a": 15.0, "b": 3.0}, "expected_output": [5.0]}
+	  ]
+	}
+  ]
+}

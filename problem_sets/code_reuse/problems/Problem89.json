@@ -1,0 +1,43 @@
+{
+  "identifier": "filter_and_sum_negative_numbers_001",
+  "prompts": [
+    {
+      "prompt_id": "filter_and_sum_negative_numbers_prompt_01",
+      "prompt": "Build a parent function named 'filter_negative_numbers' that takes a list of integers `nums` and returns a new list containing only the negative numbers. Then, implement a child function named 'sum_negative_numbers' that takes a list of integers `nums`, utilizes 'filter_negative_numbers' to obtain a list of negative numbers, and returns the sum of the negative numbers.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [-1, -2, 3, 4, -5]},
+          "expected_output": [-8]
+        },
+        {
+          "input": {"nums": [2, 3, 4, 5]},
+          "expected_output": [0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "filter_negative_numbers",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "sum_negative_numbers",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [-3, -4, 5, -6, 7]}, "expected_output": [-13]},
+    {"input": {"nums": [-1, -2, -3, -4]}, "expected_output": [-10]},
+    {"input": {"nums": [1, 2, 3, 4]}, "expected_output": [0]},
+    {"input": {"nums": [-10, 10, -20, 20]}, "expected_output": [-30]}
+  ]
+}

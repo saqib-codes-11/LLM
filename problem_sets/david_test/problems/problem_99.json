@@ -1,0 +1,45 @@
+{
+    "identifier": "problem_online_store",
+    "description": "Manage an online store with various commands such as add, remove, search, and checkout.",
+    "function_prototype": {
+        "function_name": "manage_online_store",
+        "parameters": [
+            {"name": "commands", "type": "List[Tuple[str, Union[str, float, List[str]]]]"}
+        ],
+        "return_values": [{"type": "List[Union[List[str], float]]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "commands": [
+                    ["add", "apple", 0.5],
+                    ["add", "orange", 0.8],
+                    ["search", "app"],
+                    ["checkout", ["apple", "orange"]]
+                ]
+            },
+            "expected_output": ["None", "None", ["apple"], 1.3]
+        }
+    ],
+    "tags": ["List Manipulation", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "online_store_description",
+            "prompt": "Implement the manage_online_store function to handle multiple store commands like adding, removing, searching, and checkout. Return a list with the results of each command.",
+            "genericize": true,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "commands": [
+                            ["add", "banana", 0.3],
+                            ["remove", "apple"],
+                            ["search", "ban"],
+                            ["checkout", ["banana"]]
+                        ]
+                    },
+                    "expected_output": ["None", "None", ["banana"], 0.3]
+                }
+            ]
+        }
+    ]
+}

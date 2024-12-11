@@ -1,0 +1,43 @@
+{
+  "identifier": "sum_and_cumsum_001",
+  "prompts": [
+    {
+      "prompt_id": "sum_and_cumsum_prompt_01",
+      "prompt": "Write a parent function named 'calculate_sum' that takes a list of integers and returns their sum. Then, write a child function named 'calculate_cumsum' that takes a list of integers and, utilizing 'calculate_sum', returns a new list where each element is the sum of the elements before it in the original list.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"nums": [1, 2, 3, 4, 5]},
+          "expected_output": [1, 3, 6, 10, 15]
+        },
+        {
+          "input": {"nums": [5, 3, 8, 7]},
+          "expected_output": [5, 8, 16, 23]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_sum",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "int"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "calculate_cumsum",
+    "parameters": [
+      {"name": "nums", "type": "List[int]"}
+    ],
+    "return_values": [
+      {"type": "List[int]"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"nums": [1, 1, 1, 1, 1]}, "expected_output": [1, 2, 3, 4, 5]},
+    {"input": {"nums": [2, 4, 6, 8]}, "expected_output": [2, 6, 12, 20]},
+    {"input": {"nums": [3, 3, 3]}, "expected_output": [3, 6, 9]},
+    {"input": {"nums": [10, 20, 30, 40]}, "expected_output": [10, 30, 60, 100]}
+  ]
+}

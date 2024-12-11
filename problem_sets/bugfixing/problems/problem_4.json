@@ -1,0 +1,38 @@
+{
+	"identifier": "problem_4",
+	"description": "Debug and fix the function to concatenate two strings.",
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "The provided function `concatenate` attempts to return the concatenation of two strings, but it contains bugs. Debug and fix the function to return the correct concatenation.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"a": "'Hello', ", "b": "'World!'"}, "expected_output": ["'Hello, World!'"]},
+				{"input": {"a": "'Good'", "b": "'bye!'"}, "expected_output": ["'Goodbye!'"]}
+			],
+			"input_code": "def concatenate(a: str, b: str) -> str:\n    return a - b"
+		},
+		{
+			"prompt_id": "detailed_prompt",
+			"prompt": "The function named 'concatenate' is intended to take two string arguments, 'a' and 'b', and return their concatenation as a string. However, it contains bugs. Debug and fix the function to ensure it returns the correct concatenation.",
+			"genericize": true,
+			"sample_inputs_outputs": [
+				{"input": {"a": "'Hello, '", "b": "'World!'"}, "expected_output": ["'Hello, World!'"]},
+				{"input": {"a": "'Good'", "b": "'bye!'"}, "expected_output": ["'Goodbye!'"]}
+			],
+			"input_code": "def concatenate(a: str, b: str) -> str:\n    return a + b + b"
+		}
+	],
+	"function_prototype": {
+		"function_name": "concatenate",
+		"parameters": [{"name": "a", "type": "str"}, {"name": "b", "type": "str"}],
+		"return_values": [{"type": "str"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"a": "'Hi '", "b": "'there!'"}, "expected_output": ["'Hi there!'"]},
+		{"input": {"a": "'See '", "b": "'you!'"}, "expected_output": ["'See you!'"]}
+	],
+	"optimal_solution": "def concatenate(a: str, b: str) -> str:\n    return a + b",
+	"additional_instructions": "Ensure that your function handles empty strings correctly.",
+	"tags": ["Debugging", "Easy"]
+}

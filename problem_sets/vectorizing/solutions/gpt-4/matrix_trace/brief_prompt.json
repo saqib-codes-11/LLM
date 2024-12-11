@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "matrix_trace",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef matrix_trace_vec(A):\n    # convert A into a numpy array \n    A = np.array(A)\n    # return the trace of the matrix\n    return np.trace(A)",
+    "feedback": null
+}

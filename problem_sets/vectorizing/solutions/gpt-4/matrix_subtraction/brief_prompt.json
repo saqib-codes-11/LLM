@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "matrix_subtraction",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef matrix_subtraction(A: np.ndarray, B: np.ndarray) -> np.ndarray:\n    return A - B",
+    "feedback": null
+}

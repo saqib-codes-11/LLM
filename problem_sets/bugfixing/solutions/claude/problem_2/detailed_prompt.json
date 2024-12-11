@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_2",
+    "model_identifier": "claude",
+    "prompt_identifier": "detailed_prompt",
+    "solution_code": "def add(a: int, b: int) -> int:\n\treturn a + b\n",
+    "feedback": null
+}

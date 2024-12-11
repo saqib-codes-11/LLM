@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_42628647-4b5e-4c70-9ab5-151b5a6bbe30",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "42628647-4b5e-4c70-9ab5-151b5a6bbe30",
+    "solution_code": "def solve(n: list[int]) -> int:\n    final_max = current_max = n[0]\n\n    for num in n[1:]:\n        current_max = max(current_max + num, num)\n        final_max = max(final_max, current_max)\n\n    return sum(int(digit) % 2 == 0 for digit in str(final_max))",
+    "feedback": null
+}

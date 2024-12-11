@@ -1,0 +1,12 @@
+{
+    "problem_identifier": "math_operations_001",
+    "prompt_identifier": "math_operations_prompt_01",
+    "model_identifier": "gpt-3.5-turbo",
+    "score": 0.25,
+    "sub_criteria_scores": null,
+    "issues": [
+        "Test failed:\n\tInput: n = 16; Expected Output: 4\n\tFunction prototype: calculate_square_root(n: float) -> float\n\tExpected result: 4.0 <class 'float'>\n\tActual result: 4.0000001858445895 <class 'float'>",
+        "Test failed:\n\tInput: n = 81; Expected Output: 9\n\tFunction prototype: calculate_square_root(n: float) -> float\n\tExpected result: 9.0 <class 'float'>\n\tActual result: 9.000000000004924 <class 'float'>",
+        "Test failed:\n\tInput: n = 1; Expected Output: 1\n\tFunction prototype: calculate_square_root(n: float) -> float\n\tExpected result: 1.0 <class 'float'>\n\tActual result: 1.0000000464611474 <class 'float'>"
+    ]
+}

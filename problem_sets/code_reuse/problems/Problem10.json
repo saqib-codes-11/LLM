@@ -1,0 +1,44 @@
+{
+  "identifier": "calculate_area_001",
+  "prompts": [
+    {
+      "prompt_id": "calculate_area_prompt_01",
+      "prompt": "Write a parent function named 'rectangle_area' that takes two arguments, width and height, and returns the area of a rectangle. Then, write a child function named 'square_area' that takes a single argument, side, and utilizes 'rectangle_area' to calculate and return the area of a square.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"side": 5},
+          "expected_output": [25]
+        },
+        {
+          "input": {"side": 9},
+          "expected_output": [81]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "rectangle_area",
+    "parameters": [
+      {"name": "width", "type": "float"},
+      {"name": "height", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "square_area",
+    "parameters": [
+      {"name": "side", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"side": 4.0}, "expected_output": [16.0]},
+    {"input": {"side": 7.0}, "expected_output": [49.0]},
+    {"input": {"side": 2.5}, "expected_output": [6.25]},
+    {"input": {"side": 10.0}, "expected_output": [100.0]}
+  ]
+}

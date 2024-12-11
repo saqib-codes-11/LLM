@@ -1,0 +1,29 @@
+{
+    "identifier": "count_negative",
+    "description": "Given an unvectorized code for count_negative, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `count_negative` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        count = 0\n        for i in range(len(A)):\n            for j in range(len(A[0])):\n                if A[i][j] < 0:\n                    count += 1\n        return count\n    #TAGS: loops, nested loops, comparison\n    \n    ### Problem 26: Zero Matrix\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "count_negative",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

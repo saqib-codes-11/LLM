@@ -1,0 +1,43 @@
+{
+  "identifier": "square_and_square_root_001",
+  "prompts": [
+    {
+      "prompt_id": "square_and_square_root_prompt_01",
+      "prompt": "Write a parent function named 'square' that takes a number and returns its square. Then, write a child function named 'square_root' that takes a number and, utilizing 'square', returns the square root of the number without using any square root calculation methods or operators.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"num": 25},
+          "expected_output": [5.0]
+        },
+        {
+          "input": {"num": 4},
+          "expected_output": [2.0]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "square",
+    "parameters": [
+      {"name": "num", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "square_root",
+    "parameters": [
+      {"name": "num", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"num": 9}, "expected_output": [3.0]},
+    {"input": {"num": 16}, "expected_output": [4.0]},
+    {"input": {"num": 1}, "expected_output": [1.0]},
+    {"input": {"num": 100}, "expected_output": [10.0]}
+  ]
+}

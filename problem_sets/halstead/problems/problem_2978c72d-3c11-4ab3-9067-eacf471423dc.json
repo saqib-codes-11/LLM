@@ -1,0 +1,49 @@
+{
+    "identifier": "problem_2978c72d-3c11-4ab3-9067-eacf471423dc",
+    "prompts": [
+        {
+            "prompt_id": "2978c72d-3c11-4ab3-9067-eacf471423dc",
+            "prompt": "Given an integer n (1 \u2264 n \u2264 1700), compute the sum of the fourth powers of the first n even numbers. Return the sum of its even digits.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": 1
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": 2
+            },
+            "expected_output": [
+                6
+            ]
+        },
+        {
+            "input": {
+                "n": 3
+            },
+            "expected_output": [
+                4
+            ]
+        }
+    ]
+}

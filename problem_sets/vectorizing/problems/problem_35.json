@@ -1,0 +1,29 @@
+{
+    "identifier": "is_lower_triangular",
+    "description": "Given an unvectorized code for is_lower_triangular, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `is_lower_triangular` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        for i in range(len(A)):\n            for j in range(i+1, len(A[0])):\n                if A[i][j] != 0:\n                    return False\n        return True\n    #TAGS: loops, nested loops, comparison\n    \n    ### Problem 36: Check Upper Triangular\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "is_lower_triangular",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

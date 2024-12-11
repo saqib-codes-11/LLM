@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_f7a35b1e-deda-46b3-b362-607afe56a55f",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "f7a35b1e-deda-46b3-b362-607afe56a55f",
+    "solution_code": "from collections import Counter\nfrom typing import List\n\ndef solve(n: List[int]) -> int:\n    # create a dictionary of the occurrence counts for each integer in the list\n    c = Counter(n)\n    # find the integer that appears exactly seven times \n    sevens = [x for x in c if c[x] == 7]  # sevens contains only one element\n    # calculate the sum of the digits of this integer\n    digit_sum = sum(int(d) for d in str(sevens[0]))\n    # return the digit sum raised to the sixth power\n    return digit_sum ** 6",
+    "feedback": null
+}

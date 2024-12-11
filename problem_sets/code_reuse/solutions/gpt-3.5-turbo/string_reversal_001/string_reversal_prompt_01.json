@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "string_reversal_001",
+    "model_identifier": "gpt-3.5-turbo",
+    "prompt_identifier": "string_reversal_prompt_01",
+    "solution_code": "# define the parent function 'reverse_string'\ndef reverse_string(s: str) -> str:\n    return s[::-1]\n\n# define the child function 'is_palindrome'\ndef is_palindrome(s: str) -> bool:\n    # get the reverse of the string\n    reversed_s = reverse_string(s)\n    \n    # check if the reversed string is equal to the original string\n    if s == reversed_s:\n        return True\n    else:\n        return False",
+    "feedback": null
+}

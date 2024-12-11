@@ -1,0 +1,21 @@
+{
+    "problem_identifier": "problem_3",
+    "prompt_identifier": "detailed_prompt",
+    "model_identifier": "human",
+    "score": 0.0,
+    "sub_criteria_scores": null,
+    "issues": [
+        [
+            "Test failed: Input: a = 4, b = 3\nExpected Output: 12 Result: {'exception': 'list index out of range', 'traceback': 'Traceback (most recent call last):\\n  File \"/Users/morgang/code/LLMCodingBenchmarkingFramework/execution.py\", line 30, in executor_script\\n    last_function_name = [name for name in exec_globals if callable(exec_globals[name])][-1]\\nIndexError: list index out of range\\n', 'parameters': [4, 3], 'function_code': ''}"
+        ],
+        [
+            "Test failed: Input: a = 7, b = 2\nExpected Output: 14 Result: {'exception': 'list index out of range', 'traceback': 'Traceback (most recent call last):\\n  File \"/Users/morgang/code/LLMCodingBenchmarkingFramework/execution.py\", line 30, in executor_script\\n    last_function_name = [name for name in exec_globals if callable(exec_globals[name])][-1]\\nIndexError: list index out of range\\n', 'parameters': [7, 2], 'function_code': ''}"
+        ],
+        [
+            "Test failed: Input: a = 4, b = 3\nExpected Output: 12 Result: {'exception': 'list index out of range', 'traceback': 'Traceback (most recent call last):\\n  File \"/Users/morgang/code/LLMCodingBenchmarkingFramework/execution.py\", line 30, in executor_script\\n    last_function_name = [name for name in exec_globals if callable(exec_globals[name])][-1]\\nIndexError: list index out of range\\n', 'parameters': [4, 3], 'function_code': ''}"
+        ],
+        [
+            "Test failed: Input: a = 7, b = 2\nExpected Output: 14 Result: {'exception': 'list index out of range', 'traceback': 'Traceback (most recent call last):\\n  File \"/Users/morgang/code/LLMCodingBenchmarkingFramework/execution.py\", line 30, in executor_script\\n    last_function_name = [name for name in exec_globals if callable(exec_globals[name])][-1]\\nIndexError: list index out of range\\n', 'parameters': [7, 2], 'function_code': ''}"
+        ]
+    ]
+}

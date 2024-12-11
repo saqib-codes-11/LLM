@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_b7005594-5c10-4c62-8aa1-6508081c000b",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "b7005594-5c10-4c62-8aa1-6508081c000b",
+    "solution_code": "def solve(n: int) -> int:\n    sum_squares = n**3\n    product = 1\n    for digit in str(sum_squares):\n        if int(digit) % 2 == 0:\n            if int(digit):\n                product *= int(digit)\n    return product",
+    "feedback": null
+}

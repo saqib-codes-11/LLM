@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "column_min",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef column_min(A):\n    return np.min(A, 0).tolist()",
+    "feedback": null
+}

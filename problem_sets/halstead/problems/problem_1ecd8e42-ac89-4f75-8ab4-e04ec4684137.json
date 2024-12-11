@@ -1,0 +1,75 @@
+{
+    "identifier": "problem_1ecd8e42-ac89-4f75-8ab4-e04ec4684137",
+    "prompts": [
+        {
+            "prompt_id": "1ecd8e42-ac89-4f75-8ab4-e04ec4684137",
+            "prompt": "Given a list of integers, find the element that appears exactly once in the list. Return the product of the digits of this element.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            "expected_output": [
+                5
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    10,
+                    20,
+                    30,
+                    40,
+                    50,
+                    10,
+                    20,
+                    30,
+                    40
+                ]
+            },
+            "expected_output": [
+                0
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    150,
+                    250,
+                    351,
+                    150,
+                    250
+                ]
+            },
+            "expected_output": [
+                15
+            ]
+        }
+    ]
+}

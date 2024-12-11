@@ -1,0 +1,32 @@
+{
+    "identifier": "branch9",
+    "description": "branch9",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch9(a, b):\n    if a > b:\n        result = a + b\n    elif a < b:\n        if b % 2 == 0:\n            result = a * b\n        else:\n            result = a - b\n    else:\n        if a % 2 == 0:\n            result = a // b\n        else:\n            result = a ** b\n    \n    if result > 10:\n        return result * 2\n    elif result < 0:\n        return result + 10\n    else:\n        return result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch9",
+        "parameters": [
+            {
+                "name": "a",
+                "type": "int"
+            },
+            {
+                "name": "b",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

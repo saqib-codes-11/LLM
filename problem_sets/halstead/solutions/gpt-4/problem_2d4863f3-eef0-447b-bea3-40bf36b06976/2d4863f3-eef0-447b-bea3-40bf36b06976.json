@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_2d4863f3-eef0-447b-bea3-40bf36b06976",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "2d4863f3-eef0-447b-bea3-40bf36b06976",
+    "solution_code": "from typing import List\n\ndef solve(n: List[int]) -> int:\n    n.sort()\n    product1 = n[0]*n[1]*n[2]*n[3] # first 4 numbers\n    product2 = n[0]*n[1]*n[-1]*n[-2] # first 2 and last 2 numbers\n    smallest_product = min(product1, product2) # select the smaller product\n    primes = '2357' # prime digits\n    return sum(1 for digit in str(smallest_product) if digit in primes)",
+    "feedback": null
+}

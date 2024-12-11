@@ -1,0 +1,29 @@
+{
+    "identifier": "upper_triangle_elements",
+    "description": "Given an unvectorized code for upper_triangle_elements, create its vectorized equivalent using NumPy.",
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "The provided function `upper_triangle_elements` computes the result based on its input lists. Create its vectorized equivalent using NumPy.",
+            "input_code": "def function(A):\n        # UNVECTORIZE THIS\n        result = []\n        for i in range(len(A)):\n            for j in range(i+1, len(A[0])):\n                result.append(A[i][j])\n        return result\n    #TAGS: loops, nested loops\n    \n    ### Problem 76: Extract Lower Triangle Elements\n    \n    "
+        }
+    ],
+    "function_prototype": {
+        "function_name": "upper_triangle_elements",
+        "parameters": [
+            {
+                "name": "A",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "float"
+            }
+        ]
+    },
+    "tags": [
+        "Array",
+        "Medium"
+    ]
+}

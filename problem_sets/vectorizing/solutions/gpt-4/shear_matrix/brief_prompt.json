@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "shear_matrix",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef shear_matrix(A, k, i, j):\n    A[i] += k * A[j]\n    return A",
+    "feedback": null
+}

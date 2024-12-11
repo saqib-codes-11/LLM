@@ -1,0 +1,86 @@
+{
+    "identifier": "problem_d4521582-afec-47a6-bf46-70e44e41f038",
+    "prompts": [
+        {
+            "prompt_id": "d4521582-afec-47a6-bf46-70e44e41f038",
+            "prompt": "Given a list of positive integers, find the element that appears an even number of times in the list. Return the sum of the digits of this element squared.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    3,
+                    2,
+                    4,
+                    2,
+                    4,
+                    3,
+                    2,
+                    4,
+                    5
+                ]
+            },
+            "expected_output": [
+                9
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    1,
+                    1,
+                    2,
+                    2,
+                    2,
+                    3,
+                    3,
+                    3,
+                    4,
+                    4,
+                    4
+                ]
+            },
+            "expected_output": [
+                1
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    5,
+                    5,
+                    5,
+                    6,
+                    6,
+                    6,
+                    7,
+                    7,
+                    7,
+                    8,
+                    8,
+                    8,
+                    9,
+                    9
+                ]
+            },
+            "expected_output": [
+                9
+            ]
+        }
+    ]
+}

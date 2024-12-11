@@ -1,0 +1,76 @@
+{
+    "identifier": "problem_46edba7f-63ff-4456-bc88-d04f4533bdba",
+    "prompts": [
+        {
+            "prompt_id": "46edba7f-63ff-4456-bc88-d04f4533bdba",
+            "prompt": "Given a list of integers, determine the number of elements that are greater than the median of the list. Return the sum of the digits of this count.  Write a function named solve to accomplish this task. Optimize for the Halstead difficulty metric."
+        }
+    ],
+    "function_prototype": {
+        "function_name": "solve",
+        "parameters": [
+            {
+                "name": "n",
+                "type": "List[int]"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "n": [
+                    10,
+                    20,
+                    30,
+                    40,
+                    50,
+                    60,
+                    70,
+                    80,
+                    90,
+                    100
+                ]
+            },
+            "expected_output": [
+                5
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    110,
+                    220,
+                    330,
+                    440,
+                    550,
+                    660,
+                    550
+                ]
+            },
+            "expected_output": [
+                3
+            ]
+        },
+        {
+            "input": {
+                "n": [
+                    150,
+                    250,
+                    50,
+                    350,
+                    75,
+                    155,
+                    200
+                ]
+            },
+            "expected_output": [
+                3
+            ]
+        }
+    ]
+}

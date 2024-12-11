@@ -1,0 +1,42 @@
+{
+	"identifier": "problem_social_network",
+	"description": "Simulate the behavior of a basic social network with various operations like adding friends, finding mutual friends, suggesting connections, and finding friends.",
+	"function_prototype": {
+		"function_name": "simulate_social_network",
+		"parameters": [{"name": "operations", "type": "List[Dict[str, str]]"}],
+		"return_values": [{"type": "List[Union[List[str], str]]"}]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {
+				"operations": [
+					{"action": "add_friend", "user1": "Alice", "user2": "Bob"},
+					{"action": "add_friend", "user1": "Alice", "user2": "Charlie"},
+					{"action": "add_friend", "user1": "Bob", "user2": "Charlie"},
+					{"action": "find_mutual_friends", "user1": "Alice", "user2": "Bob"},
+					{"action": "find_friends", "user": "Alice"}
+				]
+			},
+			"expected_output": ["Friend Added", "Friend Added", "Friend Added", ["Charlie"], ["Bob", "Charlie"]]
+		}
+	],
+	"tags": ["Simulation", "Medium"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the `simulate_social_network` function to simulate the behavior of a basic social network. The function should handle various operations like adding friends, finding mutual friends, suggesting connections, and finding friends.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {
+						"operations": [
+							{"action": "add_friend", "user1": "Eve", "user2": "Frank"},
+							{"action": "find_friends", "user": "Eve"}
+						]
+					},
+					"expected_output": ["Friend Added", ["Frank"]]
+				}
+			]
+		}
+	]
+}

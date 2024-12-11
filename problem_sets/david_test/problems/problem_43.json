@@ -1,0 +1,52 @@
+{
+    "identifier": "problem_dfs_traversal",
+    "description": "Implement a function to perform a Depth-First Search (DFS) traversal on a graph.",
+    "function_prototype": {
+        "function_name": "dfs_traversal",
+        "parameters": [
+            {"name": "edges", "type": "List[List[int, int]]"},
+            {"name": "start_vertex", "type": "int"}
+        ],
+        "return_values": [{"type": "List[int]"}]
+    },
+    "correctness_test_suite": [
+        {
+            "input": {
+                "edges": [[0, 1], [0, 2], [1, 2], [2, 0], [2, 3], [3, 3]],
+                "start_vertex": 2
+            },
+            "expected_output": [2, 0, 1, 3]
+        },
+        {
+            "input": {
+                "edges": [[0, 1], [1, 2], [1, 3]],
+                "start_vertex": 0
+            },
+            "expected_output": [0, 1, 2, 3]
+        }
+    ],
+    "tags": ["Graph", "DFS", "Medium"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the dfs_traversal function that takes a list of edges and a start vertex, then returns a list of vertices visited during the Depth-First Search traversal.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {
+                    "input": {
+                        "edges": [[0, 1], [0, 2], [1, 3]],
+                        "start_vertex": 0
+                    },
+                    "expected_output": [0, 1, 2, 3]
+                },
+                {
+                    "input": {
+                        "edges": [[1, 0], [1, 2], [2, 3], [3, 3]],
+                        "start_vertex": 1
+                    },
+                    "expected_output": [1, 0, 2, 3]
+                }
+            ]
+        }
+    ]
+}

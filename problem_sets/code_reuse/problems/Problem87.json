@@ -1,0 +1,47 @@
+{
+  "identifier": "triangle_area_and_checking_area_in_range_001",
+  "prompts": [
+    {
+      "prompt_id": "triangle_area_and_checking_area_in_range_prompt_01",
+      "prompt": "Construct a parent function named 'calculate_triangle_area' that accepts two floats `base` and `height` and returns the area of a triangle. Next, design a child function named 'is_area_in_range' that accepts four floats `base`, `height`, `low`, and `high`, uses 'calculate_triangle_area' to compute the area, and checks whether the calculated area lies within the inclusive range `low` to `high`.",
+      "sample_inputs_outputs": [
+        {
+          "input": {"base": 10.0, "height": 5.0, "low": 10.0, "high": 30.0},
+          "expected_output": [true]
+        },
+        {
+          "input": {"base": 7.0, "height": 3.0, "low": 10.0, "high": 15.0},
+          "expected_output": [false]
+        }
+      ]
+    }
+  ],
+  "parent_function_prototype": {
+    "function_name": "calculate_triangle_area",
+    "parameters": [
+      {"name": "base", "type": "float"},
+      {"name": "height", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "float"}
+    ]
+  },
+  "function_prototype": {
+    "function_name": "is_area_in_range",
+    "parameters": [
+      {"name": "base", "type": "float"},
+      {"name": "height", "type": "float"},
+      {"name": "low", "type": "float"},
+      {"name": "high", "type": "float"}
+    ],
+    "return_values": [
+      {"type": "bool"}
+    ]
+  },
+  "correctness_test_suite": [
+    {"input": {"base": 8.0, "height": 4.0, "low": 10.0, "high": 20.0}, "expected_output": [true]},
+    {"input": {"base": 6.0, "height": 3.0, "low": 5.0, "high": 10.0}, "expected_output": [true]},
+    {"input": {"base": 9.0, "height": 6.0, "low": 30.0, "high": 40.0}, "expected_output": [true]},
+    {"input": {"base": 10.0, "height": 7.0, "low": 30.0, "high": 70.0}, "expected_output": [true]}
+  ]
+}

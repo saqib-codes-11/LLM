@@ -1,0 +1,36 @@
+{
+    "identifier": "branch18",
+    "description": "branch18",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch18(x, y, z):\n    \"\"\"This function takes three parameters and \n    returns a final value based on those parameters. \n    \"\"\"\n    if x > 0 and y == 0:\n        return x + 1\n    elif x > 0 and y > 0:\n        return x + y + z\n    elif x == 0 and y > 0:\n        return x + y - z\n    elif x < 0 and y > 0:\n        return x * y + z\n    elif x < 0 and y < 0:\n        return x * y - z\n    elif x == 0 and y < 0:\n        return x - y + z\n    elif x > 0 and y < 0:\n        return x - y - z\n    else:\n        return \"No result.\""
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch18",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "int"
+            },
+            {
+                "name": "y",
+                "type": "int"
+            },
+            {
+                "name": "z",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}

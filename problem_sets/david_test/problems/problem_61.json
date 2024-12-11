@@ -1,0 +1,25 @@
+{
+    "identifier": "problem_count_vowels",
+    "description": "Count the number of vowels in a given string.",
+    "function_prototype": {
+        "function_name": "count_vowels",
+        "parameters": [{"name": "s", "type": "str"}],
+        "return_values": [{"type": "int"}]
+    },
+    "correctness_test_suite": [
+        {"input": {"s": "hello"}, "expected_output": [2]},
+        {"input": {"s": "world"}, "expected_output": [1]}
+    ],
+    "tags": ["String Analysis", "Easy"],
+    "prompts": [
+        {
+            "prompt_id": "brief_prompt",
+            "prompt": "Implement the count_vowels function to return the number of vowels in a given string.",
+            "genericize": false,
+            "sample_inputs_outputs": [
+                {"input": {"s": "aeiou"}, "expected_output": [5]},
+                {"input": {"s": "xyz"}, "expected_output": [0]}
+            ]
+        }
+    ]
+}

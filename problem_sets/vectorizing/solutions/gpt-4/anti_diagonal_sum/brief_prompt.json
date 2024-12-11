@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "anti_diagonal_sum",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\n\ndef function(A):\n    A_numpy = np.array(A)\n    return np.trace(np.fliplr(A_numpy))",
+    "feedback": null
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_9f340bc0-f030-445c-bf93-b7b30aef4223",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "9f340bc0-f030-445c-bf93-b7b30aef4223",
+    "solution_code": "def solve(n: int) -> int:\n    primes = [2]\n    i = 3\n    while len(primes) != n:\n        if all(i % p != 0 for p in primes):\n            primes.append(i)\n        i += 2\n    sum_square = sum(p**2 for p in primes)\n    primes_in_sum = [int(d) for d in str(sum_square) if int(d) in [2,3,5,7]]\n    return (eval('*'.join(map(str, primes_in_sum))))",
+    "feedback": null
+}

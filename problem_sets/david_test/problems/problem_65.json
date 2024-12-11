@@ -1,0 +1,25 @@
+{
+	"identifier": "problem_reverse_words",
+	"description": "Reverse the order of words in a given sentence.",
+	"function_prototype": {
+		"function_name": "reverse_words",
+		"parameters": [{"name": "sentence", "type": "str"}],
+		"return_values": [{"type": "str"}]
+	},
+	"correctness_test_suite": [
+		{"input": {"sentence": "Hello world"}, "expected_output": ["world Hello"]},
+		{"input": {"sentence": "OpenAI is great!"}, "expected_output": ["great! is OpenAI"]}
+	],
+	"tags": ["String Processing", "Easy"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Implement the reverse_words function that takes a sentence as input and returns the sentence with its words in reversed order. Words are separated by spaces.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{"input": {"sentence": "Reversing words is fun"}, "expected_output": ["fun is words Reversing"]},
+				{"input": {"sentence": "How are you?"}, "expected_output": ["you? are How"]}
+			]
+		}
+	]
+}

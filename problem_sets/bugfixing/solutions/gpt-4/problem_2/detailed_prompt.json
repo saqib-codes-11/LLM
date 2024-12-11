@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_2",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "detailed_prompt",
+    "solution_code": "def add(a: int, b: int) -> int:\n    return a + b",
+    "feedback": null
+}

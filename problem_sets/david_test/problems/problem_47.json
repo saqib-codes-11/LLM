@@ -1,0 +1,75 @@
+{
+	"identifier": "problem_game_simulation",
+	"description": "Simulate a basic game that involves rooms, objects, and a player. Execute a series of commands and return the final state of the player.",
+	"function_prototype": {
+		"function_name": "game_simulation",
+		"parameters": [{"name": "commands", "type": "List[List[str]]"}],
+		"return_values": [{"type": "List[Dict[str, Union[str, List[str]]]]"}]
+	},
+	"correctness_test_suite": [
+		{
+			"input": {
+				"commands": [
+					["create_room", "Kitchen", "A room with a stove and fridge."],
+					["create_room", "Living Room", "A room with a sofa and TV."],
+					["create_object", "Knife", "Used for cutting."],
+					["create_object", "Remote", "Used for changing channels."],
+					["create_player", "John"],
+					["add_object_to_room", "Kitchen", "Knife"],
+					["move_player", "Kitchen"],
+					["player_take_object", "Knife"],
+					["move_player", "Living Room"],
+					["player_drop_object", "Knife"]
+				]
+			},
+			"expected_output": [{
+				"player_location": "Kitchen",
+				"player_inventory": [],
+				"current_room_objects": ["Knife"]
+			}, {
+				"player_location": "Kitchen",
+				"player_inventory": ["Knife"],
+				"current_room_objects": []
+			}, {
+				"player_location": "Living Room",
+				"player_inventory": ["Knife"],
+				"current_room_objects": []
+			}, {
+				"player_location": "Living Room",
+				"player_inventory": [],
+				"current_room_objects": ["Knife"]
+			}]
+		}
+	],
+	"tags": ["Simulation", "Game"],
+	"prompts": [
+		{
+			"prompt_id": "brief_prompt",
+			"prompt": "Simulate a game by processing a series of commands to manage rooms, objects, and a player. Your function should return the state of the player after each command.",
+			"genericize": false,
+			"sample_inputs_outputs": [
+				{
+					"input": {
+						"commands": [
+							["create_room", "Bedroom", "A room with a bed and wardrobe."],
+							["create_object", "Book", "Used for reading."],
+							["create_player", "Alice"],
+							["add_object_to_room", "Bedroom", "Book"],
+							["move_player", "Bedroom"],
+							["player_take_object", "Book"]
+						]
+					},
+					"expected_output": [{
+						"player_location": "Bedroom",
+						"player_inventory": [],
+						"current_room_objects": ["Book"]
+					}, {
+						"player_location": "Bedroom",
+						"player_inventory": ["Book"],
+						"current_room_objects": []
+					}]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "problem_6bde88ad-5070-4d39-9e2b-db3ced2134f7",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "6bde88ad-5070-4d39-9e2b-db3ced2134f7",
+    "solution_code": "from typing import List\ndef solve(n: List[int]) -> int:\n    m = sorted(n)\n    len_n = len(n)\n    median = (m[len_n//2] + m[-(len_n//2 + 1)]) / 2\n    count = len([i for i in m if i > 2*median and i%2==0])\n    return sum(int(x) for x in str(count))",
+    "feedback": null
+}

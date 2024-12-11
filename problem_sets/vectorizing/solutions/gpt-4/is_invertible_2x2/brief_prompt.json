@@ -1,0 +1,7 @@
+{
+    "problem_identifier": "is_invertible_2x2",
+    "model_identifier": "gpt-4",
+    "prompt_identifier": "brief_prompt",
+    "solution_code": "import numpy as np\ndef is_invertible_2x2(A):\n    A = np.array(A)\n    det = A[0, 0] * A[1, 1] - A[0, 1] * A[1, 0]\n    return det != 0",
+    "feedback": null
+}

@@ -1,0 +1,36 @@
+{
+    "identifier": "branch48",
+    "description": "branch48",
+    "prompts": [
+        {
+            "prompt_id": "prompt",
+            "prompt": "Generate tests in Python (compatible with pytest) that produce 100% code coverage. Output only Python code and nothing else before or after.",
+            "input_code": "def branch48(x, y, z): \n    # x, y, and z are all integers\n    \n    # Create a variable to store the final result\n    result = 0 \n    \n    # Branches based on x\n    if x == 0: \n        result = x + y \n    \n    elif x == 1:\n        result = x * y \n    \n    elif x == 2:\n        result = x + z \n    \n    elif x == 3:\n        result = x * z \n    \n    # Branches based on y\n    if y == 0: \n        result = y + z \n    \n    elif y == 1:\n        result = y * z \n    \n    elif y == 2:\n        result = y + x \n    \n    elif y == 3:\n        result = y * x \n    \n    # Branches based on z\n    if z == 0: \n        result = z + x \n    \n    elif z == 1:\n        result = z * x \n    \n    elif z == 2:\n        result = z + y \n    \n    elif z == 3:\n        result = z * y \n    \n    # Return the final result\n    return result"
+        }
+    ],
+    "tags": [
+        "Code Coverage"
+    ],
+    "function_prototype": {
+        "function_name": "branch48",
+        "parameters": [
+            {
+                "name": "x",
+                "type": "int"
+            },
+            {
+                "name": "y",
+                "type": "int"
+            },
+            {
+                "name": "z",
+                "type": "int"
+            }
+        ],
+        "return_values": [
+            {
+                "type": "int"
+            }
+        ]
+    }
+}
